@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+  position: relative;
+  font-weight: 300;
+  transition: color 300ms;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 0;
+  height: 0.125rem;
+  background-color: #d4af37;
+  transition: width 300ms;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+@layer components {
+  .nav-container {
+    @apply flex items-center justify-between h-20 relative z-30 max-w-7xl mx-auto px-4 md:px-8;
+  }
+
+  .nav-menu {
+    @apply hidden lg:flex items-center justify-center space-x-8;
+  }
+
+  .nav-item {
+    @apply relative py-8 font-light tracking-wide cursor-pointer text-center;
+  }
+
+  .nav-link {
+    @apply relative font-light tracking-wide transition-colors duration-300;
+  }
+
+  .nav-button {
+    @apply inline-flex items-center justify-center space-x-1.5 tracking-wide;
+  }
+
+  .mega-menu {
+    @apply invisible opacity-0 absolute left-1/2 -translate-x-1/2 top-full 
+           bg-white rounded-lg shadow-lg transform -translate-y-2 
+           transition-all duration-300 z-40 w-[500px];
+  }
+
+  .mega-menu-container {
+    @apply p-6;
+  }
+
+  .mega-menu-grid {
+    @apply grid grid-cols-4 gap-x-6;
+  }
+
+  .mega-menu-column {
+    @apply space-y-3;
+  }
+
+  .mega-menu-title {
+    @apply text-sm font-medium text-gray-800 mb-2 text-center border-b border-gray-100 pb-2;
+  }
+
+  .mega-menu-item {
+    @apply block text-gray-600 hover:text-gold transition-colors duration-200 
+           py-1 text-sm font-light text-center;
+  }
+
+  .group:hover .mega-menu {
+    @apply visible opacity-100 translate-y-0;
+  }
+
+  .booking-button {
+    @apply px-6 py-2.5 rounded-full bg-gold hover:bg-gold/90 text-white 
+           transition-colors duration-300 font-light tracking-wide text-sm;
+  }
+
+  .mega-menu[data-menu='procedures'] {
+    @apply w-[400px];
+  }
+
+  .mega-menu[data-menu='a-propos'] {
+    @apply w-[250px];
+  }
+
+  .mobile-menu-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 z-[51] lg:hidden;
+  }
+
+  .mobile-menu-container {
+    @apply fixed right-0 top-0 h-full w-64 bg-white shadow-lg z-[52] lg:hidden;
+  }
+
+  .mobile-menu-content {
+    @apply p-4 pt-16 overflow-y-auto max-h-screen;
+  }
+
+  .mobile-menu-item {
+    @apply border-b border-gray-100 last:border-0;
+  }
+
+  .mobile-menu-button {
+    @apply flex items-center justify-between w-full py-3 text-gray-800 hover:text-gold;
+  }
+
+  .mobile-submenu-item {
+    @apply border-l border-gray-200;
+  }
+
+  .mobile-submenu-button {
+    @apply block w-full text-left pl-4 py-2 text-sm text-gray-600 hover:text-gold;
+  }
+}
