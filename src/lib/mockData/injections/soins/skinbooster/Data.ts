@@ -90,19 +90,19 @@ export const skinboosterData = {
     items: [
       {
         question: "Combien de séances sont nécessaires ?",
-        answer: "Un protocole standard comprend 3 séances espacées de 2-3 semaines, puis une séance d'entretien tous les 4-6 mois.",
+        answer: ["Un protocole standard comprend 3 séances espacées de 2-3 semaines, puis une séance d'entretien tous les 4-6 mois."],
       },
       {
         question: "Est-ce douloureux ?",
-        answer: "Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante.",
+        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante."],
       },
       {
         question: "Quand voit-on les résultats ?",
-        answer: "Les premiers résultats sont visibles dès la première séance et s'améliorent progressivement.",
+        answer: ["Les premiers résultats sont visibles dès la première séance et s'améliorent progressivement."],
       },
       {
         question: "Y a-t-il une période d'éviction sociale ?",
-        answer: "Les suites sont minimes, avec parfois de petites rougeurs qui disparaissent en 24-48h.",
+        answer: ["Les suites sont minimes, avec parfois de petites rougeurs qui disparaissent en 24-48h."],
       },
     ],
   },

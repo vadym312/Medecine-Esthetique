@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: string[];
 }
 
 interface FAQProps {
@@ -42,32 +42,31 @@ export const TreatmentFAQ: React.FC<FAQProps> = ({ title, subtitle, items }) => 
                 aria-expanded={openIndex === index}
               >
                 <span
-                  className={`text-lg font-medium transition-colors duration-300 ${
-                    openIndex === index ? 'text-gray-900' : 'text-gray-700'
-                  }`}
+                  className={`text-lg font-medium transition-colors duration-300 ${openIndex === index ? 'text-gray-900' : 'text-gray-700'
+                    }`}
                 >
                   {faq.question}
                 </span>
                 <ChevronDown
-                  className={`w-5 h-5 transition-all duration-300 ease-in-out ${
-                    openIndex === index ? 'rotate-180 text-gray-900' : 'text-gray-400'
-                  }`}
+                  className={`w-5 h-5 transition-all duration-300 ease-in-out ${openIndex === index ? 'rotate-180 text-gray-900' : 'text-gray-400'
+                    }`}
                 />
               </button>
               <div
                 className={`
                   grid transition-all duration-300 ease-in-out
-                  ${
-                    openIndex === index
-                      ? 'grid-rows-[1fr] opacity-100'
-                      : 'grid-rows-[0fr] opacity-0'
+                  ${openIndex === index
+                    ? 'grid-rows-[1fr] opacity-100'
+                    : 'grid-rows-[0fr] opacity-0'
                   }
                 `}
               >
                 <div className="overflow-hidden">
-                  <p className="px-6 pb-6 text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
+                  {faq.answer.map((answer, index) =>
+                    <p className="px-6 pb-6 text-gray-600 leading-relaxed" key={index}>
+                      {answer}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>

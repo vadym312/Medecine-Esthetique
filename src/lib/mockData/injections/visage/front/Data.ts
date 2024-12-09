@@ -90,19 +90,19 @@ export const frontData = {
     items: [
       {
         question: "Combien de temps dure le traitement ?",
-        answer: "La séance dure environ 30 minutes. Les résultats sont visibles progressivement sur quelques jours.",
+        answer: ["La séance dure environ 30 minutes. Les résultats sont visibles progressivement sur quelques jours."],
       },
       {
         question: "Est-ce douloureux ?",
-        answer: "Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante.",
+        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante."],
       },
       {
         question: "Quelle est la durée des résultats ?",
-        answer: "Les résultats durent généralement entre 4 et 6 mois pour le Botox, et jusqu'à 18 mois pour l'acide hyaluronique.",
+        answer: ["Les résultats durent généralement entre 4 et 6 mois pour le Botox, et jusqu'à 18 mois pour l'acide hyaluronique."],
       },
       {
         question: "Y a-t-il une période d'éviction sociale ?",
-        answer: "Les suites sont minimes, avec parfois de légères rougeurs qui disparaissent en quelques heures.",
+        answer: ["Les suites sont minimes, avec parfois de légères rougeurs qui disparaissent en quelques heures."],
       },
     ],
   },

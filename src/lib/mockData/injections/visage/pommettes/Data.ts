@@ -90,19 +90,19 @@ export const pommettesData = {
     items: [
       {
         question: "Combien de temps dure le traitement ?",
-        answer: "La séance dure environ 30 minutes. Les résultats sont visibles immédiatement et s'améliorent progressivement sur 15 jours.",
+        answer: ["La séance dure environ 30 minutes. Les résultats sont visibles immédiatement et s'améliorent progressivement sur 15 jours."],
       },
       {
         question: "Est-ce douloureux ?",
-        answer: "Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante et l'utilisation de produits contenant un anesthésiant.",
+        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante et l'utilisation de produits contenant un anesthésiant."],
       },
       {
         question: "Quelle est la durée des résultats ?",
-        answer: "Les résultats durent généralement entre 12 et 18 mois, selon les patients et le produit utilisé.",
+        answer: ["Les résultats durent généralement entre 12 et 18 mois, selon les patients et le produit utilisé."],
       },
       {
         question: "Y a-t-il une période d'éviction sociale ?",
-        answer: "Les suites sont minimes, avec parfois de légères rougeurs ou gonflements qui disparaissent en quelques jours.",
+        answer: ["Les suites sont minimes, avec parfois de légères rougeurs ou gonflements qui disparaissent en quelques jours."],
       },
     ],
   },

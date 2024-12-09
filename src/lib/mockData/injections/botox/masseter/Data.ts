@@ -90,19 +90,19 @@ export const masseterData = {
     items: [
       {
         question: "Combien de temps dure le traitement ?",
-        answer: "La séance dure environ 15-20 minutes. Les résultats apparaissent progressivement sur 2-3 semaines.",
+        answer: ["La séance dure environ 15-20 minutes. Les résultats apparaissent progressivement sur 2-3 semaines."],
       },
       {
         question: "Est-ce douloureux ?",
-        answer: "Le traitement est très peu douloureux, ressenti comme de petites piqûres d'aiguille.",
+        answer: ["Le traitement est très peu douloureux, ressenti comme de petites piqûres d'aiguille."],
       },
       {
         question: "Quelle est la durée des résultats ?",
-        answer: "Les résultats durent généralement 6 à 8 mois selon les patients.",
+        answer: ["Les résultats durent généralement 6 à 8 mois selon les patients."],
       },
       {
         question: "Y a-t-il une période d'éviction sociale ?",
-        answer: "Non, vous pouvez reprendre vos activités immédiatement après le traitement.",
+        answer: ["Non, vous pouvez reprendre vos activités immédiatement après le traitement."],
       },
     ],
   },
