@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/src/utils/animations';
 
 interface CTAProps {
-  title: string;
+  title?: string;
   image?: string;
   description: string;
   buttonText: string;
