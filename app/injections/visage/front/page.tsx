@@ -17,10 +17,12 @@ const FrontPage: React.FC = () => {
     <>
       <TreatmentHero {...frontData.hero} />
       
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-4">
         <p className="text-center text-lg text-gray-700 leading-relaxed">
           {frontData.intro.text}
         </p>
+        <p className="text-center text-lg text-gray-700 leading-relaxed">Le <b>Dr Emmanuel Elard</b>, expert en esthétique médicale à Paris, utilise des techniques avancées comme la <b>myomodulation</b> pour offrir des résultats naturels et harmonieux.</p>
+        <p className="text-center text-lg text-gray-700 leading-relaxed"><b>Prenez rendez-vous dès aujourd’hui pour bénéficier d’un traitement personnalisé.</b></p>
       </div>
 
       <TreatmentTypes {...frontData.types} />

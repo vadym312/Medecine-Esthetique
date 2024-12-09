@@ -12,7 +12,7 @@ interface VideoResult {
 
 interface ResultsSectionProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   videos?: VideoResult[];
   showPlaceholder?: boolean;
 }
