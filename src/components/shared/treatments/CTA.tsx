@@ -6,6 +6,7 @@ import { fadeIn } from '@/src/utils/animations';
 
 interface CTAProps {
   title: string;
+  image?: string;
   description: string;
   buttonText: string;
   buttonLink: string;
