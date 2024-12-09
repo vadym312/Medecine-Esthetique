@@ -134,8 +134,7 @@ export const pommettesData = {
     buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
-    title: "Traitements Complémentaires",
-    subtitle: "Découvrez nos autres solutions pour sublimer votre visage",
+    title: "Ces procedures peuvent aussi vous intéresser",
     procedures: [
       {
         category: "INJECTION",

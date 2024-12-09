@@ -15,7 +15,7 @@ interface Procedure {
 
 interface RelatedProceduresProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   procedures: Procedure[];
 }
 
