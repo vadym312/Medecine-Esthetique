@@ -11,7 +11,7 @@ interface FAQItem {
 
 interface FAQProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   items: FAQItem[];
 }
 
