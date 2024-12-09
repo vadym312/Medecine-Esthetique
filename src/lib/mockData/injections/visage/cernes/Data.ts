@@ -156,7 +156,7 @@ export const cernesData = {
       {
         category: "INJECTION",
         title: "TEMPES",
-        description: "Atténuation des plis d'amertume.",
+        description: "Restauration du volume temporal.",
         image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-tempes-site.jpg",
         link: "/injections/visage/tempes",
       },

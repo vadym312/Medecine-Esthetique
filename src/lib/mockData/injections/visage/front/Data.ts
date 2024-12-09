@@ -1,25 +1,30 @@
 export const frontData = {
   hero: {
     title: "Traitement du Front",
-    subtitle: "Harmonisation et rajeunissement de la zone frontale",
-    backgroundImage: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80",
+    subtitle: "INJECTIONS D’ACIDE HYALURONIQUE POUR TRAITER LES RIDES DU FRONT",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/lifting-medical-injections-visage-paris.jpg",
   },
   intro: {
-    text: "Le traitement du front permet de corriger les rides et restaurer l'harmonie de la zone frontale. Notre approche médicale combine expertise et techniques de pointe pour des résultats naturels et durables.",
+    text: "Le front est une zone clé de l’expression faciale, mais il est également sujet aux rides horizontales et, parfois, à un creux qui peut altérer l’harmonie du visage. Grâce aux injections d’acide hyaluronique, il est possible de lisser les rides, de corriger un front creux et d’améliorer son apparence globale tout en préservant une expression naturelle.",
   },
   types: {
     title: "Types de Corrections",
-    subtitle: "Une approche personnalisée selon vos besoins",
+    subtitle: "Types de fronts et rides du front traités avec l’acide hyaluronique",
     items: [
       {
-        title: "Rides Horizontales",
-        description: "Atténuation des rides d'expression horizontales du front.",
-        imageUrl: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80",
+        title: "Les rides légères",
+        description: "Première apparition des lignes horizontales, souvent causées par la fatigue ou la déshydratation.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rides-front-superficiel.jpg",
       },
       {
-        title: "Rides du Lion",
-        description: "Correction des rides verticales entre les sourcils.",
-        imageUrl: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&q=80",
+        title: "Les rides profondes",
+        description: "Sillons marqués, visibles au repos, qui peuvent être lissés grâce à l’acide hyaluronique.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rides-front-profondes.jpg",
+      },
+      {
+        title: "Les fronts creux",
+        description: "Corrigés grâce à l’injection derrière le muscle frontal, qui pousse le muscle vers l’avant et étire les fibres musculaires, produisant un effet « botox-like ».",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/front-creux.jpg",
       },
     ],
   },
@@ -46,17 +51,23 @@ export const frontData = {
     ],
   },
   video: {
-    title: "Le traitement du front en vidéo",
-    videoId: "yyQ30IDZFFA",
+    title: "Vidéo du déroulement de la séance",
+    videoId: "HvP0FWex74Y",
   },
   results: {
-    title: "Résultats",
-    subtitle: "Des transformations naturelles et harmonieuses",
-    videos: [{
-      id: '1',
-      title: 'Résultat du traitement - Cas 1',
-      url: 'https://www.youtube.com/embed/VIDEO_ID_1'
-    }],
+    title: "Exemples de Résultats Obtenus par le Dr Elard",
+    videos: [
+      {
+        id: '1',
+        title: 'Résultat du traitement - Cas 1',
+        url: 'https://www.youtube.com/embed/A2qF6KfnTD8'
+      },
+      {
+        id: '2',
+        title: 'Résultat du traitement - Cas 2',
+        url: 'https://www.youtube.com/embed/cxjm_wK6ROE'
+      }
+    ],
   },
   testimonials: {
     title: "Témoignages Patients",
@@ -85,49 +96,78 @@ export const frontData = {
     ],
   },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur le traitement du front",
+    title: "FAQ",
     items: [
       {
-        question: "Combien de temps dure le traitement ?",
-        answer: ["La séance dure environ 30 minutes. Les résultats sont visibles progressivement sur quelques jours."],
+        question: "Qu'est-ce que l'acide hyaluronique et comment agit-il sur le front ?",
+        answer: ["L’acide hyaluronique est une substance naturellement présente dans le corps humain, notamment dans la peau, où il assure hydratation et élasticité. Injecté au niveau du front, il comble les rides et les creux, offrant une apparence plus lisse et harmonieuse."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante."],
+        question: "Quels problèmes du front peuvent être traités avec l'acide hyaluronique ?",
+        answer: ["Les injections d’acide hyaluronique permettent de corriger les rides horizontales dues aux expressions répétées et de combler les fronts creux, en redonnant du volume et en améliorant l’esthétique globale."],
       },
       {
-        question: "Quelle est la durée des résultats ?",
-        answer: ["Les résultats durent généralement entre 4 et 6 mois pour le Botox, et jusqu'à 18 mois pour l'acide hyaluronique."],
+        question: "En quoi consiste la technique de myomodulation pour le front ?",
+        answer: ["La myomodulation est une méthode où l’acide hyaluronique est injecté derrière le muscle frontal. Cette approche corrige les creux, pousse le muscle vers l’avant, étire les fibres musculaires et lisse les rides, tout en préservant la mobilité naturelle du front."],
       },
       {
-        question: "Y a-t-il une période d'éviction sociale ?",
-        answer: ["Les suites sont minimes, avec parfois de légères rougeurs qui disparaissent en quelques heures."],
+        question: "Comment se déroule une séance d'injection pour le front ?",
+        answer: ["Après une consultation personnalisée, le praticien nettoie et désinfecte la zone à traiter. L’injection est réalisée avec précision, souvent à l’aide de micro-canules pour minimiser l’inconfort. La séance dure généralement entre 15 et 20 minutes."],
       },
+      {
+        question: "Les injections sont-elles douloureuses ?",
+        answer: ["La plupart des patients ressentent peu ou pas de douleur, grâce à l’utilisation de micro-canules et, si nécessaire, d’une anesthésie locale."],
+      },
+      {
+        question: "Quels sont les effets secondaires possibles ?",
+        answer: ["Des rougeurs, un léger gonflement ou des ecchymoses peuvent apparaître aux points d’injection, mais ces effets disparaissent généralement en quelques heures à quelques jours."],
+      },
+      {
+        question: "Combien de temps durent les résultats ?",
+        answer: ["Les effets des injections d’acide hyaluronique au niveau du front durent généralement entre  12 et 16 mois, selon le type de peau, le mode de vie et le produit utilisé."],
+      },
+      {
+        question: "Y a-t-il des contre-indications aux injections d'acide hyaluronique ?",
+        answer: ["Les injections sont déconseillées aux personnes présentant des infections cutanées actives, des allergies à l’un des composants du produit ou des maladies auto-immunes. Il est essentiel de discuter de votre historique médical avec votre praticien."],
+      },
+      {
+        question: "Puis-je reprendre mes activités normales après la séance ?",
+        answer: ["Oui, les injections n’entraînent généralement pas d’éviction sociale. Il est toutefois recommandé d’éviter les efforts physiques intenses et l’exposition à la chaleur (sauna, hammam) pendant 24 à 48 heures après le traitement."],
+      },
+      {
+        question: "Quel est le coût d'une injection d'acide hyaluronique pour le front ?",
+        answer: ["Le tarif varie en fonction de la quantité de produit nécessaire et de la complexité du traitement, généralement entre 400€ et 600€. Il est conseillé de consulter votre praticien pour un devis précis."],
+      }
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
-    title: "Traitements Complémentaires",
-    subtitle: "Découvrez nos autres solutions pour sublimer votre visage",
+    title: "Ces procedures peuvent aussi vous intéresser",
     procedures: [
       {
         category: "INJECTION",
-        title: "RIDES DU LION",
-        description: "Traitement des rides inter-sourcilières.",
-        image: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec",
-        link: "/injections/visage/rides-lion",
+        title: "RHINOPLASTIE MÉDICALE",
+        description: "Traitement des rides rhinoplastie médicale.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rhinoplastie-medicale-injection-1.jpg",
+        link: "/injections/visage/rhinoplastie-medicale",
+      },
+      {
+        category: "INJECTION",
+        title: "MENTON",
+        description: "Restructuration et projection du menton.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/menton-site2.jpg",
+        link: "/injections/visage/menton",
       },
       {
         category: "INJECTION",
         title: "TEMPES",
         description: "Restauration du volume temporal.",
-        image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-tempes-site.jpg",
         link: "/injections/visage/tempes",
       },
     ],
