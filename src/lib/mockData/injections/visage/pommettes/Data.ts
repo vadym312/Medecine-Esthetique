@@ -1,25 +1,30 @@
 export const pommettesData = {
   hero: {
     title: "Pommettes",
-    subtitle: "Restauration du volume et rehaussement naturel des pommettes",
-    backgroundImage: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80",
+    subtitle: "Injections d’acide hyaluronique pour rajeunir et sculpter les pommettes",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/esthetique-visage-anti-age-paris.jpg",
   },
   intro: {
-    text: "Le traitement des pommettes par acide hyaluronique permet de restaurer harmonieusement le volume naturel du visage, redonnant jeunesse et fraîcheur à votre apparence.",
+    text: "Les pommettes jouent un rôle essentiel dans l’harmonie et la jeunesse du visage. Avec le temps, elles peuvent perdre de leur volume, ce qui entraîne un affaissement des traits et une perte de définition du visage. Grâce aux injections d’acide hyaluronique, il est possible de restaurer leur volume, de les rehausser et de redonner au visage un aspect plus jeune et équilibré. Découvrez l’approche du Dr Emmanuel Elard, spécialiste en esthétique médicale à Paris.",
   },
   types: {
     title: "Types de Corrections",
-    subtitle: "Une approche personnalisée selon vos besoins",
+    subtitle: "Les problématiques les plus fréquentes traitées par le Dr Elard :",
     items: [
       {
         title: "Pommettes Plates",
-        description: "Restauration du volume pour des pommettes plus saillantes et un visage plus sculpté.",
-        imageUrl: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80",
+        description: "Peuvent provoquer un relâchement du tiers moyen du visage et amplifier l’apparition des sillons nasogéniens",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-plates.jpg",
       },
       {
-        title: "Pommettes Asymétriques",
-        description: "Harmonisation des volumes pour rétablir la symétrie naturelle du visage.",
-        imageUrl: "https://images.unsplash.com/photo-1522337094846-8a818192de1f?auto=format&fit=crop&q=80",
+        title: "Perte de volume liée à l’âge",
+        description: "Principalement due à la fonte des tissus graisseux. Le traitement des pommettes redonne un aspect jeune et naturel au visage.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-age.jpg",
+      },
+      {
+        title: "Asymétrie des pommettes",
+        description: "Un visage n’est jamais symétrique. Les injections corrigent les déséquilibres pour une meilleure harmonie faciale.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/refzerfezr.png",
       },
     ],
   },
@@ -46,12 +51,13 @@ export const pommettesData = {
     ],
   },
   video: {
-    title: "Le traitement des pommettes en vidéo",
-    videoId: "yyQ30IDZFFA",
+    title: "Déroulement d'une Séance d'Injection pour les Pommettes",
+    subtitle: "Lors d’une séance d’injection, le médecin esthétique injecte avec précision pour garantir un volume harmonieux et un résultat naturel. La séance est rapide, avec un confort optimal pour le patient.",
+    videoId: "M1HinlfYA04",
   },
   results: {
-    title: "Résultats",
-    subtitle: "Des transformations naturelles et harmonieuses",
+    title: "Exemples de Résultats Obtenus par le Dr Elard",
+    subtitle: "Exemples de Résultats - Injections des Pommettes à Paris .",
     videos: [{
       id: '1',
       title: 'Résultat du traitement - Cas 1',
@@ -85,32 +91,47 @@ export const pommettesData = {
     ],
   },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur le traitement des pommettes",
+    title: "FAQ",
     items: [
       {
-        question: "Combien de temps dure le traitement ?",
-        answer: ["La séance dure environ 30 minutes. Les résultats sont visibles immédiatement et s'améliorent progressivement sur 15 jours."],
+        question: "Combien de temps dure l’effet des injections pour les pommettes ?",
+        answer: ["Les résultats des injections d’acide hyaluronique pour les pommettes durent généralement entre 12 et 18 mois, en fonction du produit utilisé et de la vitesse à laquelle votre corps résorbe l’acide hyaluronique."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante et l'utilisation de produits contenant un anesthésiant."],
+        question: "Le traitement est-il douloureux ?",
+        answer: ["Les injections sont peu douloureuses. Une crème anesthésiante ou un anesthésique local peut être appliqué pour assurer un confort optimal. De plus, l’utilisation de micro-canules minimise la douleur et les sensations désagréables."],
       },
       {
-        question: "Quelle est la durée des résultats ?",
-        answer: ["Les résultats durent généralement entre 12 et 18 mois, selon les patients et le produit utilisé."],
+        question: "Quels sont les effets secondaires possibles ?",
+        answer: ["Des rougeurs, un léger œdème ou quelques ecchymoses peuvent apparaître après l’injection, mais ils disparaissent en quelques jours. Les complications plus graves, comme une infection ou une mauvaise répartition du produit, sont rares lorsqu’elles sont réalisées par un expert."],
       },
       {
-        question: "Y a-t-il une période d'éviction sociale ?",
-        answer: ["Les suites sont minimes, avec parfois de légères rougeurs ou gonflements qui disparaissent en quelques jours."],
+        question: "À qui s’adresse ce traitement ?",
+        answer: ["Le rajeunissement des pommettes convient à toute personne souhaitant restaurer le volume perdu, sculpter les traits de son visage ou corriger une asymétrie. Ce traitement est idéal pour les hommes et les femmes à partir de 30 ans qui recherchent une solution non invasive."],
+      },
+      {
+        question: "Puis-je reprendre mes activités après les injections ?",
+        answer: ["Oui, la reprise des activités est immédiate. Les suites sont simples et ne nécessitent pas d’éviction sociale. Il est toutefois conseillé d’éviter les activités intenses ou l’exposition à une source de chaleur (sauna, hammam) pendant 24 à 48 heures."],
+      },
+      {
+        question: "Comment choisir entre chirurgie et injections ?",
+        answer: ["Oui, les injections réalisées par le Dr Emmanuel Elard visent à obtenir des résultats subtils et naturels, en respectant l’harmonie de votre visage. Le volume est restauré de manière équilibrée, sans effet artificiel."],
+      },
+      {
+        question: "Combien de temps dure une injection pour les cernes ?",
+        answer: ["Les injections sont une excellente alternative à la chirurgie pour restaurer le volume des pommettes sans éviction sociale. Si le relâchement cutané est trop important, des traitements complémentaires ou une chirurgie esthétique peuvent être envisagés."],
+      },
+      {
+        question: "Les résultats des injections de cernes sont-ils permanents ?",
+        answer: ["Non, les résultats des injections d’acide hyaluronique ne sont pas permanents. Ils durent généralement entre 12 et 18 mois, selon le métabolisme de chaque patient et la qualité du produit utilisé. Une retouche annuelle peut être nécessaire pour maintenir les effets."],
       },
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
     title: "Traitements Complémentaires",
@@ -118,17 +139,24 @@ export const pommettesData = {
     procedures: [
       {
         category: "INJECTION",
+        title: "OVALE DU VISAGE",
+        description: "Redéfinition des contours du visage.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/ovale-visage.jpg",
+        link: "/injections/visage/ovale-du-visage",
+      },
+      {
+        category: "INJECTION",
         title: "SILLONS NASOGÉNIENS",
         description: "Atténuation des plis d'amertume.",
-        image: "https://images.unsplash.com/photo-1523263685509-57c1d050d19b",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg",
         link: "/injections/visage/sillons-nasogeniens",
       },
       {
         category: "INJECTION",
-        title: "CERNES",
-        description: "Traitement des cernes pour un regard reposé.",
-        image: "https://images.unsplash.com/photo-1522337094846-8a818192de1f",
-        link: "/injections/visage/cernes",
+        title: "MENTON",
+        description: "Restructuration et projection du menton.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/menton-site2.jpg",
+        link: "/injections/visage/menton",
       },
     ],
   },

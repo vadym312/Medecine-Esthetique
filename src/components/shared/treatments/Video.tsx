@@ -6,10 +6,11 @@ import { fadeIn } from '@/src/utils/animations';
 
 interface VideoSectionProps {
   title: string;
+  subtitle?: string;
   videoId: string;
 }
 
-export const TreatmentVideo: React.FC<VideoSectionProps> = ({ title, videoId }) => {
+export const TreatmentVideo: React.FC<VideoSectionProps> = ({ title, subtitle, videoId }) => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,6 +23,15 @@ export const TreatmentVideo: React.FC<VideoSectionProps> = ({ title, videoId }) 
             className="text-4xl font-bold text-gray-900 mb-4"
           >
             {title}
+          </motion.h2>
+          <motion.h2
+            variants={fadeIn}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="text-xl text-gray-600 mb-4"
+          >
+            {subtitle}
           </motion.h2>
         </div>
 
