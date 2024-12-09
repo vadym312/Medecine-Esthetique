@@ -42,8 +42,8 @@ export const TreatmentProcedure: React.FC<ProcedureSectionProps> = ({
                 className="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-100 text-center"
               >
                 <div className="flex justify-center mb-6">
-                  <div className="p-4 bg-blue-50 rounded-full">
-                    <Icon className="w-8 h-8 text-blue-600" />
+                  <div className="p-4 bg-gold-light rounded-full">
+                    <Icon className="w-8 h-8 text-gold" />
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
