@@ -2,7 +2,7 @@ export const cernesData = {
   hero: {
     title: "Traitement des Cernes",
     subtitle: "Une solution médicale pour un regard reposé et rajeuni",
-    backgroundImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/lifting-medical-injections-visage-paris.jpg",
   },
   intro: {
     text: "Les cernes sont une préoccupation esthétique majeure qui peut affecter l'apparence du regard. Notre approche médicale combine expertise et techniques de pointe pour des résultats naturels.",
@@ -14,12 +14,17 @@ export const cernesData = {
       {
         title: "Cernes Creux",
         description: "Causés par une perte de volume sous les yeux, créant une dépression visible.",
-        imageUrl: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/cerne-creux.jpg",
       },
       {
-        title: "Cernes Pigmentaires",
+        title: "Cernes Colorés",
         description: "Caractérisés par une coloration brune ou bleutée sous les yeux.",
-        imageUrl: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/cerne-pigmente.jpg",
+      },
+      {
+        title: "Cernes Gonflés",
+        description: "Les cernes gonflés sont souvent le résultat d’une accumulation de graisse sous la paupière inférieure, liée à la génétique ou au vieillissement. ",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/cerne-gonfle.jpg",
       },
     ],
   },
@@ -108,6 +113,7 @@ export const cernesData = {
   },
   cta: {
     title: "Prenez Rendez-vous",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
     description: "Consultez nos experts pour une évaluation personnalisée de vos besoins",
     buttonText: "Réserver une Consultation",
     buttonLink: "/contact",
@@ -120,15 +126,22 @@ export const cernesData = {
         category: "INJECTION",
         title: "POMMETTES",
         description: "Restauration du volume des pommettes.",
-        image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
         link: "/injections/visage/pommettes",
       },
       {
         category: "INJECTION",
         title: "SILLONS NASOGÉNIENS",
         description: "Atténuation des plis d'amertume.",
-        image: "https://images.unsplash.com/photo-1523263685509-57c1d050d19b",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg",
         link: "/injections/visage/sillons-nasogeniens",
+      },
+      {
+        category: "INJECTION",
+        title: "TEMPES",
+        description: "Atténuation des plis d'amertume.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-tempes-site.jpg",
+        link: "/injections/visage/tempes",
       },
     ],
   },
