@@ -34,7 +34,7 @@ export const TreatmentVideo: React.FC<VideoSectionProps> = ({ title, videoId }) 
             className="relative pb-[56.25%] h-0 rounded-xl overflow-hidden shadow-2xl"
           >
             <iframe
-              src={`https://www.youtube.com/${videoId}`}
+              src={`https://www.youtube.com/embed/${videoId}`}
               title={title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
