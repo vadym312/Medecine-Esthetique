@@ -38,7 +38,7 @@ export const RelatedProcedures: React.FC<RelatedProceduresProps> = ({
           <p className="text-xl text-gray-600">{subtitle}</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {procedures.map((procedure, index) => (
             <motion.a
               key={index}
@@ -60,14 +60,14 @@ export const RelatedProcedures: React.FC<RelatedProceduresProps> = ({
               </div>
 
               <div className="p-8">
-                <div className="text-sm font-medium text-blue-600 mb-2">
+                <div className="text-sm font-medium text-gold mb-2">
                   {procedure.category}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {procedure.title}
                 </h3>
                 <p className="text-gray-600 mb-4">{procedure.description}</p>
-                <div className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-700">
+                <div className="inline-flex items-center text-gold font-medium group-hover:text-gold-dark">
                   En savoir plus
                   <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
                 </div>
