@@ -90,19 +90,19 @@ export const pattesOieData = {
     items: [
       {
         question: "Combien de temps dure le traitement ?",
-        answer: "La séance dure environ 15-20 minutes. Les résultats apparaissent progressivement sur 3-5 jours.",
+        answer: ["La séance dure environ 15-20 minutes. Les résultats apparaissent progressivement sur 3-5 jours."],
       },
       {
         question: "Est-ce douloureux ?",
-        answer: "Le traitement est très peu douloureux, ressenti comme de petites piqûres d'aiguille.",
+        answer: ["Le traitement est très peu douloureux, ressenti comme de petites piqûres d'aiguille."],
       },
       {
         question: "Quelle est la durée des résultats ?",
-        answer: "Les résultats durent généralement 4 à 6 mois selon les patients.",
+        answer: ["Les résultats durent généralement 4 à 6 mois selon les patients."],
       },
       {
         question: "Y a-t-il une période d'éviction sociale ?",
-        answer: "Non, vous pouvez reprendre vos activités immédiatement après le traitement.",
+        answer: ["Non, vous pouvez reprendre vos activités immédiatement après le traitement."],
       },
     ],
   },

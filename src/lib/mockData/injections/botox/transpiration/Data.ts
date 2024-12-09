@@ -90,19 +90,19 @@ export const transpirationData = {
     items: [
       {
         question: "Combien de temps dure le traitement ?",
-        answer: "La séance dure environ 30-45 minutes selon les zones à traiter.",
+        answer: ["La séance dure environ 30-45 minutes selon les zones à traiter."],
       },
       {
         question: "Est-ce douloureux ?",
-        answer: "Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante si nécessaire.",
+        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante si nécessaire."],
       },
       {
         question: "Quelle est la durée des résultats ?",
-        answer: "Les résultats durent généralement 6 à 8 mois selon les patients.",
+        answer: ["Les résultats durent généralement 6 à 8 mois selon les patients."],
       },
       {
         question: "Quand les résultats sont-ils visibles ?",
-        answer: "La réduction de la transpiration est visible dès 48-72h après le traitement.",
+        answer: ["La réduction de la transpiration est visible dès 48-72h après le traitement."],
       },
     ],
   },

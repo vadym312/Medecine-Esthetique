@@ -1,62 +1,69 @@
 export const sillonsNasogeniensData = {
   hero: {
     title: "Sillons Nasogéniens",
-    subtitle: "Atténuation naturelle des plis d'amertume",
-    backgroundImage: "https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&q=80",
+    subtitle: "Injections d'Acide Hyaluronique pour Traiter les sillons nasogéniens",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/rajeunissement-pommettes-visage-injection-paris.jpg",
   },
   intro: {
-    text: "Les sillons nasogéniens sont des plis naturels qui s'accentuent avec l'âge. Notre approche médicale combine expertise et techniques de pointe pour des résultats naturels.",
+    text: "Les cernes peuvent donner un aspect fatigué et vieilli au visage. Grâce aux injections d’acide hyaluronique, vous pouvez retrouver un regard frais et lumineux sans chirurgie. Découvrez le traitement proposé par le Dr Emmanuel Elard, spécialiste en esthétique à Paris, pour atténuer efficacement les cernes.",
   },
   types: {
     title: "Types de Sillons",
     subtitle: "Une approche personnalisée selon la profondeur des sillons",
     items: [
       {
-        title: "Sillons Modérés",
-        description: "Traitement préventif des sillons peu marqués.",
-        imageUrl: "https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&q=80",
+        title: "Sillons peu marqués",
+        description: "Ces sillons sont souvent liés à une légère perte d’élasticité de la peau et peuvent être traités avec une faible quantité d’acide hyaluronique, pour un résultat discret et naturel.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/nlf1.jpg",
       },
       {
-        title: "Sillons Profonds",
-        description: "Correction des sillons marqués et installés.",
-        imageUrl: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80",
+        title: "Sillons modérément creusés",
+        description: "Ils résultent généralement de la perte de volume des joues. Les injections permettent de restaurer le galbe du visage tout en comblant la zone concernée.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/sng2.jpg",
+      },
+      {
+        title: "Sillons profonds",
+        description: "Ils apparaissent lorsque le relâchement cutané est plus prononcé. Un traitement combiné avec des techniques complémentaires peut être envisagé pour un résultat optimal.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG3.jpg",
       },
     ],
   },
   procedure: {
-    title: "Déroulement du Traitement",
-    subtitle: "Un protocole en 4 étapes pour des résultats optimaux",
+    title: "Comment se déroule une injection des sillons nasogéniens par le Dr Emmanuel Elard ?",
+    subtitle: "Les injections d’acide hyaluronique pour les sillons nasogéniens sont rapides, précises et adaptées à vos besoins spécifiques. Voici les étapes essentielles d’une séance",
     steps: [
       {
-        title: "Consultation",
-        description: "Analyse de vos sillons et définition de vos objectifs.",
+        title: "Évaluation personnalisée",
+        description: "Une analyse complète de votre visage est réalisée pour déterminer les zones à traiter et la quantité de produit nécessaire.",
       },
       {
         title: "Préparation",
-        description: "Application d'une crème anesthésiante pour votre confort.",
+        description: "Une crème anesthésiante est appliquée pour garantir un confort optimal.",
       },
       {
         title: "Injection",
-        description: "Injection précise d'acide hyaluronique pour un résultat naturel.",
+        description: "À l’aide d’une canule ou d’une aiguille fine, le Dr Elard injecte de l’acide hyaluronique dans les sillons. La procédure est rapide et indolore.",
       },
       {
-        title: "Suivi",
-        description: "Contrôle des résultats et retouches si nécessaire.",
+        title: "Résultats immédiats",
+        description: "Dès la fin de la séance, les sillons sont visiblement atténués. Vous pouvez reprendre vos activités immédiatement après",
       },
     ],
   },
   video: {
-    title: "Le traitement des sillons nasogéniens en vidéo",
-    videoId: "yyQ30IDZFFA",
+    title: "Déroulement d'une Séance d'Injection des Sillons Nasogéniens en Vidéo",
+    videoId: "WGPYXlNaeLo",
   },
   results: {
-    title: "Résultats",
-    subtitle: "Des transformations naturelles et harmonieuses",
-    videos: [{
-      id: '1',
-      title: 'Résultat du traitement - Cas 1',
-      url: 'https://www.youtube.com/embed/VIDEO_ID_1'
-    }],
+    title: "Exemple de Résultats Obtenus par le Dr Elard",
+    subtitle: "Les avant/après montrent l'impact des injections pour traiter des sillons nasogéniens profonds. La vidéo dynamique montre à quel point les résultats sont naturels et harmonieux.",
+    videos: [
+      {
+        id: '1',
+        title: 'Résultat du traitement - Cas 1',
+        url: 'https://www.youtube.com/embed/E34BN0E8oaQ'
+      }
+    ],
   },
   testimonials: {
     title: "Témoignages Patients",
@@ -85,32 +92,59 @@ export const sillonsNasogeniensData = {
     ],
   },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur le traitement des sillons nasogéniens",
+    title: "FAQ",
     items: [
       {
+        question: "Comment enlever les sillons nasogéniens ?",
+        answer: ["Les sillons nasogéniens, ces plis qui s’étendent des ailes du nez aux coins de la bouche, peuvent être atténués par diverses méthodes :", "1. Injections d’acide hyaluronique : Ce traitement de médecine esthétique comble les rides en apportant du volume sous la peau, offrant des résultats immédiats et durables pendant plusieurs mois.", "2. Exercices faciaux : Des exercices ciblés renforcent les muscles du visage, contribuant à réduire la profondeur des sillons nasogéniens.", "3. Crèmes anti-âge : L’application régulière de crèmes contenant des ingrédients actifs, tels que le rétinol ou les peptides, peut améliorer l’élasticité de la peau et diminuer l’apparence des rides.", "4. Chirurgie esthétique : Pour des résultats plus permanents, des interventions chirurgicales comme le lifting peuvent être envisagées.", "Il est essentiel de consulter un professionnel de santé pour déterminer la méthode la plus adaptée à votre situation."],
+      },
+      {
+        question: "Comment savoir si je suis un bon candidat pour ce traitement ?",
+        answer: ["Le nombre de seringues d’acide hyaluronique nécessaires pour traiter les sillons nasogéniens dépend de plusieurs facteurs, notamment la profondeur des sillons et le résultat souhaité. Généralement, une à deux seringues suffisent pour des sillons modérés. Cependant, en cas de relâchement cutané plus prononcé, trois à quatre seringues peuvent être recommandées pour obtenir un effet optimal.", "Il est essentiel de consulter un professionnel de santé qualifié pour une évaluation personnalisée et déterminer le plan de traitement le plus adapté à votre situation."],
+      },
+      {
+        question: "Combien de seringues d'acide hyaluronique faut il pour les sillons ?",
+        answer: ["La séance dure généralement entre 15 et 30 minutes. C’est une procédure rapide, souvent surnommée “treatment lunch break”, qui ne nécessite pas d’éviction sociale."],
+      },
+      {
         question: "Combien de temps dure le traitement ?",
-        answer: "La séance dure environ 30 minutes. Les résultats sont visibles immédiatement et s'améliorent progressivement sur 15 jours.",
+        answer: ["La séance dure généralement entre 15 et 30 minutes. C’est une procédure rapide, souvent surnommée “treatment lunch break”, qui ne nécessite pas d’éviction sociale."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: "Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante.",
+        question: "Les résultats sont-ils naturels ?",
+        answer: ["Oui, absolument. L’acide hyaluronique utilisé est spécialement conçu pour s’intégrer naturellement à la structure de votre peau, sans effet figé. Le Dr Elard privilégie un résultat subtil et harmonieux, respectant les traits de votre visage."],
       },
       {
-        question: "Quelle est la durée des résultats ?",
-        answer: "Les résultats durent généralement entre 12 et 18 mois, selon les patients et le produit utilisé.",
+        question: "Comment atténuer les sillons nasogéniens ?",
+        answer: ["Les sillons nasogéniens, ces plis qui s’étendent des ailes du nez aux coins de la bouche, peuvent être atténués par diverses méthodes : ", " 1. Soins cosmétiques : L’application régulière de crèmes hydratantes enrichies en acide hyaluronique et en vitamine C peut améliorer l’élasticité de la peau et réduire l’apparence des rides.", " 2. Gymnastique faciale : Des exercices spécifiques renforcent les muscles du visage, contribuant à diminuer la profondeur des sillons nasogéniens. Par exemple, sourire largement en maintenant la position pendant quelques secondes peut être bénéfique. ", " 3. Massages faciaux : Des auto-massages quotidiens, effectués lors de l’application de votre crème hydratante, peuvent aider à défroisser les muscles et à redonner de la tonicité aux pommettes.", " 4. Injections d’acide hyaluronique : Ce traitement de médecine esthétique comble les rides en apportant du volume sous la peau, offrant des résultats immédiats et durables pendant plusieurs mois. ", " 5. Chirurgie esthétique : Pour des résultats plus permanents, des interventions chirurgicales comme le lifting peuvent être envisagées. ", " Il est essentiel de consulter un professionnel de santé pour déterminer la méthode la plus adaptée à votre situation."],
       },
       {
-        question: "Y a-t-il une période d'éviction sociale ?",
-        answer: "Les suites sont minimes, avec parfois de légères rougeurs qui disparaissent en quelques jours.",
+        question: "Y a-t-il des effets secondaires ?",
+        answer: ["Les effets secondaires sont rares et minimes. Vous pourriez ressentir une légère rougeur, un gonflement ou de petites ecchymoses au niveau de la zone injectée, mais ceux-ci disparaissent en quelques heures à quelques jours. Une consultation préalable est réalisée pour minimiser tout risque."],
       },
+      {
+        question: "Puis-je reprendre mes activités après le traitement ?",
+        answer: ["Oui, vous pouvez reprendre vos activités immédiatement après la séance. Il est conseillé d’éviter les activités physiques intenses, l’exposition au soleil ou au froid extrême dans les 24 heures suivant l’injection."],
+      },
+      {
+        question: "Combien de temps durent les résultats ?",
+        answer: ["Les résultats durent entre 12 et 18 mois, selon la qualité du produit utilisé et votre métabolisme. Des retouches peuvent être effectuées pour maintenir l’effet."],
+      },
+      {
+        question: "Le traitement est-il douloureux ?",
+        answer: ["Non, le traitement est indolore. Une crème anesthésiante est appliquée avant l’injection pour assurer un maximum de confort. De plus, les produits injectés contiennent généralement un anesthésiant local pour réduire toute sensation désagréable."],
+      },
+      {
+        question: "Combien coûte le traitement ?",
+        answer: ["Le tarif débute à 350 €, mais peut varier selon la quantité de produit nécessaire. Un devis personnalisé vous sera proposé après consultation."],
+      }
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
     title: "Traitements Complémentaires",
@@ -120,15 +154,15 @@ export const sillonsNasogeniensData = {
         category: "INJECTION",
         title: "POMMETTES",
         description: "Restauration du volume des pommettes.",
-        image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
         link: "/injections/visage/pommettes",
       },
       {
         category: "INJECTION",
-        title: "OVALE DU VISAGE",
-        description: "Redéfinition des contours du visage.",
-        image: "https://images.unsplash.com/photo-1523263685509-57c1d050d19b",
-        link: "/injections/visage/ovale-du-visage",
+        title: "TEMPES",
+        description: "Restauration du volume temporal.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-tempes-site.jpg",
+        link: "/injections/visage/tempes",
       },
     ],
   },

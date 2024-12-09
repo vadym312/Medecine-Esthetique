@@ -90,19 +90,19 @@ export const rajeunissementMainsData = {
     items: [
       {
         question: "Combien de séances sont nécessaires ?",
-        answer: "Le nombre de séances varie selon vos besoins, généralement 1 à 2 séances suffisent pour le volume, et 3-4 séances pour la revitalisation.",
+        answer: ["Le nombre de séances varie selon vos besoins, généralement 1 à 2 séances suffisent pour le volume, et 3-4 séances pour la revitalisation."],
       },
       {
         question: "Est-ce douloureux ?",
-        answer: "Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante.",
+        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante."],
       },
       {
         question: "Quelle est la durée des résultats ?",
-        answer: "Les résultats durent généralement 12 à 18 mois pour le volume, et 4-6 mois pour la revitalisation.",
+        answer: ["Les résultats durent généralement 12 à 18 mois pour le volume, et 4-6 mois pour la revitalisation."],
       },
       {
         question: "Y a-t-il une période d'éviction sociale ?",
-        answer: "Les suites sont minimes, avec parfois de légères ecchymoses qui disparaissent en quelques jours.",
+        answer: ["Les suites sont minimes, avec parfois de légères ecchymoses qui disparaissent en quelques jours."],
       },
     ],
   },

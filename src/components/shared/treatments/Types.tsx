@@ -11,8 +11,8 @@ interface TypeItem {
 }
 
 interface TypesSectionProps {
-  title: string;
-  subtitle: string;
+  title?: string;
+  subtitle?: string;
   items: TypeItem[];
 }
 

@@ -94,39 +94,39 @@ export const cernesData = {
     items: [
       {
         question: "Comment traiter les cernes sous les yeux ?",
-        answer: "Les cernes sous les yeux peuvent être traités efficacement avec des injections d’acide hyaluronique. Ce traitement comble les creux, réduit les ombres et améliore l’hydratation de la peau pour un regard plus reposé et lumineux. Une consultation est nécessaire pour évaluer vos besoins et adapter le traitement à votre type de cerne.",
+        answer: ["Les cernes sous les yeux peuvent être traités efficacement avec des injections d’acide hyaluronique. Ce traitement comble les creux, réduit les ombres et améliore l’hydratation de la peau pour un regard plus reposé et lumineux. Une consultation est nécessaire pour évaluer vos besoins et adapter le traitement à votre type de cerne."],
       },
       {
         question: "Combien de seringues d'acide hyaluronique faut-il pour les cernes ?",
-        answer: "En général, une seringue suffit pour traiter les deux cernes, car la quantité utilisée est très faible et le produit est injecté de manière précise et homogène. Cependant, cela dépend de la profondeur des cernes et de vos besoins spécifiques, qui seront évalués lors de la consultation.",
+        answer: ["En général, une seringue suffit pour traiter les deux cernes, car la quantité utilisée est très faible et le produit est injecté de manière précise et homogène. Cependant, cela dépend de la profondeur des cernes et de vos besoins spécifiques, qui seront évalués lors de la consultation."],
       },
       {
         question: "Comment traiter les cernes noirs ?",
-        answer: "Les cernes noirs, souvent causés par une mauvaise circulation sanguine ou une pigmentation, peuvent être atténués par des injections d’acide hyaluronique. Ce traitement épaissit la peau fine sous les yeux et améliore la microcirculation, réduisant l’apparence des cernes foncés. Une bonne hygiène de vie et des soins topiques peuvent aussi aider.",
+        answer: ["Les cernes noirs, souvent causés par une mauvaise circulation sanguine ou une pigmentation, peuvent être atténués par des injections d’acide hyaluronique. Ce traitement épaissit la peau fine sous les yeux et améliore la microcirculation, réduisant l’apparence des cernes foncés. Une bonne hygiène de vie et des soins topiques peuvent aussi aider."],
       },
       {
         question: "Comment traiter les cernes creuses ?",
-        answer: "Les cernes creuses sont principalement dues à une perte de volume sous les yeux. Les injections d’acide hyaluronique comblent ces creux de manière naturelle, redonnant du volume et estompant les ombres. Ce traitement non invasif offre des résultats immédiats et durables, souvent jusqu’à 12 à 18 mois.",
+        answer: ["Les cernes creuses sont principalement dues à une perte de volume sous les yeux. Les injections d’acide hyaluronique comblent ces creux de manière naturelle, redonnant du volume et estompant les ombres. Ce traitement non invasif offre des résultats immédiats et durables, souvent jusqu’à 12 à 18 mois."],
       },
       {
         question: "Est-il possible de traiter les cernes naturellement ?",
-        answer: "Bien qu’il soit difficile de corriger complètement les cernes naturellement, certains soins comme les crèmes spécifiques, les massages drainants, une bonne hydratation et un sommeil de qualité peuvent aider à atténuer leur apparence. Cependant, pour des résultats significatifs, les injections d’acide hyaluronique restent la solution la plus efficace.",
+        answer: ["Bien qu’il soit difficile de corriger complètement les cernes naturellement, certains soins comme les crèmes spécifiques, les massages drainants, une bonne hydratation et un sommeil de qualité peuvent aider à atténuer leur apparence. Cependant, pour des résultats significatifs, les injections d’acide hyaluronique restent la solution la plus efficace."],
       },
       {
         question: "Comment traiter les cernes et les poches sous les yeux ?",
-        answer: "Les cernes creux et les poches graisseuses sont traités différemment. Les cernes peuvent être corrigés par des injections d’acide hyaluronique. En revanche, si vous avez des poches sous les yeux, une chirurgie des paupières (blépharoplastie) peut être envisagée. Le traitement le plus adapté sera défini après une consultation.",
+        answer: ["Les cernes creux et les poches graisseuses sont traités différemment. Les cernes peuvent être corrigés par des injections d’acide hyaluronique. En revanche, si vous avez des poches sous les yeux, une chirurgie des paupières (blépharoplastie) peut être envisagée. Le traitement le plus adapté sera défini après une consultation."],
       },
       {
         question: "Combien de temps dure une injection pour les cernes ?",
-        answer: "Le traitement d’injection d’acide hyaluronique pour les cernes dure environ 15 à 30 minutes. Les résultats sont visibles immédiatement après la séance, bien qu’un léger gonflement puisse persister pendant quelques jours.",
+        answer: ["Le traitement d’injection d’acide hyaluronique pour les cernes dure environ 15 à 30 minutes. Les résultats sont visibles immédiatement après la séance, bien qu’un léger gonflement puisse persister pendant quelques jours."],
       },
       {
         question: "Les résultats des injections de cernes sont-ils permanents ?",
-        answer: "Non, les résultats des injections d’acide hyaluronique ne sont pas permanents. Ils durent généralement entre 12 et 18 mois, selon le métabolisme de chaque patient et la qualité du produit utilisé. Une retouche annuelle peut être nécessaire pour maintenir les effets.",
+        answer: ["Non, les résultats des injections d’acide hyaluronique ne sont pas permanents. Ils durent généralement entre 12 et 18 mois, selon le métabolisme de chaque patient et la qualité du produit utilisé. Une retouche annuelle peut être nécessaire pour maintenir les effets."],
       },
       {
         question: "Le traitement des cernes avec l'acide hyaluronique est-il douloureux ?",
-        answer: "Le traitement est généralement indolore, car une crème anesthésiante est appliquée avant l’injection. De plus, l’acide hyaluronique est injecté à l’aide de micro-canules ou d’aiguilles très fines, minimisant l’inconfort.",
+        answer: ["Le traitement est généralement indolore, car une crème anesthésiante est appliquée avant l’injection. De plus, l’acide hyaluronique est injecté à l’aide de micro-canules ou d’aiguilles très fines, minimisant l’inconfort."],
       },
     ],
   },
