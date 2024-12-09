@@ -138,7 +138,6 @@ export const cernesData = {
   },
   relatedProcedures: {
     title: "Ces procedures peuvent aussi vous intéresser",
-    subtitle: "Découvrez nos autres traitements esthétiques pour sublimer votre beauté naturelle",
     procedures: [
       {
         category: "INJECTION",

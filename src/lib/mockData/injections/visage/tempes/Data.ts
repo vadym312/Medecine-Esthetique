@@ -1,25 +1,29 @@
 export const tempesData = {
   hero: {
     title: "Traitement des Tempes",
-    subtitle: "Restauration harmonieuse du volume temporal",
-    backgroundImage: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80",
+    subtitle: "Injections d'Acide Hyaluronique pour les Tempes",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/rajeunissement-pommettes-visage-injection-paris.jpg",
   },
   intro: {
-    text: "Le traitement des tempes creuses permet de restaurer le volume naturel de la zone temporale, redonnant jeunesse et harmonie au visage. Notre approche médicale combine expertise et techniques de pointe pour des résultats naturels.",
+    text: "Avec le temps, les tempes peuvent se creuser, donnant un aspect de fatigue et accentuant les signes de vieillissement du visage. Ce phénomène est causé par l’affinement des muscles, notamment le muscle temporal, et la résorption osseuse, qui modifient progressivement la structure de cette région. En injectant de l’acide hyaluronique dans les tempes, il est possible de restaurer les volumes perdus, d’adoucir les traits, et de redonner un éclat plus jeune au regard. Ce traitement, rapide et peu invasif, permet ainsi d’harmoniser le visage en agissant subtilement sur une zone essentielle de l’équilibre esthétique.",
   },
   types: {
-    title: "Types de Corrections",
-    subtitle: "Une approche personnalisée selon vos besoins",
+    title: "Les Types de Tempes Creuses et Comment les Traiter",
     items: [
       {
-        title: "Tempes Creuses",
-        description: "Restauration du volume des tempes creuses.",
-        imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80",
+        title: "Tempes Légèrement Creuses",
+        description: "Les tempes commencent à perdre du volume, mais l’affinement reste modéré. Une injection légère d’acide hyaluronique suffit pour restaurer les volumes tout en maintenant un aspect naturel.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-legerment-creuses.jpg",
       },
       {
-        title: "Asymétrie Temporale",
-        description: "Harmonisation des volumes entre les deux tempes.",
-        imageUrl: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80",
+        title: "Tempes Marquées",
+        description: "La résorption osseuse est plus marquée, et la peau peut apparaître relâchée. Des injections plus denses permettent de redonner du volume tout en soutenant les tissus.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-creuses.jpg",
+      },
+      {
+        title: "Tempes Très Creuses",
+        description: "Cette forme avancée de creusement crée un contraste notable avec le reste du visage. Des injections d’acide hyaluronique plus importantes sont nécessaires pour restaurer l’harmonie du visage et redonner un aspect plein et jeune aux tempes.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-tres-creuses.jpg",
       },
     ],
   },
@@ -46,12 +50,12 @@ export const tempesData = {
     ],
   },
   video: {
-    title: "Le traitement des tempes en vidéo",
+    title: "Déroulement d'une Séance d'Injection des Tempes en Vidéo",
     videoId: "yyQ30IDZFFA",
   },
   results: {
-    title: "Résultats",
-    subtitle: "Des transformations naturelles et harmonieuses",
+    title: "Avant / après injection de tempes",
+    subtitle: "Voici quelques exemples de résultats obtenus par le Dr Emmanuel Elard pour la correction des tempes",
     videos: [{
       id: '1',
       title: 'Résultat du traitement - Cas 1',
@@ -85,49 +89,74 @@ export const tempesData = {
     ],
   },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur le traitement des tempes",
+    title: "FAQ",
     items: [
       {
-        question: "Combien de temps dure le traitement ?",
-        answer: ["La séance dure environ 30 minutes. Les résultats sont visibles immédiatement."],
+        question: "Quelles sont les causes du creusement des tempes ?",
+        answer: ["Le creusement des tempes est principalement dû au vieillissement naturel, qui entraîne une diminution de la graisse sous-cutanée et une résorption osseuse. Ces changements peuvent donner au visage un aspect fatigué et vieilli."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante."],
+        question: "Les injections d'acide hyaluronique dans les tempes sont-elles douloureuses ?",
+        answer: ["Les injections sont généralement bien tolérées. Pour assurer un confort optimal, une crème anesthésiante ou un anesthésique local peut être appliqué avant la procédure."],
       },
       {
-        question: "Quelle est la durée des résultats ?",
-        answer: ["Les résultats durent généralement entre 12 et 18 mois."],
+        question: "Quels sont les effets secondaires possibles après une injection dans les tempes ?",
+        answer: ["Des effets secondaires mineurs peuvent survenir, tels que de légères rougeurs, un œdème ou de petites ecchymoses. Ces manifestations sont temporaires et disparaissent généralement en quelques jours."],
       },
       {
-        question: "Y a-t-il une période d'éviction sociale ?",
-        answer: ["Les suites sont minimes, avec parfois de légères rougeurs qui disparaissent en quelques jours."],
+        question: "Y a-t-il des contre-indications aux injections d'acide hyaluronique dans les tempes ?",
+        answer: ["Les injections sont déconseillées aux personnes présentant des infections cutanées actives, des maladies auto-immunes, aux femmes enceintes ou allaitantes, ainsi qu’à celles ayant des antécédents d’allergie à l’acide hyaluronique."],
+      },
+      {
+        question: "Peut-on associer les injections des tempes à d'autres traitements esthétiques ?",
+        answer: ["Oui, il est possible de combiner les injections des tempes avec d’autres traitements, tels que les injections de toxine botulique ou le comblement d’autres zones du visage, pour un rajeunissement global et harmonieux."],
+      },
+      {
+        question: "Quelle est la durée de la séance d'injection pour les tempes ?",
+        answer: ["La procédure dure généralement entre 15 et 20 minutes, selon les besoins spécifiques de chaque patient."],
+      },
+      {
+        question: "Quand peut-on reprendre ses activités après une injection dans les tempes ?",
+        answer: ["La reprise des activités quotidiennes est immédiate. Il est toutefois recommandé d’éviter les efforts physiques intenses et l’exposition à des sources de chaleur importantes (comme le sauna) pendant les 24 heures suivant l’injection."],
+      },
+      {
+        question: "Comment choisir le praticien pour des injections dans les tempes ?",
+        answer: ["Il est essentiel de consulter un médecin qualifié et expérimenté en médecine esthétique, ayant une connaissance approfondie de l’anatomie faciale, pour garantir des résultats naturels et minimiser les risques."],
+      },
+      {
+        question: "Quel est le coût des injections d'acide hyaluronique dans les tempes ?",
+        answer: ["Le tarif varie en fonction de la quantité de produit nécessaire et de l’expertise du praticien. En général, le coût se situe entre 400€ et 800€."],
       },
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
-    title: "Traitements Complémentaires",
-    subtitle: "Découvrez nos autres solutions pour sublimer votre visage",
+    title: "Ces procedures peuvent aussi vous intéresser",
     procedures: [
       {
         category: "INJECTION",
         title: "POMMETTES",
         description: "Restauration du volume des pommettes.",
-        image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
         link: "/injections/visage/pommettes",
+      },
+      {
+        category: "INJECTION",
+        title: "SILLONS NASOGÉNIENS",
+        description: "Atténuation des plis d'amertume.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg",
+        link: "/injections/visage/sillons-nasogeniens",
       },
       {
         category: "INJECTION",
         title: "FRONT",
         description: "Traitement des rides du front.",
-        image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-du-front.jpg",
         link: "/injections/visage/front",
       },
     ],
