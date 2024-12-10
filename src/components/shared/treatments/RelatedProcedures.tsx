@@ -38,7 +38,7 @@ export const RelatedProcedures: React.FC<RelatedProceduresProps> = ({
           <p className="text-xl text-gray-600">{subtitle}</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className={`grid md:grid-cols-${procedures.length} gap-8`}>
           {procedures.map((procedure, index) => (
             <motion.a
               key={index}
