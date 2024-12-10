@@ -58,7 +58,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
             {subtitle}
           </motion.p>
         </div>
-        {videos && videos.length > 0 ?
+        {videos && videos.length > 0 &&
           <div className={`grid md:grid-cols-${videos.length < 2 ? 2 : videos.length} gap-8 max-w-5xl mx-auto`}>
             {videos.map((video) => (
               <motion.div
@@ -108,8 +108,9 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
               </motion.div>
             )}
           </div>
-          :
-          <div className={`grid md:grid-cols-${images?.data.length} gap-8 max-w-5xl mx-auto`}>
+        }
+        <br/>
+        { images && images.title && <div className={`grid md:grid-cols-${images?.data.length} gap-8 max-w-5xl mx-auto`}>
             {images?.data.map((image) => (
               <motion.div
                 key={image.id}
