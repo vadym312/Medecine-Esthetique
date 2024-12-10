@@ -121,6 +121,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
               >
                 <img
                   src={image.url}
+                  alt='result'
                   className="absolute top-0 left-0"
                 />
               </motion.div>

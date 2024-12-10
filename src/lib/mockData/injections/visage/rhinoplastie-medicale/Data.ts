@@ -1,25 +1,30 @@
 export const rhinoplastieMedicaleData = {
   hero: {
     title: "Rhinoplastie Médicale",
-    subtitle: "Correction non chirurgicale du nez",
-    backgroundImage: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80",
+    subtitle: "Injections d'Acide Hyaluronique pour la Rhinoplastie Médicale",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/rhinoplastie-medicale-paris-injections-nez.jpg",
   },
   intro: {
-    text: "La rhinoplastie médicale est une technique innovante permettant de corriger les imperfections du nez sans chirurgie. Cette approche utilise des injections d'acide hyaluronique pour harmoniser les proportions nasales de manière naturelle et réversible.",
+    text: "La rhinoplastie médicale permet d’embellir et d’harmoniser votre nez sans avoir recours à la chirurgie. Grâce aux injections d’acide hyaluronique, il est possible de corriger les petites imperfections, telles qu’une bosse nasale, un nez trop creusé ou une asymétrie, tout en obtenant un résultat naturel et immédiat. Découvrez la méthode du Dr Emmanuel Elard, expert en rhinoplastie médicale à Paris.",
   },
   types: {
     title: "Types de Corrections",
-    subtitle: "Une approche personnalisée selon vos besoins",
+    subtitle: "Ce que peut traiter la rhinoplastie médicale :",
     items: [
       {
-        title: "Bosse du Nez",
-        description: "Correction de la bosse nasale pour un profil harmonieux.",
-        imageUrl: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&q=80",
+        title: "Correction d’une bosse nasale",
+        description: "Une solution idéale pour lisser les imperfections du profil sans altérer les structures osseuses",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/bosse-nez.jpg",
       },
       {
-        title: "Pointe du Nez",
-        description: "Affinement et projection de la pointe nasale.",
-        imageUrl: "https://images.unsplash.com/photo-1606818616331-32df8f8f59df?auto=format&fit=crop&q=80",
+        title: "Rehaussement de la pointe",
+        description: "Pour ceux qui souhaitent une pointe plus définie sans chirurgie invasive.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pointe-tombante.jpg",
+      },
+      {
+        title: "Amélioration d’un nez aplati",
+        description: "Ajout de volume pour une projection harmonieuse et naturelle.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/nez-aplati.png",
       },
     ],
   },
@@ -46,17 +51,18 @@ export const rhinoplastieMedicaleData = {
     ],
   },
   video: {
-    title: "La rhinoplastie médicale en vidéo",
-    videoId: "yyQ30IDZFFA",
+    title: "Déroulement d’une Séance de Rhinoplastie Médicale en Vidéo",
+    videoId: "8MN0JcEb4Sg",
   },
   results: {
-    title: "Résultats",
-    subtitle: "Des transformations naturelles et harmonieuses",
-    videos: [{
-      id: '1',
-      title: 'Résultat du traitement - Cas 1',
-      url: 'https://www.youtube.com/embed/VIDEO_ID_1'
-    }],
+    title: "Exemples de resultats obtenus par le DR Elard",
+    images: {
+      title: "Avant et après rhinoplastie médicale.",
+      data: [{
+        id: '1',
+        url: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rhinoplastie-medicale2-1024x538.jpg"
+      }]
+    }
   },
   testimonials: {
     title: "Témoignages Patients",
@@ -85,32 +91,47 @@ export const rhinoplastieMedicaleData = {
     ],
   },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur la rhinoplastie médicale",
+    title: "FAQ",
     items: [
       {
-        question: "Combien de temps dure le traitement ?",
-        answer: ["La séance dure environ 30 minutes. Les résultats sont visibles immédiatement."],
+        question: "Qu'est-ce que la rhinoplastie médicale ?",
+        answer: ["La rhinoplastie médicale est une procédure non chirurgicale visant à modifier l’apparence du nez à l’aide d’injections de produits de comblement, tels que l’acide hyaluronique. Elle permet de corriger des imperfections mineures, comme une bosse légère, une asymétrie ou une pointe tombante, sans recourir à la chirurgie traditionnelle."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante."],
+        question: "Quels sont les avantages de la rhinoplastie médicale par rapport à la chirurgie ?",
+        answer: ["Les principaux avantages incluent l’absence d’anesthésie générale, une récupération rapide, des résultats immédiats et réversibles, ainsi qu’un coût généralement inférieur à celui d’une rhinoplastie chirurgicale."],
       },
       {
-        question: "Quelle est la durée des résultats ?",
-        answer: ["Les résultats durent généralement entre 12 et 18 mois."],
+        question: "Combien de temps durent les résultats d'une rhinoplastie médicale ?",
+        answer: ["Les effets des injections d’acide hyaluronique durent généralement entre 12 et 18 mois, selon le type de produit utilisé et le métabolisme individuel du patient."],
       },
       {
-        question: "Y a-t-il une période d'éviction sociale ?",
-        answer: ["Les suites sont minimes, avec parfois de légères rougeurs qui disparaissent en quelques jours."],
+        question: "La procédure est-elle douloureuse ?",
+        answer: ["La plupart des patients ressentent une gêne minimale. Une crème anesthésiante est souvent appliquée avant les injections pour assurer un confort optimal."],
+      },
+      {
+        question: "Qui est un bon candidat pour la rhinoplastie médicale ?",
+        answer: ["Les personnes souhaitant corriger des imperfections mineures du nez sans recourir à la chirurgie sont de bons candidats. Cependant, pour des modifications structurelles importantes, une rhinoplastie chirurgicale peut être plus appropriée."],
+      },
+      {
+        question: "Y a-t-il des contre-indications à la rhinoplastie médicale ?",
+        answer: ["Il est essentiel de consulter un médecin spécialisé en médecine esthétique, ayant une expérience avérée dans les injections faciales et une connaissance approfondie de l’anatomie nasale. Vérifiez ses qualifications, ses certifications et consultez des avis de patients précédents."],
+      },
+      {
+        question: "Quelle est la durée de la procédure et le temps de récupération ?",
+        answer: ["Les injections sont une excellente alternative à la chirurgie pour restaurer le volume des pommettes sans éviction sociale. Si le relâchement cutané est trop important, des", "La procédure dure généralement entre 15 et 30 minutes. La plupart des patients reprennent leurs activités normales immédiatement après, bien qu’il soit conseillé d’éviter les activités physiques intenses pendant 24 à 48 heures.", "complémentaires ou une chirurgie esthétique peuvent être envisagés."],
+      },
+      {
+        question: "Le résultat est-il naturel ?",
+        answer: ["Lorsqu’elle est réalisée par un praticien expérimenté, la rhinoplastie médicale offre des résultats subtils et naturels, améliorant l’harmonie du visage sans donner un aspect artificiel."],
       },
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
     title: "Traitements Complémentaires",
@@ -118,17 +139,24 @@ export const rhinoplastieMedicaleData = {
     procedures: [
       {
         category: "INJECTION",
-        title: "POMMETTES",
-        description: "Restauration du volume des pommettes.",
-        image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e",
-        link: "/injections/visage/pommettes",
+        title: "MENTON",
+        description: "Restructuration et projection du menton.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/menton-site2.jpg",
+        link: "/injections/visage/menton",
       },
       {
         category: "INJECTION",
-        title: "MENTON",
-        description: "Restructuration et projection du menton.",
-        image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d",
-        link: "/injections/visage/menton",
+        title: "FRONT",
+        description: "Restauration du volume temporal.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/front-inj.jpg",
+        link: "/injections/visage/front",
+      },
+      {
+        category: "INJECTION",
+        title: "POMMETTES",
+        description: "Restauration du volume des pommettes.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
+        link: "/injections/visage/pommettes",
       },
     ],
   },
