@@ -47,7 +47,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className={`grid md:grid-cols-${videos.length < 2 ? 2 : videos.length} gap-8 max-w-5xl mx-auto`}>
           {videos.map((video) => (
             <motion.div
               key={video.id}
