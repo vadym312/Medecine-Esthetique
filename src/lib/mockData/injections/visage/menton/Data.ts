@@ -1,25 +1,30 @@
 export const mentonData = {
   hero: {
     title: "Traitement du Menton",
-    subtitle: "Restructuration et projection harmonieuse du menton",
-    backgroundImage: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80",
+    subtitle: "InjeCtions d'acIde hyaluronique pour remodeler le menton",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/rajeunissement-pommettes-visage-injection-paris.jpg",
   },
   intro: {
-    text: "Le traitement du menton permet de corriger les imperfections et d'harmoniser le profil du visage. Notre approche médicale combine expertise et techniques de pointe pour des résultats naturels et équilibrés.",
+    text: "Le menton est un élément clé de l’harmonie du visage. Grâce aux injections d’acide hyaluronique, il est possible de corriger un menton fuyant, asymétrique ou disproportionné, pour un résultat naturel et équilibré. Découvrez comment le Dr Emmanuel Elard, spécialiste en esthétique à Paris, peut remodeler votre menton de manière non invasive.",
   },
   types: {
-    title: "Types de Corrections",
-    subtitle: "Une approche personnalisée selon vos besoins",
+    title: "Quelles sont les imperfections du menton et comment les corriger ?",
+    subtitle: "Le menton peut présenter diverses particularités qui altèrent l’esthétique du visage. Avec l’acide hyaluronique, il est possible de traiter efficacement ces imperfections.",
     items: [
       {
-        title: "Menton Fuyant",
-        description: "Correction du manque de projection pour un profil harmonieux.",
-        imageUrl: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&q=80",
+        title: "Menton fuyant",
+        description: "Manque de projection. En projetant le menton vers l’avant avec de l’acide hyaluronique, on améliore le profil et l’équilibre du visage.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/iorehfu.jpg",
       },
       {
-        title: "Asymétrie du Menton",
-        description: "Harmonisation des irrégularités pour un résultat équilibré.",
-        imageUrl: "https://images.unsplash.com/photo-1606818616331-32df8f8f59df?auto=format&fit=crop&q=80",
+        title: "Asymétrie du menton",
+        description: "Pour corriger une asymétrie, l’acide hyaluronique permet de remodeler la zone pour obtenir un menton symétrique et harmonieux.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rferfere.png",
+      },
+      {
+        title: "Affaissement du menton",
+        description: "En partie responsable du double menton et des bajoues. L’injection d’acide hyaluronique permet de corriger ces problématiques.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/affaissement-menton.jpg",
       },
     ],
   },
@@ -46,16 +51,17 @@ export const mentonData = {
     ],
   },
   video: {
-    title: "Le traitement du menton en vidéo",
-    videoId: "yyQ30IDZFFA",
+    title: "Déroulement d'une séance d'injection du menton en vidéo",
+    subtitle: "Pour comprendre comment se déroule une séance d’injection d’acide hyaluronique pour le menton, visionnez cette vidéo. Elle montre comment le Dr Elard procède pour projeter le menton vers l’avant et redéfinir la mâchoire, tout en assurant le confort de ses patients.",
+    videoId: "8FsZ8JXT3b4",
   },
   results: {
     title: "Résultats",
-    subtitle: "Des transformations naturelles et harmonieuses",
+    subtitle: "Avant/après d'une injection du menton en vidéo dynamique",
     videos: [{
       id: '1',
       title: 'Résultat du traitement - Cas 1',
-      url: 'https://www.youtube.com/embed/VIDEO_ID_1'
+      url: 'https://www.youtube.com/embed/xfCTrqFeEDM'
     }],
   },
   testimonials: {
@@ -85,50 +91,75 @@ export const mentonData = {
     ],
   },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur le traitement du menton",
+    title: "FAQ",
     items: [
       {
-        question: "Combien de temps dure le traitement ?",
-        answer: ["La séance dure environ 30 minutes. Les résultats sont visibles immédiatement."],
+        question: "Qu'est-ce que l'acide hyaluronique et comment agit-il sur le menton ?",
+        answer: ["L’acide hyaluronique est une substance naturellement présente dans notre organisme, notamment dans la peau, où il maintient l’hydratation et la fermeté. Lorsqu’il est injecté dans le menton, il comble les volumes manquants, projette un menton fuyant et améliore l’harmonie du visage."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante."],
+        question: "Quels sont les avantages des injections d'acide hyaluronique pour le menton ?",
+        answer: ["Les injections permettent de corriger un menton fuyant, de redéfinir l’ovale du visage, d’améliorer l’équilibre du profil et d’obtenir des résultats immédiats sans chirurgie. De plus, l’acide hyaluronique est résorbable et bien toléré par l’organisme."],
       },
       {
-        question: "Quelle est la durée des résultats ?",
-        answer: ["Les résultats durent généralement entre 12 et 18 mois."],
+        question: "Combien de temps durent les effets des injections dans le menton ?",
+        answer: ["Les résultats des injections d’acide hyaluronique dans le menton durent en moyenne entre 12 et 18 mois, selon le métabolisme de chacun et le type de produit utilisé."],
       },
       {
-        question: "Y a-t-il une période d'éviction sociale ?",
-        answer: ["Les suites sont minimes, avec parfois de légères rougeurs qui disparaissent en quelques jours."],
+        question: "Le traitement est-il douloureux ?",
+        answer: ["Les injections sont généralement bien tolérées. Une crème anesthésiante peut être appliquée avant la séance pour minimiser l’inconfort. De plus, l’utilisation de canules à bout rond réduit le risque de douleur et de bleus."],
       },
+      {
+        question: "Quels sont les effets secondaires possibles ?",
+        answer: ["Des rougeurs, un léger gonflement ou de petites ecchymoses peuvent apparaître au site d’injection, mais ces effets disparaissent généralement en quelques jours. Les complications graves sont rares lorsque le traitement est réalisé par un professionnel qualifié."],
+      },
+      {
+        question: "Combien coûte une injection d'acide hyaluronique pour le menton ?",
+        answer: ["Le coût varie en fonction de la quantité de produit nécessaire et de la complexité du traitement. En moyenne, il faut compter entre 400€ et 800€ par séance. "],
+      },
+      {
+        question: "Y a-t-il des contre-indications aux injections d'acide hyaluronique ?",
+        answer: ["Les injections sont déconseillées aux femmes enceintes ou allaitantes, aux personnes souffrant de maladies auto-immunes ou présentant une infection cutanée active au site d’injection. Il est essentiel de discuter de votre état de santé avec le praticien avant le traitement."],
+      },
+      {
+        question: "Comment se déroule une séance d'injection pour le menton ?",
+        answer: ["Après une consultation initiale pour évaluer vos besoins, la zone est nettoyée et une crème anesthésiante peut être appliquée. Le praticien injecte ensuite l’acide hyaluronique à l’aide d’une aiguille fine ou d’une canule, puis masse la zone pour assurer une répartition homogène du produit. La séance dure généralement entre 15 et 30 minutes."],
+      },
+      {
+        question: "Les résultats sont-ils naturels ?",
+        answer: ["La reprise des activités quotidiennes est immédiate. Il est toutefois recommandé d’éviter les exercices intenses, l’exposition à la chaleur (sauna, hammam) et la consommation d’alcool pendant 24 à 48 heures après l’injection."],
+      }
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
-    title: "Traitements Complémentaires",
-    subtitle: "Découvrez nos autres solutions pour sublimer votre visage",
+    title: "Ces procedures peuvent aussi vous intéresser",
     procedures: [
-      {
-        category: "INJECTION",
-        title: "OVALE DU VISAGE",
-        description: "Redéfinition des contours du visage.",
-        image: "https://images.unsplash.com/photo-1523263685509-57c1d050d19b",
-        link: "/injections/visage/ovale-du-visage",
-      },
       {
         category: "INJECTION",
         title: "POMMETTES",
         description: "Restauration du volume des pommettes.",
-        image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
         link: "/injections/visage/pommettes",
+      },
+      {
+        category: "INJECTION",
+        title: "SILLONS NASOGÉNIENS",
+        description: "Atténuation des plis d'amertume.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg",
+        link: "/injections/visage/sillons-nasogeniens",
+      },
+      {
+        category: "INJECTION",
+        title: "TEMPES",
+        description: "Restauration du volume temporal.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-tempes-site.jpg",
+        link: "/injections/visage/tempes",
       },
     ],
   },

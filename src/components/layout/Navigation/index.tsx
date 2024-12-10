@@ -7,6 +7,7 @@ import { NavigationMenu } from './Menu';
 import { NavigationMobile } from './Mobile';
 import { useNavigationState } from './hooks/useNavigationState';
 import { useScrollState } from './hooks/useScrollState';
+import Link from 'next/link';
 
 export const Navigation = memo(() => {
   const isScrolled = useScrollState();
@@ -14,9 +15,8 @@ export const Navigation = memo(() => {
 
   return (
     <motion.header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -26,7 +26,7 @@ export const Navigation = memo(() => {
           <Logo isScrolled={isScrolled} />
           <NavigationMenu isScrolled={isScrolled} />
           <div className="hidden lg:block">
-            <button className="booking-button">Prendre RDV</button>
+            <Link href='https://drelard.booking.nextmotion.net'><button className="booking-button">Prendre RDV</button></Link>
           </div>
           <NavigationMobile
             isOpen={isMobileMenuOpen}
