@@ -55,6 +55,20 @@ export const mentonData = {
     subtitle: "Pour comprendre comment se déroule une séance d’injection d’acide hyaluronique pour le menton, visionnez cette vidéo. Elle montre comment le Dr Elard procède pour projeter le menton vers l’avant et redéfinir la mâchoire, tout en assurant le confort de ses patients.",
     videoId: "8FsZ8JXT3b4",
   },
+  avant_apres: {
+    title: "Avant / après injection du menton",
+    images: {
+      description: "Avant et après injection au menton pour harmoniser le profil et corriger le double menton.",
+      url: ["https://medecine-esthetique.net/wp-content/uploads/2024/11/avant-apres-calque-menrton-1024x674.jpg"]
+    },
+  },
+  avant_apresd: {
+    title: "Avant/après d'une injection du menton et de l'ovale du visage",
+    images: {
+      description: "Avant et après une injection au menton pour sublimer l’ovale du visage.",
+      url: ["https://medecine-esthetique.net/wp-content/uploads/2024/11/68DD67FF-A19F-4E54-84CA-30CDC52BF2FB-1024x674.jpg"]
+    },
+  },
   results: {
     title: "Avant/après d'une injection du menton en vidéo dynamique",
     videos: [{

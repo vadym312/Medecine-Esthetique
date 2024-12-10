@@ -5,7 +5,7 @@ import { TreatmentHero } from '@/src/components/shared/treatments/Hero';
 import { TreatmentTypes } from '@/src/components/shared/treatments/Types';
 import { TreatmentProcedure } from '@/src/components/shared/treatments/Procedure';
 import { TreatmentVideo } from '@/src/components/shared/treatments/Video';
-import { TreatmentResults } from '@/src/components/shared/treatments/Results';
+import { TreatmentAvant } from '@/src/components/shared/treatments/Avant_Après';
 import { TreatmentTestimonials } from '@/src/components/shared/treatments/Testimonials';
 import { TreatmentFAQ } from '@/src/components/shared/treatments/FAQ';
 import { TreatmentCTA } from '@/src/components/shared/treatments/CTA';
@@ -26,7 +26,7 @@ const TempesPage: React.FC = () => {
       <TreatmentTypes {...tempesData.types} />
       <TreatmentProcedure {...tempesData.procedure} />
       <TreatmentVideo {...tempesData.video} />
-      <TreatmentResults {...tempesData.results} />
+      <TreatmentAvant {...tempesData.avant_apres}/>
       <TreatmentTestimonials {...tempesData.testimonials} />
       <TreatmentFAQ {...tempesData.faq} />
       <TreatmentCTA {...tempesData.cta} />

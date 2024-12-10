@@ -5,6 +5,7 @@ import { TreatmentHero } from '@/src/components/shared/treatments/Hero';
 import { TreatmentTypes } from '@/src/components/shared/treatments/Types';
 import { TreatmentProcedure } from '@/src/components/shared/treatments/Procedure';
 import { TreatmentVideo } from '@/src/components/shared/treatments/Video';
+import { TreatmentAvant } from '@/src/components/shared/treatments/Avant_Après';
 import { TreatmentResults } from '@/src/components/shared/treatments/Results';
 import { TreatmentTestimonials } from '@/src/components/shared/treatments/Testimonials';
 import { TreatmentFAQ } from '@/src/components/shared/treatments/FAQ';
@@ -25,7 +26,9 @@ const MentonPage: React.FC = () => {
 
       <TreatmentTypes {...mentonData.types} />
       <TreatmentProcedure {...mentonData.procedure} />
+      <TreatmentAvant {...mentonData.avant_apres}/>
       <TreatmentVideo {...mentonData.video} />
+      <TreatmentAvant {...mentonData.avant_apresd}/>
       <TreatmentResults {...mentonData.results} />
       <TreatmentTestimonials {...mentonData.testimonials} />
       <TreatmentFAQ {...mentonData.faq} />

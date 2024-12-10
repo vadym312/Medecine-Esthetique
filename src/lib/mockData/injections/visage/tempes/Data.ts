@@ -53,6 +53,14 @@ export const tempesData = {
     title: "Déroulement d'une Séance d'Injection des Tempes en Vidéo",
     videoId: "ZVNfWpR6xws",
   },
+  avant_apres: {
+    title: "Avant / après injection de tempes",
+    subtitle: "Voici quelques exemples de résultats obtenus par le Dr Emmanuel Elard pour la correction des tempes",
+    images: {
+      description: "Avant et après traitement esthétique des tempes.",
+      url: ["https://medecine-esthetique.net/wp-content/uploads/2024/11/filler-temple-pop-2.jpg"]
+    },
+  },
   results: {
     title: "Avant / après injection de tempes",
     subtitle: "Voici quelques exemples de résultats obtenus par le Dr Emmanuel Elard pour la correction des tempes",
