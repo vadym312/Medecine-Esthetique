@@ -1,25 +1,30 @@
 export const mesoliftData = {
   hero: {
     title: "Mésolift",
-    subtitle: "Revitalisation profonde du visage",
-    backgroundImage: "https://images.unsplash.com/photo-1521510186458-bbbda7aef46b?auto=format&fit=crop&q=80",
+    subtitle: "Le Mésolift",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/mesolift-paris-specialiste-injections-dr-elard.jpg",
   },
   intro: {
-    text: "Le Mésolift est un traitement de revitalisation qui combine vitamines, minéraux et acide hyaluronique pour redonner éclat et vitalité à votre peau. Cette technique permet une amélioration globale de la qualité cutanée.",
+    text: "Lors de la consultation, le Dr Emmanuel Elard évalue l’état de votre peau et détermine l’approche optimale pour un traitement de mésolift. Ce soin permet de lisser les ridules superficielles tout en redonnant hydratation et éclat à la peau. Le mésolift utilise de l’acide hyaluronique non réticulé, injecté délicatement dans les couches superficielles de la peau. Une séance dure généralement moins de 30 minutes, et un effet de luminosité immédiat est visible, s’améliorant au fil des séances.",
   },
   types: {
-    title: "Types de Traitements",
-    subtitle: "Une approche personnalisée selon vos besoins",
+    title: "LE MÉSOLIFT POUR UNE PEAU PLUS LISSE ET ÉCLATANTE",
+    subtitle: "Les bienfaits du mésolift :",
     items: [
       {
-        title: "Revitalisation Classique",
-        description: "Cocktail de vitamines et minéraux pour une peau éclatante.",
-        imageUrl: "https://images.unsplash.com/photo-1521510186458-bbbda7aef46b?auto=format&fit=crop&q=80",
+        title: "Hydratation profonde",
+        description: "l’acide hyaluronique attire et retient l’eau, offrant une hydratation durable.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/medecine-esthetique-prevenir-age-des-20ans-1536x1024.jpeg",
       },
       {
-        title: "Mésolift Plus",
-        description: "Association avec de l'acide hyaluronique pour une action anti-âge renforcée.",
-        imageUrl: "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&q=80",
+        title: "Amélioration de la texture",
+        description: "les ridules superficielles sont lissées, la peau paraît plus rebondie.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/injections-illegales-medecine-esthetique.jpg",
+      },
+      {
+        title: "Teint lumineux",
+        description: "en stimulant la microcirculation, le mésolift redonne de l’éclat à la peau.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/injections-illegales-medecine-esthetique.jpg",
       },
     ],
   },
@@ -46,8 +51,9 @@ export const mesoliftData = {
     ],
   },
   video: {
-    title: "Le traitement Mésolift en vidéo",
-    videoId: "yyQ30IDZFFA",
+    title: "DÉROULEMENT D'UNE SÉANCE DE MÉSOLIFT EN VIDÉO",
+    subtitle: "Découvrez en vidéo comment se déroule une séance de mésolift, pour mieux comprendre chaque étape de ce soin rajeunissant.",
+    videoId: "KFhqQ7YmtiY",
   },
   results: {
     title: "Résultats",
@@ -107,10 +113,10 @@ export const mesoliftData = {
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
     title: "Traitements Complémentaires",
