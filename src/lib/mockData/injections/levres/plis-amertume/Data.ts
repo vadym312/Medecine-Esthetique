@@ -1,25 +1,30 @@
 export const plisAmertumesData = {
   hero: {
     title: "Plis d'Amertume",
-    subtitle: "Correction des plis aux coins de la bouche",
-    backgroundImage: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80",
+    subtitle: "INJECTIONS D’ACIDE HYALURONIQUE POUR TRAITER LES PLIS D’AMERTUME",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/traitement-plis-amertume-paris-esthetique.jpg",
   },
   intro: {
-    text: "Les plis d'amertume, ou plis marionnettes, sont des sillons qui se creusent entre les coins de la bouche et le menton. Notre approche médicale permet de les atténuer naturellement pour un visage plus harmonieux et rajeuni.",
+    text: "Les plis d’amertume, ces rides qui se forment des coins de la bouche vers le menton, peuvent donner un air triste ou sévère au visage. Grâce aux injections d’acide hyaluronique, il est possible de lisser ces plis et de redonner au visage un aspect harmonieux et détendu. Découvrez le traitement proposé par le Dr Emmanuel Elard, expert en médecine esthétique à Paris, et offrez-vous une transformation subtile et naturelle.",
   },
   types: {
     title: "Types de Corrections",
-    subtitle: "Une approche personnalisée selon la profondeur des plis",
+    subtitle: "Les problématiques les plus fréquentes traitées par le Dr Elard :",
     items: [
       {
-        title: "Plis Légers",
-        description: "Traitement préventif des plis débutants.",
-        imageUrl: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80",
+        title: "Plis peu marqués",
+        description: "Légère dépression qui commence à se former et peut être corrigée avec une petite quantité d’acide hyaluronique pour prévenir leur accentuation.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/plis-amertume-discrets.jpg",
       },
       {
-        title: "Plis Marqués",
-        description: "Correction des plis profonds et installés.",
-        imageUrl: "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&q=80",
+        title: "Plis profonds",
+        description: "Rides bien installées nécessitant un traitement des pommettes et des tempes pour restaurer les volumes perdus.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/plis-amertume-marques.jpg",
+      },
+      {
+        title: "Plis  & relâchement cutané",
+        description: "Nécessitent une combinaison de traitements comme les injections des tempes, des pommettes avec de la Radiofréquence ou HIFU.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Plis-amertume-severes.jpg",
       },
     ],
   },
@@ -46,12 +51,11 @@ export const plisAmertumesData = {
     ],
   },
   video: {
-    title: "Le traitement des plis d'amertume en vidéo",
-    videoId: "yyQ30IDZFFA",
+    title: "Déroulement d'une Séance d'Injection des Plis d'Amertume en Vidéo",
+    videoId: "Tf5nd5RBXa",
   },
   results: {
-    title: "Résultats",
-    subtitle: "Des transformations naturelles et harmonieuses",
+    title: "Exemples de Résultats Obtenus par le Dr Elard",
     videos: [{
       id: '1',
       title: 'Résultat du traitement - Cas 1',
@@ -85,50 +89,75 @@ export const plisAmertumesData = {
     ],
   },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur le traitement des plis d'amertume",
+    title: "FAQ",
     items: [
       {
-        question: "Combien de temps dure le traitement ?",
-        answer: ["La séance dure environ 30 minutes. Les résultats sont visibles immédiatement."],
+        question: "Qu'est-ce que les plis d'amertume ?",
+        answer: ["Les plis d’amertume, également appelés rides de la marionnette, sont des rides verticales qui se forment aux coins de la bouche et descendent vers le menton. Elles peuvent donner au visage une expression triste ou sévère."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante."],
+        question: "Quelles sont les causes des plis d'amertume ?",
+        answer: ["Ces rides résultent principalement du vieillissement cutané, qui entraîne une perte d’élasticité et de volume de la peau. Des facteurs tels que les expressions faciales répétées, le tabagisme, l’exposition au soleil et la déshydratation peuvent également contribuer à leur apparition."],
       },
       {
-        question: "Quelle est la durée des résultats ?",
-        answer: ["Les résultats durent généralement entre 12 et 18 mois."],
+        question: "À quel âge apparaissent généralement les plis d'amertume ?",
+        answer: ["Ils apparaissent généralement vers l’âge de 40 ans, mais peuvent se manifester plus tôt en fonction de facteurs génétiques et de l’hygiène de vie."],
       },
       {
-        question: "Y a-t-il une période d'éviction sociale ?",
-        answer: ["Les suites sont minimes, avec parfois de légères rougeurs qui disparaissent en quelques jours."],
+        question: "Comment prévenir l'apparition des plis d'amertume ?",
+        answer: ["Une routine de soins adaptée, incluant une hydratation régulière et l’utilisation de crèmes anti-âge, peut aider à retarder leur apparition. Adopter une alimentation équilibrée, protéger sa peau du soleil et éviter le tabac sont également des mesures préventives efficaces."],
+      },
+      {
+        question: "Quels sont les traitements disponibles pour atténuer les plis d'amertume ?",
+        answer: ["Plusieurs options existent, notamment les injections d’acide hyaluronique pour combler les rides, les injections de toxine botulique pour détendre les muscles responsables, les peelings chimiques, le microneedling et les traitements au laser. Le choix du traitement dépend de la profondeur des rides et des attentes du patient."],
+      },
+      {
+        question: "Les injections d'acide hyaluronique sont-elles douloureuses ?",
+        answer: ["Les injections sont généralement bien tolérées. Une anesthésie locale peut être appliquée pour minimiser l’inconfort. Des rougeurs ou des gonflements temporaires peuvent apparaître après la procédure."],
+      },
+      {
+        question: "Combien de temps durent les effets des injections d'acide hyaluronique ?",
+        answer: ["Les résultats sont visibles immédiatement après l’injection et peuvent durer entre 12 et 18 mois, selon le type de produit utilisé et les caractéristiques individuelles du patient."],
+      },
+      {
+        question: "Les hommes peuvent-ils également être concernés par les plis d'amertume ?",
+        answer: ["Oui, les plis d’amertume affectent aussi bien les hommes que les femmes, bien que leur apparence puisse varier en fonction de la structure faciale et des habitudes de vie."],
+      },
+      {
+        question: "Combien coûte le traitement des plis d'amertume par injections d'acide hyaluronique ?",
+        answer: ["Le coût varie en fonction de la quantité de produit nécessaire et de la complexité du traitement, généralement entre 400 € et 800 €. Une consultation préalable est recommandée pour obtenir un devis personnalisé."],
       },
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
-    title: "Traitements Complémentaires",
-    subtitle: "Découvrez nos autres solutions pour sublimer votre visage",
+    title: "Ces procedures peuvent aussi vous intéresser",
     procedures: [
       {
         category: "INJECTION",
-        title: "AUGMENTATION DES LÈVRES",
-        description: "Volumisation naturelle des lèvres.",
-        image: "https://images.unsplash.com/photo-1594125674956-61a9b49c8ecc",
-        link: "/injections/levres/augmentation-des-levres",
+        title: "OVALE DU VISAGE",
+        description: "Redéfinition des contours du visage.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/ovale-visage.jpg",
+        link: "/injections/visage/ovale-du-visage",
       },
       {
         category: "INJECTION",
-        title: "RIDES PÉRIBUCCALES",
-        description: "Traitement des rides autour de la bouche.",
-        image: "https://images.unsplash.com/photo-1522337094846-8a818192de1f",
-        link: "/injections/levres/rides-peribuccales",
+        title: "SILLONS NASOGÉNIENS",
+        description: "Atténuation des plis d'amertume.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg",
+        link: "/injections/visage/sillons-nasogeniens",
+      },
+      {
+        category: "INJECTION",
+        title: "POMMETTES",
+        description: "Restauration du volume des pommettes.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
+        link: "/injections/visage/pommettes",
       },
     ],
   },
