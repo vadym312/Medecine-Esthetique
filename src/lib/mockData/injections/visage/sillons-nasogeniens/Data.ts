@@ -60,10 +60,17 @@ export const sillonsNasogeniensData = {
     videos: [
       {
         id: '1',
-        title: 'Résultat du traitement - Cas 1',
+        title: 'Plan d’injection pour traiter les sillons nasogéniens.',
         url: 'https://www.youtube.com/embed/E34BN0E8oaQ'
       }
     ],
+    images: {
+      title: "Plan d’injection pour traiter les sillons nasogéniens.",
+      data: [{
+        id: '1',
+        url: "https://medecine-esthetique.net/wp-content/uploads/2024/11/stan-sko-1024x471.jpg"
+      }]
+    }
   },
   testimonials: {
     title: "Témoignages Patients",
@@ -155,6 +162,13 @@ export const sillonsNasogeniensData = {
         description: "Restauration du volume des pommettes.",
         image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
         link: "/injections/visage/pommettes",
+      },
+      {
+        category: "INJECTION",
+        title: "CERNES",
+        description: "Traitement des cernes.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/eroifheroifj.png",
+        link: "/injections/visage/cernes",
       },
       {
         category: "INJECTION",

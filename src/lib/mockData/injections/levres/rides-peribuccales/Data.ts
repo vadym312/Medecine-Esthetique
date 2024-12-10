@@ -1,25 +1,29 @@
 export const ridesPeribuccalesData = {
   hero: {
     title: "Rides Péribuccales",
-    subtitle: "Traitement des rides autour de la bouche",
-    backgroundImage: "https://images.unsplash.com/photo-1522337094846-8a818192de1f?auto=format&fit=crop&q=80",
+    subtitle: "INJECTIONS D'ACIDE HYALURONIQUE POUR TRAITER LES RIDES AUTOUR DE LA BOUCHE",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/rajeunissement-pommettes-visage-injection-paris.jpg",
   },
   intro: {
-    text: "Les rides péribuccales, aussi appelées rides du fumeur ou code-barres, sont des rides verticales qui apparaissent autour de la bouche. Notre approche médicale permet de les atténuer efficacement pour un résultat naturel.",
+    text: "Les rides autour de la bouche peuvent durcir l’expression du visage et vous donner un air fatigué ou triste. Grâce aux injections d’acide hyaluronique, il est possible de lisser ces rides et de restaurer un aspect harmonieux et naturel. Découvrez comment le Dr Emmanuel Elard, expert en esthétique médicale, peut vous aider à retrouver un sourire éclatant.",
   },
   types: {
-    title: "Types de Rides",
-    subtitle: "Une approche personnalisée selon la profondeur des rides",
+    title: "Les types de rides a traiter",
     items: [
       {
-        title: "Rides Superficielles",
-        description: "Traitement préventif des rides fines.",
-        imageUrl: "https://images.unsplash.com/photo-1594125674956-61a9b49c8ecc?auto=format&fit=crop&q=80",
+        title: "Rides verticales des lèvres",
+        description: "vCes fines ridules au-dessus de la lèvre supérieure, souvent liées à l’âge ou au tabagisme, peuvent être lissées pour redonner à la bouche un aspect plus doux et harmonieux.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rides-code-barre.jpg",
       },
       {
-        title: "Rides Profondes",
-        description: "Correction des rides marquées et installées.",
-        imageUrl: "https://images.unsplash.com/photo-1522337094846-8a818192de1f?auto=format&fit=crop&q=80",
+        title: "Ridules autour des lèvres.",
+        description: "Ces petites rides qui apparaissent autour des lèvres avec le temps peuvent être corrigées pour lisser la peau et apporter un effet rajeunissant naturel.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/cassures-dermiques-levres.jpg",
+      },
+      {
+        title: "Plis d’amertume",
+        description: "Ces rides qui descendent des coins de la bouche donnent un air triste ou sévère, mais peuvent être atténuées grâce à des injections d’acide hyaluronique pour restaurer un sourire éclatant",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/fines-ridules-bouche.jpg",
       },
     ],
   },
@@ -45,13 +49,9 @@ export const ridesPeribuccalesData = {
       },
     ],
   },
-  video: {
-    title: "Le traitement des rides péribuccales en vidéo",
-    videoId: "yyQ30IDZFFA",
-  },
   results: {
-    title: "Résultats",
-    subtitle: "Des transformations naturelles et harmonieuses",
+    title: "Exemples de Résultats Obtenus par le Dr Elard",
+    subtitle: "Avant / Après : Exemples de patients ayant bénéficié d’un traitement de l’ovale du visage.",
     videos: [{
       id: '1',
       title: 'Résultat du traitement - Cas 1',
@@ -85,50 +85,71 @@ export const ridesPeribuccalesData = {
     ],
   },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur le traitement des rides péribuccales",
+    title: "FAQ",
     items: [
       {
-        question: "Combien de temps dure le traitement ?",
-        answer: ["La séance dure environ 30 minutes. Les résultats sont visibles immédiatement."],
+        question: "Combien de temps dure l’effet des injections pour les pommettes ?",
+        answer: ["Les résultats des injections d’acide hyaluronique pour les pommettes durent généralement entre 12 et 18 mois, en fonction du produit utilisé et de la vitesse à laquelle votre corps résorbe l’acide hyaluronique."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante."],
+        question: "Le traitement est-il douloureux ?",
+        answer: ["Les injections sont peu douloureuses. Une crème anesthésiante ou un anesthésique local peut être appliqué pour assurer un confort optimal. De plus, l’utilisation de micro-canules minimise la douleur et les sensations désagréables."],
       },
       {
-        question: "Quelle est la durée des résultats ?",
-        answer: ["Les résultats durent généralement entre 6 et 12 mois."],
+        question: "Quels sont les effets secondaires possibles ?",
+        answer: ["Des rougeurs, un léger œdème ou quelques ecchymoses peuvent apparaître après l’injection, mais ils disparaissent en quelques jours. Les complications plus graves, comme une infection ou une mauvaise répartition du produit, sont rares lorsqu’elles sont réalisées par un expert."],
       },
       {
-        question: "Y a-t-il une période d'éviction sociale ?",
-        answer: ["Les suites sont minimes, avec parfois de légères rougeurs qui disparaissent en quelques jours."],
+        question: "À qui s’adresse ce traitement ?",
+        answer: ["Le rajeunissement des pommettes convient à toute personne souhaitant restaurer le volume perdu, sculpter les traits de son visage ou corriger une asymétrie. Ce traitement est idéal pour les hommes et les femmes à partir de 30 ans qui recherchent une solution non invasive."],
+      },
+      {
+        question: "Puis-je reprendre mes activités après les injections ?",
+        answer: ["Oui, la reprise des activités est immédiate. Les suites sont simples et ne nécessitent pas d’éviction sociale. Il est toutefois conseillé d’éviter les activités intenses ou l’exposition à une source de chaleur (sauna, hammam) pendant 24 à 48 heures."],
+      },
+      {
+        question: "Comment choisir entre chirurgie et injections ?",
+        answer: ["Oui, les injections réalisées par le Dr Emmanuel Elard visent à obtenir des résultats subtils et naturels, en respectant l’harmonie de votre visage. Le volume est restauré de manière équilibrée, sans effet artificiel."],
+      },
+      {
+        question: "Combien de temps dure une injection pour les cernes ?",
+        answer: ["Les injections sont une excellente alternative à la chirurgie pour restaurer le volume des pommettes sans éviction sociale. Si le relâchement cutané est trop important, des traitements complémentaires ou une chirurgie esthétique peuvent être envisagés."],
+      },
+      {
+        question: "Les résultats des injections de cernes sont-ils permanents ?",
+        answer: ["Non, les résultats des injections d’acide hyaluronique ne sont pas permanents. Ils durent généralement entre 12 et 18 mois, selon le métabolisme de chaque patient et la qualité du produit utilisé. Une retouche annuelle peut être nécessaire pour maintenir les effets."],
       },
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
-    title: "Traitements Complémentaires",
-    subtitle: "Découvrez nos autres solutions pour sublimer votre visage",
+    title: "Ces procedures peuvent aussi vous intéresser",
     procedures: [
       {
         category: "INJECTION",
-        title: "AUGMENTATION DES LÈVRES",
-        description: "Volumisation naturelle des lèvres.",
-        image: "https://images.unsplash.com/photo-1594125674956-61a9b49c8ecc",
-        link: "/injections/levres/augmentation-des-levres",
+        title: "PLIS D'AMERTUME",
+        description: "Redéfinition des contours du pils d'amertume.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/plis-damertume-1.jpg",
+        link: "/injections/visage/pils-d-amertume",
       },
       {
         category: "INJECTION",
-        title: "PLIS D'AMERTUME",
-        description: "Correction des plis aux coins de la bouche.",
-        image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e",
-        link: "/injections/levres/plis-amertume",
+        title: "SILLONS NASOGÉNIENS",
+        description: "Atténuation des plis d'amertume.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg",
+        link: "/injections/visage/sillons-nasogeniens",
+      },
+      {
+        category: "INJECTION",
+        title: "AUGMENTATION DES LÈVRES",
+        description: "Restauration du volume des à vos lèvres.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/augmentation-des-levres.jpg",
+        link: "/injections/visage/augmentation-des-levres",
       },
     ],
   },

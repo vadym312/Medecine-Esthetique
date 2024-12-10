@@ -56,8 +56,7 @@ export const mentonData = {
     videoId: "8FsZ8JXT3b4",
   },
   results: {
-    title: "Résultats",
-    subtitle: "Avant/après d'une injection du menton en vidéo dynamique",
+    title: "Avant/après d'une injection du menton en vidéo dynamique",
     videos: [{
       id: '1',
       title: 'Résultat du traitement - Cas 1',
