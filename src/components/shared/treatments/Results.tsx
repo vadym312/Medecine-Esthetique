@@ -25,6 +25,7 @@ interface ResultsSectionProps {
   subtitle?: string;
   videos?: VideoResult[];
   images?: ImageResult;
+  iframes?: string[];
   showPlaceholder?: boolean;
 }
 
@@ -33,7 +34,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
   subtitle,
   videos = [],
   images,
-  showPlaceholder = true,
+  iframes
 }) => {
   return (
     <section className="py-16 bg-gray-50">
@@ -58,8 +59,29 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
             {subtitle}
           </motion.p>
         </div>
-        {videos && videos.length > 0 ?
-          <div className={`grid md:grid-cols-${videos.length < 2 ? 2 : videos.length} gap-8 max-w-5xl mx-auto`}>
+        {iframes && iframes.length > 0 &&
+          <div className={`grid md:grid-cols-${iframes.length} gap-8 max-w-5xl mx-auto`}>
+            {iframes.map((iframe, index) => (
+              <motion.div
+                key={index}
+                variants={fadeIn}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                className="relative pb-[50%] h-0 rounded-xl flex justify-center overflow-hidden shadow-lg"
+              >
+                <iframe
+                  src={iframe}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full"
+                />
+              </motion.div>
+            ))}
+          </div>
+        }
+        {videos && videos.length > 0 &&
+          <div className={`grid md:grid-cols-${videos.length} gap-8 max-w-5xl mx-auto`}>
             {videos.map((video) => (
               <motion.div
                 key={video.id}
@@ -67,10 +89,10 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true }}
-                className="relative pb-[177.77%] h-0 rounded-xl overflow-hidden shadow-lg"
+                className="relative pb-[50%] h-0 rounded-xl flex justify-center overflow-hidden shadow-lg"
               >
                 <iframe
-                  src={video.url}
+                  src={`https://www.youtube.com/embed/${video.url}`}
                   title={video.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -78,38 +100,10 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                 />
               </motion.div>
             ))}
-
-            {showPlaceholder && videos.length < 2 && (
-              <motion.div
-                variants={fadeIn}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                className="relative pb-[177.77%] h-0 rounded-xl overflow-hidden shadow-lg"
-              >
-                <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                  <div className="text-gray-400 flex flex-col items-center">
-                    <svg
-                      className="w-16 h-16 mb-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                    <p className="text-lg font-medium">Prochainement</p>
-                  </div>
-                </div>
-              </motion.div>
-            )}
           </div>
-          :
-          <div className={`grid md:grid-cols-${images?.data.length} gap-8 max-w-5xl mx-auto`}>
+        }
+        <br/>
+        { images && images.title && <div className={`grid md:grid-cols-${images?.data.length} gap-8 max-w-5xl mx-auto`}>
             {images?.data.map((image) => (
               <motion.div
                 key={image.id}
@@ -117,7 +111,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true }}
-                className="relative pb-[50%] h-0 rounded-xl overflow-hidden shadow-lg"
+                className="relative pb-[45%] h-0 rounded-xl overflow-hidden shadow-lg"
               >
                 <img
                   src={image.url}

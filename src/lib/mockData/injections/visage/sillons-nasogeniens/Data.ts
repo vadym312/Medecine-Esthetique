@@ -54,6 +54,15 @@ export const sillonsNasogeniensData = {
     title: "Déroulement d'une Séance d'Injection des Sillons Nasogéniens en Vidéo",
     videoId: "WGPYXlNaeLo",
   },
+  avant_apres: {
+    title: "Avant - après injection sillons nasogéniens",
+    subtitle: "Les avant/après montrent l'impact des injections pour traiter des sillons nasogéniens modérés. La vidéo dynamique montre à quel point les résultats sont naturels et harmonieux.",
+    images: {
+      description: "Cette série de photos montre les résultats d’un traitement esthétique visant à corriger les sillons nasogéniens grâce à des injections d’acide hyaluronique. La technique employée consiste en des injections profondes sous les coussinets graisseux et au-dessus des muscles, pour restaurer les volumes tout en préservant un aspect naturel.",
+      url: ["https://medecine-esthetique.net/wp-content/uploads/2024/11/Jimmy-Lefevre2-1024x471.jpg"]
+    },
+    videoIds: ['yQ5-1ETB_cw', "3tgz3dgazZs"],
+  },
   results: {
     title: "Exemple de Résultats Obtenus par le Dr Elard",
     subtitle: "Les avant/après montrent l'impact des injections pour traiter des sillons nasogéniens profonds. La vidéo dynamique montre à quel point les résultats sont naturels et harmonieux.",

@@ -45,7 +45,7 @@ export const TreatmentTypes: React.FC<TypesSectionProps> = ({
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className={`grid md:grid-cols-${items.length} gap-8`}>
           {items.map((item, index) => (
             <motion.div
               key={item.title}

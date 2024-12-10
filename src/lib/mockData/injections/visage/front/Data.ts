@@ -54,6 +54,13 @@ export const frontData = {
     title: "Vidéo du déroulement de la séance",
     videoId: "HvP0FWex74Y",
   },
+  avant_apres: {
+    title: "Avant / après injection du front",
+    images: {
+      description: "Avant et après injection esthétique du front.",
+      url: ["https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-front-paris-1024x538.jpg"]
+    },
+  },
   results: {
     title: "Exemples de Résultats Obtenus par le Dr Elard",
     videos: [

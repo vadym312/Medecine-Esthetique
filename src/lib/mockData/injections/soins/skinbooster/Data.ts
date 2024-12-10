@@ -1,25 +1,29 @@
 export const skinboosterData = {
   hero: {
     title: "Skinbooster",
-    subtitle: "Hydratation profonde et revitalisation cutanée",
-    backgroundImage: "https://images.unsplash.com/photo-1525904097878-94fb15835963?auto=format&fit=crop&q=80",
+    subtitle: "SKINBOOSTER POUR UNE PEAU HYDRATÉE ET ÉCLATANTE",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/skinbooster-injection-acide-hyaluronique-paris.jpg",
   },
   intro: {
-    text: "Le Skinbooster est un traitement innovant qui permet une hydratation profonde et durable de la peau. Cette technique utilise de l'acide hyaluronique très fluide pour revitaliser et améliorer la qualité de la peau.",
+    text: "Le skinbooster est un traitement unique d’hydratation intense à base d’acide hyaluronique, conçu pour nourrir la peau en profondeur et lui redonner un éclat naturel. Par de fines injections sous la surface de la peau, il améliore l’élasticité et la luminosité de celle-ci, tout en offrant un effet rajeunissant subtil et naturel. Ce traitement de skinbooster, très populaire à Paris, est recommandé pour les peaux qui présentent des signes de déshydratation, de fatigue ou de teint terne. Il est également idéal pour ceux qui cherchent à retrouver un teint éclatant sans passer par des procédures invasives.",
   },
   types: {
-    title: "Types de Traitements",
-    subtitle: "Une approche personnalisée selon vos besoins",
+    title: "Le skinbooster pour tous les types de peau : un soin adapté à vos besoins",
     items: [
       {
-        title: "Hydratation Intense",
-        description: "Restauration profonde de l'hydratation cutanée.",
-        imageUrl: "https://images.unsplash.com/photo-1525904097878-94fb15835963?auto=format&fit=crop&q=80",
+        title: "Peaux sèches",
+        description: "Les peaux manquant d’hydratation bénéficient particulièrement du skinbooster. Ce traitement restaure l’hydratation et lisse la surface de la peau.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/peau-seche.jpg",
       },
       {
-        title: "Revitalisation",
-        description: "Amélioration de la texture et de l'éclat de la peau.",
-        imageUrl: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80",
+        title: "Peaux ternes",
+        description: "Pour les personnes qui ont le teint fatigué, le skinbooster redonne de l’éclat et un effet bonne mine immédiat.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/teint-terne-1.jpg",
+      },
+      {
+        title: "Peaux relâchées",
+        description: "Le skinbooster aide également à raffermir les peaux légèrement relâchées, en stimulant la production de collagène et en améliorant l’élasticité.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/peau-relachee.jpeg",
       },
     ],
   },
@@ -45,91 +49,81 @@ export const skinboosterData = {
       },
     ],
   },
-  video: {
-    title: "Le traitement Skinbooster en vidéo",
-    videoId: "yyQ30IDZFFA",
-  },
-  results: {
-    title: "Résultats",
-    subtitle: "Des transformations naturelles et harmonieuses",
-    videos: [{
-      id: '1',
-      title: 'Résultat du traitement - Cas 1',
-      url: 'https://www.youtube.com/embed/VIDEO_ID_1'
-    }],
-  },
-  testimonials: {
-    title: "Témoignages Patients",
-    subtitle: "L'expérience de nos patients",
-    items: [
-      {
-        id: 1,
-        name: "Sophie L.",
-        location: "Paris",
-        rating: 5,
-        comment: "Ma peau est plus lumineuse et hydratée. Un vrai coup d'éclat !",
-        date: "2024-03-15",
-        treatment: "Skinbooster",
-        verified: true,
-      },
-      {
-        id: 2,
-        name: "Marie D.",
-        location: "Lyon",
-        rating: 5,
-        comment: "Résultat naturel et durable. Ma peau est transformée.",
-        date: "2024-03-10",
-        treatment: "Skinbooster",
-        verified: true,
-      },
-    ],
-  },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur le traitement Skinbooster",
+    title: "FAQ",
     items: [
       {
-        question: "Combien de séances sont nécessaires ?",
-        answer: ["Un protocole standard comprend 3 séances espacées de 2-3 semaines, puis une séance d'entretien tous les 4-6 mois."],
+        question: "Qu'est-ce que le Skinbooster et en quoi diffère-t-il des autres injections d'acide hyaluronique ?",
+        answer: ["Le Skinbooster est une injection d’acide hyaluronique faiblement réticulé, conçue pour hydrater et revitaliser la peau en profondeur sans ajouter de volume. Contrairement aux fillers traditionnels qui comblent les rides ou augmentent le volume, le Skinbooster améliore la texture, l’élasticité et l’éclat de la peau."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante."],
+        question: "Quelles zones peuvent être traitées avec le Skinbooster ?",
+        answer: ["Les injections de Skinbooster sont polyvalentes et peuvent être appliquées sur diverses zones, notamment le visage, le cou, le décolleté et les mains. Elles sont idéales pour hydrater en profondeur, améliorer la texture de la peau et atténuer les fines ridules."],
       },
       {
-        question: "Quand voit-on les résultats ?",
-        answer: ["Les premiers résultats sont visibles dès la première séance et s'améliorent progressivement."],
+        question: "À partir de quel âge est-il recommandé de commencer les injections de Skinbooster ?",
+        answer: ["Il n’y a pas d’âge spécifique pour débuter les injections de Skinbooster. Cependant, elles sont souvent recommandées dès l’apparition des premiers signes de déshydratation ou de vieillissement cutané, généralement à partir de 25-30 ans, pour prévenir et ralentir ces effets."],
       },
       {
-        question: "Y a-t-il une période d'éviction sociale ?",
-        answer: ["Les suites sont minimes, avec parfois de petites rougeurs qui disparaissent en 24-48h."],
+        question: "Combien de séances sont nécessaires pour obtenir des résultats optimaux ?",
+        answer: ["Un protocole typique comprend généralement deux à trois séances espacées de quatre semaines. Par la suite, des séances d’entretien tous les six mois sont recommandées pour maintenir les résultats."],
+      },
+      {
+        question: "Les injections de Skinbooster sont-elles douloureuses ?",
+        answer: ["Les injections de Skinbooster sont généralement bien tolérées. Une crème anesthésiante peut être appliquée avant la séance pour minimiser l’inconfort. Certaines formulations contiennent également un anesthésique local pour améliorer le confort pendant l’injection."],
+      },
+      {
+        question: "Quels sont les effets secondaires possibles après une injection de Skinbooster ?",
+        answer: ["Les effets secondaires sont généralement légers et temporaires. Ils peuvent inclure des rougeurs, un léger gonflement ou de petites ecchymoses aux points d’injection, disparaissant généralement en quelques jours."],
+      },
+      {
+        question: "Combien de temps durent les effets des injections de Skinbooster ?",
+        answer: ["Les résultats des injections de Skinbooster peuvent durer jusqu’à six mois, selon la qualité de la peau et le mode de vie du patient. Des séances d’entretien régulières sont recommandées pour prolonger les effets."],
+      },
+      {
+        question: "Y a-t-il des contre-indications aux injections de Skinbooster ?",
+        answer: ["Les contre-indications incluent l’hypersensibilité à l’un des composants, la grossesse et l’allaitement, les maladies auto-immunes actives, les infections ou inflammations de la zone à traiter, et les traitements anticoagulants. Il est essentiel de discuter de votre état de santé avec votre médecin avant le traitement."],
+      },
+      {
+        question: "Peut-on associer les injections de Skinbooster à d'autres traitements esthétiques ?",
+        answer: ["Oui, les injections de Skinbooster peuvent être combinées avec d’autres traitements esthétiques tels que la toxine botulique, les fillers à base d’acide hyaluronique ou les peelings, pour une approche globale du rajeunissement cutané."],
+      },
+      {
+        question: "Quels sont les soins à suivre après une injection de Skinbooster ?",
+        answer: ["Après une injection de Skinbooster, il est recommandé d’éviter le maquillage et les traitements esthétiques sur la zone injectée pendant 12 heures. Il est également conseillé d’éviter le sauna, le hammam, l’exposition aux UV, le froid intense et l’activité physique intense pendant quelques jours. La consommation d’alcool avant et après les injections peut augmenter le risque d’hématomes."],
       },
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
-    title: "Traitements Complémentaires",
-    subtitle: "Découvrez nos autres solutions pour sublimer votre peau",
+    title: "Ces procedures peuvent aussi vous intéresser",
     procedures: [
       {
         category: "SOIN",
         title: "MÉSOLIFT",
         description: "Revitalisation complète du visage.",
-        image: "https://images.unsplash.com/photo-1522337660859-02fbefca4702",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/mesolift.jpg",
         link: "/injections/soins/mesolift",
       },
       {
-        category: "SOIN",
-        title: "RAJEUNISSEMENT DES MAINS",
-        description: "Traitement anti-âge pour les mains.",
-        image: "https://images.unsplash.com/photo-1502781252888-9143ba7f074e",
-        link: "/injections/soins/rajeunissement-des-mains",
+        category: "INJECTION",
+        title: "SILLONS NASOGÉNIENS",
+        description: "Atténuation des plis d'amertume.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg",
+        link: "/injections/visage/sillons-nasogeniens",
       },
+      {
+        category: "INJECTION",
+        title: "POMMETTES",
+        description: "Restauration du volume des pommettes.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
+        link: "/injections/visage/pommettes",
+      }
     ],
   },
 };
