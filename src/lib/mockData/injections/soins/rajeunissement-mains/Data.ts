@@ -1,25 +1,29 @@
 export const rajeunissementMainsData = {
   hero: {
     title: "Rajeunissement des Mains",
-    subtitle: "Traitement anti-âge complet pour les mains",
-    backgroundImage: "https://images.unsplash.com/photo-1502781252888-9143ba7f074e?auto=format&fit=crop&q=80",
+    subtitle: "INJECTIONS D’ACIDE HYALURONIQUE POUR LE RAJEUNISSEMENT DES MAINS À PARIS",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/rajeunissement-pommettes-visage-injection-paris.jpg",
   },
   intro: {
-    text: "Le traitement de rajeunissement des mains combine différentes techniques pour restaurer le volume, améliorer la qualité de la peau et effacer les signes de l'âge. Une approche globale pour des mains plus jeunes et harmonieuses.",
+    text: "Avec le temps, la peau des mains s’affine et les muscles se réduisent, entraînant une “squelettisation” où les vaisseaux et les os deviennent visibles en relief. L’injection d’acide hyaluronique est une solution efficace pour redensifier la peau et estomper ces signes de vieillissement, offrant des résultats naturels et immédiats.",
   },
   types: {
     title: "Types de Traitements",
-    subtitle: "Une approche personnalisée selon vos besoins",
     items: [
       {
-        title: "Restauration du Volume",
-        description: "Comblement des veines saillantes et des tendons apparents.",
-        imageUrl: "https://images.unsplash.com/photo-1502781252888-9143ba7f074e?auto=format&fit=crop&q=80",
+        title: "Peau fine et transparente",
+        description: "La perte de densité rend les vaisseaux et les os plus visibles.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/medecine-esthetique-prevenir-age-des-20ans.jpeg",
       },
       {
-        title: "Qualité de la Peau",
-        description: "Amélioration de la texture et de l'élasticité cutanée.",
-        imageUrl: "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&q=80",
+        title: "Fonte musculaire",
+        description: "La réduction des muscles accentue le relief des mains, les faisant paraître plus osseuses.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/injections-illegales-medecine-esthetique.jpg",
+      },
+      {
+        title: "Squelettisation",
+        description: "L’apparition de veines proéminentes et de reliefs osseux est un signe visible du vieillissement.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/injections-illegales-medecine-esthetique.jpg",
       },
     ],
   },
@@ -46,12 +50,12 @@ export const rajeunissementMainsData = {
     ],
   },
   video: {
-    title: "Le rajeunissement des mains en vidéo",
-    videoId: "yyQ30IDZFFA",
+    title: "DÉROULEMENT D'UNE SÉANCE DE RAJEUNISSEMENT DES MAINS PAR ACIDE HYALURONIQUE EN VIDÉO",
+    videoId: "XHOmBV4js_E",
   },
   results: {
-    title: "Résultats",
-    subtitle: "Des transformations naturelles et harmonieuses",
+    title: "Exemples de Résultats Obtenus par le Dr Elard",
+    subtitle: "Avant / Après : Exemples de patients ayant bénéficié d’un traitement de l’ovale du visage.",
     videos: [{
       id: '1',
       title: 'Résultat du traitement - Cas 1',
@@ -107,10 +111,10 @@ export const rajeunissementMainsData = {
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
     title: "Traitements Complémentaires",
