@@ -58,11 +58,7 @@ export const pommettesData = {
   results: {
     title: "Exemples de Résultats Obtenus par le Dr Elard",
     subtitle: "Exemples de Résultats - Injections des Pommettes à Paris .",
-    videos: [{
-      id: '1',
-      title: 'Résultat du traitement - Cas 1',
-      url: 'https://www.youtube.com/embed/VIDEO_ID_1'
-    }],
+    iframes: ["https://patient.nextmotion.net/photocompare/8fb22b7f-d6b4-4be8-ae81-0e5c8f636b4f:1tCurs:Zj2HX1Fg8uIpgDDMO4iBM1AHPY9crcsc4I_NYPjJJKZDXe_NRDuOaMIgn5K4QvYRaUwXz2G1fS48n7-V-nYO_A"]
   },
   testimonials: {
     title: "Témoignages",
