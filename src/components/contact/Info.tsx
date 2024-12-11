@@ -64,7 +64,6 @@ export const ContactInfo: React.FC = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Cabinet location"
-            className="grayscale"
           ></iframe>
         </div>
         <div className="absolute bottom-4 right-4">
