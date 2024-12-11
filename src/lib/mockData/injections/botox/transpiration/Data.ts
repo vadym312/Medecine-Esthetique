@@ -1,25 +1,29 @@
 export const transpirationData = {
   hero: {
-    title: "Hyperhidrose",
-    subtitle: "Traitement de la transpiration excessive",
-    backgroundImage: "https://images.unsplash.com/photo-1597931752949-98c74b5b159f?auto=format&fit=crop&q=80",
+    title: "Transpiration",
+    subtitle: "INJECTIONS DE BOTOX POUR TRAITER LA TRANSPIRATION EXCESSIVE",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/traitement-hypersudation-paris-injection-botox.jpg",
   },
   intro: {
-    text: "L'hyperhidrose, ou transpiration excessive, peut avoir un impact significatif sur la qualité de vie. Le traitement par toxine botulique offre une solution efficace et durable pour réduire la transpiration excessive.",
+    text: "La transpiration excessive peut devenir un véritable obstacle au quotidien. Grâce aux injections de Botox, il est possible de réguler efficacement cette surproduction de sueur. Découvrez la méthode du Dr Emmanuel Elard, spécialiste des injectables à Paris, pour un traitement sûr et durable de l’hyperhidrose.",
   },
   types: {
-    title: "Zones de Traitement",
-    subtitle: "Une approche personnalisée selon vos besoins",
+    title: "Les différents cas de rides de la patte d’oie ",
     items: [
       {
-        title: "Aisselles",
-        description: "Traitement de la transpiration axillaire excessive.",
-        imageUrl: "https://images.unsplash.com/photo-1597931752949-98c74b5b159f?auto=format&fit=crop&q=80",
+        title: "Hyperhidrose axillaire (aisselles)",
+        description: "Une transpiration excessive au niveau des aisselles peut causer des gênes sociales et des vêtements tachés.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/transpiration-aisselles.jpg",
       },
       {
-        title: "Mains et Pieds",
-        description: "Solution pour l'hyperhidrose palmaire et plantaire.",
-        imageUrl: "https://images.unsplash.com/photo-1614465000772-1b302f406c47?auto=format&fit=crop&q=80",
+        title: "Hyperhidrose palmaire (mains)",
+        description: "Idéale pour ceux dont les mains moites affectent leur confiance en eux dans leur vie professionnelle ou personnelle.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/hyperhydrose-palmaire.jpg",
+      },
+      {
+        title: "Hyperhidrose plantaire (pieds)",
+        description: "Un traitement efficace pour les patients gênés par la transpiration excessive des pieds.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/hyperhydros-epieds.jpg",
       },
     ],
   },
@@ -85,50 +89,79 @@ export const transpirationData = {
     ],
   },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur le traitement de l'hyperhidrose",
+    title: "FAQ",
     items: [
       {
-        question: "Combien de temps dure le traitement ?",
-        answer: ["La séance dure environ 30-45 minutes selon les zones à traiter."],
+        question: "Comment la toxine botulique agit-elle sur la transpiration excessive ?",
+        answer: ["La toxine botulique bloque temporairement les signaux nerveux responsables de l’activation des glandes sudoripares, réduisant ainsi la production de sueur dans les zones traitées."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: ["Le traitement est peu douloureux grâce à l'application d'une crème anesthésiante si nécessaire."],
+        question: "Le traitement est-il douloureux ?",
+        answer: ["Les injections sont généralement bien tolérées. Une légère sensation de picotement peut être ressentie, mais l’utilisation d’aiguilles très fines minimise l’inconfort."],
       },
       {
-        question: "Quelle est la durée des résultats ?",
-        answer: ["Les résultats durent généralement 6 à 8 mois selon les patients."],
+        question: "Le traitement est-il douloureux ?",
+        answer: ["Les injections de Botox sont généralement bien tolérées. Les aiguilles utilisées sont très fines, et la plupart des Combien de temps les effets du traitement durent-ils ?patients ressentent une gêne minimale. Si nécessaire, une crème anesthésiante peut être appliquée avant la procédure pour augmenter le confort."],
       },
       {
-        question: "Quand les résultats sont-ils visibles ?",
-        answer: ["La réduction de la transpiration est visible dès 48-72h après le traitement."],
+        question: "Quels sont les effets secondaires possibles ?",
+        answer: ["Des rougeurs, des ecchymoses ou une sensibilité temporaire peuvent apparaître au niveau des points d’injection, mais ces effets disparaissent généralement en quelques heures à quelques jours."],
+      },
+      {
+        question: "Y a-t-il des contre-indications au traitement ?",
+        answer: ["Le traitement est déconseillé aux femmes enceintes ou allaitantes, ainsi qu’aux personnes souffrant de certaines affections neuromusculaires. Il est essentiel de discuter de votre état de santé avec le médecin avant de procéder aux injections."],
+      },
+      {
+        question: "Le traitement est-il pris en charge par la sécurité sociale ?",
+        answer: ["Dans certains cas d’hyperhidrose sévère, une prise en charge partielle peut être possible. Il est recommandé de consulter votre médecin et votre organisme de sécurité sociale pour obtenir des informations précises sur les modalités de remboursement."],
+      },
+      {
+        question: "Combien de temps faut-il pour observer les premiers résultats ?",
+        answer: ["Les effets commencent généralement à apparaître entre 3 et 7 jours après le traitement, avec une réduction notable de la transpiration."],
+      },
+      {
+        question: "Le traitement affecte-t-il la transpiration dans d'autres parties du corps ?",
+        answer: ["Non, le traitement cible spécifiquement les zones injectées. La transpiration dans les autres parties du corps reste inchangée."],
+      },
+      {
+        question: "Puis-je reprendre mes activités quotidiennes après le traitement ?",
+        answer: ["Oui, aucune éviction sociale ou professionnelle n’est nécessaire. Il est toutefois conseillé d’éviter les activités physiques intenses et les sources de chaleur excessive pendant les 24 heures suivant les injections."],
+      },
+      {
+        question: "Combien de séances sont nécessaires pour un résultat optimal ?",
+        answer: ["Une seule séance suffit généralement pour observer une réduction significative de la transpiration. Des séances d’entretien peuvent être programmées tous les 4 à 6 mois pour maintenir les effets."],
       },
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
-    title: "Traitements Complémentaires",
-    subtitle: "Découvrez nos autres solutions",
+    title: "Ces procedures peuvent aussi vous intéresser",
     procedures: [
       {
         category: "BOTOX",
         title: "RIDES DU FRONT",
         description: "Traitement des rides horizontales du front.",
-        image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-front.jpg",
         link: "/injections/botox/rides-du-front",
       },
       {
         category: "BOTOX",
-        title: "MASSETER",
-        description: "Traitement du bruxisme et affinement du visage.",
-        image: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6",
-        link: "/injections/botox/masseter",
+        title: "RIDES DU LION",
+        description: "Traitement des rides au coin des yeux.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-ride-lion.jpg",
+        link: "/injections/botox/rides-du-lion",
+      },
+      {
+        category: "BOTOX",
+        title: "PATTES D'OIE",
+        description: "Traitement des rides au coin des yeux.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pattes-doie.jpg",
+        link: "/injections/botox/pattes-d-oie",
       },
     ],
   },

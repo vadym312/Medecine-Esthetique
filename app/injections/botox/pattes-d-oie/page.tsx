@@ -6,7 +6,6 @@ import { TreatmentTypes } from '@/src/components/shared/treatments/Types';
 import { TreatmentProcedure } from '@/src/components/shared/treatments/Procedure';
 import { TreatmentVideo } from '@/src/components/shared/treatments/Video';
 import { TreatmentResults } from '@/src/components/shared/treatments/Results';
-import { TreatmentTestimonials } from '@/src/components/shared/treatments/Testimonials';
 import { TreatmentFAQ } from '@/src/components/shared/treatments/FAQ';
 import { TreatmentCTA } from '@/src/components/shared/treatments/CTA';
 import { RelatedProcedures } from '@/src/components/shared/treatments/RelatedProcedures';
@@ -27,7 +26,6 @@ const PattesOiePage: React.FC = () => {
       <TreatmentProcedure {...pattesOieData.procedure} />
       <TreatmentVideo {...pattesOieData.video} />
       <TreatmentResults {...pattesOieData.results} />
-      <TreatmentTestimonials {...pattesOieData.testimonials} />
       <TreatmentFAQ {...pattesOieData.faq} />
       <TreatmentCTA {...pattesOieData.cta} />
       <RelatedProcedures {...pattesOieData.relatedProcedures} />

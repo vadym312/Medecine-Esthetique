@@ -68,7 +68,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true }}
-                className="relative pb-[50%] h-0 rounded-xl flex justify-center overflow-hidden shadow-lg"
+                className="relative pb-[60%] h-0 rounded-xl flex justify-center overflow-hidden shadow-lg"
               >
                 <iframe
                   src={iframe}
@@ -89,7 +89,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true }}
-                className="relative pb-[50%] h-0 rounded-xl flex justify-center overflow-hidden shadow-lg"
+                className="relative pb-[100%] h-0 rounded-xl flex justify-center overflow-hidden shadow-lg"
               >
                 <iframe
                   src={`https://www.youtube.com/embed/${video.url}`}

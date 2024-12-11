@@ -1,25 +1,29 @@
 export const masseterData = {
   hero: {
     title: "Masseter",
-    subtitle: "Traitement du muscle masséter par toxine botulique",
-    backgroundImage: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&q=80",
+    subtitle: "INJECTIONS DE BOTOX DANS LES MASSÉTERS POUR AFFINER LA MÂCHOIRE",
+    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/dessiner-ovale-visage-injections-acide-hyaluronique-paris.jpg",
   },
   intro: {
-    text: "Le traitement du muscle masséter par toxine botulique permet d'affiner l'ovale du visage et de soulager les symptômes du bruxisme. Cette technique offre une solution à la fois esthétique et thérapeutique.",
+    text: "Rêvez-vous d’une mâchoire plus fine et harmonieuse ? Grâce aux injections de botox dans les masséters, il est possible d’affiner la mâchoire sans chirurgie et d’adoucir les contours du visage. Découvrez cette technique innovante réalisée par le Dr Emmanuel Elard, expert en médecine esthétique à Paris.",
   },
   types: {
-    title: "Types de Traitements",
-    subtitle: "Une approche personnalisée selon vos besoins",
+    title: "Les avantages des injections de botox dans les masséters",
     items: [
       {
-        title: "Affinement du Visage",
-        description: "Réduction du volume des muscles masséters pour un visage plus fin.",
-        imageUrl: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&q=80",
+        title: "Mâchoire carrée",
+        description: "Réduction subtile du volume des masséters pour obtenir un contour plus fin.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/machoire-carree.jpg",
       },
       {
-        title: "Traitement du Bruxisme",
-        description: "Soulagement des tensions liées au grincement des dents.",
-        imageUrl: "https://images.unsplash.com/photo-1606818616331-32df8f8f59df?auto=format&fit=crop&q=80",
+        title: "Bruxisme",
+        description: "Diminution des tensions musculaires et soulagement des douleurs liées au grincement des dents.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/bruxisme.jpg",
+      },
+      {
+        title: "Adoucissement des traits",
+        description: "Un visage visuellement plus harmonieux, sans changer l’identité naturelle du patient.",
+        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/affiner-visage.jpg",
       },
     ],
   },
@@ -85,50 +89,79 @@ export const masseterData = {
     ],
   },
   faq: {
-    title: "Questions Fréquentes",
-    subtitle: "Tout savoir sur le traitement des masséters",
+    title: "FAQ",
     items: [
       {
-        question: "Combien de temps dure le traitement ?",
-        answer: ["La séance dure environ 15-20 minutes. Les résultats apparaissent progressivement sur 2-3 semaines."],
+        question: "Qu'est-ce que le Botox dans les masséters ?",
+        answer: ["Le Botox, ou toxine botulique, est injecté dans les muscles masséters pour réduire leur volume. Cela permet d’affiner la mâchoire et d’adoucir les contours du visage. Ce traitement est également efficace pour diminuer le bruxisme (grincement des dents)."],
       },
       {
-        question: "Est-ce douloureux ?",
-        answer: ["Le traitement est très peu douloureux, ressenti comme de petites piqûres d'aiguille."],
+        question: "Comment se déroule la procédure ?",
+        answer: ["Après une consultation initiale, le praticien injecte le Botox directement dans les masséters à l’aide d’aiguilles fines. La séance dure généralement entre 15 et 20 minutes et ne nécessite pas d’anesthésie."],
       },
       {
-        question: "Quelle est la durée des résultats ?",
-        answer: ["Les résultats durent généralement 6 à 8 mois selon les patients."],
+        question: "Quels sont les effets secondaires possibles ?",
+        answer: ["Les effets secondaires sont rares et temporaires. Ils peuvent inclure des rougeurs, des ecchymoses ou une légère sensibilité au site d’injection. Ces symptômes disparaissent généralement en quelques heures à quelques jours."],
       },
       {
-        question: "Y a-t-il une période d'éviction sociale ?",
-        answer: ["Non, vous pouvez reprendre vos activités immédiatement après le traitement."],
+        question: "Quand les résultats sont-ils visibles et combien de temps durent-ils ?",
+        answer: ["Les premiers effets apparaissent entre 7 et 10 jours après l’injection, avec un résultat optimal atteint en 4 à 6 semaines. Les effets durent généralement entre 4 et 6 mois, après quoi des injections d’entretien sont recommandées pour maintenir les résultats."],
+      },
+      {
+        question: "Le traitement est-il douloureux ?",
+        answer: ["La procédure est généralement bien tolérée. Les patients ressentent une légère piqûre lors de l’injection, mais la douleur est minimale et ne nécessite pas d’anesthésie."],
+      },
+      {
+        question: "Y a-t-il des contre-indications au Botox dans les masséters ?",
+        answer: ["Les contre-indications incluent la grossesse, l’allaitement, certaines maladies neuromusculaires et des allergies connues à la toxine botulique. Il est essentiel de discuter de votre historique médical avec le praticien avant le traitement."],
+      },
+      {
+        question: "Puis-je reprendre mes activités normales après le traitement ?",
+        answer: ["Oui, la plupart des patients reprennent leurs activités quotidiennes immédiatement après la séance. Il est toutefois conseillé d’éviter les exercices intenses et les massages de la zone traitée pendant 24 heures."],
+      },
+      {
+        question: "Le Botox dans les masséters affecte-t-il la mastication ?",
+        answer: ["Lorsqu’il est administré correctement, le Botox réduit la force des masséters sans compromettre la fonction de mastication. Il est important de consulter un praticien expérimenté pour minimiser les risques."],
+      },
+      {
+        question: "Combien coûte le traitement ?",
+        answer: ["Le coût de ce traitement est de 600€"],
+      },
+      {
+        question: "Comment choisir un praticien qualifié pour ce traitement ?",
+        answer: ["Assurez-vous que le praticien est un professionnel de santé qualifié, avec une formation spécifique en injections de toxine botulique. N’hésitez pas à demander des références, à consulter des avis de patients et à vérifier les certifications du praticien."],
       },
     ],
   },
   cta: {
-    title: "Prenez Rendez-vous",
-    description: "Consultez nos experts pour une évaluation personnalisée",
-    buttonText: "Réserver une Consultation",
-    buttonLink: "/contact",
+    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
+    buttonText: "Prendre Rendez-vous",
+    buttonLink: "https://drelard.booking.nextmotion.net",
   },
   relatedProcedures: {
-    title: "Traitements Complémentaires",
-    subtitle: "Découvrez nos autres solutions pour sublimer votre visage",
+    title: "Ces procedures peuvent aussi vous intéresser",
     procedures: [
       {
         category: "BOTOX",
         title: "RIDES DU FRONT",
         description: "Traitement des rides horizontales du front.",
-        image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-front.jpg",
         link: "/injections/botox/rides-du-front",
       },
       {
-        category: "INJECTION",
-        title: "OVALE DU VISAGE",
-        description: "Redéfinition des contours du visage.",
-        image: "https://images.unsplash.com/photo-1523263685509-57c1d050d19b",
-        link: "/injections/visage/ovale-du-visage",
+        category: "BOTOX",
+        title: "RIDES DU LION",
+        description: "Traitement des rides au coin des yeux.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-ride-lion.jpg",
+        link: "/injections/botox/rides-du-lion",
+      },
+      {
+        category: "BOTOX",
+        title: "TRANSPIRATION",
+        description: "Traitement des transpiration.",
+        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-transpiration.jpg",
+        link: "/injections/botox/transpiration",
       },
     ],
   },
