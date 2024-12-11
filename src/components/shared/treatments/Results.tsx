@@ -60,7 +60,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
           </motion.p>
         </div>
         {iframes && iframes.length > 0 &&
-          <div className={`grid md:grid-cols-${iframes.length} gap-8 max-w-5xl mx-auto`}>
+          <div className={`grid md:grid-cols-${iframes.length} gap-8 max-w-5xl mx-auto mb-6`}>
             {iframes.map((iframe, index) => (
               <motion.div
                 key={index}
