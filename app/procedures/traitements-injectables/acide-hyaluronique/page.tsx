@@ -1,72 +1,39 @@
 'use client';
 
 import React from 'react';
-import { Hero } from '@/src/components/procedures/traitements-injectables/acide-hyaluronique/Hero';
+import { TreatmentHero } from '@/src/components/shared/treatments/Hero';
 import { KeyPointsGrid } from '@/src/components/procedures/traitements-injectables/acide-hyaluronique/KeyPoints/Grid';
-import { VideoSection } from '@/src/components/procedures/traitements-injectables/acide-hyaluronique/Video';
-import { CaseStudySection } from '@/src/components/procedures/traitements-injectables/acide-hyaluronique/CaseStudy';
-import { ExpertiseSection } from '@/src/components/procedures/traitements-injectables/acide-hyaluronique/Expertise';
-import { TestimonialsSection } from '@/src/components/procedures/traitements-injectables/acide-hyaluronique/Testimonials';
-import { AppointmentSection } from '@/src/components/procedures/traitements-injectables/acide-hyaluronique/Appointment';
+import { ContentSection } from '@/src/components/procedures/traitements-injectables/Content';
+import { CallToAction } from '@/src/components/procedures/traitements-injectables/CallToAction';
 import { ProceduresGrid } from '@/src/components/procedures/Grid';
 import { hyaluronicAcidKeyPoints } from '@/src/lib/mockData/procedures/traitements-injectables/acide-hyaluronique/KeyPoints';
-
-import {
-  introSection,
-  agingSection,
-  techniquesSection,
-  resultsSection,
-  caseStudyData,
-  expertiseData,
-  testimonials,
-  relatedProcedures,
-} from '@/src/lib/mockData/procedures/traitements-injectables/acide-hyaluronique/Data';
+import { acideData } from '@/src/lib/mockData/procedures/traitements-injectables/acide-hyaluronique/Data';
 
 const AcideHyaluroniquePage: React.FC = () => {
   return (
     <>
-      <Hero
-        title="Acide Hyaluronique"
-        subtitle="La solution naturelle pour un rajeunissement harmonieux"
-        imageUrl="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d"
-      />
+      <TreatmentHero {...acideData.hero} />
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {acideData.introText.map((intro, index) =>
+          <p className="text-center text-lg text-gray-700 leading-relaxed" key={index}>
+            {intro}
+          </p>
+        )}
+      </div>
 
       <KeyPointsGrid
         title="Points Clés de l'Acide Hyaluronique"
         points={hyaluronicAcidKeyPoints}
       />
+      {acideData.content.map((section, index) =>
+        <ContentSection {...section} key={`acide-${index}`} className={`${index % 2 == 0 ? "bg-white" : "bg-gray-50"}`} />
+      )}
 
-      <VideoSection {...introSection} className="bg-white" isReversed={false} />
-
-      <VideoSection
-        {...agingSection}
-        className="bg-gray-50"
-        isReversed={true}
-      />
-
-      <VideoSection
-        {...techniquesSection}
-        className="bg-white"
-        isReversed={false}
-      />
-
-      <VideoSection
-        {...resultsSection}
-        className="bg-gray-50"
-        isReversed={true}
-      />
-
-      <CaseStudySection {...caseStudyData} className="bg-white" />
-
-      <ExpertiseSection {...expertiseData} className="bg-gray-50" />
-
-      <TestimonialsSection testimonials={testimonials} className="bg-white" />
-
-      <AppointmentSection className="bg-gradient-to-br from-gold/10 via-gold/5 to-transparent" />
+      <CallToAction {...acideData.cta}/>
 
       <ProceduresGrid
-        title="Ces procédures pourraient vous intéresser"
-        procedures={relatedProcedures}
+        {...acideData.relatedProcedures}
         className="bg-gray-50"
       />
     </>

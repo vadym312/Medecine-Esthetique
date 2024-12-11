@@ -29,14 +29,13 @@ export const TreatmentCTA: React.FC<CTAProps> = ({
           viewport={{ once: true }}
           className="max-w-3xl mx-auto"
         >
-          <motion.a
-            href={buttonLink}
+          <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-block"
           >
             <img src={image} alt="avatar"/>
-          </motion.a>
+          </motion.div>
           <h2 className="text-4xl font-bold text-white mb-4">{title}</h2>
           <p className="text-xl text-gray-300 mb-8">{description}</p>
           <motion.a

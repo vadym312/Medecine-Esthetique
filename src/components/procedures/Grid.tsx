@@ -12,12 +12,13 @@ export interface RelatedProcedure {
 }
 
 interface ProceduresGridProps {
-  title: string;
+  title?: string;
+  subtitle?: string;
   procedures: RelatedProcedure[];
   className?: string; 
 }
 
-export const ProceduresGrid = ({ title, procedures, className }: ProceduresGridProps) => {
+export const ProceduresGrid = ({ title, subtitle, procedures, className }: ProceduresGridProps) => {
   const [ref, inView, controls] = useIntersectionAnimation();
 
   return (
@@ -30,6 +31,7 @@ export const ProceduresGrid = ({ title, procedures, className }: ProceduresGridP
           className="space-y-12"
         >
           <h2 className="text-3xl font-bold text-center mb-12">{title}</h2>
+          <p className='text-lg text-text-primary'>{subtitle}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {procedures.map((procedure, index) => (
               <ProcedureCard

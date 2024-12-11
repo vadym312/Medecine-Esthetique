@@ -8,16 +8,19 @@ export interface RelatedProcedure {
 }
 
 interface RelatedProceduresProps {
+  title: string;
+  subtitle?: string;
   procedures: RelatedProcedure[];
 }
 
-export const RelatedProcedures = ({ procedures }: RelatedProceduresProps) => {
+export const RelatedProcedures = ({ title, subtitle, procedures }: RelatedProceduresProps) => {
   return (
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-montserrat font-bold text-center mb-12">
-          Procédures associées
+        <h2 className="text-3xl font-montserrat font-bold text-center mb-3">
+          {title}
         </h2>
+        <p className="text-gray-600 leading-relaxed text-center mb-5">{subtitle}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {procedures.map((procedure, index) => (
             <motion.div
