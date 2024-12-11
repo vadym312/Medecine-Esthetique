@@ -1,76 +1,34 @@
 'use client';
 
 import React from 'react';
-import { Hero } from '@/src/components/procedures/technologies-avancees/hifu/Hero';
-import { KeyPointsGrid } from '@/src/components/procedures/technologies-avancees/hifu/KeyPoints/Grid';
-import { VideoSection } from '@/src/components/procedures/technologies-avancees/hifu/Video';
-import { CaseStudySection } from '@/src/components/procedures/technologies-avancees/hifu/CaseStudy';
-import { ExpertiseSection } from '@/src/components/procedures/technologies-avancees/hifu/Expertise';
-import { TestimonialsSection } from '@/src/components/procedures/technologies-avancees/hifu/Testimonials';
-import { AppointmentSection } from '@/src/components/procedures/technologies-avancees/hifu/Appointment';
-import { ProceduresGrid } from '@/src/components/procedures/Grid';
-import { hifuKeyPoints } from '@/src/lib/mockData/procedures/technologies-avancees/hifu/KeyPoints';
+import { TreatmentHero } from '@/src/components/shared/treatments/Hero';
+import { TreatmentTypes } from '@/src/components/shared/treatments/Types';
+import { TreatmentProcedure } from '@/src/components/shared/treatments/Procedure';
+import { TreatmentVideo } from '@/src/components/shared/treatments/Video';
+import { TreatmentResults } from '@/src/components/shared/treatments/Results';
+import { TreatmentFAQ } from '@/src/components/shared/treatments/FAQ';
+import { TreatmentCTA } from '@/src/components/shared/treatments/CTA';
+import { hifuData } from '@/src/lib/mockData/procedures/technologies-avancees/hifu/Data';
 
-import {
-  introSection,
-  agingSection,
-  techniquesSection,
-  resultsSection,
-  caseStudyData,
-  expertiseData,
-  testimonials,
-  relatedProcedures,
-} from '@/src/lib/mockData/procedures/technologies-avancees/hifu/Data';
-
-const HifuPage: React.FC = () => {
+const CernesPage: React.FC = () => {
   return (
     <>
-      <Hero
-        title="HIFU"
-        subtitle="Lifting Sans Chirurgie"
-        imageUrl="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d"
-      />
+      <TreatmentHero {...hifuData.hero} />
+      
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <p className="text-center text-lg text-gray-700 leading-relaxed">
+          {hifuData.intro.text}
+        </p>
+      </div>
 
-      <KeyPointsGrid
-        title="Points Clés du Traitement"
-        points={hifuKeyPoints}
-      />
-
-      <VideoSection {...introSection} className="bg-white" isReversed={false} />
-
-      <VideoSection
-        {...agingSection}
-        className="bg-gray-50"
-        isReversed={true}
-      />
-
-      <VideoSection
-        {...techniquesSection}
-        className="bg-white"
-        isReversed={false}
-      />
-
-      <VideoSection
-        {...resultsSection}
-        className="bg-gray-50"
-        isReversed={true}
-      />
-
-      <CaseStudySection {...caseStudyData} className="bg-white" />
-
-      <ExpertiseSection {...expertiseData} className="bg-gray-50" />
-
-      <TestimonialsSection testimonials={testimonials} className="bg-white" />
-
-      <AppointmentSection className="bg-gradient-to-br from-gold/10 via-gold/5 to-transparent" />
-
-      <ProceduresGrid
-        title="Ces procédures pourraient vous intéresser"
-        procedures={relatedProcedures}
-        className="bg-gray-50"
-      />
+      <TreatmentTypes {...hifuData.types} />
+      <TreatmentProcedure {...hifuData.procedure} />
+      <TreatmentVideo {...hifuData.video} />
+      <TreatmentResults {...hifuData.results} />
+      <TreatmentFAQ {...hifuData.faq} />
+      <TreatmentCTA {...hifuData.cta} />
     </>
   );
 };
 
-export default HifuPage;
+export default CernesPage;
