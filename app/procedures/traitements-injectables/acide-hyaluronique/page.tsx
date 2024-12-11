@@ -4,7 +4,7 @@ import React from 'react';
 import { TreatmentHero } from '@/src/components/shared/treatments/Hero';
 import { KeyPointsGrid } from '@/src/components/procedures/traitements-injectables/acide-hyaluronique/KeyPoints/Grid';
 import { ContentSection } from '@/src/components/procedures/traitements-injectables/Content';
-import { AppointmentSection } from '@/src/components/procedures/traitements-injectables/acide-hyaluronique/Appointment';
+import { CallToAction } from '@/src/components/procedures/traitements-injectables/CallToAction';
 import { ProceduresGrid } from '@/src/components/procedures/Grid';
 import { hyaluronicAcidKeyPoints } from '@/src/lib/mockData/procedures/traitements-injectables/acide-hyaluronique/KeyPoints';
 import { acideData } from '@/src/lib/mockData/procedures/traitements-injectables/acide-hyaluronique/Data';
@@ -26,46 +26,11 @@ const AcideHyaluroniquePage: React.FC = () => {
         title="Points Clés de l'Acide Hyaluronique"
         points={hyaluronicAcidKeyPoints}
       />
+      {acideData.content.map((section, index) =>
+        <ContentSection {...section} key={`acide-${index}`} className={`${index % 2 == 0 ? "bg-white" : "bg-gray-50"}`} />
+      )}
 
-      <ContentSection {...acideData.introSection} className="bg-white" isReversed={false} />
-
-      <ContentSection
-        {...acideData.agingSection}
-        className="bg-gray-50"
-        isReversed={true}
-      />
-
-      <ContentSection
-        {...acideData.techniquesSection}
-        className="bg-white"
-        isReversed={false}
-      />
-
-      <ContentSection
-        {...acideData.resultsSection}
-        className="bg-white"
-        isReversed={false}
-      />
-
-      <ContentSection
-        {...acideData.patientSection}
-        className="bg-gray-50"
-        isReversed={false}
-      />
-
-      <ContentSection
-        {...acideData.emotionSection}
-        className="bg-white"
-        isReversed={true}
-      />
-
-      <ContentSection
-        {...acideData.expertiseSection}
-        className="bg-gray-50"
-        isReversed={false}
-      />
-
-      <AppointmentSection className="bg-gradient-to-br from-gold/10 via-gold/5 to-transparent" />
+      <CallToAction {...acideData.cta}/>
 
       <ProceduresGrid
         {...acideData.relatedProcedures}

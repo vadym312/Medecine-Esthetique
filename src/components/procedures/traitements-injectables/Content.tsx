@@ -8,6 +8,7 @@ import { slideUp } from '@/src/utils/animations';
 
 interface SubContent {
   title?: string;
+  subtitle?: string;
   lists?: string[];
 }
 interface VideoSectionProps {
@@ -16,6 +17,7 @@ interface VideoSectionProps {
   description?: string;
   lists?: string[];
   subcontent?: SubContent[]
+  question?: string;
   videoId?: string;
   imageUrl?: string;
   iframeUrl?: string;
@@ -29,6 +31,7 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
   description,
   lists,
   subcontent,
+  question,
   videoId,
   imageUrl,
   iframeUrl,
@@ -47,25 +50,27 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
           className={`grid md:grid-cols-2 gap-12 items-center ${isReversed ? 'direction-rtl' : ''
             }`}
         >
-          <div className={`space-y-3 ${isReversed ? 'md:order-2' : ''}`}>
+          <div className={`space-y-3 ${isReversed && 'md:order-2'}`}>
             <h2 className="text-3xl font-bold text-text-primary">{title}</h2>
             {subtitle && <p className="text-text-secondary leading-relaxed">{subtitle}</p>}
             {description && <p className="text-text-secondary leading-relaxed">{description}</p>}
             <ul className='list-inside'>
-              {lists && lists.map((list, index) =>
-                <li className="text-text-secondary leading-relaxed list-disc" key={index}>{list}</li>
+              {lists && lists.map((list) =>
+                <li className="text-text-secondary leading-relaxed list-disc" key={list}>{list}</li>
               )}
             </ul>
             {subcontent && subcontent.map((sub: SubContent, index: number) =>
-              <>
-                <p className="text-text-primary text-xl font-medium leading-relaxed" key={index}>{sub.title}</p>
+              <div key={index}>
+                <p className="text-text-primary text-xl font-semibold leading-relaxed mb-3">{sub.title}</p>
+                <p className="text-text-primary leading-relaxed">{sub.subtitle}</p>
                 <ul className='list-inside'>
-                  {sub && sub.lists?.map((sublist: string, idx: number) =>
-                    <li className="text-text-secondary leading-relaxed list-disc" key={idx}>{sublist}</li>
+                  {sub && sub.lists?.map((sublist: string) =>
+                    <li className="text-text-secondary leading-relaxed list-disc" key={sublist}>{sublist}</li>
                   )}
                 </ul>
-              </>
+              </div>
             )}
+            {question && <p className="text-text-secondary leading-relaxed">{question}</p>}
           </div>
           <div
             className={`relative aspect-video rounded-lg overflow-hidden shadow-lg ${isReversed ? 'md:order-1' : ''

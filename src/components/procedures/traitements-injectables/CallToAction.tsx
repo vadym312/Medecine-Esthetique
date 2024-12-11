@@ -2,8 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Calendar } from 'lucide-react';
+import Link from 'next/link';
 
-export const CallToAction = () => {
+interface CTAProps {
+  title?: string;
+  description?: string;
+  imageUrl?: string;
+  buttonText: string;
+  buttonLink: string;
+  tip?: string;
+}
+
+export const CallToAction: React.FC<CTAProps> = ({ title, description, imageUrl, buttonText, buttonLink, tip }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -20,29 +30,34 @@ export const CallToAction = () => {
         transition={{ duration: 0.8 }}
         className="max-w-4xl mx-auto text-center"
       >
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="inline-block"
+        >
+          <img src={imageUrl} alt="avatar" />
+        </motion.div>
         <h2 className="text-3xl font-bold mb-6">
-          Prenez Rendez-vous pour une Consultation Personnalisée
+          {title}
         </h2>
         <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-          Découvrez comment l'acide hyaluronique peut sublimer naturellement
-          votre beauté. Notre expertise est à votre service pour un résultat sur
-          mesure.
+          {description}
         </p>
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="inline-block"
         >
-          <a
-            href="#"
+          <Link
+            href={buttonLink}
             className="inline-flex items-center px-8 py-4 bg-gold hover:bg-gold/90 text-white rounded-lg shadow-lg transition-colors duration-300"
           >
             <Calendar className="w-5 h-5 mr-2" />
-            Prendre Rendez-vous
-          </a>
+            {buttonText}
+          </Link>
         </motion.div>
         <p className="mt-6 text-sm text-gray-500">
-          Consultation initiale sans engagement • Réponse sous 24h
+          {tip}
         </p>
       </motion.div>
     </section>
