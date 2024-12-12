@@ -17,7 +17,7 @@ export const DoctorBanner: React.FC = () => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl font-light tracking-wide"
+            className="text-4xl tracking-wide"
           >
             {doctor.name}
           </motion.h2>
@@ -51,7 +51,11 @@ export const DoctorBanner: React.FC = () => {
             className="space-y-6"
           >
             <h2 className="text-3xl font-bold">{doctor.name}</h2>
-            <p className="text-primary-dark">{doctor.description}</p>
+            <div>
+              {doctor.description && doctor.description.map((text, index) =>
+                <p className="text-primary-dark" key={index}>{text}</p>
+              )}
+            </div>
 
             <div className="space-y-4">
               {doctor.qualifications.map((qualification: any) => {

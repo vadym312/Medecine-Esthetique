@@ -1,5 +1,5 @@
 export const hero = {
-  title: 'MÉDECINE ESTHÉTIQUE À PARIS',
+  title: 'Bienvenue au Cabinet du Dr Emmanuel Elard - Médecine Esthétique à Paris',
   subtitle:
     "Les détails font la perfection,\nla perfection n'est pas un détail.",
   backgroundImage: {
