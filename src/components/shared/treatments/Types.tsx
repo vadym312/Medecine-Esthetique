@@ -6,7 +6,7 @@ import { fadeIn } from '@/src/utils/animations';
 
 interface TypeItem {
   title: string;
-  description: string;
+  description?: string;
   imageUrl: string;
 }
 

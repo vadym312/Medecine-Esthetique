@@ -4,6 +4,7 @@ import React from 'react';
 import { TreatmentHero } from '@/src/components/shared/treatments/Hero';
 import { TreatmentTypes } from '@/src/components/shared/treatments/Types';
 import { TreatmentProcedure } from '@/src/components/shared/treatments/Procedure';
+import { TreatmentVideo } from '@/src/components/shared/treatments/Video';
 import { TreatmentFAQ } from '@/src/components/shared/treatments/FAQ';
 import { TreatmentCTA } from '@/src/components/shared/treatments/CTA';
 import { pelxrData } from '@/src/lib/mockData/procedures/traitements-specialises/plexr/Data';
@@ -21,6 +22,7 @@ const CernesPage: React.FC = () => {
 
       <TreatmentTypes {...pelxrData.types} />
       <TreatmentProcedure {...pelxrData.procedure} />
+      <TreatmentVideo {...pelxrData.video} />
       <TreatmentFAQ {...pelxrData.faq} />
       <TreatmentCTA {...pelxrData.cta} />
     </>
