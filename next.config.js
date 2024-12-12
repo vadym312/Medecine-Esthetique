@@ -54,7 +54,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:; frame-src 'self' https://www.youtube.com/ https://www.youtube-nocookie.com/ https://patient.nextmotion.net/ https://www.google.com/; ".replace(/\s{2,}/g, ' ').trim()
+            value: "default-src 'self'; media-src 'self' https:; img-src 'self' data: https:; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:; frame-src 'self' https://www.youtube.com/ https://www.youtube-nocookie.com/ https://patient.nextmotion.net/ https://www.google.com/; ".replace(/\s{2,}/g, ' ').trim()
           }
         ]
       }

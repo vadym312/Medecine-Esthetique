@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Container } from '../ui/Container';
 import { instagramPosts } from '@/src/lib/mockData/homepage/instagramPosts';
+import { Play } from 'lucide-react';
 
 export const InstagramFeed: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ export const InstagramFeed: React.FC = () => {
           {instagramPosts.data.map((post: any, index: number) => (
             <motion.a
               key={post.id}
-              href="https://instagram.com/dr.elard"
+              href={`https://www.instagram.com/reel/${post.id}`}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
@@ -38,6 +39,9 @@ export const InstagramFeed: React.FC = () => {
                 alt={post.alt}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                <Play className='w-16 h-16' fill='white'/>
+              </div>
               <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.a>
           ))}
