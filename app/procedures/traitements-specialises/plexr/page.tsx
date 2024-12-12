@@ -1,76 +1,30 @@
 'use client';
 
 import React from 'react';
-import { Hero } from '@/src/components/procedures/traitements-specialises/plexr/Hero';
-import { KeyPointsGrid } from '@/src/components/procedures/traitements-specialises/plexr/KeyPoints/Grid';
-import { VideoSection } from '@/src/components/procedures/traitements-specialises/plexr/Video';
-import { CaseStudySection } from '@/src/components/procedures/traitements-specialises/plexr/CaseStudy';
-import { ExpertiseSection } from '@/src/components/procedures/traitements-specialises/plexr/Expertise';
-import { TestimonialsSection } from '@/src/components/procedures/traitements-specialises/plexr/Testimonials';
-import { AppointmentSection } from '@/src/components/procedures/traitements-specialises/plexr/Appointment';
-import { ProceduresGrid } from '@/src/components/procedures/Grid';
-import { plexrKeyPoints } from '@/src/lib/mockData/procedures/traitements-specialises/plexr/KeyPoints';
+import { TreatmentHero } from '@/src/components/shared/treatments/Hero';
+import { TreatmentTypes } from '@/src/components/shared/treatments/Types';
+import { TreatmentProcedure } from '@/src/components/shared/treatments/Procedure';
+import { TreatmentFAQ } from '@/src/components/shared/treatments/FAQ';
+import { TreatmentCTA } from '@/src/components/shared/treatments/CTA';
+import { pelxrData } from '@/src/lib/mockData/procedures/traitements-specialises/plexr/Data';
 
-import {
-  introSection,
-  agingSection,
-  techniquesSection,
-  resultsSection,
-  caseStudyData,
-  expertiseData,
-  testimonials,
-  relatedProcedures,
-} from '@/src/lib/mockData/procedures/traitements-specialises/plexr/Data';
-
-const PlexrPage: React.FC = () => {
+const CernesPage: React.FC = () => {
   return (
     <>
-      <Hero
-        title="Plexr"
-        subtitle="Blépharoplastie Sans Chirurgie"
-        imageUrl="https://images.unsplash.com/photo-1522337094846-8a818192de1f"
-      />
+      <TreatmentHero {...pelxrData.hero} />
+      
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <p className="text-center text-lg text-gray-700 leading-relaxed">
+          {pelxrData.intro.text}
+        </p>
+      </div>
 
-      <KeyPointsGrid
-        title="Points Clés du Traitement"
-        points={plexrKeyPoints}
-      />
-
-      <VideoSection {...introSection} className="bg-white" isReversed={false} />
-
-      <VideoSection
-        {...agingSection}
-        className="bg-gray-50"
-        isReversed={true}
-      />
-
-      <VideoSection
-        {...techniquesSection}
-        className="bg-white"
-        isReversed={false}
-      />
-
-      <VideoSection
-        {...resultsSection}
-        className="bg-gray-50"
-        isReversed={true}
-      />
-
-      <CaseStudySection {...caseStudyData} className="bg-white" />
-
-      <ExpertiseSection {...expertiseData} className="bg-gray-50" />
-
-      <TestimonialsSection testimonials={testimonials} className="bg-white" />
-
-      <AppointmentSection className="bg-gradient-to-br from-gold/10 via-gold/5 to-transparent" />
-
-      <ProceduresGrid
-        title="Ces procédures pourraient vous intéresser"
-        procedures={relatedProcedures}
-        className="bg-gray-50"
-      />
+      <TreatmentTypes {...pelxrData.types} />
+      <TreatmentProcedure {...pelxrData.procedure} />
+      <TreatmentFAQ {...pelxrData.faq} />
+      <TreatmentCTA {...pelxrData.cta} />
     </>
   );
 };
 
-export default PlexrPage;
+export default CernesPage;
