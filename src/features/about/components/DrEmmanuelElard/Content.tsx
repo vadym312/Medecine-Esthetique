@@ -46,18 +46,19 @@ export const Results: React.FC<ResultsSectionProps> = ({
           variants={slideUp}
           initial="initial"
           animate={controls}
-          className={`grid md:grid-cols-2 items-center`}
+          className={`grid md:grid-cols-2 gap-12 items-center`}
         >
           <motion.div
             variants={fadeIn}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
+            className='relative h-[550px]'
           >
             <img
               src={imageUrl}
               alt='result'
-              className='w-3/5'
+              className='w-full h-full object-cover rounded-lg shadow-lg'
             />
           </motion.div>
           <div className="space-y-3">

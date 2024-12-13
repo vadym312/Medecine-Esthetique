@@ -2,11 +2,10 @@
 
 import React from 'react';
 import { getMockPage } from '@/src/lib/mockData/about/le-cabinet';
-import { motion } from 'framer-motion';
-import { fadeIn } from '@/src/utils/animations';
 import { HeroSection } from './Hero';
 import { TechnologySection } from './Technology';
 import { EnvironmentSection } from './Environment';
+import { ReasonSection } from './Reason';
 import { BookingSection } from './Booking';
 import { ContactSection } from './Contact';
 
@@ -34,6 +33,7 @@ export const LeCabinet: React.FC = () => {
       <HeroSection />
       <TechnologySection />
       <EnvironmentSection />
+      <ReasonSection/>
       <BookingSection />
       <ContactSection />
     </>
