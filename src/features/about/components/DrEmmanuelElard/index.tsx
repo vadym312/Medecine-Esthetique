@@ -8,7 +8,7 @@ import { Qualifications } from './Qualifications';
 import { Training } from './Training';
 import { Award } from './Award';
 import { Testimonials } from './Testimonials';
-import { Map } from './Map';
+import { Results } from './Content'
 
 interface DrEmmanuelElardProps {
   initialData: {
@@ -20,7 +20,7 @@ interface DrEmmanuelElardProps {
       training: React.ComponentProps<typeof Training>;
       award: React.ComponentProps<typeof Award>;
       testimonials: React.ComponentProps<typeof Testimonials>;
-      contact: React.ComponentProps<typeof Map>;
+      results: React. ComponentProps<typeof Results>;
     };
   };
 }
@@ -35,7 +35,7 @@ export const DrEmmanuelElard: React.FC<DrEmmanuelElardProps> = ({ initialData })
       <Training {...initialData.home.training} />
       <Award {...initialData.home.award} />
       <Testimonials {...initialData.home.testimonials} />
-      <Map {...initialData.home.contact} />
+      <Results {...initialData.home.results}/>
     </>
   );
 };

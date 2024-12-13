@@ -5,13 +5,13 @@ export const mockdrData = {
       description:
         "Expert en médecine esthétique à Paris, le Dr Emmanuel Elard propose des solutions personnalisées d'injections et de rajeunissement. Résultats naturels garantis.",
       ogImage:
-        'https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80',
+        'https://medecine-esthetique.net/wp-content/uploads/2023/07/dr-elard-specialiste-anti-age-paris.jpg',
     },
     hero: {
       title: 'DR EMMANUEL ELARD',
       subtitle: 'MÉDECIN ESTHÉTIQUE EXPERT EN INJECTIONS',
       backgroundImage:
-        'https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80',
+        'https://medecine-esthetique.net/wp-content/uploads/2023/07/dr-elard-specialiste-anti-age-paris.jpg',
       award: {
         text: "Innovateur de l'Année 2023 - Aesthetic Awards",
         year: 2023,
@@ -20,11 +20,11 @@ export const mockdrData = {
     biography: {
       title: 'EXPERT EN MÉDECINE ESTHÉTIQUE',
       paragraphs: [
-        "Depuis plus de dix ans, le Dr Emmanuel Elard s'est spécialisé en médecine esthétique, particulièrement dans les techniques d'injection. Son expertise et sa maîtrise des dernières innovations en font une référence dans le domaine.",
-        "Sa double compétence de praticien et de formateur lui permet d'être toujours à la pointe des dernières techniques, garantissant des résultats naturels et harmonieux à ses patients.",
+        "Depuis plus de dix ans, le Dr Emmanuel Elard met son expertise en médecine esthétique au service de ses patients, avec une approche centrée sur des résultats naturels et subtils. Son cabinet, situé dans le 12e arrondissement de Paris, est spécialisé dans les techniques d’injectables telles que les traitements de comblement, de volumétrie et de correction, pour un visage reposé et harmonieux.",
+        "Grâce à des interventions personnalisées et sans douleur, Dr Elard aide ses patients à retrouver confiance en leur apparence, tout en leur permettant une reprise immédiate de leurs activités. Son savoir-faire et sa maîtrise des techniques de pointe lui permettent de proposer des soins esthétiques avancés, sécurisés et adaptés aux attentes de chacun.",
       ],
       image: {
-        src: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80',
+        src: 'https://medecine-esthetique.net/wp-content/uploads/2023/10/docteur-elard-emmanuel-medecin-esthetique-paris-l.png',
         alt: 'Cabinet médical',
       },
     },
@@ -51,47 +51,47 @@ export const mockdrData = {
       ],
     },
     qualifications: {
-      title: 'FORMATION ET DIPLÔMES',
+      title: 'Une Formation et des Diplômes de Haut Niveau en Techniques d’Injection',
       items: [
         {
-          title: "Diplôme Inter-Universitaire en Techniques d'Injection",
+          title: "Diplôme Universitaire en Techniques d’Injection et Comblement (DUTIC)",
           description:
-            "Formation approfondie en techniques d'injection et comblement facial",
+            "Dr Elard est diplômé du DUTIC (Diplôme Universitaire en Techniques d’Injection et Comblement), qui lui a permis de se former aux méthodes de pointe en matière de médecine esthétique. Ce diplôme, délivré par l’Université Paris XII, est un gage de son expertise et de sa maîtrise des injectables.",
         },
         {
           title:
-            'Diplôme Inter-Universitaire de Médecine Morphologique et Anti-Âge',
+            'Diplome inter-universitaire DE Médecine morphologique et Anti-Âge (MMAA)',
           description:
-            'Spécialisation en médecine anti-âge et techniques avancées de rajeunissement',
+            'En complément du DUTIC, Dr Elard a obtenu un Master en Médecine Anti-Âge (MMAA), renforçant sa capacité à proposer des traitements esthétiques adaptés aux besoins de chaque patient, toujours dans un souci de naturel et d’harmonie.',
         },
       ],
     },
     training: {
-      title: 'ENSEIGNANT ET FORMATEUR',
+      title: 'Enseignant et Formateur en Médecine Esthétique',
       items: [
         {
-          title: "Enseignant au DU/DIU à l'Université Paris XII",
+          title: "Enseignant au DUTIC à l’Université Paris XII",
           description:
-            "Transmission de mon expertise aux futurs praticiens, partage des techniques avancées d'injection et des dernières innovations dans le domaine de la médecine esthétique.",
+            "Dr Elard partage son savoir-faire en tant qu’enseignant au DUTIC, le diplôme dédié aux techniques d’injection. Son implication dans cette formation universitaire témoigne de sa maîtrise des techniques d’injection et de sa volonté de transmettre les bonnes pratiques aux futurs médecins esthétiques.",
           image:
-            'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80',
+            'https://medecine-esthetique.net/wp-content/uploads/2024/11/formateur-Dr-ELARD.jpg',
         },
         {
-          title: "Formateur en Techniques d'Injection",
+          title: "Formateur au sein des formations privées AMIR",
           description:
-            "Animation de formations privées pour les professionnels de santé, perfectionnement des techniques d'injection et accompagnement personnalisé dans le développement des compétences.",
+            "En tant que formateur auprès d’AMIR, Dr Elard intervient également dans des formations privées en injectables, destinées aux médecins souhaitant approfondir leurs compétences en médecine esthétique. Sa double casquette d’enseignant et de praticien l’amène à rester à la pointe des dernières techniques en injectables.",
           image:
-            'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80',
+            'https://medecine-esthetique.net/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg',
         },
       ],
     },
     award: {
-      title: "INNOVATEUR DE L'ANNÉE 2023",
+      title: "Innovateur de l’Année 2023 aux Aesthetic Awards",
       description:
-        "Récompensé pour l'innovation et l'excellence dans le domaine de la médecine esthétique, notamment pour l'introduction de techniques novatrices et l'engagement constant dans la formation des professionnels.",
+        "L’expertise et l’innovation du Dr Emmanuel Elard ont été récompensées lors des Aesthetic Awards 2023, où il a été élu Innovateur de l’année par Anti-Age Magazine. Cette distinction met en avant son apport majeur dans le domaine de la médecine esthétique et témoigne de son engagement pour l’excellence.",
       year: 2023,
       image:
-        'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80',
+        'https://medecine-esthetique.net/wp-content/uploads/2024/11/LO6ouTOs.jpeg',
     },
     testimonials: {
       items: [
@@ -114,6 +114,18 @@ export const mockdrData = {
           treatment: 'Rajeunissement du visage',
         },
       ],
+    },
+    results:{
+      title: "Pratique Axée sur des Résultats Naturels et Harmonieux",
+      description: ["Situé au 8 avenue Dorian, Paris 12e, le Dr Elard offre des soins esthétiques pour les patients souhaitant rajeunir ou embellir leur apparence de façon discrète et naturelle. ", "Ses interventions permettent un retour immédiat aux activités et visent à offrir à ses patients une apparence moins fatiguée et plus harmonieuse, sans effets visibles comme les bleus ou hématomes."],
+      subtitle: "Le Dr Emmanuel ELARD est membre de plusieurs sociétés savantes telles que : ",
+      lists:[
+        "La Société Française de Médecine Morphologique et anti-âge (SoFMAA)",
+        "L’Association Française de Médecine Esthetique (AFME)",
+        "La Société Française de Mésothérapie (SFM)",
+        "La LED Academy",
+      ],
+      imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/clinique-esthetique-dr-elard.jpg"
     },
     contact: {
       title: 'NOUS TROUVER',

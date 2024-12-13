@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Syringe, Zap, Sparkles } from 'lucide-react';
+import { ImageOptimizer } from '../../shared/ImageOptimizer';
 
 interface InterventionCardProps {
   title: string;
@@ -30,7 +31,7 @@ export const InterventionCard: React.FC<InterventionCardProps> = ({
       className="relative group overflow-hidden rounded-lg"
     >
       <div className="aspect-square">
-        <img
+        <ImageOptimizer
           src={imageUrl}
           alt={title}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
