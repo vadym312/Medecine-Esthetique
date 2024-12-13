@@ -19,7 +19,7 @@ export const Biography: React.FC<BiographyProps> = (props) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
-            className="relative group"
+            className="relative flex justify-center"
             variants={fadeIn}
             initial="initial"
             whileInView="animate"
@@ -28,9 +28,8 @@ export const Biography: React.FC<BiographyProps> = (props) => {
             <img
               src={props.image.src}
               alt={props.image.alt}
-              className="rounded-lg shadow-xl transition-transform duration-300 group-hover:scale-105"
+              className="rounded-lg shadow-xl w-96 transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gold opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-lg"></div>
           </motion.div>
           
           <motion.div
