@@ -86,6 +86,7 @@ import { motion } from 'framer-motion';
 import { Award, GraduationCap, Users } from 'lucide-react';
 import { Container } from '../ui/Container';
 import { doctor } from '@/src/lib/mockData/homepage/doctor';
+import { ImageOptimizer } from '../shared/ImageOptimizer';
 
 const icons = {
   award: Award,
@@ -115,16 +116,17 @@ export const DoctorBanner: React.FC = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            className='flex justify-center'
           >
-            <img
+            <ImageOptimizer
               src={doctor.image.url}
               alt={doctor.image.alt}
-              className="rounded-lg shadow-xl w-full"
+              className="rounded-lg shadow-xl w-96"
             />
           </motion.div>
 

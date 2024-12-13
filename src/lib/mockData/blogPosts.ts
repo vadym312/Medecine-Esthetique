@@ -108,7 +108,7 @@ export const blogPosts = [
     date: '2024-03-15',
     readTime: 8,
     imageUrl:
-      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80',
+      'https://medecine-esthetique.net/wp-content/uploads/2024/11/vieillissement-du-visage.jpg',
     featured: true,
     sections: [
       {
@@ -154,7 +154,7 @@ export const blogPosts = [
     date: '2024-03-10',
     readTime: 6,
     imageUrl:
-      'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80',
+      'https://medecine-esthetique.net/wp-content/uploads/2024/11/micronutrition.jpg',
     sections: [
       {
         id: 'introduction',
@@ -182,7 +182,7 @@ export const blogPosts = [
     date: '2024-03-08',
     readTime: 7,
     imageUrl:
-      'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80',
+      'https://medecine-esthetique.net/wp-content/uploads/2024/11/exposition-solaire.jpg',
     sections: [
       {
         id: 'introduction',

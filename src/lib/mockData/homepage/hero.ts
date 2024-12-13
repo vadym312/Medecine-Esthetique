@@ -19,5 +19,5 @@ export const hero = {
     alt: 'Cabinet médical moderne',
   },
   ctaText: 'Prendre Rendez-vous',
-  ctaUrl: '/contact',
+  ctaUrl: 'https://drelard.booking.nextmotion.net/site-web',
 };

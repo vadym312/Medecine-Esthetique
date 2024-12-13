@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import { BlogArticle } from '@/src/types';
+import { BlogPost } from '@/src/types/blog';
 import { ImageOptimizer } from '@/src/components/shared/ImageOptimizer';
+import Link from 'next/link';
 
 interface ArticleCardProps {
-  article: BlogArticle;
+  article: BlogPost;
   index: number;
 }
 
@@ -27,12 +28,14 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
       <div className="p-6">
         <time className="text-sm text-primary-light">{article.date}</time>
         <h3 className="text-xl font-semibold mt-2 mb-3">{article.title}</h3>
-        <p className="text-primary-dark mb-4">{article.description}</p>
+        <p className="text-primary-dark mb-4">{article.excerpt}</p>
 
-        <button className="inline-flex items-center text-gold hover:text-gold/80 transition-colors">
-          Lire la suite
-          <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-        </button>
+        <Link href={`/blog/${article.id}`}>
+          <button className="inline-flex items-center text-gold hover:text-gold/80 transition-colors">
+            Lire la suite
+            <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+          </button>
+        </Link>
       </div>
     </motion.article>
   );
