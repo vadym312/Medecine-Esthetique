@@ -86,7 +86,6 @@ import { motion } from 'framer-motion';
 import { Award, GraduationCap, Users } from 'lucide-react';
 import { Container } from '../ui/Container';
 import { doctor } from '@/src/lib/mockData/homepage/doctor';
-import { ImageOptimizer } from '../shared/ImageOptimizer';
 
 const icons = {
   award: Award,
@@ -123,7 +122,7 @@ export const DoctorBanner: React.FC = () => {
             viewport={{ once: true }}
             className='flex justify-center'
           >
-            <ImageOptimizer
+            <img
               src={doctor.image.url}
               alt={doctor.image.alt}
               className="rounded-lg shadow-xl w-96"

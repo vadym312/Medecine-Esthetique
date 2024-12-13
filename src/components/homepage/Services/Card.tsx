@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion';
 import { Service } from '@/src/types';
-import { ImageOptimizer } from '../../shared/ImageOptimizer';
-
 interface ServiceCardProps {
   service: Service;
   index: number;
@@ -16,7 +14,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
       className="bg-white rounded-lg shadow-xl overflow-hidden"
     >
       <div className="h-48 overflow-hidden">
-        <ImageOptimizer
+        <img
           src={service.imageUrl}
           alt={service.title}
           className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"

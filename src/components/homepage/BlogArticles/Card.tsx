@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { BlogPost } from '@/src/types/blog';
-import { ImageOptimizer } from '@/src/components/shared/ImageOptimizer';
 import Link from 'next/link';
 
 interface ArticleCardProps {
@@ -18,7 +17,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
       className="bg-white rounded-lg shadow-lg overflow-hidden group"
     >
       <div className="aspect-[16/9] overflow-hidden">
-        <ImageOptimizer
+        <img
           src={article.imageUrl}
           alt={article.title}
           className="w-full h-full transition-transform duration-300 group-hover:scale-105"
