@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import { Testimonial } from '@/src/types';
+import { ImageOptimizer } from '../../shared/ImageOptimizer';
 
 interface TestimonialCardProps {
   testimonial: Testimonial;
@@ -19,7 +20,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
       className="bg-white p-6 rounded-lg shadow-lg"
     >
       <div className="flex items-center gap-4 mb-4">
-        <img
+        <ImageOptimizer
           src={testimonial.imageUrl}
           alt={testimonial.name}
           className="w-12 h-12 rounded-full object-cover"

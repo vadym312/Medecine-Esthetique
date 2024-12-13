@@ -11,7 +11,7 @@ export const mockPages: Record<string, PageData> = {
       metaDescription:
         'Cabinet de médecine esthétique du Dr Emmanuel ELARD à Paris. Découvrez nos traitements personnalisés et prenez rendez-vous.',
       ogImage: {
-        url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068',
+        url: 'https://medecine-esthetique.net/wp-content/uploads/2023/07/dr-elard-specialiste-anti-age-paris.jpg',
         alt: 'Cabinet médical du Dr Emmanuel ELARD',
         width: 1200,
         height: 630,

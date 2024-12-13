@@ -27,7 +27,7 @@ export default function WhatsAppButton({
   return (
     <div
       className={clsx(
-        'fixed z-50 flex items-center',
+        'fixed z-20 flex items-center',
         POSITION_CLASSES[position],
         className
       )}

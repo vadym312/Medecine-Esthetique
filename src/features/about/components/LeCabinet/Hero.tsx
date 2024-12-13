@@ -1,7 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { Building2 } from 'lucide-react';
+import React from "react";
 
 export const HeroSection = () => {
   return (
@@ -10,26 +9,23 @@ export const HeroSection = () => {
         className="absolute inset-0 z-0"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068')",
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
+            "url('https://medecine-esthetique.net/wp-content/uploads/2023/07/dr-elard-specialiste-anti-age-paris.jpg')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-montserrat text-white mb-6">
-            Un Cabinet Moderne au Service de Votre Beauté
-          </h1>
-          <p className="text-xl text-white/90 mb-8">
-            Un espace dédié à votre bien-être, équipé des dernières technologies
-            en médecine esthétique
-          </p>
-          <Building2 className="text-gold w-12 h-12" />
-        </div>
+      <div className="container mx-auto px-4 relative z-10 max-w-3xl">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-montserrat text-white mb-6 text-center">
+          Cabinet de Médecine Esthétique du Dr
+        </h1>
+        <p className="text-xl text-white/90 mb-8 text-center">
+          Un espace dédié à votre bien-être, équipé des dernières technologies
+          en médecine esthétique
+        </p>
       </div>
     </section>
   );

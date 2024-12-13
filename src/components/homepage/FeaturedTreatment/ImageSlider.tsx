@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ImageOptimizer } from '../../shared/ImageOptimizer';
 
 interface ImageSliderProps {
   images: string[];
@@ -31,7 +32,7 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
           transition={{ duration: 0.3 }}
           className="absolute inset-0"
         >
-          <img
+          <ImageOptimizer
             src={images[currentIndex]}
             alt="Treatment result"
             className="w-full h-full object-cover"
