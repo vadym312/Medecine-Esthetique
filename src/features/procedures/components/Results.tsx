@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/src/utils/animations';
-import { ImageOptimizer } from '@/src/components/shared/ImageOptimizer';
 
 interface BeforeAfterImage {
   before: string;
@@ -43,7 +42,7 @@ export const Results: React.FC<ResultsProps> = ({ title, description, beforeAfte
               className="space-y-8"
             >
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                <ImageOptimizer
+                <img
                   src={image.before}
                   alt="Avant le traitement"
                   className="w-full h-full"
@@ -53,7 +52,7 @@ export const Results: React.FC<ResultsProps> = ({ title, description, beforeAfte
                 </div>
               </div>
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                <ImageOptimizer
+                <img
                   src={image.after}
                   alt="Après le traitement"
                   className="w-full h-full"

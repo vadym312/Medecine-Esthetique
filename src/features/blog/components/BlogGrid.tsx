@@ -4,7 +4,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { BlogPost } from '@/src/types/blog';
 import { BlogCard } from './BlogCard';
-import { getOptimizedImageUrl } from '@/src/utils/imageOptimization';
 
 interface BlogGridProps {
   posts: BlogPost[];
@@ -26,7 +25,7 @@ export const BlogGrid: React.FC<BlogGridProps> = ({ posts, onPostClick }) => {
           <BlogCard
             post={{
               ...post,
-              imageUrl: getOptimizedImageUrl(post.imageUrl, 800),
+              imageUrl: post.imageUrl,
             }}
           />
         </motion.div>
