@@ -27,7 +27,7 @@ export const acideData = {
       title: "Le vieillissement du visage : une analyse complète",
       subtitle: "Avec l’âge, plusieurs phénomènes agissent en synergie :",
       question: "L’acide hyaluronique intervient pour corriger ces changements, en respectant les proportions naturelles du visage.",
-      contet: [
+      subcontent: [
         {
           lists: [
             "Les os perdent de leur densité, entraînant un affaissement du visage.",
@@ -37,41 +37,24 @@ export const acideData = {
           ]
         }
       ],
-      videoId: "bofwwoGB7w",
+      videoId: "bofwwoGB7wQ",
       isReversed: true
     },
     {
-      title: "Le vieillissement du visage : une analyse complète",
-      subtitle: "Avec l’âge, plusieurs phénomènes agissent en synergie :",
-      question: "L’acide hyaluronique intervient pour corriger ces changements, en respectant les proportions naturelles du visage.",
-      contet: [
+      title: "Techniques d’injection : un art au service de la précision",
+      subtitle: "Chaque traitement est personnalisé selon vos besoins et votre morphologie. Voici les principales techniques :",
+      question: "Chaque technique nécessite une maîtrise parfaite pour éviter des résultats sur-corrigés. Les injections se font à l’aide de fines aiguilles ou de micro-canules, garantissant un confort optimal.",
+      subcontent: [
         {
           lists: [
-            "Les os perdent de leur densité, entraînant un affaissement du visage.",
-            "La graisse sous-cutanée migre vers le bas, creusant les pommettes et formant des bajoues.",
-            "Les muscles s’affaiblissent, ce qui accentue les plis du visage.",
-            "La peau, enfin, devient plus fine et relâchée."
+            "Comblement des rides : Pour les sillons nasogéniens ou les plis d’amertume.",
+            "Augmentation des volumes : Pommettes, tempes, menton, lèvres.",
+            "Harmonisation du visage : Jawline contouring, rhinoplastie médicale.",
+            "Hydratation profonde : Skinbooster et mésothérapie"
           ]
         }
       ],
-      videoId: "bofwwoGB7w",
-      isReversed: false
-    },
-    {
-      title: "Le vieillissement du visage : une analyse complète",
-      subtitle: "Avec l’âge, plusieurs phénomènes agissent en synergie :",
-      question: "L’acide hyaluronique intervient pour corriger ces changements, en respectant les proportions naturelles du visage.",
-      contet: [
-        {
-          lists: [
-            "Les os perdent de leur densité, entraînant un affaissement du visage.",
-            "La graisse sous-cutanée migre vers le bas, creusant les pommettes et formant des bajoues.",
-            "Les muscles s’affaiblissent, ce qui accentue les plis du visage.",
-            "La peau, enfin, devient plus fine et relâchée."
-          ]
-        }
-      ],
-      videoId: "bofwwoGB7w",
+      videoId: "LLvnioKLg1c",
       isReversed: false
     },
     {

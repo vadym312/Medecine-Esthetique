@@ -92,7 +92,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                 className="relative pb-[100%] h-0 rounded-xl flex justify-center overflow-hidden shadow-lg"
               >
                 <iframe
-                  src={`https://www.youtube.com/embed/${video.url}`}
+                  src={video.url}
                   title={video.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

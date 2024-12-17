@@ -46,15 +46,27 @@ export const ridesFrontData = {
   },
   video: {
     title: "DÉROULEMENT D’UNE SÉANCE D'INJECTION POUR LES RIDES DU FRONT EN VIDÉO",
-    videoId: "GRy0TIJbLw",
+    videoId: "vGRy0TIJbLw",
   },
   results: {
     title: "Exemples de Résultats Obtenus par le Dr Elard",
-    videos: [{
-      id: '1',
-      title: 'Résultat du traitement - Cas 1',
-      url: 'https://www.youtube.com/embed/pccK9Q1QNz'
-    }],
+    videos: [
+      {
+        id: '1',
+        title: 'Résultat du traitement - Cas 1',
+        url: 'https://www.youtube.com/embed/JGFxeY_6Pao'
+      },
+      {
+        id: '2',
+        title: 'Résultat du traitement - Cas 2',
+        url: 'https://www.youtube.com/embed/pccK9Q1QNzo'
+      },
+      {
+        id: '3',
+        title: 'Résultat du traitement - Cas 3',
+        url: 'https://www.youtube.com/embed/VRc7mu6bPGg'
+      }
+    ],
   },
   testimonials: {
     title: "Témoignages Patients",
