@@ -4,16 +4,15 @@ import React, { useState, Suspense, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { BlogPost } from '@/src/types/blog';
+import type { BlogPost } from '@/src/types/blog';
 import { BlogHero } from './Hero';
 import { CategoryFilter } from './CategoryFilter';
 import { LoadingSpinner } from '@/src/components/ui/LoadingSpinner';
 import { BlogGrid } from './BlogGrid';
-import { getOptimizedImageUrl, preloadImages } from '@/src/utils/imageOptimization';
 
 const NewsletterSignup = dynamic(() => import('./NewsletterSignup').then(mod => mod.NewsletterSignup));
 const CallToAction = dynamic(() => import('./CallToAction').then(mod => mod.CallToAction));
-const BlogPost = dynamic(() => import('./BlogPost'));
+const BlogPostComponent = dynamic(() => import('./BlogPost'));
 
 const ITEMS_PER_PAGE = 6;
 
@@ -43,7 +42,6 @@ export const BlogPage: React.FC<BlogPageProps> = ({ initialPosts }) => {
     if (featuredPost) {
       imagesToPreload.unshift(featuredPost.imageUrl);
     }
-    preloadImages(imagesToPreload);
   }, [paginatedPosts, featuredPost]);
 
   useEffect(() => {
@@ -57,7 +55,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ initialPosts }) => {
     if (post) {
       return (
         <Suspense fallback={<LoadingSpinner />}>
-          <BlogPost post={post} />
+          <BlogPostComponent post={post} />
         </Suspense>
       );
     }
@@ -75,7 +73,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ initialPosts }) => {
           <BlogHero
             post={{
               ...featuredPost,
-              imageUrl: getOptimizedImageUrl(featuredPost.imageUrl, 1200),
+              imageUrl: featuredPost.imageUrl,
             }}
           />
         </motion.div>

@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/src/utils/animations';
-import { ImageOptimizer } from '@/src/components/shared/ImageOptimizer';
 
 interface HeroProps {
   title: string;
@@ -16,10 +15,9 @@ export const Hero: React.FC<HeroProps> = ({ title, subtitle, description, imageU
   return (
     <section className="relative h-[80vh] flex items-center">
       <div className="absolute inset-0">
-        <ImageOptimizer
+        <img
           src={imageUrl}
           alt={title}
-          priority
           className="w-full h-full"
         />
         <div className="absolute inset-0 bg-black/40" />

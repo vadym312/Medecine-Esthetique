@@ -102,7 +102,7 @@ export const ContactForm: React.FC = () => {
 
         <button
           type="submit"
-          className="w-full bg-gold-500 hover:bg-gold-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+          className="w-full bg-gold hover:bg-gold-dark text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
         >
           Envoyer
           <Send className="w-4 h-4" />

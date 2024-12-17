@@ -9,12 +9,19 @@ import { ReadingProgress } from './ReadingProgress';
 import { RecentPosts } from './RecentPosts';
 import { NewsletterSignup } from './NewsletterSignup';
 import { CallToAction } from './CallToAction';
+import { blogPosts } from '@/src/lib/mockData/blogPosts';
 
 interface BlogPostProps {
   post: BlogPostType;
 }
 
+
 export const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
+
+  const recentPosts = blogPosts
+    .filter((p) => p.id !== post.id)
+    .slice(0, 3);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <ReadingProgress />
@@ -32,7 +39,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
 
           <aside className="hidden lg:block lg:col-span-3">
             <div className="sticky top-24">
-              <RecentPosts posts={[]} />
+              <RecentPosts posts={recentPosts} />
             </div>
           </aside>
         </div>
