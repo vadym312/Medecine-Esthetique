@@ -56,11 +56,7 @@ export const plisAmertumesData = {
   },
   results: {
     title: "Exemples de Résultats Obtenus par le Dr Elard",
-    videos: [{
-      id: '1',
-      title: 'Résultat du traitement - Cas 1',
-      url: 'https://www.youtube.com/embed/VIDEO_ID_1'
-    }],
+    iframes: ["https://patient.nextmotion.net/photocompare/438131d5-83a8-4a12-9b37-87a265849e4c:1tATAq:gAMFf4_3YBlthfqSHGps_pfgEf25b4rxfzVpjB_MvUtdtVF3BDKY8VXtrBoq-pXlu4AZ4qVu-aA8pY0BlIGEhA","https://patient.nextmotion.net/photocompare/438131d5-83a8-4a12-9b37-87a265849e4c:1tATAq:gAMFf4_3YBlthfqSHGps_pfgEf25b4rxfzVpjB_MvUtdtVF3BDKY8VXtrBoq-pXlu4AZ4qVu-aA8pY0BlIGEhA"]
   },
   testimonials: {
     title: "Témoignages Patients",
