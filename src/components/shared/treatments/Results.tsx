@@ -60,25 +60,28 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
           </motion.p>
         </div>
         {iframes && iframes.length > 0 &&
-          <div className={`grid md:grid-cols-${iframes.length} gap-8 max-w-5xl mx-auto mb-6`}>
-            {iframes.map((iframe, index) => (
-              <motion.div
-                key={index}
-                variants={fadeIn}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                className="relative pb-[60%] h-0 rounded-xl flex justify-center overflow-hidden shadow-lg"
-              >
-                <iframe
-                  src={iframe}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full"
-                />
-              </motion.div>
-            ))}
+          <div className={`grid md:grid-cols-${iframes.length} gap-8 mx-auto max-w-5xl mb-6`}>
+            <div className='flex justify-center'>
+              {iframes.map((iframe, index) => (
+                <motion.div
+                  key={index}
+                  variants={fadeIn}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true }}
+                  className="relative pb-[60%] h-0 w-[400px] rounded-xl flex justify-center overflow-hidden shadow-lg"
+                >
+                  <iframe
+                    src={iframe}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full"
+                  />
+                </motion.div>
+              ))}
+            </div>
           </div>
+
         }
         {videos && videos.length > 0 &&
           <div className={`grid md:grid-cols-${videos.length} gap-8 max-w-5xl mx-auto`}>
@@ -102,26 +105,26 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
             ))}
           </div>
         }
-        <br/>
-        { images && images.title && <div className={`grid md:grid-cols-${images?.data.length} gap-8 max-w-5xl mx-auto`}>
-            {images?.data.map((image) => (
-              <motion.div
-                key={image.id}
-                variants={fadeIn}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                className="relative pb-[45%] h-0 rounded-xl overflow-hidden shadow-lg"
-              >
-                <img
-                  src={image.url}
-                  alt='result'
-                  className="absolute top-0 left-0"
-                />
-              </motion.div>
-            ))}
-            <p className='text-center text-gray-600'>{images?.title}</p>
-          </div>
+        <br />
+        {images && images.title && <div className={`grid md:grid-cols-${images?.data.length} gap-8 max-w-5xl mx-auto`}>
+          {images?.data.map((image) => (
+            <motion.div
+              key={image.id}
+              variants={fadeIn}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              className="relative pb-[45%] h-0 rounded-xl overflow-hidden shadow-lg"
+            >
+              <img
+                src={image.url}
+                alt='result'
+                className="absolute top-0 left-0"
+              />
+            </motion.div>
+          ))}
+          <p className='text-center text-gray-600'>{images?.title}</p>
+        </div>
         }
 
       </div>
