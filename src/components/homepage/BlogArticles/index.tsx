@@ -1,8 +1,18 @@
+"use client";
+
+import { useEffect } from 'react';
 import { Container } from '../../ui/Container';
 import { ArticleCard } from './Card';
-import { blogPosts } from '@/src/lib/mockData/blogPosts';
+import { usePosts } from '@/src/hooks/usePosts';
+import { BlogPost } from '@/src/types/blog';
 
 export const BlogArticles: React.FC = () => {
+
+  const { posts, fetchPosts } = usePosts();
+  useEffect(() => {
+    fetchPosts(1);
+  }, []);
+
   return (
     <section className="py-20 bg-gray-50">
       <Container>
@@ -11,7 +21,7 @@ export const BlogArticles: React.FC = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {blogPosts.slice(0, 3).map((article, index) => (
+          {posts.slice(0, 3).map((article: BlogPost, index: number) => (
             <ArticleCard key={article.id} article={article} index={index} />
           ))}
         </div>
