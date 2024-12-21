@@ -18,14 +18,14 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
     >
       <div className="aspect-[16/9] overflow-hidden">
         <img
-          src={article.imageUrl}
+          src={article.image}
           alt={article.title}
           className="w-full h-full transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 
       <div className="p-6">
-        <time className="text-sm text-primary-light">{article.date}</time>
+        <time className="text-sm text-primary-light">{article.createdAt}</time>
         <h3 className="text-xl font-semibold mt-2 mb-3">{article.title}</h3>
         <p className="text-primary-dark mb-4">{article.excerpt}</p>
 

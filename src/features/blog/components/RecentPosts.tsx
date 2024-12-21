@@ -12,11 +12,11 @@ interface RecentPostsProps {
 }
 
 export const RecentPosts: React.FC<RecentPostsProps> = ({ posts }) => {
+  const router = useRouter()
   if (!posts.length) {
     return null;
   }
 
-  const router = useRouter()
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
