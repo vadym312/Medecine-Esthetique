@@ -32,7 +32,7 @@ export const RecentPosts: React.FC<RecentPostsProps> = ({ posts }) => {
             <div className="flex gap-4">
               <div className="flex-shrink-0">
                 <img
-                  src={post.imageUrl}
+                  src={post.image}
                   alt={post.title}
                   className="w-24 h-24 object-cover rounded-lg group-hover:opacity-90 transition-opacity"
                 />
@@ -45,7 +45,7 @@ export const RecentPosts: React.FC<RecentPostsProps> = ({ posts }) => {
                   <Clock size={14} className="flex-shrink-0" />
                   <span>{post.readTime} min de lecture</span>
                   <span className="text-gray-400">•</span>
-                  <span>{formatDate(post.date)}</span>
+                  <span>{formatDate(post.createdAt)}</span>
                 </div>
               </div>
             </div>

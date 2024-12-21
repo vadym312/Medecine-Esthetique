@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Injections pour enlever les Cernes: Techniques et Résultats",
         description: "Découvrez comment les injections d'acide hyaluronique réduisent efficacement les cernes sous les yeux. Méthodes, résultats et précautions à connaître.",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/cernes/",
+        url: "https://medecine-esthetique.net/injections/visage/cernes/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2023/07/traitement-cernes-medecine-esthetique-paris.jpg',

@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Rhinoplastie Médicale Paris–Remodelage du Nez sans Chirurgie",
         description: "Rhinoplastie médicale à Paris : corrigez votre nez sans chirurgie avec des injections d'acide hyaluronique. Résultats naturels et immédiats.",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/rhinoplastie-medicale/",
+        url: "https://medecine-esthetique.net/injections/visage/rhinoplastie-medicale/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/rhinoplastie-medicale2.jpg',

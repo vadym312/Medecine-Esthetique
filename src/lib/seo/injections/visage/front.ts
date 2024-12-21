@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Injection Front : Harmonise les contours et traite les rides",
         description: "À Paris, comblez les rides du front et harmonisez votre profil grâce aux injections d'acide hyaluronique. Découvrez les techniques, résultats et précautions.",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/front/",
+        url: "https://medecine-esthetique.net/injections/visage/front/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-front-paris.jpg',

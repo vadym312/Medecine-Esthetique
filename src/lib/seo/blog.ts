@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 
 export const defaultMetadata: Metadata = {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://medecine-esthetique.net/'),
-    title: 'Injections Acide Hyaluronique Tempes : Rajeunissement Visage',
-    description: "Découvrez comment les injections d'acide hyaluronique comblent les tempes creuses, redonnant volume et jeunesse au visage. Techniques, résultats et précautions.",
+    title: 'Guide Complet des Soins Anti-Âge et Embellissement Naturel',
+    description: "Les secrets de la médecine esthétique révélés dans ce blog pour un visage rajeuni et des résultats naturels",
     applicationName: 'Dr Emmanuel ELARD',
     authors: [{ name: 'Dr Emmanuel ELARD' }],
     generator: 'Next.js',
@@ -18,28 +18,23 @@ export const defaultMetadata: Metadata = {
     },
     openGraph: {
         type: 'article',
-        title: "Injections Acide Hyaluronique Tempes : Rajeunissement Visage",
-        description: "Découvrez comment les injections d'acide hyaluronique comblent les tempes creuses, redonnant volume et jeunesse au visage. Techniques, résultats et précautions",
+        title: "Guide Complet des Soins Anti-Âge et Embellissement Naturel",
+        description: "Les secrets de la médecine esthétique révélés dans ce blog pour un visage rajeuni et des résultats naturels",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/visage/tempes/",
+        url: "https://medecine-esthetique.net/blog/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
-            url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-creuses2.jpg',
+            url: 'https://medecine-esthetique.net/wp-content/uploads/2023/07/skinbooster-injection-acide-hyaluronique-paris.jpg',
             width: 1200,
             height: 630,
-            alt: "Avant et après traitement esthétique des tempes creuses pour un effet rajeunissant.",
+            alt: "Les Secrets de la Médecine Esthétique",
         }],
-        videos: [
-            {
-                url: "https://www.youtube.com/embed/M1HinlfYA04",
-            }
-        ]
     },
     twitter: {
         card: 'summary_large_image',
-        title: "Injections Acide Hyaluronique Tempes : Rajeunissement Visage",
-        description: "Découvrez comment les injections d'acide hyaluronique comblent les tempes creuses, redonnant volume et jeunesse au visage. Techniques, résultats et précautions.",
-        images: "https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-creuses2.jpg",
+        title: "Guide Complet des Soins Anti-Âge et Embellissement Naturel",
+        description: "Les secrets de la médecine esthétique révélés dans ce blog pour un visage rajeuni et des résultats naturels",
+        images: "https://medecine-esthetique.net/wp-content/uploads/2023/07/skinbooster-injection-acide-hyaluronique-paris.jpg",
     },
     robots: {
         index: true,

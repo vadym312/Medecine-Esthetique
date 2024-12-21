@@ -2,12 +2,13 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import type { Category } from '@/src/types/blog';
 import { clsx } from 'clsx';
 
 interface CategoryFilterProps {
-  categories: string[];
-  selectedCategory: string | null;
-  onSelectCategory: (category: string | null) => void;
+  categories: Category[];
+  selectedCategory: Category | null;
+  onSelectCategory: (category: Category | null) => void;
 }
 
 export const CategoryFilter: React.FC<CategoryFilterProps> = ({

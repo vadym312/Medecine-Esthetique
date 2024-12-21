@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Ovale du Visage à Paris : Redéfinition et Contouring",
         description: "Redéfinissez l'ovale de votre visage avec des injections d'acide hyaluronique à Paris. Contouring du menton, bajoues et angle mandibulaire",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/ovale-du-visage/",
+        url: "https://medecine-esthetique.net/injections/visage/ovale-du-visage/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/ovale-visage-contour.jpg',

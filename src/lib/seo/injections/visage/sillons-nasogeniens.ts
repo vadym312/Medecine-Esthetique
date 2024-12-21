@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Injections pour Sillons Nasogéniens: Techniques et Résultats",
         description: "Découvrez comment les injections d'acide hyaluronique atténuent les sillons nasogéniens pour un visage rajeuni. Techniques, résultats et précautions.",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/sillons-nasogeniens/",
+        url: "https://medecine-esthetique.net/injections/visage/sillons-nasogeniens/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/Nasolabial-Folds-eII.jpg1',

@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Les injections de menton redéfinissent l'ovale du visage – Tout ce qu'il faut savoir",
         description: "Découvrez comment les injections d'acide hyaluronique au menton sculptent un ovale du visage plus lifté et harmonieux. Tout ce qu'il faut savoir avant de commencer.",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/menton/",
+        url: "https://medecine-esthetique.net/injections/visage/menton/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-du-menton.jpg',

@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BlogPost } from '@/src/types/blog';
-import { Clock } from 'lucide-react';
 import { formatDate } from '@/src/utils/formatDate';
 
 interface BlogCardProps {
@@ -16,13 +15,12 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
     <motion.article
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className={`bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow ${
-        featured ? 'lg:col-span-2 row-span-2' : ''
-      }`}
+      className={`bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow ${featured ? 'lg:col-span-2 row-span-2' : ''
+        }`}
     >
       <div className={`relative ${featured ? 'h-72' : 'h-48'} overflow-hidden`}>
         <img
-          src={post.imageUrl}
+          src={post.image}
           alt={post.title}
           className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
         />
@@ -32,9 +30,8 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
       </div>
       <div className="p-6">
         <h3
-          className={`${
-            featured ? 'text-2xl' : 'text-xl'
-          } font-semibold mb-2 hover:text-gold transition-colors`}
+          className={`${featured ? 'text-2xl' : 'text-xl'
+            } font-semibold mb-2 hover:text-gold transition-colors`}
         >
           {post.title}
         </h3>
@@ -42,23 +39,23 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img
-              src={post.author.avatar}
-              alt={post.author.name}
-              className="w-8 h-8 rounded-full"
+              src="https://medecine-esthetique.net/wp-content/uploads/2024/11/docteur-elard-emmanuel-medecin-esthetique-paris.jpg"
+              alt="dr emmanuel elard"
+              className="w-12 h-12 rounded-full"
             />
             <div className="flex flex-col">
-              <span className="text-sm font-medium text-gray-900">
-                {post.author.name}
-              </span>
+              <h3 className="font-medium text-gray-900">
+                Dr Emmanuel Elard
+              </h3>
               <span className="text-xs text-gray-500">
-                {formatDate(post.date)}
+                {formatDate(post.createdAt)}
               </span>
             </div>
           </div>
-          <div className="flex items-center text-gray-500">
+          {/* <div className="flex items-center text-gray-500">
             <Clock size={16} className="mr-1" />
             <span className="text-sm">{post.readTime} min</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </motion.article>

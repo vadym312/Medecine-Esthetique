@@ -25,7 +25,7 @@ export const BlogGrid: React.FC<BlogGridProps> = ({ posts, onPostClick }) => {
           <BlogCard
             post={{
               ...post,
-              imageUrl: post.imageUrl,
+              image: post.image,
             }}
           />
         </motion.div>

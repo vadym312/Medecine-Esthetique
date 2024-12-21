@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 
 export const defaultMetadata: Metadata = {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://medecine-esthetique.net/'),
-    title: 'Injections Acide Hyaluronique Tempes : Rajeunissement Visage',
-    description: "Découvrez comment les injections d'acide hyaluronique comblent les tempes creuses, redonnant volume et jeunesse au visage. Techniques, résultats et précautions.",
+    title: 'Injection lèvres acide hyaluronique à Paris 12',
+    description: "Sublimez vos lèvres avec des injections d'acide hyaluronique : naturels, harmonieux, avant-après, durée et sécurité. Découvrez nos solutions à Paris",
     applicationName: 'Dr Emmanuel ELARD',
     authors: [{ name: 'Dr Emmanuel ELARD' }],
     generator: 'Next.js',
@@ -18,28 +18,28 @@ export const defaultMetadata: Metadata = {
     },
     openGraph: {
         type: 'article',
-        title: "Injections Acide Hyaluronique Tempes : Rajeunissement Visage",
-        description: "Découvrez comment les injections d'acide hyaluronique comblent les tempes creuses, redonnant volume et jeunesse au visage. Techniques, résultats et précautions",
+        title: "Injection lèvres acide hyaluronique à Paris 12",
+        description: "Sublimez vos lèvres avec des injections d'acide hyaluronique : naturels, harmonieux, avant-après, durée et sécurité. Découvrez nos solutions à Paris",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/visage/tempes/",
+        url: "https://medecine-esthetique.net/injections/levres/augmentation-des-levres/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
-            url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-creuses2.jpg',
-            width: 1200,
-            height: 630,
-            alt: "Avant et après traitement esthétique des tempes creuses pour un effet rajeunissant.",
+            url: 'https://medecine-esthetique.net/wp-content/uploads/2023/07/traitement-cernes-medecine-esthetique-paris.jpg',
+            width: 2000,
+            height: 1333,
+            alt: "enlever les cernes",
         }],
         videos: [
             {
-                url: "https://www.youtube.com/embed/M1HinlfYA04",
+                url: "https://www.youtube.com/embed/yyQ30IDZFFA",
             }
         ]
     },
     twitter: {
         card: 'summary_large_image',
-        title: "Injections Acide Hyaluronique Tempes : Rajeunissement Visage",
-        description: "Découvrez comment les injections d'acide hyaluronique comblent les tempes creuses, redonnant volume et jeunesse au visage. Techniques, résultats et précautions.",
-        images: "https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-creuses2.jpg",
+        title: "Injections pour enlever les Cernes: Techniques et Résultats",
+        description: "Découvrez comment les injections d'acide hyaluronique réduisent efficacement les cernes sous les yeux. Méthodes, résultats et précautions à connaître.",
+        images: "https://medecine-esthetique.net/wp-content/uploads/2023/07/traitement-cernes-medecine-esthetique-paris.jpg",
     },
     robots: {
         index: true,

@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Injections Acide Hyaluronique Pommettes : Volume Naturel",
         description: "Découvrez comment les injections d'acide hyaluronique redonnent du volume à vos pommettes pour un visage rajeuni et harmonieux. Techniques, résultats et précautions.",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/pommettes/",
+        url: "https://medecine-esthetique.net/injections/visage/pommettes/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettesze.jpg',
