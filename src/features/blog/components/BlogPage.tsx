@@ -21,7 +21,7 @@ export const BlogPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [selectedPost, setSelectedPost] = useState<string | null>(null);
   const [page, setPage] = useState(1);
-  const { posts, fetchPosts } = usePosts();
+  const { posts, loading, fetchPosts } = usePosts();
   useEffect(() => {
     fetchPosts(1);
   }, []);
@@ -60,6 +60,14 @@ export const BlogPage: React.FC = () => {
         </Suspense>
       );
     }
+  }
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-[60vh]">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gold"></div>
+      </div>
+    );
   }
 
   return (

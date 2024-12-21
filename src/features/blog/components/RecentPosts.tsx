@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { BlogPost } from '@/src/types/blog';
 import { Clock } from 'lucide-react';
 import { formatDate } from '@/src/utils/formatDate';
+import { useRouter } from 'next/navigation';
 
 interface RecentPostsProps {
   posts: BlogPost[];
@@ -14,6 +15,8 @@ export const RecentPosts: React.FC<RecentPostsProps> = ({ posts }) => {
   if (!posts.length) {
     return null;
   }
+
+  const router = useRouter()
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
@@ -29,7 +32,7 @@ export const RecentPosts: React.FC<RecentPostsProps> = ({ posts }) => {
             transition={{ delay: index * 0.1 }}
             className="group cursor-pointer"
           >
-            <div className="flex gap-4">
+            <div className="flex gap-4" onClick={()=> router.push(`/blog/${post.id}`)}>
               <div className="flex-shrink-0">
                 <img
                   src={post.image}
