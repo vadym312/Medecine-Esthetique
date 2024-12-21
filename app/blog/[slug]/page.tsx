@@ -1,12 +1,20 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useParams } from 'next/navigation';
+import { BlogPost as BlogPostType } from '@/src/types/blog';
 import { BlogPost } from '@/src/features/blog/components/BlogPost';
-import { blogPosts } from '@/src/lib/mockData/blogPosts';
+import { usePosts } from '@/src/hooks/usePosts';
 
 export default function BlogPostPage() {
+
+  const { posts, fetchPosts } = usePosts();
+  useEffect(() => {
+    fetchPosts(1);
+  }, []);
+
   const { slug } = useParams();
-  const post = blogPosts.find(post => post.id === slug);
+  const post = posts.find((post: BlogPostType) => post.id === slug);
 
   if (!post) {
     return (
@@ -23,5 +31,5 @@ export default function BlogPostPage() {
     );
   }
 
-  return <BlogPost post={post} />;
+  return <BlogPost post={post} posts={posts}/>;
 }

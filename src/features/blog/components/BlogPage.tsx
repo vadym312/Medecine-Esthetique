@@ -56,7 +56,7 @@ export const BlogPage: React.FC = () => {
     if (post) {
       return (
         <Suspense fallback={<LoadingSpinner />}>
-          <BlogPostComponent post={post} />
+          <BlogPostComponent post={post} posts={posts} />
         </Suspense>
       );
     }
