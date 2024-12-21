@@ -9,19 +9,14 @@ import { ReadingProgress } from './ReadingProgress';
 import { RecentPosts } from './RecentPosts';
 import { NewsletterSignup } from './NewsletterSignup';
 import { CallToAction } from './CallToAction';
-import { usePosts } from '@/src/hooks/usePosts';
 
 interface BlogPostProps {
   post: BlogPostType;
+  posts: BlogPostType[];
 }
 
 
-export const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
-
-  const { posts, fetchPosts } = usePosts();
-  useEffect(() => {
-    fetchPosts(1);
-  }, []);
+export const BlogPost: React.FC<BlogPostProps> = ({ post, posts }) => {
 
   const recentPosts = posts
     .filter((p: BlogPostType) => p.id !== post.id)
