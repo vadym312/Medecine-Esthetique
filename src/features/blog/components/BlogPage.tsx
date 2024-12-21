@@ -4,11 +4,12 @@ import React, { useState, Suspense, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import type { BlogPost } from '@/src/types/blog';
+import type { BlogPost, Category } from '@/src/types/blog';
 import { BlogHero } from './Hero';
 import { CategoryFilter } from './CategoryFilter';
 import { LoadingSpinner } from '@/src/components/ui/LoadingSpinner';
 import { BlogGrid } from './BlogGrid';
+import { usePosts } from '@/src/hooks/usePosts';
 
 const NewsletterSignup = dynamic(() => import('./NewsletterSignup').then(mod => mod.NewsletterSignup));
 const CallToAction = dynamic(() => import('./CallToAction').then(mod => mod.CallToAction));
@@ -16,31 +17,31 @@ const BlogPostComponent = dynamic(() => import('./BlogPost'));
 
 const ITEMS_PER_PAGE = 6;
 
-interface BlogPageProps {
-  initialPosts: BlogPost[];
-}
-
-export const BlogPage: React.FC<BlogPageProps> = ({ initialPosts }) => {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+export const BlogPage: React.FC = () => {
+  const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [selectedPost, setSelectedPost] = useState<string | null>(null);
   const [page, setPage] = useState(1);
+  const { posts, fetchPosts } = usePosts();
+  useEffect(() => {
+    fetchPosts(1);
+  }, []);
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
 
-  const categories = Array.from(new Set(initialPosts.map(post => post.category)));
-  const featuredPost = initialPosts.find(post => post.featured);
-  const filteredPosts = initialPosts.filter(
-    post => !post.featured && (!selectedCategory || post.category === selectedCategory)
-  );
+  const categories = Array.from(new Set(posts.map((post: BlogPost) => post.category)));
+  const featuredPost: BlogPost = posts[0];
+  const filteredPosts = selectedCategory ? posts.filter(
+    (post: BlogPost) => (post.category === selectedCategory)
+  ) : posts;
 
   const paginatedPosts = filteredPosts.slice(0, page * ITEMS_PER_PAGE);
 
   useEffect(() => {
-    const imagesToPreload = paginatedPosts.map(post => post.imageUrl);
+    const imagesToPreload = paginatedPosts.map((post: BlogPost) => post.image);
     if (featuredPost) {
-      imagesToPreload.unshift(featuredPost.imageUrl);
+      imagesToPreload.unshift(featuredPost.image);
     }
   }, [paginatedPosts, featuredPost]);
 
@@ -51,7 +52,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ initialPosts }) => {
   }, [inView]);
 
   if (selectedPost) {
-    const post = initialPosts.find(post => post.id === selectedPost);
+    const post = posts.find((post: BlogPost) => post.id === selectedPost);
     if (post) {
       return (
         <Suspense fallback={<LoadingSpinner />}>
@@ -73,7 +74,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ initialPosts }) => {
           <BlogHero
             post={{
               ...featuredPost,
-              imageUrl: featuredPost.imageUrl,
+              image: featuredPost.image,
             }}
           />
         </motion.div>

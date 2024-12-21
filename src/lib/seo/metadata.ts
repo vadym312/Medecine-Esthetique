@@ -1,12 +1,9 @@
 import { Metadata } from 'next';
 
 export const defaultMetadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://dr-emmanuel-elard.fr'),
-  title: {
-    default: 'Dr Emmanuel ELARD | Médecine Esthétique à Paris',
-    template: '%s | Dr Emmanuel ELARD',
-  },
-  description: 'Cabinet de médecine esthétique du Dr Emmanuel ELARD à Paris. Expertise en injections, soins du visage et traitements anti-âge.',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://medecine-esthetique.net/'),
+  title: 'Dr Emmanuel Elard - Injections Esthétiques à Paris',
+  description: "Spécialiste des injections d'acide hyaluronique à Paris, le Dr Emmanuel Elard offre des traitements pour un visage rajeuni et harmonieux, sans chirurgie.",
   applicationName: 'Dr Emmanuel ELARD',
   authors: [{ name: 'Dr Emmanuel ELARD' }],
   generator: 'Next.js',
@@ -21,20 +18,22 @@ export const defaultMetadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'fr_FR',
+    title: "Injections Esthétiques à Paris - Dr Emmanuel Elard, Expert en Acide Hyaluronique",
+    locale: 'en_US',
     url: process.env.NEXT_PUBLIC_SITE_URL,
-    siteName: 'Dr Emmanuel ELARD',
+    siteName: 'https://medecine-esthetique.net',
     images: [{
-      url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09',
-      width: 1200,
-      height: 630,
-      alt: 'Cabinet du Dr Emmanuel ELARD',
+      url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg',
+      width: 1444,
+      height: 811,
+      alt: 'Le Dr Emmanuel Elard réalisant une injection esthétique dans un cadre professionnel.',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@dr_elard',
-    creator: '@dr_elard',
+    title: "Injections Esthétiques à Paris - Dr Emmanuel Elard, Expert en Acide Hyaluronique",
+    description: "Faites confiance au Dr Emmanuel Elard, spécialiste des injections d'acide hyaluronique à Paris, pour un visage rajeuni et harmonieux. Découvrez des traitements personnalisés pour sublimer votre beauté avec des résultats naturels.",
+    images: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg",
   },
   robots: {
     index: true,
@@ -75,8 +74,8 @@ export const generateMetadata = (
     ...(imageUrl && {
       images: [{
         url: imageUrl,
-        width: 1200,
-        height: 630,
+        width: 1444,
+        height: 811,
         alt: title,
       }],
     }),

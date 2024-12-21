@@ -13,17 +13,20 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   content: string;
-  category: string;
-  author: {
-    name: string;
-    avatar: string;
-  };
-  date: string;
-  readTime: number;
-  imageUrl: string;
-  featured?: boolean;
-  sections: {
+  category: Category;
+  createdAt: string;
+  readTime?: number;
+  image?: string;
+  sections?: {
     id: string;
     title: string;
   }[];
+}
+
+export enum Category {
+  INNOVATIONS,
+  TREATMENTS,
+  WELL_BEING,
+  CARE,
+  EDUCATION,
 }

@@ -27,7 +27,7 @@ export const BlogHero: React.FC<BlogHeroProps> = ({ post }) => {
           >
             <div className="absolute inset-0">
               <img
-                src={post.imageUrl}
+                src={post.image}
                 alt={post.title}
                 className="w-full h-full object-cover"
               />
@@ -49,18 +49,18 @@ export const BlogHero: React.FC<BlogHeroProps> = ({ post }) => {
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <img
-                  src={post.author.avatar}
-                  alt={post.author.name}
+                  src="https://medecine-esthetique.net/wp-content/uploads/2024/11/docteur-elard-emmanuel-medecin-esthetique-paris.jpg"
+                  alt="dr emmanuel elard"
                   className="w-12 h-12 rounded-full"
                 />
                 <div>
                   <h3 className="font-medium text-gray-900">
-                    {post.author.name}
+                    Dr Emmanuel Elard
                   </h3>
                   <div className="flex items-center space-x-4 text-sm text-gray-500">
                     <span className="flex items-center">
                       <Calendar size={14} className="mr-1" />
-                      {formatDate(post.date)}
+                      {formatDate(post.createdAt)}
                     </span>
                     <span className="flex items-center">
                       <Clock size={14} className="mr-1" />

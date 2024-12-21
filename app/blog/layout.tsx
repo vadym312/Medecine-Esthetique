@@ -1,11 +1,7 @@
 import { Metadata } from 'next';
-import { generateMetadata } from '@/src/lib/seo/metadata';
+import { defaultMetadata } from '@/src/lib/seo/blog';
 
-export const metadata: Metadata = generateMetadata(
-  'Blog | Dr Emmanuel ELARD',
-  'Découvrez nos articles sur la médecine esthétique, les dernières innovations et conseils beauté par le Dr Emmanuel ELARD.',
-  'https://images.unsplash.com/photo-1576091160550-2173dba999ef'
-);
+export const metadata: Metadata = defaultMetadata
 
 export default function BlogLayout({
   children,
