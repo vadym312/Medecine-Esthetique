@@ -2,7 +2,7 @@ export const augmentationLevresData = {
   hero: {
     title: "Augmentation des Lèvres",
     subtitle: "INJECTIONS D’ACIDE HYALURONIQUE POUR AUGMENTER LES LÈVRES",
-    backgroundImage: "/images/lèvres.png",
+    backgroundImage: "/images/lèvres.webp",
   },
   intro: {
     text: "Sublimez votre sourire et redonnez éclat et volume à vos lèvres. Grâce aux injections d’acide hyaluronique, nous pouvons sculpter des lèvres naturelles, pulpeuses et parfaitement adaptées à l’harmonie de votre visage. Découvrez les traitements personnalisés du Dr Emmanuel Elard, expert en esthétique médicale à Paris, pour obtenir un résultat naturel et sur-mesure.",

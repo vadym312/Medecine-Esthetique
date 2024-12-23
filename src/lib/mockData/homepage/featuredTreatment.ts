@@ -41,7 +41,7 @@ export const featuredTreatment = {
     author: 'Sophie L.',
   },
   images: [
-    '/images/rhinoplastie.png',
+    '/images/rhinoplastie.webp',
     'https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&q=80',
     'https://images.unsplash.com/photo-1542893849-b14a2c62aacb?auto=format&fit=crop&q=80',
   ],

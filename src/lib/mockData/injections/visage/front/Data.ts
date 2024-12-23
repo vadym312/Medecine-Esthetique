@@ -2,7 +2,7 @@ export const frontData = {
   hero: {
     title: "Traitement du Front",
     subtitle: "INJECTIONS D’ACIDE HYALURONIQUE POUR TRAITER LES RIDES DU FRONT",
-    backgroundImage: "/images/front.png",
+    backgroundImage: "/images/front.webp",
   },
   intro: {
     text: "Le front est une zone clé de l’expression faciale, mais il est également sujet aux rides horizontales et, parfois, à un creux qui peut altérer l’harmonie du visage. Grâce aux injections d’acide hyaluronique, il est possible de lisser les rides, de corriger un front creux et d’améliorer son apparence globale tout en préservant une expression naturelle.",

@@ -2,7 +2,7 @@ export const mesoliftData = {
   hero: {
     title: "Mésolift",
     subtitle: "Le Mésolift",
-    backgroundImage: "/images/skinbooster-mesolift.png",
+    backgroundImage: "/images/skinbooster-mesolift.webp",
   },
   intro: {
     text: "Lors de la consultation, le Dr Emmanuel Elard évalue l’état de votre peau et détermine l’approche optimale pour un traitement de mésolift. Ce soin permet de lisser les ridules superficielles tout en redonnant hydratation et éclat à la peau. Le mésolift utilise de l’acide hyaluronique non réticulé, injecté délicatement dans les couches superficielles de la peau. Une séance dure généralement moins de 30 minutes, et un effet de luminosité immédiat est visible, s’améliorant au fil des séances.",

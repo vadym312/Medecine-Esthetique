@@ -2,7 +2,7 @@ export const rajeunissementMainsData = {
   hero: {
     title: "Rajeunissement des Mains",
     subtitle: "INJECTIONS D’ACIDE HYALURONIQUE POUR LE RAJEUNISSEMENT DES MAINS À PARIS",
-    backgroundImage: "/images/mains.png",
+    backgroundImage: "/images/mains.webp",
   },
   intro: {
     text: "Avec le temps, la peau des mains s’affine et les muscles se réduisent, entraînant une “squelettisation” où les vaisseaux et les os deviennent visibles en relief. L’injection d’acide hyaluronique est une solution efficace pour redensifier la peau et estomper ces signes de vieillissement, offrant des résultats naturels et immédiats.",

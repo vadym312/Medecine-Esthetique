@@ -2,7 +2,7 @@ export const sillonsNasogeniensData = {
   hero: {
     title: "Sillons Nasogéniens",
     subtitle: "Injections d'Acide Hyaluronique pour Traiter les sillons nasogéniens",
-    backgroundImage: "/images/sillons-nasogeniens.png",
+    backgroundImage: "/images/sillons-nasogeniens.webp",
   },
   intro: {
     text: "Les cernes peuvent donner un aspect fatigué et vieilli au visage. Grâce aux injections d’acide hyaluronique, vous pouvez retrouver un regard frais et lumineux sans chirurgie. Découvrez le traitement proposé par le Dr Emmanuel Elard, spécialiste en esthétique à Paris, pour atténuer efficacement les cernes.",
