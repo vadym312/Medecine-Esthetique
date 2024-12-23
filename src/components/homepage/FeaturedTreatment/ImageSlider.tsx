@@ -41,7 +41,7 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
 
       <button
         onClick={prev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:bg-white transition-colors"
+        className="absolute z-50 left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:bg-white transition-colors"
         aria-label="Previous image"
       >
         <ChevronLeft className="w-6 h-6" />
@@ -49,7 +49,7 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
 
       <button
         onClick={next}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:bg-white transition-colors"
+        className="absolute z-50 right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:bg-white transition-colors"
         aria-label="Next image"
       >
         <ChevronRight className="w-6 h-6" />

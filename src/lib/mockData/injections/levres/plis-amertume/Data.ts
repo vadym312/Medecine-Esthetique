@@ -2,7 +2,7 @@ export const plisAmertumesData = {
   hero: {
     title: "Plis d'Amertume",
     subtitle: "INJECTIONS D’ACIDE HYALURONIQUE POUR TRAITER LES PLIS D’AMERTUME",
-    backgroundImage: "/images/plis-d'amertume.png",
+    backgroundImage: "/images/plis-amertume.webp",
   },
   intro: {
     text: "Les plis d’amertume, ces rides qui se forment des coins de la bouche vers le menton, peuvent donner un air triste ou sévère au visage. Grâce aux injections d’acide hyaluronique, il est possible de lisser ces plis et de redonner au visage un aspect harmonieux et détendu. Découvrez le traitement proposé par le Dr Emmanuel Elard, expert en médecine esthétique à Paris, et offrez-vous une transformation subtile et naturelle.",

@@ -79,7 +79,7 @@ export const TreatmentAvant: React.FC<AvantSectionProps> = ({
                 {videoIds && videoIds.length > 0 &&
                     <div className={`grid md:grid-cols-${videoIds.length + 1} gap-8 max-w-5xl mx-auto`}>
                         {videoIds.map((video, index) => (
-                            <div className={`${index !== 0 ? `col-span-2` : ""}`} key={index}>
+                            <div className={`${index !== 0 ? `md:col-span-2` : ""}`} key={index}>
                                 <motion.div
                                     variants={fadeIn}
                                     initial="initial"

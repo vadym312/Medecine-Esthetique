@@ -2,7 +2,7 @@ export const rhinoplastieMedicaleData = {
   hero: {
     title: "Rhinoplastie Médicale",
     subtitle: "Injections d'Acide Hyaluronique pour la Rhinoplastie Médicale",
-    backgroundImage: "/images/Rhinoplastie.png",
+    backgroundImage: "/images/Rhinoplastie.webp",
   },
   intro: {
     text: "La rhinoplastie médicale permet d’embellir et d’harmoniser votre nez sans avoir recours à la chirurgie. Grâce aux injections d’acide hyaluronique, il est possible de corriger les petites imperfections, telles qu’une bosse nasale, un nez trop creusé ou une asymétrie, tout en obtenant un résultat naturel et immédiat. Découvrez la méthode du Dr Emmanuel Elard, expert en rhinoplastie médicale à Paris.",

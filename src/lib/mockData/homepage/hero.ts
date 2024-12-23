@@ -15,7 +15,7 @@ export const hero = {
   subtitle:
     "Les détails font la perfection,\nla perfection n'est pas un détail.",
   backgroundImage: {
-    url: '/images/hero.png',
+    url: '/images/hero.webp',
     alt: 'Cabinet médical moderne',
   },
   ctaText: 'Prendre Rendez-vous',

@@ -2,7 +2,7 @@ export const ridesLionData = {
   hero: {
     title: "Rides du Lion",
     subtitle: "Injections de Botox pour traiter les rides du lion",
-    backgroundImage: "/images/rides-du-lion.png",
+    backgroundImage: "/images/rides-du-lion.webp",
   },
   intro: {
     text: "Les rides du lion, situées entre les sourcils, peuvent être particulièrement dérangeantes car elles donnent une impression de sévérité ou de tension, même lorsque vous êtes détendu. Grâce aux injections de botox, il est possible de lisser ces rides pour offrir un visage plus apaisé et une apparence plus douce. De nombreux patients rapportent se sentir plus détendus et confiants après le traitement, retrouvant une expression plus sereine. Dans certains cas, traiter cette ride peut même contribuer à améliorer un syndrome dépressif, en diminuant les signaux négatifs associés aux émotions exprimées par le visage.",

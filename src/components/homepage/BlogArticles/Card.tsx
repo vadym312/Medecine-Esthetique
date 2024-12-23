@@ -20,7 +20,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
         <img
           src={article.image}
           alt={article.title}
-          className="w-full h-full transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
         />
       </div>
 

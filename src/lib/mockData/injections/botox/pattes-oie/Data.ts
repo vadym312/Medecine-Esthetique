@@ -2,7 +2,7 @@ export const pattesOieData = {
   hero: {
     title: "Pattes d'Oie",
     subtitle: "INJECTIONS DE BOTOX POUR TRAITER LES RIDES DE LA PATTE D’OIE",
-    backgroundImage: "/images/pattes-doie.png",
+    backgroundImage: "/images/pattes-doie.webp",
   },
   intro: {
     text: "Les rides de la patte d’oie, situées au coin des yeux, apparaissent souvent avec l’âge ou suite à des expressions faciales répétées. Grâce aux injections de Botox, il est possible de lisser ces rides tout en conservant un regard naturel et expressif. Le Dr Emmanuel Elard, expert en injections de toxine botulique à Paris, vous propose un traitement sûr, efficace et sans douleur pour retrouver un regard rajeuni.",

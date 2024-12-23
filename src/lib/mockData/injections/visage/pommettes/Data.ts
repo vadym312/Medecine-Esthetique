@@ -2,7 +2,7 @@ export const pommettesData = {
   hero: {
     title: "Pommettes",
     subtitle: "Injections d’acide hyaluronique pour rajeunir et sculpter les pommettes",
-    backgroundImage: "/images/Pommettes.png",
+    backgroundImage: "/images/Pommettes.webp",
   },
   intro: {
     text: "Les pommettes jouent un rôle essentiel dans l’harmonie et la jeunesse du visage. Avec le temps, elles peuvent perdre de leur volume, ce qui entraîne un affaissement des traits et une perte de définition du visage. Grâce aux injections d’acide hyaluronique, il est possible de restaurer leur volume, de les rehausser et de redonner au visage un aspect plus jeune et équilibré. Découvrez l’approche du Dr Emmanuel Elard, spécialiste en esthétique médicale à Paris.",

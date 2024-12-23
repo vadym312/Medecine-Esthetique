@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/images/hero.png')`,
+            backgroundImage: `url('/images/hero.webp')`,
           }}
         >
           <div className="absolute inset-0 bg-black/50" />

@@ -2,7 +2,7 @@ export const ovaleVisageData = {
   hero: {
     title: "Ovale du Visage",
     subtitle: "Injections d’acide hyaluronique pour traiter l’ovale du visage",
-    backgroundImage: "/images/Ovale-du-visage.png",
+    backgroundImage: "/images/Ovale-du-visage.webp",
   },
   intro: {
     text: "L’ovale du visage est souvent le premier à montrer les signes de l’âge ou de relâchement. Avec les injections d’acide hyaluronique, vous pouvez redéfinir les contours de votre visage, corriger les bajoues et accentuer l’angle mandibulaire pour un rendu harmonieux et naturel. Découvrez les techniques du Dr Emmanuel Elard, expert en esthétique médicale à Paris, pour traiter efficacement l’ovale du visage.",

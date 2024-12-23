@@ -109,7 +109,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
         {videos && videos.length > 0 &&
           <div className={`grid md:grid-cols-${pathname.includes('sillons') ? videos.length + 1 : videos.length} gap-8 max-w-5xl mx-auto`}>
             {videos.map((video, index) => (
-              <div className={`${pathname.includes('sillons') ? index !== 0 ? `col-span-2` : "" : ""}`} key={video.id}>
+              <div className={`${pathname.includes('sillons') ? index !== 0 ? `md:col-span-2` : "" : ""}`} key={video.id}>
                 <motion.div
                   variants={fadeIn}
                   initial="initial"

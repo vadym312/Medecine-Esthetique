@@ -2,7 +2,7 @@ export const skinboosterData = {
   hero: {
     title: "Skinbooster",
     subtitle: "SKINBOOSTER POUR UNE PEAU HYDRATÉE ET ÉCLATANTE",
-    backgroundImage: "/images/skinbooster-mesolift.png",
+    backgroundImage: "/images/skinbooster-mesolift.webp",
   },
   intro: {
     text: "Le skinbooster est un traitement unique d’hydratation intense à base d’acide hyaluronique, conçu pour nourrir la peau en profondeur et lui redonner un éclat naturel. Par de fines injections sous la surface de la peau, il améliore l’élasticité et la luminosité de celle-ci, tout en offrant un effet rajeunissant subtil et naturel. Ce traitement de skinbooster, très populaire à Paris, est recommandé pour les peaux qui présentent des signes de déshydratation, de fatigue ou de teint terne. Il est également idéal pour ceux qui cherchent à retrouver un teint éclatant sans passer par des procédures invasives.",
