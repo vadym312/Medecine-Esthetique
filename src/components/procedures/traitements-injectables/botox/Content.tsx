@@ -25,6 +25,7 @@ export const ContentSection = ({
     <div className="relative aspect-video">
       <iframe
         src={videoUrl}
+        title='media_video'
         className="absolute inset-0 w-full h-full rounded-lg shadow-lg"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
