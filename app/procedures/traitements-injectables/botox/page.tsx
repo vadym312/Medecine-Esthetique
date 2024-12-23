@@ -14,7 +14,7 @@ const Botox: React.FC = () => {
     <div className="bg-white">
       <Hero
         title="Botox"
-        imageUrl="https://medecine-esthetique.net/wp-content/uploads/2023/07/cryolipolyse-paris-medecine-esthetique-silhouette.jpg"
+        imageUrl="/images/botox.png"
       />
       <IntroSection {...botoxData.intro}/>
       <KeyPointsInfographic />
