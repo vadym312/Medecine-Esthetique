@@ -3,7 +3,6 @@
 import { Hero } from '@/src/components/homepage/Hero';
 import { DoctorBanner } from '@/src/components/homepage/DoctorBanner';
 import { Services } from '@/src/components/homepage/Services';
-import { Interventions } from '@/src/components/homepage/Interventions';
 import { FeaturedTreatment } from '@/src/components/homepage/FeaturedTreatment';
 import { Testimonials } from '@/src/components/homepage/Testimonials';
 import { InstagramFeed } from '@/src/components/homepage/InstagramFeed';
@@ -16,7 +15,6 @@ const Homepage: React.FC = () => {
       <Hero />
       <DoctorBanner />
       <Services />
-      <Interventions />
       <FeaturedTreatment />
       <Testimonials />
       <InstagramFeed />

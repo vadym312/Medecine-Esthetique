@@ -2,7 +2,7 @@ export const mentonData = {
   hero: {
     title: "Traitement du Menton",
     subtitle: "InjeCtions d'acIde hyaluronique pour remodeler le menton",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/rajeunissement-pommettes-visage-injection-paris.jpg",
+    backgroundImage: "/images/menton.png",
   },
   intro: {
     text: "Le menton est un élément clé de l’harmonie du visage. Grâce aux injections d’acide hyaluronique, il est possible de corriger un menton fuyant, asymétrique ou disproportionné, pour un résultat naturel et équilibré. Découvrez comment le Dr Emmanuel Elard, spécialiste en esthétique à Paris, peut remodeler votre menton de manière non invasive.",

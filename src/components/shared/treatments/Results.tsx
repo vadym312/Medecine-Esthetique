@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/src/utils/animations';
+import { usePathname } from 'next/navigation';
 
 interface VideoResult {
   id: string;
@@ -36,6 +37,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
   images,
   iframes
 }) => {
+  const pathname = usePathname()
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,10 +63,9 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
         </div>
         {iframes && iframes.length > 0 &&
           <div className={`grid md:grid-cols-${iframes.length} gap-8 mx-auto max-w-5xl mb-6`}>
-            <div className='flex justify-center'>
-              {iframes.map((iframe, index) => (
+            {iframes.map((iframe, index) => (
+              <div key={index} className='flex justify-center'>
                 <motion.div
-                  key={index}
                   variants={fadeIn}
                   initial="initial"
                   whileInView="animate"
@@ -78,34 +79,12 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                     className="absolute top-0 left-0 w-full h-full"
                   />
                 </motion.div>
-              ))}
-            </div>
-          </div>
+              </div>
 
-        }
-        {videos && videos.length > 0 &&
-          <div className={`grid md:grid-cols-${videos.length} gap-8 max-w-5xl mx-auto`}>
-            {videos.map((video) => (
-              <motion.div
-                key={video.id}
-                variants={fadeIn}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                className="relative pb-[100%] h-0 rounded-xl flex justify-center overflow-hidden shadow-lg"
-              >
-                <iframe
-                  src={video.url}
-                  title={video.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full"
-                />
-              </motion.div>
             ))}
           </div>
         }
-        <br />
+
         {images && images.title && <div className={`grid md:grid-cols-${images?.data.length} gap-8 max-w-5xl mx-auto`}>
           {images?.data.map((image) => (
             <motion.div
@@ -125,6 +104,31 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
           ))}
           <p className='text-center text-gray-600'>{images?.title}</p>
         </div>
+        }
+        <br />
+        {videos && videos.length > 0 &&
+          <div className={`grid md:grid-cols-${pathname.includes('sillons') ? videos.length + 1 : videos.length} gap-8 max-w-5xl mx-auto`}>
+            {videos.map((video, index) => (
+              <div className={`${pathname.includes('sillons') ? index !== 0 ? `col-span-2` : "" : ""}`} key={video.id}>
+                <motion.div
+                  variants={fadeIn}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true }}
+                  className="relative pb-[50%] min-h-full h-96 rounded-xl flex justify-center overflow-hidden shadow-lg"
+                >
+                  <iframe
+                    src={video.url}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full"
+                  />
+                </motion.div>
+              </div>
+
+            ))}
+          </div>
         }
 
       </div>

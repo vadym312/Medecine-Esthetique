@@ -65,6 +65,7 @@ export const mockdrData = {
             'En complément du DUTIC, Dr Elard a obtenu un Master en Médecine Anti-Âge (MMAA), renforçant sa capacité à proposer des traitements esthétiques adaptés aux besoins de chaque patient, toujours dans un souci de naturel et d’harmonie.',
         },
       ],
+      videoId: "66JAcdCHUak"
     },
     training: {
       title: 'Enseignant et Formateur en Médecine Esthétique',
@@ -74,14 +75,14 @@ export const mockdrData = {
           description:
             "Dr Elard partage son savoir-faire en tant qu’enseignant au DUTIC, le diplôme dédié aux techniques d’injection. Son implication dans cette formation universitaire témoigne de sa maîtrise des techniques d’injection et de sa volonté de transmettre les bonnes pratiques aux futurs médecins esthétiques.",
           image:
-            'https://medecine-esthetique.net/wp-content/uploads/2024/11/formateur-Dr-ELARD.jpg',
+            '/images/techniques.jpg',
         },
         {
           title: "Formateur au sein des formations privées AMIR",
           description:
             "En tant que formateur auprès d’AMIR, Dr Elard intervient également dans des formations privées en injectables, destinées aux médecins souhaitant approfondir leurs compétences en médecine esthétique. Sa double casquette d’enseignant et de praticien l’amène à rester à la pointe des dernières techniques en injectables.",
           image:
-            'https://medecine-esthetique.net/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg',
+            'https://medecine-esthetique.net/wp-content/uploads/2024/11/formateur-Dr-ELARD.jpg',
         },
       ],
     },

@@ -43,7 +43,7 @@ export const services = {
         'Traitements ciblés pour atténuer les rides et restaurer le volume du visage.',
       icon: 'syringe',
       imageUrl:
-        'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80',
+        '/images/services1.png',
     },
     {
       id: '2',
@@ -52,7 +52,7 @@ export const services = {
         'Protocoles personnalisés pour une peau rayonnante et revitalisée.',
       icon: 'sparkles',
       imageUrl:
-        'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80',
+        '/images/services2.png',
     },
     {
       id: '3',
@@ -60,7 +60,7 @@ export const services = {
       description: 'Solutions avancées pour sublimer votre beauté naturelle.',
       icon: 'star',
       imageUrl:
-        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80',
+        '/images/services3.png',
     },
   ],
 };
