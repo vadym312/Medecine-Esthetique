@@ -2,7 +2,7 @@ export const ridesPeribuccalesData = {
   hero: {
     title: "Rides Péribuccales",
     subtitle: "INJECTIONS D'ACIDE HYALURONIQUE POUR TRAITER LES RIDES AUTOUR DE LA BOUCHE",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/rajeunissement-pommettes-visage-injection-paris.jpg",
+    backgroundImage: "/images/rides-peribuccales.png",
   },
   intro: {
     text: "Les rides autour de la bouche peuvent durcir l’expression du visage et vous donner un air fatigué ou triste. Grâce aux injections d’acide hyaluronique, il est possible de lisser ces rides et de restaurer un aspect harmonieux et naturel. Découvrez comment le Dr Emmanuel Elard, expert en esthétique médicale, peut vous aider à retrouver un sourire éclatant.",

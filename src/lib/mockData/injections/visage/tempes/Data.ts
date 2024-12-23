@@ -2,7 +2,7 @@ export const tempesData = {
   hero: {
     title: "Traitement des Tempes",
     subtitle: "Injections d'Acide Hyaluronique pour les Tempes",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/rajeunissement-pommettes-visage-injection-paris.jpg",
+    backgroundImage: "/images/tempes.png",
   },
   intro: {
     text: "Avec le temps, les tempes peuvent se creuser, donnant un aspect de fatigue et accentuant les signes de vieillissement du visage. Ce phénomène est causé par l’affinement des muscles, notamment le muscle temporal, et la résorption osseuse, qui modifient progressivement la structure de cette région. En injectant de l’acide hyaluronique dans les tempes, il est possible de restaurer les volumes perdus, d’adoucir les traits, et de redonner un éclat plus jeune au regard. Ce traitement, rapide et peu invasif, permet ainsi d’harmoniser le visage en agissant subtilement sur une zone essentielle de l’équilibre esthétique.",

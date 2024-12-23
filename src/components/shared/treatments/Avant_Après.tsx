@@ -77,23 +77,26 @@ export const TreatmentAvant: React.FC<AvantSectionProps> = ({
                     {description}
                 </motion.p>
                 {videoIds && videoIds.length > 0 &&
-                    <div className={`grid md:grid-cols-${videoIds.length} gap-20 max-w-5xl mx-auto`}>
+                    <div className={`grid md:grid-cols-${videoIds.length + 1} gap-8 max-w-5xl mx-auto`}>
                         {videoIds.map((video, index) => (
-                            <motion.div
-                                key={index}
-                                variants={fadeIn}
-                                initial="initial"
-                                whileInView="animate"
-                                viewport={{ once: true }}
-                                className="relative pb-[50%] h-0 rounded-xl flex justify-center overflow-hidden shadow-lg"
-                            >
-                                <iframe
-                                    src={`https://www.youtube.com/embed/${video}`}
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                    className="absolute top-0 left-0 w-full h-full"
-                                />
-                            </motion.div>
+                            <div className={`${index !== 0 ? `col-span-2` : ""}`}>
+                                <motion.div
+                                    key={index}
+                                    variants={fadeIn}
+                                    initial="initial"
+                                    whileInView="animate"
+                                    viewport={{ once: true }}
+                                    className={`relative pb-[50%] h-full rounded-xl flex justify-center overflow-hidden shadow-lg`}
+                                >
+                                    <iframe
+                                        src={`https://www.youtube.com/embed/${video}`}
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        className="absolute top-0 left-0 w-full h-full"
+                                    />
+                                </motion.div>
+                            </div>
+
                         ))}
                     </div>
                 }
