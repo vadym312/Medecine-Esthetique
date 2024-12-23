@@ -58,6 +58,7 @@ export const Contact: React.FC = () => {
               src={contact.googlemapLink}
               width="100%"
               height="100%"
+              title='contact_map'
               style={{ border: 0 }}
               loading="lazy"
             />

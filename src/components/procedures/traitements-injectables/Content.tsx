@@ -87,6 +87,7 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
             {imageUrl && <img src={imageUrl} alt="emotion" />}
             {iframeUrl && <iframe
               src={iframeUrl}
+              title='iframe'
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="absolute top-0 left-0 w-full h-full"

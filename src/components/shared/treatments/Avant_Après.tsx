@@ -91,6 +91,7 @@ export const TreatmentAvant: React.FC<AvantSectionProps> = ({
                                         src={`https://www.youtube.com/embed/${video}`}
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
+                                        title='Youte video'
                                         className="absolute top-0 left-0 w-full h-full"
                                     />
                                 </motion.div>
