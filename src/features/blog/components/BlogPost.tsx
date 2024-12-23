@@ -4,11 +4,9 @@ import React, { useEffect } from 'react';
 import { BlogPost as BlogPostType } from '@/src/types/blog';
 import { BlogHero } from './Hero';
 import { ArticleContent } from './ArticleContent';
-import { TableOfContents } from './TableOfContents';
 import { ReadingProgress } from './ReadingProgress';
 import { RecentPosts } from './RecentPosts';
 import { NewsletterSignup } from './NewsletterSignup';
-import { CallToAction } from './CallToAction';
 
 interface BlogPostProps {
   post: BlogPostType;
@@ -46,7 +44,6 @@ export const BlogPost: React.FC<BlogPostProps> = ({ post, posts }) => {
       </div>
 
       <NewsletterSignup />
-      <CallToAction />
     </div>
   );
 };

@@ -12,6 +12,7 @@ import { BlogGrid } from './BlogGrid';
 import { usePosts } from '@/src/hooks/usePosts';
 
 const NewsletterSignup = dynamic(() => import('./NewsletterSignup').then(mod => mod.NewsletterSignup));
+// const CallToAction = dynamic(() => import('./CallToAction').then(mod => mod.CallToAction));
 const BlogPostComponent = dynamic(() => import('./BlogPost'));
 
 const ITEMS_PER_PAGE = 6;
@@ -106,6 +107,10 @@ export const BlogPage: React.FC = () => {
       <Suspense fallback={<LoadingSpinner />}>
         <NewsletterSignup />
       </Suspense>
+
+      {/* <Suspense fallback={<LoadingSpinner />}>
+        <CallToAction />
+      </Suspense> */}
     </div>
   );
 };
