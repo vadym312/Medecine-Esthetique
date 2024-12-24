@@ -3,7 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BlogPost } from '@/src/types/blog';
-import { BlogCard } from './BlogCard';
+import { imageLoader } from '@/src/utils/imageOptimization';
+import Image from 'next/image';
 
 interface BlogGridProps {
   posts: BlogPost[];
@@ -22,12 +23,21 @@ export const BlogGrid: React.FC<BlogGridProps> = ({ posts, onPostClick }) => {
           onClick={() => onPostClick(post.id)}
           className="cursor-pointer"
         >
-          <BlogCard
-            post={{
-              ...post,
-              image: post.image,
-            }}
-          />
+          <div className="relative aspect-video">
+            <Image
+              src={post.image || ''}
+              alt={post.title}
+              loader={imageLoader}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover"
+              priority={index === 0}
+            />
+          </div>
+          <div className="p-4">
+            <h3 className="text-xl font-semibold">{post.title}</h3>
+            <p className="text-gray-600 mt-2">{post.excerpt}</p>
+          </div>
         </motion.div>
       ))}
     </div>
