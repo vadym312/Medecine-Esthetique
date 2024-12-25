@@ -4,6 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { BlogPost } from '@/src/types/blog';
 import { formatDate } from '@/src/utils/formatDate';
+import { imageLoader } from '@/src/utils/imageOptimization';
+import Image from 'next/image';
 
 interface BlogCardProps {
   post: BlogPost;
@@ -19,9 +21,12 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
         }`}
     >
       <div className={`relative ${featured ? 'h-72' : 'h-48'} overflow-hidden`}>
-        <img
-          src={post.image}
+        <Image
+          src={post.image || ''}
           alt={post.title}
+          loader={imageLoader}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-4 right-4 bg-gold text-white px-3 py-1 rounded-full text-sm">
