@@ -72,26 +72,28 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
             )}
             {question && <p className="text-text-secondary leading-relaxed">{question}</p>}
           </div>
-          <div
-            className={`relative aspect-video rounded-lg overflow-hidden shadow-lg ${isReversed ? 'md:order-1' : ''
-              }`}
-          >
-            {videoId && <iframe
-              src={`https://www.youtube.com/embed/${videoId}`}
-              title={title}
-              className="absolute inset-0 w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-            }
-            {imageUrl && <img src={imageUrl} alt="emotion" />}
-            {iframeUrl && <iframe
-              src={iframeUrl}
-              title='iframe'
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="absolute top-0 left-0 w-full h-full"
-            />}
+          <div className='flex justify-center'>
+            <div
+              className={`relative aspect-auto w-3/5 h-[550px] rounded-lg overflow-hidden shadow-lg ${isReversed ? 'md:order-1' : ''
+                }`}
+            >
+              {videoId && <iframe
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title={title}
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+              }
+              {imageUrl && <img src={imageUrl} alt="emotion" className="absolute inset-0 w-full h-full"/>}
+              {iframeUrl && <iframe
+                src={iframeUrl}
+                title='iframe'
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full"
+              />}
+            </div>
           </div>
         </motion.div>
       </Container>
