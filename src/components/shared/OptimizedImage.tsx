@@ -1,17 +1,12 @@
 'use client';
 
-import React from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { useState, useRef, useEffect } from 'react';
+import Image, { ImageProps } from 'next/image';
+import { cn } from '@/src/utils/cn';
 
-interface OptimizedImageProps {
-  src: string;
-  alt: string;
-  width?: number;
-  height?: number;
-  priority?: boolean;
-  className?: string;
-  quality?: number;
+interface OptimizedImageProps extends Omit<ImageProps, 'onLoad'> {
+  containerClassName?: string;
+  lowQualityUrl?: string;
 }
 
 export const OptimizedImage: React.FC<OptimizedImageProps> = ({
@@ -21,28 +16,71 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   height,
   priority = false,
   className = '',
-  quality = 75,
+  containerClassName = '',
+  lowQualityUrl,
+  ...props
 }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!containerRef.current || priority) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsLoaded(true);
+          observer.disconnect();
+        }
+      },
+      { 
+        rootMargin: '50px',
+        threshold: 0.1
+      }
+    );
+
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, [priority]);
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className={`relative overflow-hidden ${className}`}
+    <div
+      ref={containerRef}
+      className={cn('relative overflow-hidden', containerClassName)}
+      style={{ 
+        width: typeof width === 'number' ? `${width}px` : width,
+        height: typeof height === 'number' ? `${height}px` : height,
+      }}
     >
-      <Image
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        priority={priority}
-        quality={quality}
-        className="w-full h-full object-cover"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,${Buffer.from(
-          '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><rect width="100%" height="100%" fill="#f3f4f6"/></svg>'
-        ).toString('base64')}`}
-      />
-    </motion.div>
+      {(isLoaded || priority) && (
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className={cn(
+            'object-cover transition-opacity duration-300',
+            isLoaded ? 'opacity-100' : 'opacity-0',
+            className
+          )}
+          priority={priority}
+          quality={90}
+          {...props}
+        />
+      )}
+      {lowQualityUrl && !isLoaded && !priority && (
+        <Image
+          src={lowQualityUrl}
+          alt={alt}
+          width={width}
+          height={height}
+          className="absolute inset-0 object-cover blur-sm"
+          quality={10}
+        />
+      )}
+      {!isLoaded && !priority && !lowQualityUrl && (
+        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+      )}
+    </div>
   );
 };

@@ -1,14 +1,14 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { cn } from '@/src/utils/cn';
 
 interface LazyImageProps {
   src: string;
   alt: string;
-  width?: number;
-  height?: number;
+  width: number;
+  height: number;
   priority?: boolean;
   className?: string;
 }
@@ -19,33 +19,51 @@ export const LazyImage: React.FC<LazyImageProps> = ({
   width,
   height,
   priority = false,
-  className = '',
+  className,
 }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const imageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!imageRef.current || priority) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsLoaded(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '50px' }
+    );
+
+    observer.observe(imageRef.current);
+    return () => observer.disconnect();
+  }, [priority]);
 
   return (
-    <div className={`relative overflow-hidden ${className}`}>
-      {isLoading && (
-        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
-      )}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: isLoading ? 0 : 1 }}
-        transition={{ duration: 0.3 }}
-      >
+    <div 
+      ref={imageRef}
+      className={cn('relative', className)}
+      style={{ 
+        width: typeof width === 'number' ? `${width}px` : width,
+        height: typeof height === 'number' ? `${height}px` : height,
+      }}
+    >
+      {(isLoaded || priority) && (
         <Image
           src={src}
           alt={alt}
-          width={width || 1200}
-          height={height || 800}
-          className="w-full h-full object-cover"
-          onLoadingComplete={() => setIsLoading(false)}
-          priority={priority}
-          quality={85}
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSEkLzYvLy0vLi08RERHPEE0Pzw4QldKTVBTVVVVPD5dYVlSYXBfUVX/2wBDAR"
+          width={width}
+          height={height}
+          className="object-cover w-full h-full"
+          loading={priority ? 'eager' : 'lazy'}
+          onLoadingComplete={() => setIsLoaded(true)}
         />
-      </motion.div>
+      )}
+      {!isLoaded && !priority && (
+        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
+      )}
     </div>
   );
 };
