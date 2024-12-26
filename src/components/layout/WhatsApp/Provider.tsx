@@ -1,10 +1,16 @@
-"use client";
+'use client';
 
 import { createContext, useContext, useEffect, useState } from 'react';
 import { WhatsAppConfig } from '@/src/types/whatsapp';
-import { fetchWhatsAppConfig } from '@/src/lib/api/whatsapp';
 
 const WhatsAppContext = createContext<WhatsAppConfig | null>(null);
+
+const defaultConfig: WhatsAppConfig = {
+  phoneNumber: '+33620352428',
+  message: 'Bonjour, je souhaite vous contacter.',
+  position: 'bottom-right',
+  theme: 'light'
+};
 
 export function useWhatsApp() {
   const context = useContext(WhatsAppContext);
@@ -15,13 +21,23 @@ export function useWhatsApp() {
 }
 
 export function WhatsAppProvider({ children }: { children: React.ReactNode }) {
-  const [config, setConfig] = useState<WhatsAppConfig | null>(null);
+  const [config, setConfig] = useState<WhatsAppConfig>(defaultConfig);
 
   useEffect(() => {
-    fetchWhatsAppConfig().then(setConfig);
-  }, []);
+    const fetchConfig = async () => {
+      try {
+        const response = await fetch('/api/whatsapp-config');
+        if (response.ok) {
+          const data = await response.json();
+          setConfig(data);
+        }
+      } catch (error) {
+        console.error('Failed to fetch WhatsApp config:', error);
+      }
+    };
 
-  if (!config) return null;
+    fetchConfig();
+  }, []);
 
   return (
     <WhatsAppContext.Provider value={config}>

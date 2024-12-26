@@ -1,14 +1,15 @@
+'use client';
+
 import React from 'react';
 import { SocialLinks } from './SocialLinks';
 import { Copyright } from './Copyright';
 
-export interface SocialLink {
-  platform: 'tiktok' | 'instagram' | 'facebook' | 'linkedin';
-  url: string;
-}
 export interface FooterProps {
   title?: string;
-  socialLinks?: SocialLink[];
+  socialLinks?: {
+    platform: 'tiktok' | 'instagram' | 'facebook' | 'linkedin';
+    url: string;
+  }[];
   copyright?: {
     text?: string;
     subtext?: string;
