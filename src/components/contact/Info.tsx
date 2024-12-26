@@ -31,7 +31,7 @@ export const ContactInfo: React.FC = () => {
               <h3 className="text-lg font-semibold text-gray-900 mb-1">
                 Téléphone
               </h3>
-              <p className="text-gray-600">01 84 06 37 73</p>
+              <p className="text-gray-600">+33 01 84 06 37 73</p>
             </div>
           </div>
 
@@ -43,9 +43,8 @@ export const ContactInfo: React.FC = () => {
                 Horaires d'ouverture
               </h3>
               <div className="text-gray-600 space-y-1">
-                <p>Lundi - Vendredi: 9h - 19h</p>
-                <p>Samedi: 10h - 17h</p>
-                <p>Dimanche: Fermé</p>
+                <p>Lundi - Vendredi: 10h - 19h</p>
+                <p>Samedi: 10h - 12h</p>
               </div>
             </div>
           </div>

@@ -6,11 +6,10 @@ import { MapPin, Phone, Clock } from 'lucide-react';
 const contactInfo = {
   address: '8 avenue Dorian',
   city: '75012 Paris',
-  phone: '01 84 06 37 73',
+  phone: '+33 01 84 06 37 73',
   hours: [
-    'Lundi - Vendredi : 9h00 - 19h00',
-    'Samedi : Sur rendez-vous',
-    'Dimanche : Fermé',
+    'Lundi - Vendredi : 10h - 19h',
+    'Samedi : 10h - 12h',
   ],
 };
 

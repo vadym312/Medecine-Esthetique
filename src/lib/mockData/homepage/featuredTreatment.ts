@@ -42,7 +42,12 @@ export const featuredTreatment = {
   },
   images: [
     '/images/rhinoplastie.webp',
-    'https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1542893849-b14a2c62aacb?auto=format&fit=crop&q=80',
+    '/images/botox.webp',
+    '/images/menton-homepage.webp',
+    '/images/ovale-homepage.webp',
+    '/images/sillons-nasogeniens-home.webp',
+    '/images/tempes-homepage.webp',
+    '/images/rides-du-lion.webp',
+    '/images/pattes-doie-homepage.webp',
   ],
 };

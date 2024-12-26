@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/src/utils/animations';
+import { usePathname } from 'next/navigation';
 
 interface ImageResult {
     description: string;
@@ -24,6 +25,7 @@ export const TreatmentAvant: React.FC<AvantSectionProps> = ({
     videoIds = [],
     images,
 }) => {
+    const pathname = usePathname()
     return (
         <section className="py-16 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,7 +57,7 @@ export const TreatmentAvant: React.FC<AvantSectionProps> = ({
                             initial="initial"
                             whileInView="animate"
                             viewport={{ once: true }}
-                            className="relative pb-[50%] h-0 rounded-xl overflow-hidden shadow-lg"
+                            className={`relative ${pathname.includes('sillons') || pathname.includes('front') ? "pb-[50%]" : "pb-[67%]"} h-full rounded-xl overflow-hidden shadow-lg`}
                         >
                             <img
                                 src={url}
