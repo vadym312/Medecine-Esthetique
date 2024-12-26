@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BlogPost } from '@/src/types/blog';
-import { Clock } from 'lucide-react';
 import { formatDate } from '@/src/utils/formatDate';
 import { useRouter } from 'next/navigation';
 
@@ -45,8 +44,6 @@ export const RecentPosts: React.FC<RecentPostsProps> = ({ posts }) => {
                   {post.title}
                 </h5>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
-                  <Clock size={14} className="flex-shrink-0" />
-                  <span>{post.readTime} min de lecture</span>
                   <span className="text-gray-400">•</span>
                   <span>{formatDate(post.createdAt)}</span>
                 </div>
