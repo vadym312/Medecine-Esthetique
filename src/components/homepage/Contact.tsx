@@ -32,14 +32,6 @@ export const Contact: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <Mail className="w-6 h-6 text-gold" />
-                <div>
-                  <h3 className="font-semibold">{contact.email.title}</h3>
-                  <p className="text-primary-dark">{contact.email.address}</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
                 <Clock className="w-6 h-6 text-gold" />
                 <div>
                   <h3 className="font-semibold">{contact.schedules.title}</h3>

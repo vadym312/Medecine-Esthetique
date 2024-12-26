@@ -8,10 +8,10 @@ import WhatsAppHoverMessage from './Message';
 import WhatsAppIcon from './Icon';
 
 export const POSITION_CLASSES = {
-  'bottom-right': 'bottom-4 right-4',
-  'bottom-left': 'bottom-4 left-4',
-  'top-right': 'top-4 right-4',
-  'top-left': 'top-4 left-4',
+  'bottom-right': 'bottom-8 right-8',
+  'bottom-left': 'bottom-8 left-8',
+  'top-right': 'top-8 right-8',
+  'top-left': 'top-8 left-8',
 }
 
 export default function WhatsAppButton({

@@ -2,7 +2,7 @@ export const ridesFrontData = {
   hero: {
     title: "Rides du Front",
     subtitle: "Injections de Botox pour traiter les rides du front",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/rajeunissement-pommettes-visage-injection-paris.jpg",
+    backgroundImage: "/images/front.webp",
   },
   intro: {
     text: "Les rides du front peuvent donner un aspect fatigué ou sévère au visage. Grâce aux injections de Botox, il est possible de lisser ces rides tout en conservant une expression naturelle. Découvrez l’approche du Dr Emmanuel Elard, expert en esthétique médicale à Paris, pour traiter efficacement et subtilement les rides du front.",
