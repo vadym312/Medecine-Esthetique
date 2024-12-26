@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
   return (
     <section className="relative h-screen">
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-right"
         style={{
           backgroundImage: `url(${hero.backgroundImage.url})`,
         }}

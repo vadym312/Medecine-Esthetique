@@ -99,7 +99,7 @@ export const acideData = {
         }
       ],
       iframeUrl: "https://patient.nextmotion.net/photocompare/a78dfefc-1cdc-4692-96ec-f9f5b272840e:1tDR6D:_9eeqf88pAfqb__WeDdmk6cRqG8R473FdwSqWSqp2-MIRzBLEsXb6PpkvS2-FilMFMWjm4TxiQsvNSgXTIyKhA",
-      isReversed: true
+      isReversed: false
     },
     {
       title: "L’impact social et émotionnel",
@@ -109,7 +109,8 @@ export const acideData = {
         "Interactions sociales plus positives.",
         "Sentiment de bien-être général."
       ],
-      imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/patiente-heureuse-1024x576.jpg"
+      imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/patiente-heureuse-1024x576.jpg",
+      isReversed: true
     },
     {
       title: "Pourquoi choisir mon expertise ?",

@@ -25,6 +25,7 @@ export default function RootLayoutWrapper({
 }) {
   return (
     <html lang="fr" className={montserrat.variable}>
+      <link rel="icon" href="/favicon.png" sizes="32x32"></link>
       <body className={montserrat.className}>
         <RootLayout>
           <WhatsAppProvider>

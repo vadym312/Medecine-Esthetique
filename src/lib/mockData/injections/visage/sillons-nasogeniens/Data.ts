@@ -5,7 +5,7 @@ export const sillonsNasogeniensData = {
     backgroundImage: "/images/sillons-nasogeniens.webp",
   },
   intro: {
-    text: "Les cernes peuvent donner un aspect fatigué et vieilli au visage. Grâce aux injections d’acide hyaluronique, vous pouvez retrouver un regard frais et lumineux sans chirurgie. Découvrez le traitement proposé par le Dr Emmanuel Elard, spécialiste en esthétique à Paris, pour atténuer efficacement les cernes.",
+    text: "Les sillons nasogéniens sont souvent responsables d’un air fatigué ou marqué sur le visage. Grâce aux injections d’acide hyaluronique, il est possible de les atténuer efficacement tout en conservant un résultat naturel et harmonieux. Découvrez l’approche personnalisée du Dr Emmanuel Elard, expert en esthétique médicale, pour retrouver un visage reposé et éclatant.",
   },
   types: {
     title: "Types de Sillons",

@@ -72,10 +72,9 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
             )}
             {question && <p className="text-text-secondary leading-relaxed">{question}</p>}
           </div>
-          <div className='flex justify-center'>
-            <div
-              className={`relative aspect-auto w-3/5 h-[550px] rounded-lg overflow-hidden shadow-lg ${isReversed ? 'md:order-1' : ''
-                }`}
+          {!imageUrl && <div className={`flex justify-center ${isReversed ? 'md:order-1' : ''}`}>
+            {(videoId || iframeUrl) && <div
+              className={`relative aspect-auto w-3/5 h-[480px] rounded-lg overflow-hidden shadow-lg`}
             >
               {videoId && <iframe
                 src={`https://www.youtube.com/embed/${videoId}`}
@@ -85,7 +84,6 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
                 allowFullScreen
               />
               }
-              {imageUrl && <img src={imageUrl} alt="emotion" className="absolute inset-0 w-full h-full"/>}
               {iframeUrl && <iframe
                 src={iframeUrl}
                 title='iframe'
@@ -93,8 +91,19 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
                 allowFullScreen
                 className="absolute top-0 left-0 w-full h-full"
               />}
+            </div>}
+          </div>}
+          {imageUrl && <div className={`${isReversed ? 'md:order-1' : ''}`}>
+            <div
+              className="relative pb-[60%] h-0 rounded-xl overflow-hidden shadow-lg"
+            >
+              <img
+                src={imageUrl}
+                alt='result'
+                className="absolute top-0 left-0 w-full h-full"
+              />
             </div>
-          </div>
+          </div>}
         </motion.div>
       </Container>
     </section>
