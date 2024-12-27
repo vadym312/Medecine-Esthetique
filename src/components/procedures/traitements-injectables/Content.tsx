@@ -74,7 +74,7 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
           </div>
           {!imageUrl && <div className={`flex justify-center ${isReversed ? 'md:order-1' : ''}`}>
             {(videoId || iframeUrl) && <div
-              className={`relative aspect-auto w-3/5 h-[480px] rounded-lg overflow-hidden shadow-lg`}
+              className={`relative aspect-auto w-3/5 h-96 sm:h-[400px] md:h-[400px] lg:h-[420px] rounded-lg overflow-hidden shadow-lg`}
             >
               {videoId && <iframe
                 src={`https://www.youtube.com/embed/${videoId}`}
