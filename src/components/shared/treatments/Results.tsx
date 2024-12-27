@@ -70,7 +70,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                   initial="initial"
                   whileInView="animate"
                   viewport={{ once: true }}
-                  className="relative pb-[60%] h-0 w-[400px] rounded-xl flex justify-center overflow-hidden shadow-lg"
+                  className="relative pb-[90%] sm:pb-[80%] md:pb-[60%] h-full w-80 sm:w-[400px] rounded-xl flex justify-center overflow-hidden shadow-lg"
                 >
                   <iframe
                     src={iframe}
