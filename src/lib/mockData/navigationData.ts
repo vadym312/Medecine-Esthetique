@@ -112,8 +112,12 @@ const baseItems: BaseMenuItem[] = [
     order: 4,
   },
   {
-    label: 'Contact',
+    label: 'Tarifs',
     order: 5,
+  },
+  {
+    label: 'Contact',
+    order: 6,
   },
 ];
 

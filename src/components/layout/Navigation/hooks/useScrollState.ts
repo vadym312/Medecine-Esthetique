@@ -7,5 +7,5 @@ export const useScrollState = () => {
   const pathname = usePathname();
   const isScrolled = useScroll(50);
   
-  return pathname?.includes('blog') || isScrolled;
+  return pathname?.includes('blog') || pathname?.includes('tarifs') || isScrolled;
 };
