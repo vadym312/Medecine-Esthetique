@@ -8,6 +8,7 @@ import { NavigationMobile } from './Mobile';
 import { useNavigationState } from './hooks/useNavigationState';
 import { useScrollState } from './hooks/useScrollState';
 import Link from 'next/link';
+import { siteConfig, buttons } from '@/src/lib/mockData/common';
 
 export const Navigation: React.FC = () => {
   const isScrolled = useScrollState();
@@ -25,8 +26,8 @@ export const Navigation: React.FC = () => {
           <Logo isScrolled={isScrolled} />
           <NavigationMenu isScrolled={isScrolled} />
           <div className="hidden lg:block">
-            <Link href='https://drelard.booking.nextmotion.net' target="_blank" rel="noopener noreferrer">
-              <button className="booking-button">Prendre RDV</button>
+            <Link href={buttons.booking.url} target="_blank" rel="noopener noreferrer">
+              <button className="booking-button">{buttons.booking.text}</button>
             </Link>
           </div>
           <NavigationMobile

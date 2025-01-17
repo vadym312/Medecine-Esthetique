@@ -74,10 +74,11 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                 >
                   <iframe
                     src={iframe}
-                    title='Youtube video'
+                    title='Iframe'
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="absolute top-0 left-0 w-full h-full"
+                    referrerPolicy="strict-origin"
                   />
                 </motion.div>
               </div>

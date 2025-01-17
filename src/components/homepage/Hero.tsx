@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import { hero } from '@/src/lib/mockData/homepage/hero';
 import { Button } from '../ui/Button';
@@ -27,7 +29,7 @@ export const Hero: React.FC = () => {
           </h1>
           <p className="text-sm md:text-base xl:text-xl text-white/90 italic">{hero.subtitle}</p>
           <Button className="bg-white hover:bg-white/90 !text-black px-8 py-3 !rounded-full text-sm transition-colors">
-            <Link href={`${hero.ctaUrl}`} target='_blank'>{hero.ctaText}</Link>
+            <Link href={hero.ctaUrl} target='_blank'>{hero.ctaText}</Link>
           </Button>
         </motion.div>
       </div>

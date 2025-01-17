@@ -6,6 +6,8 @@ import { useScroll } from '@/src/hooks/useScroll';
 export const useScrollState = () => {
   const pathname = usePathname();
   const isScrolled = useScroll(50);
-  
-  return pathname?.includes('blog') || pathname?.includes('tarifs') || isScrolled;
+
+  return (
+    pathname?.includes('blog') || pathname?.includes('tarifs') || isScrolled
+  );
 };
