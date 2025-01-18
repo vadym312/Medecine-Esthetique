@@ -2,7 +2,7 @@ export const pelxrData = {
   hero: {
     title: "Plexr",
     subtitle: "La blepharoplastie medicale sans chirurgie​",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/cryolipolyse-paris-medecine-esthetique-silhouette.jpg",
+    backgroundImage: "/images/plexr.webp",
   },
   intro: {
     text: "Le PlexR est une méthode non invasive utilisant l’énergie plasma pour traiter efficacement les paupières tombantes et les signes de relâchement cutané. Découvrez comment cette solution révolutionnaire peut sublimer votre regard sans chirurgie.",

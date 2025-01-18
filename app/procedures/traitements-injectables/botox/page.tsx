@@ -14,7 +14,7 @@ const Botox: React.FC = () => {
     <div className="bg-white">
       <Hero
         title="Botox"
-        imageUrl="/images/botox.webp"
+        imageUrl="/images/botoxpage.webp"
       />
       <IntroSection {...botoxData.intro}/>
       <KeyPointsInfographic />

@@ -2,7 +2,7 @@ export const radioData = {
   hero: {
     title: "Radiofréquence",
     subtitle: "Radiofréquence : la solution pour raffermir votre peau​",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/radiofrequence-paris-medecin-esthetique-dr-elard.jpg",
+    backgroundImage: "/images/radiofrequence.webp",
   },
   intro: {
     text: "Offrez à votre peau une seconde jeunesse grâce à la radiofréquence fractionnée avec micro-aiguilles. Cette technologie révolutionnaire, utilisée par le Dr Emmanuel Elard à Paris, stimule naturellement la production de collagène et d’élastine, pour raffermir votre peau, atténuer les rides et revitaliser votre visage, cou ou décolleté. Découvrez ce traitement efficace, sans éviction sociale, pour lutter contre les signes du vieillissement cutané.",

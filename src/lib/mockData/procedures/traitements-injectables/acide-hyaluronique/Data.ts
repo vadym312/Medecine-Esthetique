@@ -2,7 +2,7 @@ export const acideData = {
   hero: {
     title: "Acide Hyaluronique",
     subtitle: "Tout Savoir sur l'Acide Hyaluronique : Avantages, Techniques et Résultats",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/cryolipolyse-paris-medecine-esthetique-silhouette.jpg",
+    backgroundImage: "/images/acide-hyaluronique.webp",
   },
   introText: ["L’acide hyaluronique est devenu un incontournable de la médecine esthétique. Ses multiples applications permettent de redéfinir les volumes du visage, d’atténuer les signes du vieillissement, et d’obtenir des résultats naturels et harmonieux. Découvrez ici tout ce que vous devez savoir sur ce produit révolutionnaire, ses avantages, ses techniques d’injection, et les résultats que vous pouvez espérer.", "L’acide hyaluronique est devenu un incontournable de la médecine esthétique. Ses multiples applications permettent de redéfinir les volumes du visage, d’atténuer les signes du vieillissement, et d’obtenir des résultats naturels et harmonieux. Découvrez ici tout ce que vous devez savoir sur ce produit révolutionnaire, ses avantages, ses techniques d’injection, et les résultats que vous pouvez espérer."],
   content: [
