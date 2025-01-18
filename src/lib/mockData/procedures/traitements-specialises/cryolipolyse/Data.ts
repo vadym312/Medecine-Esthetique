@@ -2,7 +2,7 @@ export const cryolipolyseData = {
   hero: {
     title: "Cryolipolyse",
     subtitle: "Éliminez les graisses localisées sans chirurgie​",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/cryolipolyse-paris-medecine-esthetique-silhouette.jpg",
+    backgroundImage: "/images/cryolipolyse.webp",
   },
   intro: {
     text: "Découvrez comment la cryolipolyse, une technologie innovante, permet de réduire les amas graisseux localisés de manière non invasive, grâce au froid. Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, vous guide dans ce traitement pour affiner votre silhouette.",

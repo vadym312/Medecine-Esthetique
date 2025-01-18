@@ -2,7 +2,7 @@ export const hifuData = {
   hero: {
     title: "HIFU",
     subtitle: "HIFU (Ultrasons focalisés de haute intensité) : Un Lifting Sans Chirurgie​",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/cryolipolyse-paris-medecine-esthetique-silhouette.jpg",
+    backgroundImage: "/images/hifu.webp",
   },
   intro: {
     text: "Le HIFU (Ultrasons focalisés de haute intensité) est une technique révolutionnaire qui permet d’obtenir un effet lift naturel sans recourir à la chirurgie. Grâce à cette technologie, des micro-lésions précises sont créées dans les tissus profonds, stimulant la production de nouveau collagène. Le traitement par HIFU est idéal pour le visage et le cou, offrant des résultats visibles qui s’améliorent dans le temps.",
