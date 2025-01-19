@@ -57,7 +57,7 @@ export const cernesData = {
   results: {
     title: "Résultats Obtenus par le Dr Elard",
     subtitle: "Photos avant/après de patients ayant bénéficié du traitement des cernes avec des injections d'acide hyaluronique",
-    iframes: ["https://app.nextmotion.net/photocompare/438131d5-83a8-4a12-9b37-87a265849e4c:1tQmz6:nFTTizA-BzZQczPG6zi2084Diu0rR3GqI3tTFuEvG3tTPMbMryjPVvJ8UYxMXRFHunlCa5IhH0-ejO2y_GTOhA"]
+    iframes: ["https://patient.nextmotion.net/photocompare/438131d5-83a8-4a12-9b37-87a265849e4c:1tZSQM:MGVvEZlNl1JxfHx30AOFNg6WXFxtnHIerGI7wKGTRRFw1vr-L_1olQbKxzUXawYxiRBxR4cBK8p5hpA15TThuw"]
   },
   testimonials: {
     title: "Témoignages Patients",
