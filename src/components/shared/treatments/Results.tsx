@@ -64,60 +64,60 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
         {iframes && iframes.length > 0 &&
           <div className={`grid md:grid-cols-${iframes.length} gap-8 mx-auto max-w-5xl mb-6`}>
             {iframes.map((iframe, index) => (
-              <div key={index} className='flex justify-center'>
-                <motion.div
-                  variants={fadeIn}
-                  initial="initial"
-                  whileInView="animate"
-                  viewport={{ once: true }}
-                  className="relative pb-[90%] sm:pb-[80%] md:pb-[60%] h-full w-80 sm:w-[400px] rounded-xl flex justify-center overflow-hidden shadow-lg"
-                >
+              <div key={index} className="flex justify-center">
+                {/* Outer container with fixed dimensions */}
+                <div className="w-full max-w-sm h-[500px] md:h-[600px] overflow-hidden rounded-xl shadow-lg">
                   <iframe
                     src={iframe}
-                    title='Iframe'
+                    title={`Result frame ${index + 1}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
+                    className="w-full h-full"
+                    loading="lazy"
                     referrerPolicy="strict-origin"
                   />
-                </motion.div>
+                </div>
               </div>
-
             ))}
           </div>
         }
 
-        {images && images.title && <div className={`grid md:grid-cols-${images?.data.length} gap-8 max-w-5xl mx-auto`}>
-          {images?.data.map((image) => (
-            <motion.div
-              key={image.id}
-              variants={fadeIn}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              className="relative pb-[45%] h-0 rounded-xl overflow-hidden shadow-lg"
-            >
-              <img
-                src={image.url}
-                alt='result'
-                className="absolute top-0 left-0"
-              />
-            </motion.div>
-          ))}
-          <p className='text-center text-gray-600'>{images?.title}</p>
-        </div>
+        {images && images.title &&
+          <div className={`grid md:grid-cols-${images.data.length} gap-8 max-w-5xl mx-auto`}>
+            {images.data.map((image) => (
+              <motion.div
+                key={image.id}
+                variants={fadeIn}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                className="relative pb-[45%] h-0 rounded-xl overflow-hidden shadow-lg"
+              >
+                <img
+                  src={image.url}
+                  alt="Treatment result"
+                  className="absolute top-0 left-0 w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </motion.div>
+            ))}
+            <p className="text-center text-gray-600">{images.title}</p>
+          </div>
         }
-        <br />
+
         {videos && videos.length > 0 &&
-          <div className={`grid md:grid-cols-${pathname.includes('sillons') ? videos.length + 1 : videos.length} gap-8 max-w-5xl mx-auto`}>
+          <div className={`grid md:grid-cols-${pathname.includes('sillons') ? videos.length + 1 : videos.length} gap-8 max-w-5xl mx-auto mt-8`}>
             {videos.map((video, index) => (
-              <div className={`${pathname.includes('sillons') ? index !== 0 ? `md:col-span-2` : "" : ""}`} key={video.id}>
+              <div
+                key={video.id}
+                className={pathname.includes('sillons') && index !== 0 ? 'md:col-span-2' : ''}
+              >
                 <motion.div
                   variants={fadeIn}
                   initial="initial"
                   whileInView="animate"
                   viewport={{ once: true }}
-                  className="relative pb-[50%] min-h-full h-96 rounded-xl flex justify-center overflow-hidden shadow-lg"
+                  className="relative pb-[50%] min-h-full h-96 rounded-xl overflow-hidden shadow-lg"
                 >
                   <iframe
                     src={video.url}
@@ -125,14 +125,15 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="absolute top-0 left-0 w-full h-full"
+                    style={{ border: 'none' }}
+                    loading="lazy"
+                    referrerPolicy="strict-origin"
                   />
                 </motion.div>
               </div>
-
             ))}
           </div>
         }
-
       </div>
     </section>
   );
