@@ -3,9 +3,11 @@ import { Button } from '@/src/components/ui/Button';
 import { useScrollPosition } from './hooks/useScrollPosition';
 import { cn } from '@/src/utils/cn';
 import type { StickyBannerProps } from './types';
+import Link from 'next/link';
 
 export const StickyBanner: React.FC<StickyBannerProps> = ({
     buttonText,
+    link,
     threshold = 0.2,
     className,
 }) => {
@@ -22,9 +24,11 @@ export const StickyBanner: React.FC<StickyBannerProps> = ({
             )}
         >
             <div className="max-w-7xl mx-auto flex justify-center items-center">
-                <Button>
-                    {buttonText}
-                </Button>
+                <Link href={link} target="_blank" rel="noopener noreferrer">
+                    <Button>
+                        {buttonText}
+                    </Button>
+                </Link>
             </div>
         </div>
     );
