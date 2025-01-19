@@ -19,6 +19,7 @@ export const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
       <Footer />
       <StickyBanner
         buttonText="Prendre RDV"
+        link="https://drelard.booking.nextmotion.net/"
         threshold={0.2}
       />
       <Toaster
