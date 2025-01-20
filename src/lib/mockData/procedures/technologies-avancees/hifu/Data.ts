@@ -63,7 +63,6 @@ export const hifuData = {
         url: 'https://www.youtube.com/embed/CT1BiNw8f3Q'
       }
     ],
-    iframes: ["https://patient.nextmotion.net/photocompare/470d9a05-f19a-4212-b720-6150b413ba30:1tDquh:rZ5Un2LVnWWRC4e4vOnqOqqq3hZh9Kcpi4dazOGhCHOw8DBV3PGg_FO9yWNW3YVuWonUtVgjZ-gfp9n8k0IWHQ"]
   },
   testimonials: {
     title: "Témoignages Patients",

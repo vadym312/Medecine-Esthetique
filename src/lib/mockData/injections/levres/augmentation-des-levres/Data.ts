@@ -57,7 +57,7 @@ export const augmentationLevresData = {
   results: {
     title: "Exemples de Résultats Obtenus par le Dr Elard",
     subtitle: "Voici quelques exemples de résultats obtenus par le Dr Emmanuel Elard pour l’augmentation des lèvres.",
-    iframes: ["https://patient.nextmotion.net/photocompare/438131d5-83a8-4a12-9b37-87a265849e4c:1tATAq:gAMFf4_3YBlthfqSHGps_pfgEf25b4rxfzVpjB_MvUtdtVF3BDKY8VXtrBoq-pXlu4AZ4qVu-aA8pY0BlIGEhA","https://patient.nextmotion.net/photocompare/438131d5-83a8-4a12-9b37-87a265849e4c:1tATAq:gAMFf4_3YBlthfqSHGps_pfgEf25b4rxfzVpjB_MvUtdtVF3BDKY8VXtrBoq-pXlu4AZ4qVu-aA8pY0BlIGEhA"]
+    iframes: ["https://patient.nextmotion.net/photocompare/1cca7f78-818b-46d5-b4da-815746cebf13:1tYHog:JJNyYTmL85j264Fr43qfUwyzs4qQarDvTX1v2VYcKOaSIzrVnZqLbtorldnAe9gBSLmmrOmhdjztOYizCGPz2g"]
   },
   testimonials: {
     title: "Témoignages Patients",

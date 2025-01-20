@@ -59,7 +59,7 @@ export const masseterData = {
     videos: [{
       id: '1',
       title: 'Résultat du traitement - Cas 1',
-      url: 'https://www.youtube.com/embed/VIDEO_ID_1'
+      url: 'https://youtube.com/shorts/l7t_q-L2OVE'
     }],
   },
   testimonials: {
