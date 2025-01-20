@@ -11,22 +11,22 @@ interface KeyPoint {
 const keyPoints: KeyPoint[] = [
   {
     title: 'Sécurité',
-    description: 'Produit biocompatible naturellement présent dans la peau',
+    description: 'Produit autorisé et éprouvé médicalement, utilisé depuis des décennies en médecine esthétique.',
     icon: '🛡️',
   },
   {
     title: 'Résultats',
-    description: "Effet immédiat et durable jusqu'à 18 mois",
+    description: "Effet rapide et durable pendant 3 à 6 mois, offrant un visage reposé et détendu.",
     icon: '✨',
   },
   {
     title: 'Polyvalence',
-    description: 'Traitement de multiples zones du visage',
+    description: "Correction des rides d'expression sur différentes zones : front, glabelle, pattes d’oie, et autres.",
     icon: '🎯',
   },
   {
     title: 'Réversibilité',
-    description: 'Possibilité de dissoudre le produit si nécessaire',
+    description: "Effets temporaires et réversibles pour un retour à l'état naturel en quelques mois.",
     icon: '↩️',
   },
 ];
@@ -41,7 +41,7 @@ export const KeyPointsInfographic = () => {
     <section ref={ref} className="py-16 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Points Clés de l'Acide Hyaluronique
+        Points Clés de la Toxine Botulique
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {keyPoints.map((point, index) => (

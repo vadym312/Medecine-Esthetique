@@ -124,7 +124,7 @@ export const botoxData = {
           subtitle: "En quelques jours, Laurence a remarqué une nette amélioration. Son front était visiblement lissé, et son regard semblait plus ouvert, reposé et rajeuni. Les expressions naturelles de son visage ont été parfaitement préservées, ce qui lui a valu de nombreux compliments sur son air “épanoui”. “Je me sens tellement mieux dans ma peau. Mon regard est plus lumineux et mon visage reflète enfin ce que je ressens à l’intérieur : sérénité et confiance.” Si, comme Laurence, vous souhaitez sublimer votre visage tout en respectant votre naturel, prenez rendez-vous dès aujourd’hui pour une consultation personnalisée."
         }
       ],
-      iframeUrl: "https://patient.nextmotion.net/photocompare/06ec2ea4-a662-4a54-9121-aa991225ea07:1tDhB5:o-JQHHutyNEt1yQeZg8pequNX8TH6Fxr1TXOUSe3vmkyCHrq-3aNBvyt1JPaJGi9ES_kenIz3u2elAtmd8sD5A"
+      iframeUrl: "https://patient.nextmotion.net/photocompare/1fa4f3a8-31ad-4c9a-b93b-0ffb80d8e252:1tYIjR:1KOgDc9RquB70KSmdl0hvg8q3546voGYTDKs2uGa3j6p3l_idllBlApFBTypWVpAZOvTOxSDrUbYD2DRZ04J4A"
     },
     {
       title: "Pourquoi choisir un expert en botox ?",

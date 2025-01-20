@@ -110,14 +110,14 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
             {videos.map((video, index) => (
               <div
                 key={video.id}
-                className={pathname.includes('sillons') && index !== 0 ? 'md:col-span-2' : ''}
+                className={`${pathname.includes('sillons') && index !== 0 ? 'md:col-span-2' : ''} ${pathname.includes('hifu') ? 'flex justify-center' : ''}`}
               >
                 <motion.div
                   variants={fadeIn}
                   initial="initial"
                   whileInView="animate"
                   viewport={{ once: true }}
-                  className="relative pb-[50%] min-h-full h-96 rounded-xl overflow-hidden shadow-lg"
+                  className={`relative ${pathname.includes('hifu') ? 'w-80 h-[500px] md:h-[600px]' : ''} pb-[50%] min-h-full rounded-xl overflow-hidden shadow-lg`}
                 >
                   <iframe
                     src={video.url}
