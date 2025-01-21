@@ -64,7 +64,7 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
         {iframes && iframes.length > 0 &&
           <div className={`grid md:grid-cols-${iframes.length} gap-8 mx-auto max-w-5xl mb-6`}>
             {iframes.map((iframe, index) => (
-              <div className='flex justify-center' key={iframe}>
+              <div className='flex justify-center' key={`iframe-${index}`}>
                 <motion.div
                   variants={fadeIn}
                   initial="initial"
@@ -107,40 +107,40 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                 />
               </motion.div>
             ))}
-        <p className="text-center text-gray-600">{images.title}</p>
-      </div>
+            <p className="text-center text-gray-600">{images.title}</p>
+          </div>
         }
 
-      {videos && videos.length > 0 &&
-        <div className={`grid md:grid-cols-${pathname.includes('sillons') ? videos.length + 1 : videos.length} gap-8 max-w-5xl mx-auto mt-8`}>
-          {videos.map((video, index) => (
-            <div
-              key={video.id}
-              className={`${pathname.includes('sillons') && index !== 0 ? 'md:col-span-2' : ''} ${pathname.includes('hifu') ? 'flex justify-center' : ''}`}
-            >
-              <motion.div
-                variants={fadeIn}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                className={`relative ${pathname.includes('hifu') ? 'w-80 h-[500px] md:h-[600px]' : ''} pb-[50%] min-h-full rounded-xl overflow-hidden shadow-lg`}
+        {videos && videos.length > 0 &&
+          <div className={`grid md:grid-cols-${pathname.includes('sillons') ? videos.length + 1 : videos.length} gap-8 max-w-5xl mx-auto mt-8`}>
+            {videos.map((video, index) => (
+              <div
+                key={video.id}
+                className={`${pathname.includes('sillons') && index !== 0 ? 'md:col-span-2' : ''} ${pathname.includes('hifu') ? 'flex justify-center' : ''}`}
               >
-                <iframe
-                  src={video.url}
-                  title={video.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full"
-                  style={{ border: 'none' }}
-                  loading="lazy"
-                  referrerPolicy="strict-origin"
-                />
-              </motion.div>
-            </div>
-          ))}
-        </div>
-      }
-    </div>
-    </section >
+                <motion.div
+                  variants={fadeIn}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true }}
+                  className={`relative ${pathname.includes('hifu') ? 'w-80 h-[500px] md:h-[600px]' : ''} pb-[50%] min-h-full rounded-xl overflow-hidden shadow-lg`}
+                >
+                  <iframe
+                    src={video.url}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full"
+                    style={{ border: 'none' }}
+                    loading="lazy"
+                    referrerPolicy="strict-origin"
+                  />
+                </motion.div>
+              </div>
+            ))}
+          </div>
+        }
+      </div>
+    </section>
   );
 };

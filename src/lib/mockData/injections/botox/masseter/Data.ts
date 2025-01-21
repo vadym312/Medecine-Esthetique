@@ -2,7 +2,7 @@ export const masseterData = {
   hero: {
     title: "Masseter",
     subtitle: "INJECTIONS DE BOTOX DANS LES MASSÉTERS POUR AFFINER LA MÂCHOIRE",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/dessiner-ovale-visage-injections-acide-hyaluronique-paris.jpg",
+    backgroundImage: "/images/ovale-du-visage.webp",
   },
   intro: {
     text: "Rêvez-vous d’une mâchoire plus fine et harmonieuse ? Grâce aux injections de botox dans les masséters, il est possible d’affiner la mâchoire sans chirurgie et d’adoucir les contours du visage. Découvrez cette technique innovante réalisée par le Dr Emmanuel Elard, expert en médecine esthétique à Paris.",
