@@ -64,9 +64,14 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
         {iframes && iframes.length > 0 &&
           <div className={`grid md:grid-cols-${iframes.length} gap-8 mx-auto max-w-5xl mb-6`}>
             {iframes.map((iframe, index) => (
-              <div key={index} className="flex justify-center">
-                {/* Outer container with fixed dimensions */}
-                <div className="w-full max-w-sm h-[500px] md:h-[600px] overflow-hidden rounded-xl shadow-lg">
+              <div className='flex justify-center' key={iframe}>
+                <motion.div
+                  variants={fadeIn}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true }}
+                  className={`relative h-[500px] md:h-[550px] w-full ${pathname.includes('augmentation-des-levres') ? 'sm:w-[570px]' : 'sm:w-96'} rounded-xl shadow-lg`}
+                >
                   <iframe
                     src={iframe}
                     title={`Result frame ${index + 1}`}
@@ -74,9 +79,10 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                     allowFullScreen
                     className="w-full h-full"
                     loading="lazy"
+                    scrolling="no"
                     referrerPolicy="strict-origin"
                   />
-                </div>
+                </motion.div>
               </div>
             ))}
           </div>
@@ -101,40 +107,40 @@ export const TreatmentResults: React.FC<ResultsSectionProps> = ({
                 />
               </motion.div>
             ))}
-            <p className="text-center text-gray-600">{images.title}</p>
-          </div>
+        <p className="text-center text-gray-600">{images.title}</p>
+      </div>
         }
 
-        {videos && videos.length > 0 &&
-          <div className={`grid md:grid-cols-${pathname.includes('sillons') ? videos.length + 1 : videos.length} gap-8 max-w-5xl mx-auto mt-8`}>
-            {videos.map((video, index) => (
-              <div
-                key={video.id}
-                className={`${pathname.includes('sillons') && index !== 0 ? 'md:col-span-2' : ''} ${pathname.includes('hifu') ? 'flex justify-center' : ''}`}
+      {videos && videos.length > 0 &&
+        <div className={`grid md:grid-cols-${pathname.includes('sillons') ? videos.length + 1 : videos.length} gap-8 max-w-5xl mx-auto mt-8`}>
+          {videos.map((video, index) => (
+            <div
+              key={video.id}
+              className={`${pathname.includes('sillons') && index !== 0 ? 'md:col-span-2' : ''} ${pathname.includes('hifu') ? 'flex justify-center' : ''}`}
+            >
+              <motion.div
+                variants={fadeIn}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                className={`relative ${pathname.includes('hifu') ? 'w-80 h-[500px] md:h-[600px]' : ''} pb-[50%] min-h-full rounded-xl overflow-hidden shadow-lg`}
               >
-                <motion.div
-                  variants={fadeIn}
-                  initial="initial"
-                  whileInView="animate"
-                  viewport={{ once: true }}
-                  className={`relative ${pathname.includes('hifu') ? 'w-80 h-[500px] md:h-[600px]' : ''} pb-[50%] min-h-full rounded-xl overflow-hidden shadow-lg`}
-                >
-                  <iframe
-                    src={video.url}
-                    title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full"
-                    style={{ border: 'none' }}
-                    loading="lazy"
-                    referrerPolicy="strict-origin"
-                  />
-                </motion.div>
-              </div>
-            ))}
-          </div>
-        }
-      </div>
-    </section>
+                <iframe
+                  src={video.url}
+                  title={video.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full"
+                  style={{ border: 'none' }}
+                  loading="lazy"
+                  referrerPolicy="strict-origin"
+                />
+              </motion.div>
+            </div>
+          ))}
+        </div>
+      }
+    </div>
+    </section >
   );
 };

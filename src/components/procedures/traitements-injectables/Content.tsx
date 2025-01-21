@@ -74,11 +74,12 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
           </div>
           {!imageUrl && <div className={`flex justify-center ${isReversed ? 'md:order-1' : ''}`}>
             {(videoId || iframeUrl) && <div
-              className={`relative aspect-auto w-3/5 h-96 sm:h-[400px] md:h-[400px] lg:h-[420px] rounded-lg overflow-hidden shadow-lg`}
+              className={`relative aspect-auto w-full sm:w-3/5 md:w-full lg:w-3/5 h-[500px] sm:h-[400px] md:h-[500px] lg:h-[450px] rounded-lg overflow-hidden shadow-lg`}
             >
               {videoId && <iframe
                 src={`https://www.youtube.com/embed/${videoId}`}
                 title={title}
+                scrolling='no'
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -87,6 +88,7 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
               {iframeUrl && <iframe
                 src={iframeUrl}
                 title='iframe'
+                scrolling='no'
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="absolute top-0 left-0 w-full h-full"
