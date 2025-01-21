@@ -7,12 +7,11 @@ import { useInView } from 'react-intersection-observer';
 import type { BlogPost, Category } from '@/src/types/blog';
 import { BlogHero } from './Hero';
 import { CategoryFilter } from './CategoryFilter';
-import { LoadingSpinner } from '@/src/components/ui/LoadingSpinner';
 import { BlogGrid } from './BlogGrid';
 import { usePosts } from '@/src/hooks/usePosts';
+import { LoadingSpinner } from '@/src/components/ui/LoadingSpinner';
 
 const NewsletterSignup = dynamic(() => import('./NewsletterSignup').then(mod => mod.NewsletterSignup));
-// const CallToAction = dynamic(() => import('./CallToAction').then(mod => mod.CallToAction));
 const BlogPostComponent = dynamic(() => import('./BlogPost'));
 
 const ITEMS_PER_PAGE = 6;
@@ -22,9 +21,11 @@ export const BlogPage: React.FC = () => {
   const [selectedPost, setSelectedPost] = useState<string | null>(null);
   const [page, setPage] = useState(1);
   const { posts, loading, fetchPosts } = usePosts();
+  
   useEffect(() => {
     fetchPosts(1);
   }, []);
+  
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -37,13 +38,6 @@ export const BlogPage: React.FC = () => {
   ) : posts;
 
   const paginatedPosts = filteredPosts.slice(0, page * ITEMS_PER_PAGE);
-
-  useEffect(() => {
-    const imagesToPreload = paginatedPosts.map((post: BlogPost) => post.image);
-    if (featuredPost) {
-      imagesToPreload.unshift(featuredPost.image);
-    }
-  }, [paginatedPosts, featuredPost]);
 
   useEffect(() => {
     if (inView) {
@@ -63,11 +57,7 @@ export const BlogPage: React.FC = () => {
   }
 
   if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gold"></div>
-      </div>
-    );
+    return <LoadingSpinner />;
   }
 
   return (
@@ -107,10 +97,6 @@ export const BlogPage: React.FC = () => {
       <Suspense fallback={<LoadingSpinner />}>
         <NewsletterSignup />
       </Suspense>
-
-      {/* <Suspense fallback={<LoadingSpinner />}>
-        <CallToAction />
-      </Suspense> */}
     </div>
   );
 };

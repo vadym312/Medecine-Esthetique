@@ -12,10 +12,10 @@ interface SocialLinksProps {
 
 export const SocialLinks: React.FC<SocialLinksProps> = ({
   links = [
-    { platform: 'tiktok', url: '#' },
-    { platform: 'instagram', url: '#' },
-    { platform: 'facebook', url: '#' },
-    { platform: 'linkedin', url: '#' },
+    { platform: 'tiktok', url: 'https://www.tiktok.com/' },
+    { platform: 'instagram', url: 'https://www.instagram.com/' },
+    { platform: 'facebook', url: 'https://www.facebook.com/' },
+    { platform: 'linkedin', url: 'https://www.linkedin.com/' },
   ],
 }) => {
   const renderIcon = (platform: string) => {

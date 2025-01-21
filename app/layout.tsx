@@ -7,7 +7,7 @@ import { WhatsAppWrapper } from '@/src/components/layout/WhatsApp/Wrapper';
 import Script from 'next/script';
 
 // Optimize font loading
-const montserrat = Montserrat({ 
+const montserrat = Montserrat({
   subsets: ['latin'],
   display: 'swap',
   preload: true,
@@ -25,7 +25,25 @@ export default function RootLayoutWrapper({
 }) {
   return (
     <html lang="fr" className={montserrat.variable}>
-      <link rel="icon" href="/favicon.png" sizes="32x32"></link>
+      <head>
+        <link rel="icon" href="/favicon.png" sizes="32x32" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="preconnect"
+          href="https://patient.nextmotion.net"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={montserrat.className}>
         <RootLayout>
           <WhatsAppProvider>

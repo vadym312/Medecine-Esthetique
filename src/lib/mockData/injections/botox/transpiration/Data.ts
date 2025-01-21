@@ -2,7 +2,7 @@ export const transpirationData = {
   hero: {
     title: "Transpiration",
     subtitle: "INJECTIONS DE BOTOX POUR TRAITER LA TRANSPIRATION EXCESSIVE",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/traitement-hypersudation-paris-injection-botox.jpg",
+    backgroundImage: "/images/transpiration.webp",
   },
   intro: {
     text: "La transpiration excessive peut devenir un véritable obstacle au quotidien. Grâce aux injections de Botox, il est possible de réguler efficacement cette surproduction de sueur. Découvrez la méthode du Dr Emmanuel Elard, spécialiste des injectables à Paris, pour un traitement sûr et durable de l’hyperhidrose.",

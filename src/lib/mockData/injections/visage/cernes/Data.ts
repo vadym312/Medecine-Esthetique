@@ -2,7 +2,7 @@ export const cernesData = {
   hero: {
     title: "Traitement des Cernes",
     subtitle: "Injections d'Acide Hyaluronique pour Traiter les Cernes",
-    backgroundImage: "https://medecine-esthetique.net/wp-content/uploads/2023/07/lifting-medical-injections-visage-paris.jpg",
+    backgroundImage: "/images/cernes.webp",
   },
   intro: {
     text: "Les cernes peuvent donner un aspect fatigué et vieilli au visage. Grâce aux injections d’acide hyaluronique, vous pouvez retrouver un regard frais et lumineux sans chirurgie. Découvrez le traitement proposé par le Dr Emmanuel Elard, spécialiste en esthétique à Paris, pour atténuer efficacement les cernes.",
