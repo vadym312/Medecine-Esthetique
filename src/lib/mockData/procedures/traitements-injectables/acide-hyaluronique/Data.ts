@@ -98,7 +98,7 @@ export const acideData = {
           ]
         }
       ],
-      iframeUrl: "https://patient.nextmotion.net/photocompare/438131d5-83a8-4a12-9b37-87a265849e4c:1tZSQM:MGVvEZlNl1JxfHx30AOFNg6WXFxtnHIerGI7wKGTRRFw1vr-L_1olQbKxzUXawYxiRBxR4cBK8p5hpA15TThuw",
+      iframeUrl: "https://patient.nextmotion.net/photocompare/a78dfefc-1cdc-4692-96ec-f9f5b272840e:1tYIab:EFrVSSJuXXsMX0uyArc1YWYOcKlgMpvVI5PU5iUYBqXQZv4nu9CMOYKcIG-fjKcmOveU9CWPemXHzifGA_Oipw",
       isReversed: false
     },
     {
