@@ -14,7 +14,12 @@ const getSpecialPath = (label: string): string | null => {
     'le cabinet': '/about/le-cabinet',
     'à propos': '/about',
     'blog': '/blog',
-    'contact': '/contact'
+    'contact': '/contact',
+    'sillons nasogéniens': '/sillons-nasogeniens',
+    'front': '/injection-du-front',
+    'menton': '/injection-menton',
+    "plis d'amertume": '/plis-armetume-acide-hyaluronique-paris',
+    'botox': '/botox'
   };
   
   return specialPaths[label.toLowerCase()] || null;
