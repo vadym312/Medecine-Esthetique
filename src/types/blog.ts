@@ -17,6 +17,9 @@ export interface BlogPost {
   createdAt: string;
   readTime?: number;
   image?: string;
+  imageAlt?: string;
+  metaTitle?: string;
+  metaDescription?: string;
   sections?: {
     id: string;
     title: string;

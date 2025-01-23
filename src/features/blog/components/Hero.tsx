@@ -28,7 +28,7 @@ export const BlogHero: React.FC<BlogHeroProps> = ({ post }) => {
             <div className="absolute inset-0">
               <img
                 src={post.image}
-                alt={post.title}
+                alt={post.imageAlt}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
