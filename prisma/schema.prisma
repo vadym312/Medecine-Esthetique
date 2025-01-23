@@ -17,23 +17,28 @@ model User {
 }
 
 model Post {
-  id        String     @id @default(cuid())
-  title     String
-  excerpt   String     @db.Text
-  content   String     @db.Text
-  image     String?
-  category  Category   @default(WELL_BEING)
-  published Boolean    @default(false)
-  createdAt DateTime   @default(now())
-  updatedAt DateTime   @updatedAt
-  author    User       @relation(fields: [authorId], references: [id])
-  authorId  String
+  id              String     @id @default(cuid())
+  title           String
+  excerpt         String     @db.Text
+  content         String     @db.Text
+  image           String?
+  imageAlt        String?
+  metaTitle       String?
+  metaDescription String?
+  category        Category   @default(INJECTIONS)
+  published       Boolean    @default(false)
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+  author          User       @relation(fields: [authorId], references: [id])
+  authorId        String
 }
 
 enum Category {
-  INNOVATIONS
-  TREATMENTS
-  WELL_BEING
-  CARE
-  EDUCATION
+  INJECTIONS
+  TRAITEMENTS_DE_LA_PEAU
+  RAJEUNISSEMENT_ANTI_AGE
+  AVANT_APRES_TEMOIGNAGES
+  CONSEILS_EDUCATION
+  ACTUALITES_INNOVATIONS
+  PHILOSOPHIE_BIEN_ETRE
 }

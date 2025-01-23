@@ -4,7 +4,6 @@ import { RootLayout } from '@/src/components/layout/RootLayout';
 import { defaultMetadata } from '@/src/lib/seo/metadata';
 import { WhatsAppProvider } from '@/src/components/layout/WhatsApp/Provider';
 import { WhatsAppWrapper } from '@/src/components/layout/WhatsApp/Wrapper';
-import Script from 'next/script';
 
 // Optimize font loading
 const montserrat = Montserrat({
@@ -51,10 +50,6 @@ export default function RootLayoutWrapper({
             <WhatsAppWrapper />
           </WhatsAppProvider>
         </RootLayout>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );

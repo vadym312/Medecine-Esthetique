@@ -37,9 +37,6 @@ export const defaultMetadata: Metadata = {
                 url: "https://www.youtube.com/embed/yQ5-1ETB_cw",
             },
             {
-                url: "https://www.youtube.com/embed/yQ5-1ETB_cw",
-            },
-            {
                 url: "https://www.youtube.com/embed/3tgz3dgazZs"
             },
             {
