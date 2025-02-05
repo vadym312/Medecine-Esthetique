@@ -42,7 +42,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://patient.nextmotion.net https://www.google.com; object-src 'none';",
+            value: "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:; frame-src 'self' https://www.google.com https://www.youtube-nocookie.com https://www.youtube.com https://patient.nextmotion.net; object-src 'none';",
           },
         ],
       },
