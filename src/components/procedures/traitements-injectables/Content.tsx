@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Container } from '@/src/components/ui/Container';
-import { useIntersectionAnimation } from '@/src/shared/hooks/useIntersectionAnimation';
-import { slideUp } from '@/src/utils/animations';
-
+import React from "react";
+import { motion } from "framer-motion";
+import { Container } from "@/src/components/ui/Container";
+import { useIntersectionAnimation } from "@/src/shared/hooks/useIntersectionAnimation";
+import { slideUp } from "@/src/utils/animations";
+import { YouTubeEmbed } from "@/src/components/shared/YoutubeEmbed";
 interface SubContent {
   title?: string;
   subtitle?: string;
@@ -16,7 +16,7 @@ interface VideoSectionProps {
   subtitle?: string;
   description?: string;
   lists?: string[];
-  subcontent?: SubContent[]
+  subcontent?: SubContent[];
   question?: string;
   videoId?: string;
   imageUrl?: string;
@@ -36,7 +36,7 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
   imageUrl,
   iframeUrl,
   isReversed = false,
-  className = '',
+  className = "",
 }) => {
   const [ref, inView, controls] = useIntersectionAnimation();
 
@@ -47,65 +47,100 @@ export const ContentSection: React.FC<VideoSectionProps> = ({
           variants={slideUp}
           initial="initial"
           animate={controls}
-          className={`grid md:grid-cols-2 gap-12 items-center ${isReversed ? 'direction-rtl' : ''
-            }`}
+          className={`grid md:grid-cols-2 gap-12 items-center ${
+            isReversed ? "direction-rtl" : ""
+          }`}
         >
-          <div className={`space-y-3 ${isReversed && 'md:order-2'}`}>
+          <div className={`space-y-3 ${isReversed && "md:order-2"}`}>
             <h2 className="text-3xl font-bold text-text-primary">{title}</h2>
-            {subtitle && <p className="text-text-secondary leading-relaxed">{subtitle}</p>}
-            {description && <p className="text-text-secondary leading-relaxed">{description}</p>}
-            <ul className='list-inside'>
-              {lists && lists.map((list) =>
-                <li className="text-text-secondary leading-relaxed list-disc" key={list}>{list}</li>
-              )}
-            </ul>
-            {subcontent && subcontent.map((sub: SubContent, index: number) =>
-              <div key={index}>
-                <p className="text-text-primary text-xl font-semibold leading-relaxed mb-3">{sub.title}</p>
-                <p className="text-text-primary leading-relaxed">{sub.subtitle}</p>
-                <ul className='list-inside'>
-                  {sub && sub.lists?.map((sublist: string) =>
-                    <li className="text-text-secondary leading-relaxed list-disc" key={sublist}>{sublist}</li>
-                  )}
-                </ul>
-              </div>
+            {subtitle && (
+              <p className="text-text-secondary leading-relaxed">{subtitle}</p>
             )}
-            {question && <p className="text-text-secondary leading-relaxed">{question}</p>}
+            {description && (
+              <p className="text-text-secondary leading-relaxed">
+                {description}
+              </p>
+            )}
+            <ul className="list-inside">
+              {lists &&
+                lists.map((list) => (
+                  <li
+                    className="text-text-secondary leading-relaxed list-disc"
+                    key={list}
+                  >
+                    {list}
+                  </li>
+                ))}
+            </ul>
+            {subcontent &&
+              subcontent.map((sub: SubContent, index: number) => (
+                <div key={index}>
+                  <p className="text-text-primary text-xl font-semibold leading-relaxed mb-3">
+                    {sub.title}
+                  </p>
+                  <p className="text-text-primary leading-relaxed">
+                    {sub.subtitle}
+                  </p>
+                  <ul className="list-inside">
+                    {sub &&
+                      sub.lists?.map((sublist: string) => (
+                        <li
+                          className="text-text-secondary leading-relaxed list-disc"
+                          key={sublist}
+                        >
+                          {sublist}
+                        </li>
+                      ))}
+                  </ul>
+                </div>
+              ))}
+            {question && (
+              <p className="text-text-secondary leading-relaxed">{question}</p>
+            )}
           </div>
-          {!imageUrl && <div className={`flex justify-center ${isReversed ? 'md:order-1' : ''}`}>
-            {(videoId || iframeUrl) && <div
-              className={`relative aspect-auto w-full sm:w-3/5 md:w-full lg:w-3/5 h-[500px] sm:h-[400px] md:h-[500px] lg:h-[450px] rounded-lg overflow-hidden shadow-lg`}
-            >
-              {videoId && <iframe
-                src={`https://www.youtube.com/embed/${videoId}`}
-                title={title}
-                scrolling='no'
-                className="absolute inset-0 w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-              }
-              {iframeUrl && <iframe
-                src={iframeUrl}
-                title='iframe'
-                scrolling='no'
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-              />}
-            </div>}
-          </div>}
-          {imageUrl && <div className={`${isReversed ? 'md:order-1' : ''}`}>
+          {!imageUrl && (
             <div
-              className="relative pb-[60%] h-0 rounded-xl overflow-hidden shadow-lg"
+              className={`flex justify-center ${isReversed ? "md:order-1" : ""}`}
             >
-              <img
-                src={imageUrl}
-                alt='result'
-                className="absolute top-0 left-0 w-full h-full"
-              />
+              {(videoId || iframeUrl) && (
+                <div
+                  className={`relative aspect-auto w-full sm:w-3/5 md:w-full lg:w-3/5 h-[500px] sm:h-[400px] md:h-[500px] lg:h-[450px] rounded-lg overflow-hidden shadow-lg`}
+                >
+                  {videoId && (
+                    <YouTubeEmbed
+                      src={`https://www.youtube.com/embed/${videoId}`}
+                      title={title}
+                      scrolling="no"
+                      className="absolute inset-0 w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  )}
+                  {iframeUrl && (
+                    <YouTubeEmbed
+                      src={iframeUrl}
+                      title="iframe"
+                      scrolling="no"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute top-0 left-0 w-full h-full"
+                    />
+                  )}
+                </div>
+              )}
             </div>
-          </div>}
+          )}
+          {imageUrl && (
+            <div className={`${isReversed ? "md:order-1" : ""}`}>
+              <div className="relative pb-[60%] h-0 rounded-xl overflow-hidden shadow-lg">
+                <img
+                  src={imageUrl}
+                  alt="result"
+                  className="absolute top-0 left-0 w-full h-full"
+                />
+              </div>
+            </div>
+          )}
         </motion.div>
       </Container>
     </section>

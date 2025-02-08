@@ -1,16 +1,19 @@
-'use client';
-
-import React from 'react';
-import { motion } from 'framer-motion';
-import { fadeIn } from '@/src/utils/animations';
-
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/src/utils/animations";
+import { YouTubeEmbed } from "../YoutubeEmbed";
 interface VideoSectionProps {
   title: string;
   subtitle?: string;
   videoId: string;
 }
 
-export const TreatmentVideo: React.FC<VideoSectionProps> = ({ title, subtitle, videoId }) => {
+export const TreatmentVideo: React.FC<VideoSectionProps> = ({
+  title,
+  subtitle,
+  videoId,
+}) => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,7 +46,7 @@ export const TreatmentVideo: React.FC<VideoSectionProps> = ({ title, subtitle, v
             viewport={{ once: true }}
             className="relative pb-[56.25%] h-0 rounded-xl overflow-hidden shadow-2xl"
           >
-            <iframe
+            <YouTubeEmbed
               src={`https://www.youtube.com/embed/${videoId}`}
               title={title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

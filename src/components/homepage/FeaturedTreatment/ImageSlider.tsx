@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 interface ImageSliderProps {
   images: string[];
   testimonial: {
@@ -9,6 +9,12 @@ interface ImageSliderProps {
     author: string;
   };
 }
+
+const customLoader = ({ src, width }: { src: string; width: number }) => {
+  const maxWidth = Math.min(width <= 480 ? 393 : 384, 576);
+  const quality = 50;
+  return `${src}?w=${maxWidth}&q=${quality}&auto=format,compress`;
+};
 
 export const ImageSlider: React.FC<ImageSliderProps> = ({
   images,
@@ -31,9 +37,13 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
           transition={{ duration: 0.3 }}
           className="absolute inset-0"
         >
-          <img
+          <Image
+            loader={customLoader}
             src={images[currentIndex]}
             alt="Treatment result"
+            quality={50}
+            width={576}
+            height={768}
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -70,7 +80,7 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-colors ${
-              index === currentIndex ? 'bg-white' : 'bg-white/50'
+              index === currentIndex ? "bg-white" : "bg-white/50"
             }`}
             aria-label={`Go to image ${index + 1}`}
           />

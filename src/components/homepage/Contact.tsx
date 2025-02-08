@@ -1,7 +1,7 @@
-import { Container } from '../ui/Container';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
-import { contact } from '@/src/lib/mockData/homepage/contact';
-
+import { Container } from "../ui/Container";
+import { MapPin, Phone, Clock } from "lucide-react";
+import { contact } from "@/src/lib/mockData/homepage/contact";
+import { YouTubeEmbed as MapEmbed } from "../shared/YoutubeEmbed";
 export const Contact: React.FC = () => {
   return (
     <section className="py-20">
@@ -46,13 +46,14 @@ export const Contact: React.FC = () => {
           </div>
 
           <div className="h-[400px] rounded-lg overflow-hidden shadow-lg">
-            <iframe
+            <MapEmbed
               src={contact.googlemapLink}
               width="100%"
               height="100%"
-              title='contact_map'
+              title="contact_map"
               style={{ border: 0 }}
               loading="lazy"
+              className=""
             />
           </div>
         </div>

@@ -1,8 +1,14 @@
-import { motion } from 'framer-motion';
-import { Container } from '../ui/Container';
-import { instagramPosts } from '@/src/lib/mockData/homepage/instagramPosts';
-import { Play } from 'lucide-react';
-
+import { motion } from "framer-motion";
+import { Container } from "../ui/Container";
+import { instagramPosts } from "@/src/lib/mockData/homepage/instagramPosts";
+import { Play } from "lucide-react";
+import Image from "next/image";
+const customLoader = ({ src, width }: { src: string; width: number }) => {
+  const maxWidth = width <= 480 ? 164 : 292;
+  const finalWidth = Math.min(width, maxWidth);
+  const quality = width <= 480 ? 60 : 75;
+  return `${src}?w=${finalWidth}&q=${quality}&auto=format`;
+};
 export const InstagramFeed: React.FC = () => {
   return (
     <section className="py-20 bg-white">
@@ -34,13 +40,17 @@ export const InstagramFeed: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               className="relative group aspect-square overflow-hidden rounded-lg"
             >
-              <img
+              <Image
+                loader={customLoader}
                 src={post.imageUrl}
                 alt={post.alt}
+                width={292}
+                height={292}
+                sizes="(max-width: 480px) 164px, 292px"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
-                <Play className='w-16 h-16' fill='white'/>
+                <Play className="w-16 h-16" fill="white" />
               </div>
               <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.a>

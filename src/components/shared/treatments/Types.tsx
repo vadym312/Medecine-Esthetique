@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { fadeIn } from '@/src/utils/animations';
-
+import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/src/utils/animations";
+import Image from "next/image";
 interface TypeItem {
   title: string;
   description?: string;
@@ -15,6 +15,18 @@ interface TypesSectionProps {
   subtitle?: string;
   items: TypeItem[];
 }
+
+const customLoader = ({
+  src,
+  width,
+  quality,
+}: {
+  src: string;
+  width: number;
+  quality?: number;
+}) => {
+  return `${src}?w=${width}&q=${quality || 50}&auto=format,compress`;
+};
 
 export const TreatmentTypes: React.FC<TypesSectionProps> = ({
   title,
@@ -55,11 +67,15 @@ export const TreatmentTypes: React.FC<TypesSectionProps> = ({
               viewport={{ once: true }}
               className="bg-white rounded-lg shadow-lg overflow-hidden"
             >
-              <img
-                src={item.imageUrl}
-                alt={item.title}
-                className="w-full h-64 object-cover"
-              />
+              <div className="w-full h-64 object-cover relative">
+                <Image
+                  loader={customLoader}
+                  src={item.imageUrl}
+                  alt={item.title}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-2">
                   {item.title}

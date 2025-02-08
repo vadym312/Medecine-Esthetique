@@ -1,11 +1,16 @@
-import { motion } from 'framer-motion';
-import { Star } from 'lucide-react';
-import { Testimonial } from '@/src/types';
-
+import { motion } from "framer-motion";
+import { Star } from "lucide-react";
+import { Testimonial } from "@/src/types";
+import Image from "next/image";
 interface TestimonialCardProps {
   testimonial: Testimonial;
   index: number;
 }
+
+const customLoader = ({ src, width }: { src: string; width: number }) => {
+  const quality = 50;
+  return `${src}?w=${width}&q=${quality}&auto=format,compress`;
+};
 
 export const TestimonialCard: React.FC<TestimonialCardProps> = ({
   testimonial,
@@ -19,9 +24,12 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
       className="bg-white p-6 rounded-lg shadow-lg"
     >
       <div className="flex items-center gap-4 mb-4">
-        <img
+        <Image
+          loader={customLoader}
           src={testimonial.imageUrl}
           alt={testimonial.name}
+          width={48}
+          height={48}
           className="w-12 h-12 rounded-full object-cover"
         />
         <div>
