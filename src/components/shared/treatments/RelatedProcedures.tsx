@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
-import { fadeIn } from '@/src/utils/animations';
-
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { fadeIn } from "@/src/utils/animations";
+import Image from "next/image";
 interface Procedure {
   category: string;
   title: string;
@@ -18,6 +18,18 @@ interface RelatedProceduresProps {
   subtitle?: string;
   procedures: Procedure[];
 }
+
+const customLoader = ({
+  src,
+  width,
+  quality,
+}: {
+  src: string;
+  width: number;
+  quality?: number;
+}) => {
+  return `${src}?w=${width}&q=${quality || 80}`;
+};
 
 export const RelatedProcedures: React.FC<RelatedProceduresProps> = ({
   title,
@@ -51,11 +63,16 @@ export const RelatedProcedures: React.FC<RelatedProceduresProps> = ({
               className="group relative bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
               <div className="relative h-[300px] overflow-hidden">
-                <img
-                  src={procedure.image}
-                  alt={procedure.title}
-                  className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-                />
+                <div className="absoulte">
+                  <Image
+                    loader={customLoader}
+                    fill
+                    src={procedure.image}
+                    alt={procedure.title}
+                    className="inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+                  />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
               </div>
 

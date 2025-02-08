@@ -1,9 +1,16 @@
-import { motion } from 'framer-motion';
-import { Service } from '@/src/types';
+import { motion } from "framer-motion";
+import { Service } from "@/src/types";
+import Image from "next/image";
 interface ServiceCardProps {
   service: Service;
   index: number;
 }
+
+const customLoader = ({ src, width }: { src: string; width: number }) => {
+  const maxWidth = width <= 480 ? 393 : 384;
+  const quality = 50;
+  return `${src}?w=${maxWidth}&q=${quality}&auto=format,compress`;
+};
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
   return (
@@ -13,12 +20,18 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
       transition={{ delay: index * 0.2 }}
       className="bg-white rounded-lg shadow-xl overflow-hidden"
     >
-      <div className="h-48 overflow-hidden">
-        <img
-          src={service.imageUrl}
-          alt={service.title}
-          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
-        />
+      <div className="relative h-48 overflow-hidden">
+        {service.imageUrl ? (
+          <Image
+            loader={customLoader}
+            src={service.imageUrl}
+            alt="Hero background"
+            quality={50}
+            fill
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 384px"
+            className="absolute inset-0 w-full h-full"
+          />
+        ) : null}
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{service.title}</h3>

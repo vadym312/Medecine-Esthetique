@@ -82,15 +82,21 @@
 //     </section>
 //   );
 // };
-import { motion } from 'framer-motion';
-import { Award, GraduationCap, Users } from 'lucide-react';
-import { Container } from '../ui/Container';
-import { doctor } from '@/src/lib/mockData/homepage/doctor';
-
+import { motion } from "framer-motion";
+import { Award, GraduationCap, Users } from "lucide-react";
+import { Container } from "../ui/Container";
+import { doctor } from "@/src/lib/mockData/homepage/doctor";
+import Image from "next/image";
 const icons = {
   award: Award,
   graduationCap: GraduationCap,
   users: Users,
+};
+
+const customLoader = ({ src, width }: { src: string; width: number }) => {
+  const quality = width <= 480 ? 75 : 85; // Higher quality for mobile LCP
+
+  return `${src}?w=${width}&q=${quality}&auto=format,compress`;
 };
 
 export const DoctorBanner: React.FC = () => {
@@ -120,9 +126,12 @@ export const DoctorBanner: React.FC = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className='flex justify-center'
+            className="flex justify-center"
           >
-            <img
+            <Image
+              width={384}
+              height={512}
+              loader={customLoader}
               src={doctor.image.url}
               alt={doctor.image.alt}
               className="rounded-lg shadow-xl w-96"

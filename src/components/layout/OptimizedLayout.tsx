@@ -26,6 +26,7 @@ export const OptimizedLayout: React.FC<{ children: React.ReactNode }> = ({ child
       const link = document.createElement('link');
       link.rel = 'preload';
       link.as = 'font';
+      link.type = 'font/woff2';
       link.href = url;
       link.crossOrigin = 'anonymous';
       document.head.appendChild(link);

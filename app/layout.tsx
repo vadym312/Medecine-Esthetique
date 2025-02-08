@@ -1,21 +1,21 @@
-import './globals.css';
-import { Montserrat } from 'next/font/google';
-import { RootLayout } from '@/src/components/layout/RootLayout';
-import { defaultMetadata } from '@/src/lib/seo/metadata';
-import { WhatsAppProvider } from '@/src/components/layout/WhatsApp/Provider';
-import { WhatsAppWrapper } from '@/src/components/layout/WhatsApp/Wrapper';
+import "./globals.css";
+import { Montserrat } from "next/font/google";
+import { RootLayout } from "@/src/components/layout/RootLayout";
+import { defaultMetadata } from "@/src/lib/seo/metadata";
+import { WhatsAppProvider } from "@/src/components/layout/WhatsApp/Provider";
+import { WhatsAppWrapper } from "@/src/components/layout/WhatsApp/Wrapper";
 
 // Optimize font loading
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: ["latin"],
+  display: "swap",
   preload: true,
-  variable: '--font-montserrat',
+  variable: "--font-montserrat",
   adjustFontFallback: true,
-  fallback: ['system-ui', 'arial'],
+  fallback: ["system-ui", "arial"],
 });
 
-export const metadata = defaultMetadata;
+export const metadata = { ...defaultMetadata, fontOptimization: true };
 
 export default function RootLayoutWrapper({
   children,
@@ -43,7 +43,7 @@ export default function RootLayoutWrapper({
           crossOrigin="anonymous"
         />
       </head>
-      <body className={montserrat.className}>
+      <body className={`${montserrat.className} antialiased`}>
         <RootLayout>
           <WhatsAppProvider>
             {children}

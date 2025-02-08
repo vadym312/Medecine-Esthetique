@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { GraduationCap } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { fadeIn } from '@/src/utils/animations';
-
+import React from "react";
+import { GraduationCap } from "lucide-react";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/src/utils/animations";
+import { YouTubeEmbed } from "@/src/components/shared/YoutubeEmbed";
 interface QualificationsProps {
   title: string;
   items: {
@@ -14,7 +14,11 @@ interface QualificationsProps {
   videoId: string;
 }
 
-export const Qualifications: React.FC<QualificationsProps> = ({ title, items, videoId }) => {
+export const Qualifications: React.FC<QualificationsProps> = ({
+  title,
+  items,
+  videoId,
+}) => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,7 +29,7 @@ export const Qualifications: React.FC<QualificationsProps> = ({ title, items, vi
           viewport={{ once: true }}
           className="relative pb-[100%] h-full rounded-xl flex justify-center overflow-hidden shadow-lg"
         >
-          <iframe
+          <YouTubeEmbed
             src={`https://www.youtube.com/embed/${videoId}`}
             title="qualification"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -34,7 +38,7 @@ export const Qualifications: React.FC<QualificationsProps> = ({ title, items, vi
           />
         </motion.div>
 
-        <div className='col-span-2'>
+        <div className="col-span-2">
           <motion.div
             className="text-center mb-16"
             variants={fadeIn}
@@ -68,7 +72,6 @@ export const Qualifications: React.FC<QualificationsProps> = ({ title, items, vi
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );
