@@ -23,7 +23,7 @@ export const ReasonSection = () => {
           </div>
           <div className="relative h-80">
             <img
-              src="https://medecine-esthetique.net/wp-content/uploads/2024/11/salle-attente2.jpg"
+              src="/images/about/salle-attente2.webp"
               alt="Intérieur du reason"
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />

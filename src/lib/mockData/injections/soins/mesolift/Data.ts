@@ -14,17 +14,17 @@ export const mesoliftData = {
       {
         title: "Hydratation profonde",
         description: "l’acide hyaluronique attire et retient l’eau, offrant une hydratation durable.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/medecine-esthetique-prevenir-age-des-20ans-1536x1024.jpeg",
+        imageUrl: "/images/injections/medecine-esthetique-prevenir-age-des-20ans-1536x1024.webp",
       },
       {
         title: "Amélioration de la texture",
         description: "les ridules superficielles sont lissées, la peau paraît plus rebondie.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/injections-illegales-medecine-esthetique.jpg",
+        imageUrl: "/images/injections/injections-illegales-medecine-esthetique.webp",
       },
       {
         title: "Teint lumineux",
         description: "en stimulant la microcirculation, le mésolift redonne de l’éclat à la peau.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/injections-illegales-medecine-esthetique.jpg",
+        imageUrl: "/images/injections/injections-illegales-medecine-esthetique.webp",
       },
     ],
   },
@@ -113,7 +113,7 @@ export const mesoliftData = {
     ],
   },
   cta: {
-    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    image: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
     buttonText: "Prendre Rendez-vous",
     buttonLink: "https://drelard.booking.nextmotion.net",

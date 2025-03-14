@@ -13,17 +13,17 @@ export const tempesData = {
       {
         title: "Tempes Légèrement Creuses",
         description: "Les tempes commencent à perdre du volume, mais l’affinement reste modéré. Une injection légère d’acide hyaluronique suffit pour restaurer les volumes tout en maintenant un aspect naturel.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-legerment-creuses.jpg",
+        imageUrl: "/images/injections/tempes-legerment-creuses.webp",
       },
       {
         title: "Tempes Marquées",
         description: "La résorption osseuse est plus marquée, et la peau peut apparaître relâchée. Des injections plus denses permettent de redonner du volume tout en soutenant les tissus.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-creuses.jpg",
+        imageUrl: "/images/injections/tempes-creuses.webp",
       },
       {
         title: "Tempes Très Creuses",
         description: "Cette forme avancée de creusement crée un contraste notable avec le reste du visage. Des injections d’acide hyaluronique plus importantes sont nécessaires pour restaurer l’harmonie du visage et redonner un aspect plein et jeune aux tempes.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-tres-creuses.jpg",
+        imageUrl: "/images/injections/tempes-tres-creuses.webp",
       },
     ],
   },
@@ -58,7 +58,7 @@ export const tempesData = {
     subtitle: "Voici quelques exemples de résultats obtenus par le Dr Emmanuel Elard pour la correction des tempes",
     images: {
       description: "Avant et après traitement esthétique des tempes.",
-      url: ["https://medecine-esthetique.net/wp-content/uploads/2024/11/filler-temple-pop-2.jpg"]
+      url: ["/images/injections/filler-temple-pop-2.webp"]
     },
   },
   results: {
@@ -138,7 +138,7 @@ export const tempesData = {
     ],
   },
   cta: {
-    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    image: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
     buttonText: "Prendre Rendez-vous",
     buttonLink: "https://drelard.booking.nextmotion.net",
@@ -150,21 +150,21 @@ export const tempesData = {
         category: "INJECTION",
         title: "POMMETTES",
         description: "Restauration du volume des pommettes.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
+        image: "/images/injections/pommettes-site5.webp",
         link: "/injections/visage/pommettes",
       },
       {
         category: "INJECTION",
         title: "SILLONS NASOGÉNIENS",
         description: "Atténuation des plis d'amertume.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg",
+        image: "/images/injections/SNG-site3.webp",
         link: "/injections/visage/sillons-nasogeniens",
       },
       {
         category: "INJECTION",
         title: "FRONT",
         description: "Traitement des rides du front.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-du-front.jpg",
+        image: "/images/injections/injection-du-front.webp",
         link: "/injections/visage/front",
       },
     ],

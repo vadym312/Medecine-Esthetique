@@ -14,17 +14,17 @@ export const mentonData = {
       {
         title: "Menton fuyant",
         description: "Manque de projection. En projetant le menton vers l’avant avec de l’acide hyaluronique, on améliore le profil et l’équilibre du visage.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/iorehfu.jpg",
+        imageUrl: "/images/injections/iorehfu.webp",
       },
       {
         title: "Asymétrie du menton",
         description: "Pour corriger une asymétrie, l’acide hyaluronique permet de remodeler la zone pour obtenir un menton symétrique et harmonieux.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rferfere.png",
+        imageUrl: "/images/injections/rferfere.webp",
       },
       {
         title: "Affaissement du menton",
         description: "En partie responsable du double menton et des bajoues. L’injection d’acide hyaluronique permet de corriger ces problématiques.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/affaissement-menton.jpg",
+        imageUrl: "/images/injections/affaissement-menton.webp",
       },
     ],
   },
@@ -59,14 +59,14 @@ export const mentonData = {
     title: "Avant / après injection du menton",
     images: {
       description: "Avant et après injection au menton pour harmoniser le profil et corriger le double menton.",
-      url: ["https://medecine-esthetique.net/wp-content/uploads/2024/11/avant-apres-calque-menrton-1024x674.jpg"]
+      url: ["/images/injections/avant-apres-calque-menrton-1024x674.webp"]
     },
   },
   avant_apresd: {
     title: "Avant/après d'une injection du menton et de l'ovale du visage",
     images: {
       description: "Avant et après une injection au menton pour sublimer l’ovale du visage.",
-      url: ["https://medecine-esthetique.net/wp-content/uploads/2024/11/68DD67FF-A19F-4E54-84CA-30CDC52BF2FB-1024x674.jpg"]
+      url: ["/images/injections/68DD67FF-A19F-4E54-84CA-30CDC52BF2FB-1024x674.webp"]
     },
   },
   results: {
@@ -145,7 +145,7 @@ export const mentonData = {
     ],
   },
   cta: {
-    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    image: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
     buttonText: "Prendre Rendez-vous",
     buttonLink: "https://drelard.booking.nextmotion.net",
@@ -157,21 +157,21 @@ export const mentonData = {
         category: "INJECTION",
         title: "POMMETTES",
         description: "Restauration du volume des pommettes.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
+        image: "/images/injections/pommettes-site5.webp",
         link: "/injections/visage/pommettes",
       },
       {
         category: "INJECTION",
         title: "SILLONS NASOGÉNIENS",
         description: "Atténuation des plis d'amertume.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg",
+        image: "/images/injections/SNG-site3.webp",
         link: "/injections/visage/sillons-nasogeniens",
       },
       {
         category: "INJECTION",
         title: "TEMPES",
         description: "Restauration du volume temporal.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-tempes-site.jpg",
+        image: "/images/injections/injection-tempes-site.webp",
         link: "/injections/visage/tempes",
       },
     ],

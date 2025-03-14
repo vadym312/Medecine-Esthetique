@@ -14,17 +14,17 @@ export const frontData = {
       {
         title: "Les rides légères",
         description: "Première apparition des lignes horizontales, souvent causées par la fatigue ou la déshydratation.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rides-front-superficiel.jpg",
+        imageUrl: "/images/injections/rides-front-superficiel.webp",
       },
       {
         title: "Les rides profondes",
         description: "Sillons marqués, visibles au repos, qui peuvent être lissés grâce à l’acide hyaluronique.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rides-front-profondes.jpg",
+        imageUrl: "/images/injections/rides-front-profondes.webp",
       },
       {
         title: "Les fronts creux",
         description: "Corrigés grâce à l’injection derrière le muscle frontal, qui pousse le muscle vers l’avant et étire les fibres musculaires, produisant un effet « botox-like ».",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/front-creux.jpg",
+        imageUrl: "/images/injections/front-creux.webp",
       },
     ],
   },
@@ -58,7 +58,7 @@ export const frontData = {
     title: "Avant / après injection du front",
     images: {
       description: "Avant et après injection esthétique du front.",
-      url: ["https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-front-paris-1024x538.jpg"]
+      url: ["/images/injections/injection-front-paris-1024x538.webp"]
     },
   },
   results: {
@@ -148,7 +148,7 @@ export const frontData = {
     ],
   },
   cta: {
-    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    image: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
     buttonText: "Prendre Rendez-vous",
     buttonLink: "https://drelard.booking.nextmotion.net",
@@ -160,21 +160,21 @@ export const frontData = {
         category: "INJECTION",
         title: "RHINOPLASTIE MÉDICALE",
         description: "Traitement des rides rhinoplastie médicale.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rhinoplastie-medicale-injection-1.jpg",
+        image: "/images/injections/rhinoplastie-medicale-injection-1.webp",
         link: "/injections/visage/rhinoplastie-medicale",
       },
       {
         category: "INJECTION",
         title: "MENTON",
         description: "Restructuration et projection du menton.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/menton-site2.jpg",
+        image: "/images/injections/menton-site2.webp",
         link: "/injections/visage/menton",
       },
       {
         category: "INJECTION",
         title: "TEMPES",
         description: "Restauration du volume temporal.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-tempes-site.jpg",
+        image: "/images/injections/injection-tempes-site.webp",
         link: "/injections/visage/tempes",
       },
     ],

@@ -13,17 +13,17 @@ export const rajeunissementMainsData = {
       {
         title: "Peau fine et transparente",
         description: "La perte de densité rend les vaisseaux et les os plus visibles.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/medecine-esthetique-prevenir-age-des-20ans.jpeg",
+        imageUrl: "/images/injections/medecine-esthetique-prevenir-age-des-20ans.webp",
       },
       {
         title: "Fonte musculaire",
         description: "La réduction des muscles accentue le relief des mains, les faisant paraître plus osseuses.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/injections-illegales-medecine-esthetique.jpg",
+        imageUrl: "/images/injections/injections-illegales-medecine-esthetique.webp",
       },
       {
         title: "Squelettisation",
         description: "L’apparition de veines proéminentes et de reliefs osseux est un signe visible du vieillissement.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2023/09/injections-illegales-medecine-esthetique.jpg",
+        imageUrl: "/images/injections/injections-illegales-medecine-esthetique.webp",
       },
     ],
   },
@@ -107,7 +107,7 @@ export const rajeunissementMainsData = {
     ],
   },
   cta: {
-    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    image: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
     buttonText: "Prendre Rendez-vous",
     buttonLink: "https://drelard.booking.nextmotion.net",

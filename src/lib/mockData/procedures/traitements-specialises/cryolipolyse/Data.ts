@@ -12,19 +12,19 @@ export const cryolipolyseData = {
     items: [
       {
         title: " Poignées d’amour",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/poignees-damour.jpg",
+        imageUrl: "/images/injections/poignees-damour.webp",
       },
       {
         title: "Abdomen",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/graisse-abdominale.jpg",
+        imageUrl: "/images/injections/graisse-abdominale.webp",
       },
       {
         title: "Cuisses et bras",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/graisse-des-bras.jpg",
+        imageUrl: "/images/injections/graisse-des-bras.webp",
       },
       {
         title: "Double menton",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/double-menton.jpg",
+        imageUrl: "/images/injections/double-menton.webp",
       }
     ],
   },
@@ -137,7 +137,7 @@ export const cryolipolyseData = {
     ],
   },
   cta: {
-    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    image: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
     buttonText: "Prendre Rendez-vous",
     buttonLink: "https://drelard.booking.nextmotion.net",
@@ -149,21 +149,21 @@ export const cryolipolyseData = {
         category: "BOTOX",
         title: "RIDES DU FRONT",
         description: "Traitement des rides horizontales du front.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-front.jpg",
+        image: "/images/injections/botox-front.webp",
         link: "/injections/botox/rides-du-front",
       },
       {
         category: "BOTOX",
         title: "RIDES DU LION",
         description: "Traitement des rides au coin des yeux.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-ride-lion.jpg",
+        image: "/images/injections/botox-ride-lion.webp",
         link: "/injections/botox/rides-du-lion",
       },
       {
         category: "BOTOX",
         title: "TRANSPIRATION",
         description: "Traitement des transpiration.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-transpiration.jpg",
+        image: "/images/injections/botox-transpiration.webp",
         link: "/injections/botox/transpiration",
       },
     ],

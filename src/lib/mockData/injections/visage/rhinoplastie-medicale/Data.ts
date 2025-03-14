@@ -14,17 +14,17 @@ export const rhinoplastieMedicaleData = {
       {
         title: "Correction d’une bosse nasale",
         description: "Une solution idéale pour lisser les imperfections du profil sans altérer les structures osseuses",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/bosse-nez.jpg",
+        imageUrl: "/images/injections/bosse-nez.webp",
       },
       {
         title: "Rehaussement de la pointe",
         description: "Pour ceux qui souhaitent une pointe plus définie sans chirurgie invasive.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pointe-tombante.jpg",
+        imageUrl: "/images/injections/pointe-tombante.webp",
       },
       {
         title: "Amélioration d’un nez aplati",
         description: "Ajout de volume pour une projection harmonieuse et naturelle.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/nez-aplati.png",
+        imageUrl: "/images/injections/nez-aplati.webp",
       },
     ],
   },
@@ -60,7 +60,7 @@ export const rhinoplastieMedicaleData = {
       title: "Avant et après rhinoplastie médicale.",
       data: [{
         id: '1',
-        url: "https://medecine-esthetique.net/wp-content/uploads/2024/11/rhinoplastie-medicale2-1024x538.jpg"
+        url: "/images/injections/rhinoplastie-medicale2-1024x538.webp"
       }]
     }
   },
@@ -128,7 +128,7 @@ export const rhinoplastieMedicaleData = {
     ],
   },
   cta: {
-    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    image: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
     buttonText: "Prendre Rendez-vous",
     buttonLink: "https://drelard.booking.nextmotion.net",
@@ -140,21 +140,21 @@ export const rhinoplastieMedicaleData = {
         category: "INJECTION",
         title: "MENTON",
         description: "Restructuration et projection du menton.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/menton-site2.jpg",
+        image: "/images/injections/menton-site2.webp",
         link: "/injections/visage/menton",
       },
       {
         category: "INJECTION",
         title: "FRONT",
         description: "Restauration du volume temporal.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/front-inj.jpg",
+        image: "/images/injections/front-inj.webp",
         link: "/injections/visage/front",
       },
       {
         category: "INJECTION",
         title: "POMMETTES",
         description: "Restauration du volume des pommettes.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
+        image: "/images/injections/pommettes-site5.webp",
         link: "/injections/visage/pommettes",
       },
     ],

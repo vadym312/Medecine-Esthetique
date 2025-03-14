@@ -109,7 +109,7 @@ export const acideData = {
         "Interactions sociales plus positives.",
         "Sentiment de bien-être général."
       ],
-      imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/patiente-heureuse-1024x576.jpg",
+      imageUrl: "/images/injections/patiente-heureuse-1024x576.webp",
       isReversed: true
     },
     {
@@ -125,7 +125,7 @@ export const acideData = {
     },
   ],
   cta: {
-    imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    imageUrl: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     title: "Prenez Rendez-vous pour une Consultation Personnalisée",
     description: "Découvrez comment l'acide hyaluronique peut sublimer naturellement votre beauté. Notre expertise est à votre service pour un résultat sur mesure.",
     buttonText: "Prendre Rendez-vous",
@@ -141,91 +141,91 @@ export const acideData = {
         path: '/procedures/pommettes',
         description: 'Restauration du volume des pommettes',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png',
+          '/images/injections/pommettes-site5.webp',
       },
       {
         title: 'Tempes',
         path: '/procedures/tempes',
         description: 'Correction des tempes creuses',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-tempes-site.jpg',
+          '/images/injections/injection-tempes-site.webp',
       },
       {
         title: 'Cernes',
         path: '/procedures/cernes',
         description: 'Traitement des cernes creux et vallées des larmes',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/cernes-site.jpg',
+          '/images/injections/cernes-site.webp',
       },
       {
         title: 'Sillons Nasogéniens',
         path: '/procedures/sillons-nasogeniens',
         description: 'Atténuation des plis entre le nez et la bouche',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg',
+          '/images/injections/SNG-site3.webp',
       },
       {
         title: 'Menton',
         path: '/procedures/menton',
         description: 'Restructuration et projection du menton',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/menton-site2.jpg',
+          '/images/injections/menton-site2.webp',
       },
       {
         title: 'Ovale du visage',
         path: '/procedures/ovale-visage',
         description: "Redéfinition de l'ovale du visage",
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/ovale-visage.jpg',
+          '/images/injections/ovale-visage.webp',
       },
       {
         title: 'Mésolift',
         path: '/procedures/mesolift',
         description: 'Revitalisation globale du visage',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/mesolift.jpg',
+          '/images/injections/mesolift.webp',
       },
       {
         title: 'Augmentation des lèvres',
         path: '/procedures/levres',
         description: 'Volumisation naturelle des lèvres',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/augmentation-des-levres.jpg',
+          '/images/injections/augmentation-des-levres.webp',
       },
       {
         title: "Plis d'amertume",
         path: '/procedures/plis-amertume',
         description: 'Correction des plis aux coins de la bouche',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/plis-damertume-1.jpg',
+          '/images/injections/plis-damertume-1.webp',
       },
       {
         title: 'Rajeunissement des mains',
         path: '/procedures/mains',
         description: 'Restauration du volume des mains',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/injections-des-mains.jpg',
+          '/images/injections/injections-des-mains.webp',
       },
       {
         title: 'Front',
         path: '/procedures/front',
         description: 'Harmonisation de la zone frontale',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-du-front.jpg',
+          '/images/injections/injection-du-front.webp',
       },
       {
         title: 'Skinbooster',
         path: '/procedures/skinbooster',
         description: 'Hydratation profonde de la peau',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/skinbooster.jpg',
+          '/images/injections/skinbooster.webp',
       },
       {
         title: 'Rhinoplastie Médicale',
         path: '/procedures/rhinoplastie',
         description: 'Correction non chirurgicale du nez',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/rhinoplastie-medicale-injection-1.jpg',
+          '/images/injections/rhinoplastie-medicale-injection-1.webp',
       }
     ],
   }

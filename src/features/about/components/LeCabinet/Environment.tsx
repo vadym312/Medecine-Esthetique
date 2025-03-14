@@ -12,7 +12,7 @@ export const EnvironmentSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative h-80">
             <img
-              src="https://medecine-esthetique.net/wp-content/uploads/2024/11/bureau2.jpg"
+              src="/images/about/bureau2.webp"
               alt="Intérieur du cabinet"
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />

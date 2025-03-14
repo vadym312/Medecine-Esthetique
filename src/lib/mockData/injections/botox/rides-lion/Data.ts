@@ -13,22 +13,22 @@ export const ridesLionData = {
       {
         title: "Effet naturel",
         description: "Contrairement aux idées reçues, le botox ne fige pas lorsqu’il est correctement réalisé et vos expressions restent intactes.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/effets-naturels-du-botox.jpg",
+        imageUrl: "/images/injections/effets-naturels-du-botox.webp",
       },
       {
         title: "Rapidité",
         description: "Les résultats commencent à être visibles en 3 à 5 jours et sont complets en 10 jours.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-indolore.jpg",
+        imageUrl: "/images/injections/botox-indolore.webp",
       },
       {
         title: "Sans douleur",
         description: "Injections effectuées avec une aiguille extrêmement fine. Elles sont rapides et indolores.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/resultats-rapide-botox.jpg",
+        imageUrl: "/images/injections/resultats-rapide-botox.webp",
       },
       {
         title: "Durée optimale",
         description: "Effet lissant qui dure 4 à 6 mois sous réserve de faire son traitement régulièrement.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/duree-4-mois-botox.jpg",
+        imageUrl: "/images/injections/duree-4-mois-botox.webp",
       },
     ],
   },
@@ -82,7 +82,7 @@ export const ridesLionData = {
       data: [
         {
           id: "1",
-          url: "https://medecine-esthetique.net/wp-content/uploads/2024/11/avant-apres-RL-1024x674.jpg"
+          url: "/images/injections/avant-apres-RL-1024x674.webp"
         }
       ]
     }
@@ -155,7 +155,7 @@ export const ridesLionData = {
     ],
   },
   cta: {
-    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    image: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
     buttonText: "Prendre Rendez-vous",
     buttonLink: "https://drelard.booking.nextmotion.net",
@@ -167,21 +167,21 @@ export const ridesLionData = {
         category: "BOTOX",
         title: "RIDES DU FRONT",
         description: "Traitement des rides horizontales du front.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-front.jpg",
+        image: "/images/injections/botox-front.webp",
         link: "/injections/botox/rides-du-front",
       },
       {
         category: "BOTOX",
         title: "PATTES D'OIE",
         description: "Traitement des rides au coin des yeux.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pattes-doie.jpg",
+        image: "/images/injections/pattes-doie.webp",
         link: "/injections/botox/pattes-d-oie",
       },
       {
         category: "BOTOX",
         title: "TRANSPIRATION",
         description: "Traitement des transpiration.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-transpiration.jpg",
+        image: "/images/injections/botox-transpiration.webp",
         link: "/injections/botox/transpiration",
       },
     ],

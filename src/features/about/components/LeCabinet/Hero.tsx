@@ -9,7 +9,7 @@ export const HeroSection = () => {
         className="absolute inset-0 z-0"
         style={{
           backgroundImage:
-            "url('https://medecine-esthetique.net/wp-content/uploads/2023/07/dr-elard-specialiste-anti-age-paris.jpg')",
+            "url('/images/about/dr-elard-specialiste-anti-age-paris.webp')",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",

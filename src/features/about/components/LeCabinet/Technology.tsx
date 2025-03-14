@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Zap, Snowflake, Radio, Lightbulb } from 'lucide-react';
+import { Zap, Snowflake, Radio } from 'lucide-react';
 
 const technologies = [
   {

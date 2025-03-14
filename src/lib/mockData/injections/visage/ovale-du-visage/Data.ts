@@ -14,17 +14,17 @@ export const ovaleVisageData = {
       {
         title: "La raréfaction et le déplacement de la graisse faciale",
         description: "Avec l’âge, la graisse du visage, qui joue un rôle clé dans le maintien des volumes et de la structure, diminue progressivement et migre vers le bas. Ce phénomène entraîne un affaissement des contours du visage, notamment au niveau des bajoues et du menton, créant un aspect plus lourd et relâché. Les injections d’acide hyaluronique permettent de restaurer les volumes perdus en repositionnant les points de soutien du visage pour recréer une structure harmonieuse.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/graisse2.jpg",
+        imageUrl: "/images/injections/graisse2.webp",
       },
       {
         title: "Les modifications osseuses du tiers inférieur",
         description: "Le vieillissement osseux touche également la région du menton et de la mâchoire. Avec le temps, les os du tiers inférieur du visage se rétractent, ce qui peut raccourcir le menton, réduire l’angle mandibulaire et accentuer le relâchement des tissus environnants. Grâce à l’acide hyaluronique, il est possible de compenser ces pertes structurelles en remodelant la zone et en rétablissant un équilibre esthétique entre les différentes parties du visage.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/os2.jpg",
+        imageUrl: "/images/injections/os2.webp",
       },
       {
         title: "La perte de tonicité des muscles faciaux",
         description: "Les muscles du visage, qui participent au maintien des tissus, perdent de leur tonicité au fil des ans. Ce relâchement musculaire contribue à l’apparition des bajoues et à la perte de définition de l’ovale. Bien que les injections d’acide hyaluronique n’agissent pas directement sur les muscles, elles apportent un soutien mécanique aux tissus en redessinant les contours et en créant un effet liftant visible et naturel.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/muscles.jpg",
+        imageUrl: "/images/injections/muscles.webp",
       },
     ],
   },
@@ -62,7 +62,7 @@ export const ovaleVisageData = {
       title: "Avant et après correction de l’ovale du visage.",
       data: [{
         id: '1',
-        url: "https://medecine-esthetique.net/wp-content/uploads/2024/11/ovale-visage5.jpg"
+        url: "/images/injections/ovale-visage5.webp"
       }]
     }
   },
@@ -154,7 +154,7 @@ export const ovaleVisageData = {
     ],
   },
   cta: {
-    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    image: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
     buttonText: "Prendre Rendez-vous",
     buttonLink: "https://drelard.booking.nextmotion.net",
@@ -166,21 +166,21 @@ export const ovaleVisageData = {
         category: "INJECTION",
         title: "MENTON",
         description: "Restructuration et projection du menton.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/menton-site2.jpg",
+        image: "/images/injections/menton-site2.webp",
         link: "/injections/visage/menton",
       },
       {
         category: "INJECTION",
         title: "SILLONS NASOGÉNIENS",
         description: "Atténuation des plis d'amertume.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG-site3.jpg",
+        image: "/images/injections/SNG-site3.webp",
         link: "/injections/visage/sillons-nasogeniens",
       },
       {
         category: "INJECTION",
         title: "POMMETTES",
         description: "Restauration du volume des pommettes.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
+        image: "/images/injections/pommettes-site5.webp",
         link: "/injections/visage/pommettes",
       }
     ],

@@ -14,17 +14,17 @@ export const sillonsNasogeniensData = {
       {
         title: "Sillons peu marqués",
         description: "Ces sillons sont souvent liés à une légère perte d’élasticité de la peau et peuvent être traités avec une faible quantité d’acide hyaluronique, pour un résultat discret et naturel.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/nlf1.jpg",
+        imageUrl: "/images/injections/nlf1.webp",
       },
       {
         title: "Sillons modérément creusés",
         description: "Ils résultent généralement de la perte de volume des joues. Les injections permettent de restaurer le galbe du visage tout en comblant la zone concernée.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/sng2.jpg",
+        imageUrl: "/images/injections/sng2.webp",
       },
       {
         title: "Sillons profonds",
         description: "Ils apparaissent lorsque le relâchement cutané est plus prononcé. Un traitement combiné avec des techniques complémentaires peut être envisagé pour un résultat optimal.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/SNG3.jpg",
+        imageUrl: "/images/injections/SNG3.webp",
       },
     ],
   },
@@ -59,7 +59,7 @@ export const sillonsNasogeniensData = {
     subtitle: "Les avant/après montrent l'impact des injections pour traiter des sillons nasogéniens modérés. La vidéo dynamique montre à quel point les résultats sont naturels et harmonieux.",
     images: {
       description: "Cette série de photos montre les résultats d’un traitement esthétique visant à corriger les sillons nasogéniens grâce à des injections d’acide hyaluronique. La technique employée consiste en des injections profondes sous les coussinets graisseux et au-dessus des muscles, pour restaurer les volumes tout en préservant un aspect naturel.",
-      url: ["https://medecine-esthetique.net/wp-content/uploads/2024/11/Jimmy-Lefevre2-1024x471.jpg"]
+      url: ["/images/injections/Jimmy-Lefevre2-1024x471.webp"]
     },
     videoIds: ['yQ5-1ETB_cw', "3tgz3dgazZs"],
   },
@@ -82,7 +82,7 @@ export const sillonsNasogeniensData = {
       title: "Plan d’injection pour traiter les sillons nasogéniens.",
       data: [{
         id: '1',
-        url: "https://medecine-esthetique.net/wp-content/uploads/2024/11/stan-sko-1024x471.jpg"
+        url: "/images/injections/stan-sko-1024x471.webp"
       }]
     }
   },
@@ -162,7 +162,7 @@ export const sillonsNasogeniensData = {
     ],
   },
   cta: {
-    image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    image: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     description: "Le Dr Emmanuel Elard, expert en médecine esthétique à Paris, offre des soins personnalisés et indolores avec des résultats naturels, spécialisés dans les injectables pour un visage harmonieux et reposé.",
     buttonText: "Prendre Rendez-vous",
     buttonLink: "https://drelard.booking.nextmotion.net",
@@ -174,21 +174,21 @@ export const sillonsNasogeniensData = {
         category: "INJECTION",
         title: "POMMETTES",
         description: "Restauration du volume des pommettes.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/pommettes-site5.png",
+        image: "/images/injections/pommettes-site5.webp",
         link: "/injections/visage/pommettes",
       },
       {
         category: "INJECTION",
         title: "CERNES",
         description: "Traitement des cernes.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/eroifheroifj.png",
+        image: "/images/injections/eroifheroifj.webp",
         link: "/injections/visage/cernes",
       },
       {
         category: "INJECTION",
         title: "TEMPES",
         description: "Restauration du volume temporal.",
-        image: "https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-tempes-site.jpg",
+        image: "/images/injections/injection-tempes-site.webp",
         link: "/injections/visage/tempes",
       },
     ],

@@ -4,7 +4,7 @@ export const doctor = {
   description:
     'Spécialisé dans la médecine esthétique depuis plus de 15 ans, le Dr ELARD met son expertise au service de votre beauté naturelle.',
   image: {
-    url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/IMG_6067.jpg',
+    url: '/images/home/IMG_6067.webp',
     alt: 'Dr Emmanuel ELARD',
   },
   qualifications: [

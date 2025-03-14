@@ -157,38 +157,38 @@ export const botoxData = {
         path: '/procedures/rides-front',
         description: 'Traitement des rides horizontales du front',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-front.jpg',
+          '/images/injections/botox-front.webp',
       },
       {
         title: 'Rides du Lion',
         path: '/procedures/rides-lion',
         description: 'Correction des rides inter-sourcilières',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-ride-lion.jpg',
+          '/images/injections/botox-ride-lion.webp',
       },
       {
         title: "Rides de la Patte d'Oie",
         path: '/procedures/patte-oie',
         description: 'Atténuation des rides au coin des yeux',
         imageUrl:
-          'https://medecine-esthetique.net/wp-content/uploads/2024/11/pattes-doie.jpg',
+          '/images/injections/pattes-doie.webp',
       },
       {
         title: "Rides du traspiration",
         path: "/injections/botox/transpiration",
         description: "Traitement des transpiration.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-transpiration.jpg",
+        imageUrl: "/images/injections/botox-transpiration.webp",
       },
       {
         title: "Rides du masseter",
         path: "/injections/botox/masseter",
         description: "Traitement des masseter.",
-        imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/botox-masseter.jpg",
+        imageUrl: "/images/injections/botox-masseter.webp",
       },
     ]
   },
   cta: {
-    imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.png",
+    imageUrl: "/images/injections/Docteur-Elard-emmanuel-medecin-esthetique-paris-scaled-1-150x150.webp",
     title: "Prenez Rendez-vous pour une Consultation Personnalisée",
     description: "Découvrez comment l'acide hyaluronique peut sublimer naturellement votre beauté. Notre expertise est à votre service pour un résultat sur mesure.",
     buttonText: "Prendre Rendez-vous",

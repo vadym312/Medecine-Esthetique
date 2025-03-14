@@ -5,13 +5,13 @@ export const mockdrData = {
       description:
         "Expert en médecine esthétique à Paris, le Dr Emmanuel Elard propose des solutions personnalisées d'injections et de rajeunissement. Résultats naturels garantis.",
       ogImage:
-        'https://medecine-esthetique.net/wp-content/uploads/2023/07/dr-elard-specialiste-anti-age-paris.jpg',
+        '/images/about/dr-elard-specialiste-anti-age-paris.webp',
     },
     hero: {
       title: 'DR EMMANUEL ELARD',
       subtitle: 'MÉDECIN ESTHÉTIQUE EXPERT EN INJECTIONS',
       backgroundImage:
-        'https://medecine-esthetique.net/wp-content/uploads/2023/07/dr-elard-specialiste-anti-age-paris.jpg',
+        '/images/about/dr-elard-specialiste-anti-age-paris.webp',
       award: {
         text: "Innovateur de l'Année 2023 - Aesthetic Awards",
         year: 2023,
@@ -24,7 +24,7 @@ export const mockdrData = {
         "Grâce à des interventions personnalisées et sans douleur, Dr Elard aide ses patients à retrouver confiance en leur apparence, tout en leur permettant une reprise immédiate de leurs activités. Son savoir-faire et sa maîtrise des techniques de pointe lui permettent de proposer des soins esthétiques avancés, sécurisés et adaptés aux attentes de chacun.",
       ],
       image: {
-        src: 'https://medecine-esthetique.net/wp-content/uploads/2023/10/docteur-elard-emmanuel-medecin-esthetique-paris-l.png',
+        src: '/images/about/docteur-elard-emmanuel-medecin-esthetique-paris-l.webp',
         alt: 'Cabinet médical',
       },
     },
@@ -82,7 +82,7 @@ export const mockdrData = {
           description:
             "En tant que formateur auprès d’AMIR, Dr Elard intervient également dans des formations privées en injectables, destinées aux médecins souhaitant approfondir leurs compétences en médecine esthétique. Sa double casquette d’enseignant et de praticien l’amène à rester à la pointe des dernières techniques en injectables.",
           image:
-            'https://medecine-esthetique.net/wp-content/uploads/2024/11/formateur-Dr-ELARD.jpg',
+            '/images/about/formateur-Dr-ELARD.webp',
         },
       ],
     },
@@ -92,7 +92,7 @@ export const mockdrData = {
         "L’expertise et l’innovation du Dr Emmanuel Elard ont été récompensées lors des Aesthetic Awards 2023, où il a été élu Innovateur de l’année par Anti-Age Magazine. Cette distinction met en avant son apport majeur dans le domaine de la médecine esthétique et témoigne de son engagement pour l’excellence.",
       year: 2023,
       image:
-        'https://medecine-esthetique.net/wp-content/uploads/2024/11/LO6ouTOs.jpeg',
+        '/images/about/LO6ouTOs.webp',
     },
     testimonials: {
       items: [
@@ -126,7 +126,7 @@ export const mockdrData = {
         "La Société Française de Mésothérapie (SFM)",
         "La LED Academy",
       ],
-      imageUrl: "https://medecine-esthetique.net/wp-content/uploads/2024/11/clinique-esthetique-dr-elard.jpg"
+      imageUrl: "/images/about/clinique-esthetique-dr-elard.webp"
     },
     contact: {
       title: 'NOUS TROUVER',
