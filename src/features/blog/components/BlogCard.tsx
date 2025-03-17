@@ -44,7 +44,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img
-              src="https://medecine-esthetique.net/wp-content/uploads/2024/11/docteur-elard-emmanuel-medecin-esthetique-paris.jpg"
+              src="/images/about/docteur-elard-emmanuel-medecin-esthetique-paris.webp"
               alt="dr emmanuel elard"
               className="w-12 h-12 rounded-full"
             />

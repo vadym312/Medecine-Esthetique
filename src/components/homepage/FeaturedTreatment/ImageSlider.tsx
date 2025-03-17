@@ -65,7 +65,7 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
         <ChevronRight className="w-6 h-6" />
       </button>
 
-      <div className="absolute left-8 right-8 bottom-8 bg-white rounded-xl p-6 shadow-xl">
+      <div className="absolute left-8 right-8 bottom-16 bg-white rounded-xl p-6 shadow-xl">
         <blockquote className="text-gray-700 italic mb-2">
           {testimonial.content}
         </blockquote>
@@ -74,12 +74,12 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
         </cite>
       </div>
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-colors ${
+            className={`w-3 h-3 rounded-full transition-colors ${
               index === currentIndex ? "bg-white" : "bg-white/50"
             }`}
             aria-label={`Go to image ${index + 1}`}

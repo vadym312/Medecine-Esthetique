@@ -20,7 +20,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
       transition={{ delay: index * 0.2 }}
       className="bg-white rounded-lg shadow-xl overflow-hidden"
     >
-      <div className="relative h-48 overflow-hidden">
+      <div className="relative h-60 overflow-hidden">
         {service.imageUrl ? (
           <Image
             loader={customLoader}
