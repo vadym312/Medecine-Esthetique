@@ -49,7 +49,7 @@ export const BlogHero: React.FC<BlogHeroProps> = ({ post }) => {
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
                 <img
-                  src="https://medecine-esthetique.net/wp-content/uploads/2024/11/docteur-elard-emmanuel-medecin-esthetique-paris.jpg"
+                  src="/images/about/docteur-elard-emmanuel-medecin-esthetique-paris-l.webp"
                   alt="dr emmanuel elard"
                   className="w-12 h-12 rounded-full"
                 />
