@@ -20,16 +20,17 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
       transition={{ delay: index * 0.2 }}
       className="bg-white rounded-lg shadow-xl overflow-hidden"
     >
-      <div className="relative h-60 overflow-hidden">
+      <div className="aspect-[16/9] overflow-hidden relative">
         {service.imageUrl ? (
           <Image
             loader={customLoader}
             src={service.imageUrl}
             alt="Hero background"
             quality={50}
-            fill
-            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 384px"
-            className="absolute inset-0 w-full h-full"
+            width={393} // Mobile width
+            height={221} // Based on 16:9 ratio
+            sizes="(max-width: 480px) 393px, 384px"
+            className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
           />
         ) : null}
       </div>
