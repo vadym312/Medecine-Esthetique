@@ -18,14 +18,14 @@ export const StickyBanner: React.FC<StickyBannerProps> = ({
             className={cn(
                 'fixed bottom-0 left-0 w-full transform transition-transform duration-300',
                 'bg-black/80 backdrop-blur-sm border-t border-gray-800',
-                'py-2 px-6 shadow-lg z-30',
+                'py-3 px-6 shadow-lg z-30',
                 isVisible ? 'translate-y-0' : 'translate-y-full',
                 className
             )}
         >
             <div className="max-w-7xl mx-auto flex justify-center items-center">
                 <Link href={link} target="_blank" rel="noopener noreferrer">
-                    <Button>
+                    <Button variant="primary" size="lg" className='!rounded-full'>
                         {buttonText}
                     </Button>
                 </Link>
