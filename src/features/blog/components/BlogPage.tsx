@@ -93,7 +93,7 @@ export const BlogPage: React.FC = () => {
       />
 
       <main className="container mx-auto px-4 py-12">
-        <BlogGrid posts={paginatedPosts} onPostClick={setSelectedPost} />
+        <BlogGrid posts={paginatedPosts} categories={categories} onPostClick={setSelectedPost} />
 
         {paginatedPosts.length < filteredPosts.length && (
           <div ref={ref} className="h-20">

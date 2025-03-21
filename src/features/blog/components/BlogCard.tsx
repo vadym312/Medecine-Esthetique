@@ -46,7 +46,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
             <img
               src="/images/about/docteur-elard-emmanuel-medecin-esthetique-paris-l.webp"
               alt="dr emmanuel elard"
-              className="w-12 h-12 rounded-full"
+              className="w-10 h-12 rounded-full"
             />
             <div className="flex flex-col">
               <h3 className="font-medium text-gray-900">

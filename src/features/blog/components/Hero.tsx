@@ -51,7 +51,7 @@ export const BlogHero: React.FC<BlogHeroProps> = ({ post }) => {
                 <img
                   src="/images/about/docteur-elard-emmanuel-medecin-esthetique-paris-l.webp"
                   alt="dr emmanuel elard"
-                  className="w-12 h-12 rounded-full"
+                  className="w-10 h-12 rounded-full"
                 />
                 <div>
                   <h3 className="font-medium text-gray-900">
