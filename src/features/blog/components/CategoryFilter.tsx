@@ -35,7 +35,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
           </motion.button>
           {categories.map((category) => (
             <motion.button
-              key={category}
+              key={category.id}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => onSelectCategory(category)}
@@ -46,7 +46,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
                   : 'bg-gray-100 hover:bg-gray-200'
               )}
             >
-              {category}
+              {category.name}
             </motion.button>
           ))}
         </div>

@@ -1,16 +1,23 @@
 "use client";
 
-import { useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { Container } from '../../ui/Container';
-import { ArticleCard } from './Card';
-import { usePosts } from '@/src/hooks/usePosts';
+
 import { BlogPost } from '@/src/types/blog';
+import { fetchPosts } from '@/src/lib/api/cms';
+import { ArticleCard } from './Card';
 
 export const BlogArticles: React.FC = () => {
 
-  const { posts, fetchPosts } = usePosts();
+  const [posts, setPosts] = useState<BlogPost[]>([]);
+  
   useEffect(() => {
-    fetchPosts(1);
+    const fetchData = async () => {
+      const fetchedPosts = await fetchPosts();
+      setPosts(fetchedPosts);
+    };
+
+    fetchData();
   }, []);
 
   return (

@@ -22,8 +22,11 @@ export const BlogPost: React.FC<BlogPostProps> = ({ post, posts }) => {
   return (
     <>
       <Head>
-        <title>{post.metaTitle}</title>
-        <meta name="description" content={post.metaDescription} />
+        <title>{post.title.rendered}</title>
+        <meta name="description" content={post.excerpt.rendered.replace(/<[^>]+>/g, '')} />
+        <meta property="og:title" content={post.title.rendered} />
+        <meta property="og:description" content={post.excerpt.rendered.replace(/<[^>]+>/g, '')} />
+        <meta property="og:image" content={post._embedded?.["wp:featuredmedia"]?.[0]?.source_url} />
       </Head>
       <div className="min-h-screen bg-gray-50">
         <ReadingProgress />
@@ -36,7 +39,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ post, posts }) => {
           </div> */}
 
             <article className="col-span-1 lg:col-span-7">
-              <ArticleContent content={post.content} />
+              <ArticleContent content={post.content.rendered} />
             </article>
 
             <aside className="hidden lg:block lg:col-span-3">

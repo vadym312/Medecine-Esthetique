@@ -8,7 +8,7 @@ import type { BlogPost, Category } from '@/src/types/blog';
 import { BlogHero } from './Hero';
 import { CategoryFilter } from './CategoryFilter';
 import { BlogGrid } from './BlogGrid';
-import { usePosts } from '@/src/hooks/usePosts';
+import { fetchPosts, fetchCategories } from '@/src/lib/api/cms';
 import { LoadingSpinner } from '@/src/components/ui/LoadingSpinner';
 
 const NewsletterSignup = dynamic(() => import('./NewsletterSignup').then(mod => mod.NewsletterSignup));
@@ -20,21 +20,33 @@ export const BlogPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [selectedPost, setSelectedPost] = useState<string | null>(null);
   const [page, setPage] = useState(1);
-  const { posts, loading, fetchPosts } = usePosts();
-  
+  const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
+
   useEffect(() => {
-    fetchPosts(1);
+    const fetchData = async () => {
+      const fetchedPosts = await fetchPosts();
+      setPosts(fetchedPosts);
+    };
+
+    const fetchCategoriesData = async () => {
+      const fetchedCategories = await fetchCategories();  
+      setCategories(fetchedCategories);
+    };
+
+    fetchData();
+    fetchCategoriesData();
   }, []);
-  
+
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
 
-  const categories = Array.from(new Set(posts.map((post: BlogPost) => post.category)));
   const featuredPost: BlogPost = posts[0];
+  const featuredCategory = categories.find((category) => category.id === featuredPost?.categories[0]);
   const filteredPosts = selectedCategory ? posts.filter(
-    (post: BlogPost) => (post.category === selectedCategory)
+    (post: BlogPost) => (post?.categories[0] == selectedCategory.id)
   ) : posts;
 
   const paginatedPosts = filteredPosts.slice(0, page * ITEMS_PER_PAGE);
@@ -56,10 +68,6 @@ export const BlogPage: React.FC = () => {
     }
   }
 
-  if (loading) {
-    return <LoadingSpinner />;
-  }
-
   return (
     <div className="min-h-screen bg-gray-50">
       {featuredPost && (
@@ -72,7 +80,7 @@ export const BlogPage: React.FC = () => {
           <BlogHero
             post={{
               ...featuredPost,
-              image: featuredPost.image,
+              category: featuredCategory?.name || "Default Category",
             }}
           />
         </motion.div>

@@ -1,20 +1,31 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import { BlogPost as BlogPostType } from '@/src/types/blog';
 import { BlogPost } from '@/src/features/blog/components/BlogPost';
-import { usePosts } from '@/src/hooks/usePosts';
+import { fetchPostBySlug, fetchPosts } from '@/src/lib/api/cms';
 
 export default function BlogPostPage() {
-
-  const { posts, fetchPosts } = usePosts();
-  useEffect(() => {
-    fetchPosts(1);
-  }, []);
-
+  
   const { slug } = useParams();
-  const post = posts.find((post: BlogPostType) => post.id === slug);
+  const [post, setPost] = useState(null)
+  const [posts, setPosts] = useState<BlogPostType[]>([]);
+
+  useEffect(()=> {
+    const fetchPostData = async () => {
+      const fetchedPost = await fetchPostBySlug(slug);
+      setPost(fetchedPost);
+    };
+
+    const fetchPostsData = async () => {
+      const fetchedPosts = await fetchPosts();
+      setPosts(fetchedPosts);
+    };
+
+    fetchPostData();
+    fetchPostsData();
+  },[])
 
   if (!post) {
     return (

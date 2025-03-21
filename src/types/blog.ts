@@ -10,26 +10,38 @@ export interface BlogArticle {
 
 export interface BlogPost {
   id: string;
-  title: string;
-  excerpt: string;
-  content: string;
-  category: Category;
+  title: {
+    rendered: string;
+  };
+  excerpt: {
+    rendered: string;
+  };
+  content: {
+    rendered: string;
+  };
+  category: string;
   createdAt: string;
   readTime?: number;
   image?: string;
   imageAlt?: string;
   metaTitle?: string;
   metaDescription?: string;
+  slug: string;
+  categories: string[];
   sections?: {
     id: string;
     title: string;
   }[];
+  date: string;
+  _embedded?: {
+    "wp:featuredmedia"?: Array<{
+      source_url: string;
+    }>;
+  };
 }
 
-export enum Category {
-  INNOVATIONS,
-  TREATMENTS,
-  WELL_BEING,
-  CARE,
-  EDUCATION,
+export interface Category {
+  id: string;
+  name: string;
+  slug: string;
 }

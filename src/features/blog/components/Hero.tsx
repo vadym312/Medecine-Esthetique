@@ -27,8 +27,8 @@ export const BlogHero: React.FC<BlogHeroProps> = ({ post }) => {
           >
             <div className="absolute inset-0">
               <img
-                src={post.image}
-                alt={post.imageAlt}
+                src={post._embedded?.["wp:featuredmedia"]?.[0]?.source_url}
+                alt={post.title.rendered}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -60,21 +60,18 @@ export const BlogHero: React.FC<BlogHeroProps> = ({ post }) => {
                   <div className="flex items-center space-x-4 text-sm text-gray-500">
                     <span className="flex items-center">
                       <Calendar size={14} className="mr-1" />
-                      {formatDate(post.createdAt)}
-                    </span>
-                    <span className="flex items-center">
-                      <Clock size={14} className="mr-1" />
-                      {post.readTime} min de lecture
+                      {formatDate(post.date)}
                     </span>
                   </div>
                 </div>
               </div>
               <h1 className="text-4xl font-bold text-gray-900 leading-tight">
-                {post.title}
+                {post.title.rendered}
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                {post.excerpt}
-              </p>
+              <p
+                className="text-xl text-gray-600 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
+              />
             </div>
           </motion.div>
         </div>

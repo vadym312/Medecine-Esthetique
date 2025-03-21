@@ -22,8 +22,8 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
     >
       <div className={`relative ${featured ? 'h-72' : 'h-48'} overflow-hidden`}>
         <Image
-          src={post.image || ''}
-          alt={post.title}
+          src={post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ''}
+          alt={post.title.rendered}
           loader={imageLoader}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -38,9 +38,9 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
           className={`${featured ? 'text-2xl' : 'text-xl'
             } font-semibold mb-2 hover:text-gold transition-colors`}
         >
-          {post.title}
+          {post.title.rendered}
         </h3>
-        <p className="text-gray-600 mb-4">{post.excerpt}</p>
+        <p className="text-gray-600 mb-4" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img
@@ -53,7 +53,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
                 Dr Emmanuel Elard
               </h3>
               <span className="text-xs text-gray-500">
-                {formatDate(post.createdAt)}
+                {formatDate(post.date)}
               </span>
             </div>
           </div>

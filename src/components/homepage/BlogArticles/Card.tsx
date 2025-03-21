@@ -22,11 +22,11 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
       className="bg-white rounded-lg shadow-lg overflow-hidden group"
     >
       <div className="aspect-[16/9] overflow-hidden relative">
-        {article.image ? (
+        {article._embedded?.["wp:featuredmedia"] ? (
           <Image
             loader={customLoader}
-            src={article.image}
-            alt={article.title}
+            src={article._embedded?.["wp:featuredmedia"]?.[0]?.source_url}
+            alt={article.title.rendered}
             quality={50}
             width={393} // Mobile width
             height={221} // Based on 16:9 ratio
@@ -37,11 +37,11 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
       </div>
 
       <div className="p-6">
-        <time className="text-sm text-primary-light">{article.createdAt}</time>
-        <h3 className="text-xl font-semibold mt-2 mb-3">{article.title}</h3>
-        <p className="text-primary-dark mb-4">{article.excerpt}</p>
+        <time className="text-sm text-primary-light">{article.date}</time>
+        <h3 className="text-xl font-semibold mt-2 mb-3">{article.title.rendered}</h3>
+        <p className="text-primary-dark mb-4" dangerouslySetInnerHTML={{ __html: article.excerpt.rendered }}/>
 
-        <Link href={`/blog/${article.id}`}>
+        <Link href={`/blog/${article.slug}`}>
           <button className="inline-flex items-center text-gold hover:text-gold/80 transition-colors">
             Lire la suite
             <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />

@@ -1,8 +1,7 @@
-export function formatDate(dateString: string): string {
+export const formatDate = (dateString: string): string => {
   const date = new Date(dateString);
-  return new Intl.DateTimeFormat('fr-FR', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  }).format(date);
-}
+  if (isNaN(date.getTime())) {
+    return 'Invalid Date';
+  }
+  return date.toLocaleDateString();
+};
