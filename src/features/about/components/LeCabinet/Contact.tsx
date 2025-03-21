@@ -8,8 +8,8 @@ const contactInfo = {
   city: '75012 Paris',
   phone: '+33 01 84 06 37 73',
   hours: [
-    'Lundi - Vendredi : 10h - 19h',
-    'Samedi : 10h - 12h',
+    'Lundi - Jeudi : 10h - 18h',
+    'Vendredi : 10h - 12h',
   ],
 };
 
