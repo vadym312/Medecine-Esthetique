@@ -14,7 +14,7 @@ const getSpecialPath = (label: string): string | null => {
     'le cabinet': '/about/le-cabinet',
     'à propos': '/about',
     'blog': '/blog',
-    'contact': '/contact',
+    'contact': 'https://contact.medecine-esthetique.net/',
     'sillons nasogéniens': '/sillons-nasogeniens',
     'front': '/injection-du-front',
     'menton': '/injection-menton',

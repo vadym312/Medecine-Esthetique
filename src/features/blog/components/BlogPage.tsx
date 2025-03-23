@@ -22,8 +22,10 @@ export const BlogPage: React.FC = () => {
   const [page, setPage] = useState(1);
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     const fetchData = async () => {
       const fetchedPosts = await fetchPosts();
       setPosts(fetchedPosts);
@@ -36,6 +38,7 @@ export const BlogPage: React.FC = () => {
 
     fetchData();
     fetchCategoriesData();
+    setLoading(false);
   }, []);
 
   const { ref, inView } = useInView({
@@ -66,6 +69,10 @@ export const BlogPage: React.FC = () => {
         </Suspense>
       );
     }
+  }
+
+  if(loading){
+    return <LoadingSpinner/>
   }
 
   return (

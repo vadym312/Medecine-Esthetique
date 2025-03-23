@@ -21,12 +21,7 @@ export const NewsletterSignup: React.FC = () => {
             Inscrivez-vous à notre newsletter pour recevoir nos derniers
             articles et conseils en médecine esthétique.
           </p>
-          <form className="flex gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Votre adresse email"
-              className="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gold"
-            />
+          <form className="flex gap-4 max-w-md mx-auto justify-center">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { BlogPost } from '@/src/types/blog';
 import { formatDate } from '@/src/utils/formatDate';
-import { useRouter, useParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 interface RecentPostsProps {
   posts: BlogPost[];
@@ -12,7 +12,7 @@ interface RecentPostsProps {
 
 export const RecentPosts: React.FC<RecentPostsProps> = ({ posts }) => {
   const router = useRouter();
-  const { slug } = useParams(); 
+
   if (!posts.length) {
     return null;
   }
@@ -32,7 +32,7 @@ export const RecentPosts: React.FC<RecentPostsProps> = ({ posts }) => {
             transition={{ delay: index * 0.1 }}
             className="group cursor-pointer"
           >
-            <div className="flex gap-4" onClick={()=> router.push(`/blog/${slug}`)}>
+            <div className="flex gap-4" onClick={()=> router.push(`/blog/${post.slug}`)}>
               <div className="flex-shrink-0">
                 <img
                   src={post._embedded?.["wp:featuredmedia"]?.[0]?.source_url}

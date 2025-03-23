@@ -20,7 +20,7 @@ export const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10 max-w-3xl">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-montserrat text-white mb-6 text-center">
-          Cabinet de Médecine Esthétique du Dr
+          Cabinet de Médecine Esthétique du Dr Emmanuel ELARD
         </h1>
         <p className="text-xl text-white/90 mb-8 text-center">
           Un espace dédié à votre bien-être, équipé des dernières technologies
