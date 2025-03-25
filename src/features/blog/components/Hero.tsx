@@ -65,9 +65,7 @@ export const BlogHero: React.FC<BlogHeroProps> = ({ post }) => {
                   </div>
                 </div>
               </div>
-              <h1 className="text-4xl font-bold text-gray-900 leading-tight">
-                {post.title.rendered}
-              </h1>
+              <h1 className="text-4xl font-bold text-gray-900 leading-tight" dangerouslySetInnerHTML={{ __html: post.title.rendered }}/>
               <p
                 className="text-xl text-gray-600 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}

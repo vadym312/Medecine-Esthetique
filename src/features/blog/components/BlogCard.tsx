@@ -39,9 +39,8 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
         <h3
           className={`${featured ? 'text-2xl' : 'text-xl'
             } font-semibold mb-2 hover:text-gold transition-colors`}
-        >
-          {post.title.rendered}
-        </h3>
+            dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+        />
         <p className="text-gray-600 mb-4" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
