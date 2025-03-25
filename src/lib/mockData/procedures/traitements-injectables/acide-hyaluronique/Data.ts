@@ -138,91 +138,91 @@ export const acideData = {
     procedures: [
       {
         title: 'Pommettes',
-        path: '/procedures/pommettes',
+        path: '/injection-acide-hyaluronique-pommettes-paris',
         description: 'Restauration du volume des pommettes',
         imageUrl:
           '/images/injections/pommettes-site5.webp',
       },
       {
         title: 'Tempes',
-        path: '/procedures/tempes',
+        path: '/injection-tempes',
         description: 'Correction des tempes creuses',
         imageUrl:
           '/images/injections/injection-tempes-site.webp',
       },
       {
         title: 'Cernes',
-        path: '/procedures/cernes',
+        path: '/injections-cernes-paris',
         description: 'Traitement des cernes creux et vallées des larmes',
         imageUrl:
           '/images/injections/cernes-site.webp',
       },
       {
         title: 'Sillons Nasogéniens',
-        path: '/procedures/sillons-nasogeniens',
+        path: '/sillons-nasogeniens',
         description: 'Atténuation des plis entre le nez et la bouche',
         imageUrl:
           '/images/injections/SNG-site3.webp',
       },
       {
         title: 'Menton',
-        path: '/procedures/menton',
+        path: '/injection-menton',
         description: 'Restructuration et projection du menton',
         imageUrl:
           '/images/injections/menton-site2.webp',
       },
       {
         title: 'Ovale du visage',
-        path: '/procedures/ovale-visage',
+        path: '/ovale-du-visage',
         description: "Redéfinition de l'ovale du visage",
         imageUrl:
           '/images/injections/ovale-visage.webp',
       },
       {
         title: 'Mésolift',
-        path: '/procedures/mesolift',
+        path: '/mesolift',
         description: 'Revitalisation globale du visage',
         imageUrl:
           '/images/injections/mesolift.webp',
       },
       {
         title: 'Augmentation des lèvres',
-        path: '/procedures/levres',
+        path: '/augmentation-levres-paris',
         description: 'Volumisation naturelle des lèvres',
         imageUrl:
           '/images/injections/augmentation-des-levres.webp',
       },
       {
         title: "Plis d'amertume",
-        path: '/procedures/plis-amertume',
+        path: '/plis-armetume-acide-hyaluronique-paris',
         description: 'Correction des plis aux coins de la bouche',
         imageUrl:
           '/images/injections/plis-damertume-1.webp',
       },
       {
         title: 'Rajeunissement des mains',
-        path: '/procedures/mains',
+        path: '/rajeunissement-des-mains',
         description: 'Restauration du volume des mains',
         imageUrl:
           '/images/injections/injections-des-mains.webp',
       },
       {
         title: 'Front',
-        path: '/procedures/front',
+        path: '/botox-rides-du-front',
         description: 'Harmonisation de la zone frontale',
         imageUrl:
           '/images/injections/injection-du-front.webp',
       },
       {
         title: 'Skinbooster',
-        path: '/procedures/skinbooster',
+        path: '/skinbooster-paris',
         description: 'Hydratation profonde de la peau',
         imageUrl:
           '/images/injections/skinbooster.webp',
       },
       {
         title: 'Rhinoplastie Médicale',
-        path: '/procedures/rhinoplastie',
+        path: '/rhinoplastie-medicale-paris',
         description: 'Correction non chirurgicale du nez',
         imageUrl:
           '/images/injections/rhinoplastie-medicale-injection-1.webp',

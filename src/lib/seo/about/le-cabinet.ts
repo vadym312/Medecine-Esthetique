@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Dr Emmanuel Elard - Cabinet de Médecine Esthétique à Paris",
         description: "Le cabinet du Dr Emmanuel Elard, expert en médecine esthétique à Paris, propose des traitements de rajeunissement et d’injectables pour des résultats naturels et harmonieux.",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/about/le-cabinet/",
+        url: "https://medecine-esthetique.net/le-cabinet-paris-specialiste-injections/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/bureau1.jpg',

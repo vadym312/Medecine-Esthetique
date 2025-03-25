@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Injections Acide Hyaluronique Tempes : Rajeunissement Visage",
         description: "Découvrez comment les injections d'acide hyaluronique comblent les tempes creuses, redonnant volume et jeunesse au visage. Techniques, résultats et précautions",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/visage/tempes/",
+        url: "https://medecine-esthetique.net/injection-tempes/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/tempes-creuses2.jpg',

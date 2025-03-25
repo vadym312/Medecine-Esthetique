@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Dr Emmanuel Elard - Médecine Esthétique et Injectables à Paris",
         description: "Expert en injectables à Paris, le Dr Emmanuel Elard propose des traitements esthétiques avancés pour rajeunir et harmoniser le visage",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/about/dr-emmanuel-elard/",
+        url: "https://medecine-esthetique.net/dr-elard-emmanuel-paris-specialiste-injections/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2023/10/docteur-elard-emmanuel-medecin-esthetique-paris-l.png',

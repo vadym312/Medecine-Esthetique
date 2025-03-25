@@ -154,34 +154,34 @@ export const botoxData = {
     procedures: [
       {
         title: 'Rides du Front',
-        path: '/procedures/rides-front',
+        path: '/botox-rides-du-front',
         description: 'Traitement des rides horizontales du front',
         imageUrl:
           '/images/injections/botox-front.webp',
       },
       {
         title: 'Rides du Lion',
-        path: '/procedures/rides-lion',
+        path: '/botox-ride-du-lion',
         description: 'Correction des rides inter-sourcilières',
         imageUrl:
           '/images/injections/botox-ride-lion.webp',
       },
       {
         title: "Rides de la Patte d'Oie",
-        path: '/procedures/patte-oie',
+        path: '/botox-rides-pattes-d-oie',
         description: 'Atténuation des rides au coin des yeux',
         imageUrl:
           '/images/injections/pattes-doie.webp',
       },
       {
         title: "Rides du traspiration",
-        path: "/injections/botox/transpiration",
+        path: "/injection-botox-transpiration",
         description: "Traitement des transpiration.",
         imageUrl: "/images/injections/botox-transpiration.webp",
       },
       {
         title: "Rides du masseter",
-        path: "/injections/botox/masseter",
+        path: "/botox-masseter",
         description: "Traitement des masseter.",
         imageUrl: "/images/injections/botox-masseter.webp",
       },

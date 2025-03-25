@@ -97,13 +97,13 @@ export const rhinoplastieData = {
     procedures: [
       {
         title: 'Acide Hyaluronique',
-        path: '/procedures/traitements-injectables/acide-hyaluronique',
+        path: '/acide-hyaluronique',
         description: 'Injections pour le rajeunissement facial',
         imageUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d',
       },
       {
         title: 'Botox',
-        path: '/procedures/traitements-injectables/botox',
+        path: '/botox',
         description: 'Traitement des rides d\'expression',
         imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef',
       },

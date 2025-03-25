@@ -10,8 +10,8 @@ const generateSlug = (label: string): string => {
 
 const getSpecialPath = (label: string): string | null => {
   const specialPaths: Record<string, string> = {
-    'dr emmanuel elard': '/about/dr-emmanuel-elard',
-    'le cabinet': '/about/le-cabinet',
+    'dr emmanuel elard': '//dr-elard-emmanuel-paris-specialiste-injections',
+    'le cabinet': '/le-cabinet-paris-specialiste-injections',
     'à propos': '/about',
     'blog': '/blog',
     'contact': '/contact'

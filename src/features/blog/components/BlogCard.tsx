@@ -13,6 +13,8 @@ interface BlogCardProps {
 }
 
 export const BlogCard: React.FC<BlogCardProps> = ({ post, featured }) => {
+
+  
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}

@@ -21,7 +21,7 @@ export const defaultMetadata: Metadata = {
         title: "Injection lèvres acide hyaluronique à Paris 12",
         description: "Sublimez vos lèvres avec des injections d'acide hyaluronique : naturels, harmonieux, avant-après, durée et sécurité. Découvrez nos solutions à Paris",
         locale: 'en_US',
-        url: "https://medecine-esthetique.net/injections/levres/augmentation-des-levres/",
+        url: "https://medecine-esthetique.net/injections/augmentation-levres-paris/",
         siteName: 'https://medecine-esthetique.net',
         images: [{
             url: 'https://medecine-esthetique.net/wp-content/uploads/2023/07/traitement-cernes-medecine-esthetique-paris.jpg',
