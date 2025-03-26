@@ -7,3 +7,4 @@ Host: https://medecine-esthetique.net/
 
 # Sitemaps
 Sitemap: https://medecine-esthetique.net/sitemap.xml
+Sitemap: https://medecine-esthetique.net/server-sitemap.xml

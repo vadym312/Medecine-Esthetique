@@ -41,9 +41,9 @@ export const RecentPosts: React.FC<RecentPostsProps> = ({ posts }) => {
                 />
               </div>
               <div className="flex-1 min-w-0">
-                <h5 className="font-medium text-gray-900 mb-2 line-clamp-2 group-hover:text-gold transition-colors">
-                  {post.title.rendered}
-                </h5>
+                <h5 className="font-medium text-gray-900 mb-2 line-clamp-2 group-hover:text-gold transition-colors"
+                  dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                />
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <span className="text-gray-400">•</span>
                   <span>{formatDate(post.date)}</span>

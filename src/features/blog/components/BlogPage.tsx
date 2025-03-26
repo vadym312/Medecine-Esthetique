@@ -10,6 +10,7 @@ import { CategoryFilter } from './CategoryFilter';
 import { BlogGrid } from './BlogGrid';
 import { fetchPosts, fetchCategories } from '@/src/lib/api/cms';
 import { LoadingSpinner } from '@/src/components/ui/LoadingSpinner';
+import { useRouter } from 'next/navigation';
 
 const NewsletterSignup = dynamic(() => import('./NewsletterSignup').then(mod => mod.NewsletterSignup));
 const BlogPostComponent = dynamic(() => import('./BlogPost'));
@@ -17,8 +18,10 @@ const BlogPostComponent = dynamic(() => import('./BlogPost'));
 const ITEMS_PER_PAGE = 6;
 
 export const BlogPage: React.FC = () => {
+  
+  const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
-  const [selectedPost, setSelectedPost] = useState<string | null>(null);
+
   const [page, setPage] = useState(1);
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
@@ -60,17 +63,6 @@ export const BlogPage: React.FC = () => {
     }
   }, [inView]);
 
-  if (selectedPost) {
-    const post = posts.find((post: BlogPost) => post.id === selectedPost);
-    if (post) {
-      return (
-        <Suspense fallback={<LoadingSpinner />}>
-          <BlogPostComponent post={post} posts={posts} />
-        </Suspense>
-      );
-    }
-  }
-
   if(loading){
     return <LoadingSpinner/>
   }
@@ -79,7 +71,7 @@ export const BlogPage: React.FC = () => {
     <div className="min-h-screen bg-gray-50">
       {featuredPost && (
         <motion.div
-          onClick={() => setSelectedPost(featuredPost.id)}
+          onClick={() => router.push(`/blog/${featuredPost.slug}`)}
           className="cursor-pointer"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -100,7 +92,7 @@ export const BlogPage: React.FC = () => {
       />
 
       <main className="container mx-auto px-4 py-12">
-        <BlogGrid posts={paginatedPosts} categories={categories} onPostClick={setSelectedPost} />
+        <BlogGrid posts={paginatedPosts} categories={categories} />
 
         {paginatedPosts.length < filteredPosts.length && (
           <div ref={ref} className="h-20">

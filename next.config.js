@@ -27,10 +27,9 @@ const nextConfig = {
     locales: ["fr"],
     defaultLocale: "fr",
   },
+  optimizeFonts: true,
   experimental: {
     optimizeCss: true,
-    optimizeFonts: true,
-
     scrollRestoration: true,
     optimizePackageImports: [
       "lucide-react",
