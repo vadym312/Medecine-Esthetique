@@ -3,14 +3,26 @@ import { ArrowRight } from "lucide-react";
 import { BlogPost } from "@/src/types/blog";
 import Link from "next/link";
 import Image from "next/image";
+
 interface ArticleCardProps {
   article: BlogPost;
   index: number;
 }
+
 const customLoader = ({ src, width }: { src: string; width: number }) => {
   const maxWidth = width <= 480 ? 393 : 384;
   const quality = 50;
   return `${src}?w=${maxWidth}&q=${quality}&auto=format,compress`;
+};
+
+// Function to format the date
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString);
+  return new Intl.DateTimeFormat("fr-FR", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  }).format(date);
 };
 
 export const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
@@ -37,9 +49,12 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
       </div>
 
       <div className="p-6">
-        <time className="text-sm text-primary-light">{article.date}</time>
+        <time className="text-sm text-primary-light">{formatDate(article.date)}</time>
         <h3 className="text-xl font-semibold mt-2 mb-3">{article.title.rendered}</h3>
-        <p className="text-primary-dark mb-4" dangerouslySetInnerHTML={{ __html: article.excerpt.rendered }}/>
+        <p
+          className="text-primary-dark mb-4"
+          dangerouslySetInnerHTML={{ __html: article.excerpt.rendered }}
+        />
 
         <Link href={`/blog/${article.slug}`}>
           <button className="inline-flex items-center text-gold hover:text-gold/80 transition-colors">
