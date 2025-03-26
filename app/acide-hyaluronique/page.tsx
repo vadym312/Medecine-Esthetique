@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import Head from 'next/head';
+import { usePathname } from 'next/navigation'
 import { TreatmentHero } from '@/src/components/shared/treatments/Hero';
 import { KeyPointsGrid } from '@/src/components/procedures/traitements-injectables/acide-hyaluronique/KeyPoints/Grid';
 import { ContentSection } from '@/src/components/procedures/traitements-injectables/Content';
@@ -8,10 +10,18 @@ import { CallToAction } from '@/src/components/procedures/traitements-injectable
 import { ProceduresGrid } from '@/src/components/procedures/Grid';
 import { hyaluronicAcidKeyPoints } from '@/src/lib/mockData/procedures/traitements-injectables/acide-hyaluronique/KeyPoints';
 import { acideData } from '@/src/lib/mockData/procedures/traitements-injectables/acide-hyaluronique/Data';
+import { siteConfig } from '@/src/config/site';
 
 const AcideHyaluroniquePage: React.FC = () => {
+
+  const pathname = usePathname();
+  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+
   return (
     <>
+      <Head>
+        <link rel="canonical" href={canonicalUrl} />
+      </Head>
       <TreatmentHero {...acideData.hero} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

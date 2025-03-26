@@ -9,6 +9,7 @@ const nextConfig = {
     domains: [
       "images.unsplash.com",
       "medecine-esthetique.net",
+      "medecine-esthetique-app.netlify.app",
       "lh3.googleusercontent.com",
       "0qx3mqhgffnt0u1a.public.blob.vercel-storage.com",
     ],

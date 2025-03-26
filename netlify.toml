@@ -5,6 +5,8 @@
 [build.environment]
   NODE_VERSION = "18"
   NEXT_TELEMETRY_DISABLED = "1"
+  NEXT_PUBLIC_SITE_URL = "https://medecine-esthetique.net"
+  NEXT_PUBLIC_SITE_URL_DEV = "https://medecine-esthetique-app.netlify.app"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
@@ -30,8 +32,10 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  to = "https://medecine-esthetique.net/:splat"
+  status = 301
+  force = true
+  conditions = {host = "medecine-esthetique-app.netlify.app"}
 
 [functions]
   node_bundler = "esbuild"

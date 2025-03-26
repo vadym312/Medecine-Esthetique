@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
+import { siteConfig } from '@/src/config/site';
 
 export const defaultMetadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://medecine-esthetique.net/'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || siteConfig.domain || 'https://medecine-esthetique.net'),
   title: 'Dr Emmanuel Elard - Injections Esthétiques à Paris',
   description: "Spécialiste des injections d'acide hyaluronique à Paris, le Dr Emmanuel Elard offre des traitements pour un visage rajeuni et harmonieux, sans chirurgie.",
   applicationName: 'Dr Emmanuel ELARD',
@@ -20,10 +21,10 @@ export const defaultMetadata: Metadata = {
     type: 'website',
     title: "Injections Esthétiques à Paris - Dr Emmanuel Elard, Expert en Acide Hyaluronique",
     locale: 'en_US',
-    url: process.env.NEXT_PUBLIC_SITE_URL,
-    siteName: 'https://medecine-esthetique.net',
+    url: siteConfig.domain,
+    siteName: siteConfig.domain,
     images: [{
-      url: 'https://medecine-esthetique.net/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg',
+      url: `${siteConfig.domain}/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg`,
       width: 1444,
       height: 811,
       alt: 'Le Dr Emmanuel Elard réalisant une injection esthétique dans un cadre professionnel.',
@@ -33,7 +34,7 @@ export const defaultMetadata: Metadata = {
     card: 'summary_large_image',
     title: "Injections Esthétiques à Paris - Dr Emmanuel Elard, Expert en Acide Hyaluronique",
     description: "Faites confiance au Dr Emmanuel Elard, spécialiste des injections d'acide hyaluronique à Paris, pour un visage rajeuni et harmonieux. Découvrez des traitements personnalisés pour sublimer votre beauté avec des résultats naturels.",
-    images: "https://medecine-esthetique.net/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg",
+    images: `${siteConfig.domain}/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg`,
   },
   robots: {
     index: true,

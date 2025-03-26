@@ -1,15 +1,16 @@
 import { DefaultSeoProps } from 'next-seo';
+import { siteConfig } from '@/src/config/site';
 
 export const defaultSEOConfig: DefaultSeoProps = {
   titleTemplate: '%s | Dr Emmanuel ELARD',
   defaultTitle: 'Dr Emmanuel ELARD | Médecine Esthétique à Paris',
   description: 'Cabinet de médecine esthétique du Dr Emmanuel ELARD à Paris. Expertise en injections, soins du visage et traitements anti-âge.',
-  canonical: 'https://dr-emmanuel-elard.fr',
+  canonical: siteConfig.domain,
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://dr-emmanuel-elard.fr',
-    siteName: 'Dr Emmanuel ELARD',
+    url: siteConfig.domain,
+    siteName: siteConfig.domain,
     title: 'Dr Emmanuel ELARD | Médecine Esthétique à Paris',
     description: 'Cabinet de médecine esthétique du Dr Emmanuel ELARD à Paris. Expertise en injections, soins du visage et traitements anti-âge.',
     images: [
@@ -39,7 +40,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
   languageAlternates: [
     {
       hrefLang: 'fr',
-      href: 'https://dr-emmanuel-elard.fr',
+      href: siteConfig.domain || 'https://medecine-esthetique.net',
     },
   ],
 };

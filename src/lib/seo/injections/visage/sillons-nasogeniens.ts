@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { siteConfig } from '@/src/config/site';
 
 export const defaultMetadata: Metadata = {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://medecine-esthetique.net/'),
@@ -65,9 +66,9 @@ export const defaultMetadata: Metadata = {
         google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
     },
     alternates: {
-        canonical: process.env.NEXT_PUBLIC_SITE_URL,
+        canonical: siteConfig.domain,
         languages: {
-            'fr': process.env.NEXT_PUBLIC_SITE_URL,
+            'fr': siteConfig.domain,
         },
     },
     category: 'medical',

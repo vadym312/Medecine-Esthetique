@@ -1,9 +1,11 @@
 'use client';
 
+import Head from 'next/head';
+import { usePathname } from 'next/navigation'
 import { DrEmmanuelElard } from '@/src/features/about/components/DrEmmanuelElard';
 import { mockdrData } from '@/src/lib/mockData/about/dr-emmanuel-elard';
 import { ExpertiseIconType } from '@/src/features/about/components/DrEmmanuelElard/Expertise/types';
-
+import { siteConfig } from '@/src/config/site';
 // Transform the mock data to match the expected types
 const transformedData = {
   home: {
@@ -19,5 +21,16 @@ const transformedData = {
 };
 
 export default function DrEmmanuelElardPage() {
-  return <DrEmmanuelElard initialData={transformedData} />;
+
+  const pathname = usePathname();
+  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+
+  return (
+    <>
+      <Head>
+        <link rel="canonical" href={canonicalUrl} />
+      </Head>
+      <DrEmmanuelElard initialData={transformedData} />
+    </>
+  );
 }
