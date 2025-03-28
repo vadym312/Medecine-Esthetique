@@ -1,15 +1,16 @@
 export const featuredTreatment = {
-  title: 'Rhinoplastie Médicale',
+  title: 'Injection des tempes',
   description:
-    "La rhinoplastie médicale est une alternative non chirurgicale permettant de corriger les imperfections du nez grâce à des injections d'acide hyaluronique.",
+    "Les injections d'acide hyaluronique dans les tempes permettent de restaurer les volumes perdus avec le temps, harmoniser les contours du visage et obtenir un effet lifté sans chirurgie.",
   advantages: {
     title: 'Avantages',
     data: [
-      'Correction non chirurgicale du nez',
-      'Résultats immédiats et naturels',
-      'Procédure sans temps de récupération',
-      'Durée du traitement : 30 minutes',
-      "Résultats durables jusqu'à 18 mois",
+      'Restauration des volumes temporaux',
+      "Amélioration de l'ovale du visage et effet lifté naturel",
+      'Rééquilibrage du tiers supérieur du visage',
+      'Procédure rapide sans éviction sociale',
+      "Résultats visibles immédiatement",
+      "Effets durables jusqu'à 18 mois",
     ],
   },
   process: {
@@ -35,19 +36,62 @@ export const featuredTreatment = {
       },
     ],
   },
-  testimonial: {
-    content:
-      "La rhinoplastie médicale m'a permis de corriger les imperfections de mon nez sans chirurgie. Le résultat est exactement ce que je souhaitais !",
-    author: 'Sophie L.',
-  },
-  images: [
-    '/images/rhinoplastie.webp',
-    '/images/botox.webp',
-    '/images/menton-homepage.webp',
-    '/images/ovale-homepage.webp',
-    '/images/sillons-nasogeniens-home.webp',
-    '/images/tempes-homepage.webp',
-    '/images/rides-du-lion.webp',
-    '/images/pattes-doie-homepage.webp',
+  testimonials: [
+    {
+      id: 1,
+      image: '/images/rhinoplastie.webp',
+      content:
+        "La rhinoplastie médicale m'a permis de corriger les imperfections de mon nez sans chirurgie. Le résultat est exactement ce que je souhaitais !",
+      author: 'Sophie L.',
+    },
+    {
+      id: 2,
+      image: '/images/botox.webp',
+      content:
+        "J'avais perdu du volume au niveau des tempes, ce qui me donnait un air fatigué et vieilli. Grâce aux injections, mon visage paraît plus jeune et plus harmonieux, sans que personne ne remarque que j'ai fait un traitement.",
+      author: 'Claire V.',
+    },
+    {
+      id: 3,
+      image: '/images/menton-homepage.webp',
+      content:
+        "La rhinoplastie médicale m'a permis de corriger les imperfections de mon nez sans chirurgie. Le résultat est exactement ce que je souhaitais !",
+      author: 'Sophie L.',
+    },
+    {
+      id: 4,
+      image: '/images/ovale-homepage.webp',
+      content:
+        "J'avais perdu du volume au niveau des tempes, ce qui me donnait un air fatigué et vieilli. Grâce aux injections, mon visage paraît plus jeune et plus harmonieux, sans que personne ne remarque que j'ai fait un traitement.",
+      author: 'Claire V.',
+    },
+    {
+      id: 5,
+      image: '/images/sillons-nasogeniens-home.webp',
+      content:
+        "La rhinoplastie médicale m'a permis de corriger les imperfections de mon nez sans chirurgie. Le résultat est exactement ce que je souhaitais !",
+      author: 'Sophie L.',
+    },
+    {
+      id: 6,
+      image: '/images/tempes-homepage.webp',
+      content:
+        "J'avais perdu du volume au niveau des tempes, ce qui me donnait un air fatigué et vieilli. Grâce aux injections, mon visage paraît plus jeune et plus harmonieux, sans que personne ne remarque que j'ai fait un traitement.",
+      author: 'Claire V.',
+    },
+    {
+      id: 7,
+      image: '/images/rides-du-lion.webp',
+      content:
+        "La rhinoplastie médicale m'a permis de corriger les imperfections de mon nez sans chirurgie. Le résultat est exactement ce que je souhaitais !",
+      author: 'Sophie L.',
+    },
+    {
+      id: 8,
+      image: '/images/pattes-doie-homepage.webp',
+      content:
+        "J'avais perdu du volume au niveau des tempes, ce qui me donnait un air fatigué et vieilli. Grâce aux injections, mon visage paraît plus jeune et plus harmonieux, sans que personne ne remarque que j'ai fait un traitement.",
+      author: 'Claire V.',
+    },
   ],
 };

@@ -8,7 +8,7 @@ import { NavigationMobile } from './Mobile';
 import { useNavigationState } from './hooks/useNavigationState';
 import { useScrollState } from './hooks/useScrollState';
 import Link from 'next/link';
-import { siteConfig, buttons } from '@/src/lib/mockData/common';
+import { buttons } from '@/src/lib/mockData/common';
 
 export const Navigation: React.FC = () => {
   const isScrolled = useScrollState();

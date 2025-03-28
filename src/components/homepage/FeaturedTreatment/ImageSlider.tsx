@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+
 interface ImageSliderProps {
-  images: string[];
-  testimonial: {
+  testimonials: {
+    id: number;
+    image: string;
     content: string;
     author: string;
-  };
+  }[];
+  autoScrollInterval?: number; // Optional prop for auto-scroll timing
 }
 
 const customLoader = ({ src, width }: { src: string; width: number }) => {
@@ -17,14 +20,39 @@ const customLoader = ({ src, width }: { src: string; width: number }) => {
 };
 
 export const ImageSlider: React.FC<ImageSliderProps> = ({
-  images,
-  testimonial,
+  testimonials,
+  autoScrollInterval = 3000, // Default to 3 seconds
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
 
-  const next = () => setCurrentIndex((i) => (i + 1) % images.length);
-  const prev = () =>
-    setCurrentIndex((i) => (i - 1 + images.length) % images.length);
+  // Add useEffect for auto-scrolling
+  useEffect(() => {
+    const newTimer = setInterval(() => {
+      setCurrentIndex((i) => (i + 1) % testimonials.length);
+    }, autoScrollInterval);
+    setTimer(newTimer);
+
+    return () => clearInterval(newTimer);
+  }, [testimonials.length, autoScrollInterval]);
+
+  const next = () => {
+    setCurrentIndex((i) => (i + 1) % testimonials.length);
+    if (timer) clearInterval(timer);
+    const newTimer = setInterval(() => {
+      setCurrentIndex((i) => (i + 1) % testimonials.length);
+    }, autoScrollInterval);
+    setTimer(newTimer);
+  };
+
+  const prev = () => {
+    setCurrentIndex((i) => (i - 1 + testimonials.length) % testimonials.length);
+    if (timer) clearInterval(timer);
+    const newTimer = setInterval(() => {
+      setCurrentIndex((i) => (i + 1) % testimonials.length);
+    }, autoScrollInterval);
+    setTimer(newTimer);
+  };
 
   return (
     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100">
@@ -39,7 +67,7 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
         >
           <Image
             loader={customLoader}
-            src={images[currentIndex]}
+            src={testimonials[currentIndex].image}
             alt="Treatment result"
             quality={50}
             width={576}
@@ -67,15 +95,15 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
 
       <div className="absolute left-8 right-8 bottom-16 bg-white rounded-xl p-6 shadow-xl">
         <blockquote className="text-gray-700 italic mb-2">
-          {testimonial.content}
+          {testimonials[currentIndex].content}
         </blockquote>
         <cite className="text-gray-900 font-semibold block">
-          {testimonial.author}
+          {testimonials[currentIndex].author}
         </cite>
       </div>
 
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-        {images.map((_, index) => (
+        {testimonials.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
