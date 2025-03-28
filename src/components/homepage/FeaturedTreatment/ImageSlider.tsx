@@ -93,21 +93,21 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
         <ChevronRight className="w-6 h-6" />
       </button>
 
-      <div className="absolute left-8 right-8 bottom-16 bg-white rounded-xl p-6 shadow-xl">
-        <blockquote className="text-gray-700 italic mb-2">
+      <div className="absolute left-4 right-4 bottom-6 sm:left-8 sm:right-8 sm:bottom-12 bg-white rounded-xl p-3 sm:p-6 lg:p-4 xl:p-6 shadow-xl">
+        <blockquote className="text-gray-700 text-[10px] sm:text-base lg:text-sm xl:text-base italic mb-2">
           {testimonials[currentIndex].content}
         </blockquote>
-        <cite className="text-gray-900 font-semibold block">
+        <cite className="text-gray-900 text-[10px] sm:text-base lg:text-sm xl:text-base font-semibold block">
           {testimonials[currentIndex].author}
         </cite>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-2.5 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
         {testimonials.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${
+            className={`w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full transition-colors ${
               index === currentIndex ? "bg-white" : "bg-white/50"
             }`}
             aria-label={`Go to image ${index + 1}`}

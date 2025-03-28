@@ -61,7 +61,7 @@ export const FeaturedTreatment: React.FC = () => {
             >
               <ImageSlider
                 testimonials={currentTreatment.testimonials}
-                autoScrollInterval={3000}
+                autoScrollInterval={4000}
               />
             </motion.div>
           </AnimatePresence>
