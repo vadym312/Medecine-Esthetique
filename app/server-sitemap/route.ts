@@ -19,7 +19,7 @@ async function fetchBlogSlugs(): Promise<{ loc: string; lastmod: string }[]> {
         const posts: WordPressPost[] = await res.json();
 
         return posts.map((post) => ({
-            loc: `https://blog.medecine-esthetique.net/blog/${post.slug}`, // Construct full URL
+            loc: `https://medecine-esthetique.net/blog/${post.slug}`, // Construct full URL
             lastmod: new Date(post.modified).toISOString(), // Convert last modified date to ISO format
         }));
     } catch (error) {
