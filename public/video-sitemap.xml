@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <!-- Front Injection Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/injection-du-front/</loc>
+    <video:video>
+      <video:title>Injection Front : Harmonise les contours et traite les rides</video:title>
+      <video:description>À Paris, comblez les rides du front et harmonisez votre profil grâce aux injections d'acide hyaluronique.</video:description>
+      <video:thumbnail_loc>https://medecine-esthetique.net/wp-content/uploads/2024/11/injection-front-paris.jpg</video:thumbnail_loc>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/HvP0FWex74Y</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/injection-du-front/</loc>
+    <video:video>
+      <video:title>Résultat du traitement - Cas 1</video:title>
+      <video:description>Exemple de résultat après injection du front</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/A2qF6KfnTD8</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/injection-du-front/</loc>
+    <video:video>
+      <video:title>Résultat du traitement - Cas 2</video:title>
+      <video:description>Exemple de résultat après injection du front</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/cxjm_wK6ROE</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Botox Rides du Lion Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-du-lion/</loc>
+    <video:video>
+      <video:title>DÉROULEMENT D'UNE SÉANCE D'INJECTION POUR LES RIDES DU lion EN VIDÉO</video:title>
+      <video:description>Découvrez le déroulement d'une séance d'injection pour les rides du lion</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/a_8fNQCLW5w</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-du-lion/</loc>
+    <video:video>
+      <video:title>Résultat du traitement - Cas 1</video:title>
+      <video:description>Exemple de résultat après traitement des rides du lion</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/mrR-XRt9-Uc</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-du-lion/</loc>
+    <video:video>
+      <video:title>Résultat du traitement - Cas 2</video:title>
+      <video:description>Exemple de résultat après traitement des rides du lion</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/7vmZQ19whWo</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-du-lion/</loc>
+    <video:video>
+      <video:title>Résultat du traitement - Cas 3</video:title>
+      <video:description>Exemple de résultat après traitement des rides du lion</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/DKurl5Gnx7A</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Botox Rides du Front Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-du-front/</loc>
+    <video:video>
+      <video:title>DÉROULEMENT D'UNE SÉANCE D'INJECTION POUR LES RIDES DU FRONT EN VIDÉO</video:title>
+      <video:description>Découvrez le déroulement d'une séance d'injection pour les rides du front</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/vGRy0TIJbLw</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-du-front/</loc>
+    <video:video>
+      <video:title>Résultat du traitement - Cas 1</video:title>
+      <video:description>Exemple de résultat après traitement des rides du front</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/JGFxeY_6Pao</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-du-front/</loc>
+    <video:video>
+      <video:title>Résultat du traitement - Cas 2</video:title>
+      <video:description>Exemple de résultat après traitement des rides du front</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/pccK9Q1QNzo</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-du-front/</loc>
+    <video:video>
+      <video:title>Résultat du traitement - Cas 3</video:title>
+      <video:description>Exemple de résultat après traitement des rides du front</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/VRc7mu6bPGg</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- HIFU Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/hifu/</loc>
+    <video:video>
+      <video:title>Déroulement d'une Séance de HIFU (Ultrasons focalisés de haute intensité) en Vidéo</video:title>
+      <video:description>Découvrez le déroulement d'une séance de HIFU en visionnant notre vidéo explicative.</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/WKK0hP1WoG0</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/hifu/</loc>
+    <video:video>
+      <video:title>Résultat du traitement - Cas 1</video:title>
+      <video:description>Exemple de résultat après traitement HIFU</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/CT1BiNw8f3Q</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Sillons Nasogéniens Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/sillons-nasogeniens/</loc>
+    <video:video>
+      <video:title>Injections pour Sillons Nasogéniens - Cas 1</video:title>
+      <video:description>Exemple de traitement des sillons nasogéniens</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/WGPYXlNaeLo</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/sillons-nasogeniens/</loc>
+    <video:video>
+      <video:title>Injections pour Sillons Nasogéniens - Cas 2</video:title>
+      <video:description>Exemple de traitement des sillons nasogéniens</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/yQ5-1ETB_cw</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/sillons-nasogeniens/</loc>
+    <video:video>
+      <video:title>Injections pour Sillons Nasogéniens - Cas 3</video:title>
+      <video:description>Exemple de traitement des sillons nasogéniens</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/3tgz3dgazZs</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/sillons-nasogeniens/</loc>
+    <video:video>
+      <video:title>Injections pour Sillons Nasogéniens - Cas 4</video:title>
+      <video:description>Exemple de traitement des sillons nasogéniens</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/E34BN0E8oaQ</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Cernes Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/injections-cernes-paris/</loc>
+    <video:video>
+      <video:title>Injections pour Cernes - Cas 1</video:title>
+      <video:description>Exemple de traitement des cernes</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/yyQ30IDZFFA</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  
+  <!-- Pommettes Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/injection-acide-hyaluronique-pommettes-paris/</loc>
+    <video:video>
+      <video:title>Injections pour Pommettes - Cas 1</video:title>
+      <video:description>Exemple de traitement des pommettes</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/M1HinlfYA04</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Tempes Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/injection-tempes/</loc>
+    <video:video>
+      <video:title>Injections pour Tempes - Cas 1</video:title>
+      <video:description>Exemple de traitement des tempes</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/ZVNfWpR6xws</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Menton Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/injection-menton/</loc>
+    <video:video>
+      <video:title>Injections pour Menton - Cas 1</video:title>
+      <video:description>Exemple de traitement des mentons</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/8FsZ8JXT3b4</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/injection-menton/</loc>
+    <video:video>
+      <video:title>Injections pour Menton - Cas 2</video:title>
+      <video:description>Exemple de traitement des mentons</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/xfCTrqFeEDM</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Ovale du Visage Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/ovale-du-visage/</loc>
+    <video:video>
+      <video:title>Injections pour Ovale du Visage - Cas 1</video:title>
+      <video:description>Exemple de traitement de l'ovale du visage</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/7B55v9M0soU</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Rhinoplastie Médicale Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/rhinoplastie-medicale-paris/</loc>
+    <video:video>
+      <video:title>Injections pour Rhinoplastie Médicale - Cas 1</video:title>
+      <video:description>Exemple de traitement de la rhinoplastie médicale</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/8MN0JcEb4Sg</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Augmentation des Levres Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/augmentation-levres-paris/</loc>
+    <video:video>
+      <video:title>Injections pour Augmentation des Levres - Cas 1</video:title>
+      <video:description>Exemple de traitement de l'augmentation des levres</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/1TFMlt5DSPs</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Plis Aromtume Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/plis-armetume-acide-hyaluronique-paris/</loc>
+    <video:video>
+      <video:title>Injections pour Plis Aromtume - Cas 1</video:title>
+      <video:description>Exemple de traitement des plis aromtume</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/Tf5nd5RBXa8</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Rajeunissement des Mains Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/rajeunissement-des-mains/</loc>
+    <video:video>
+      <video:title>Injections pour Rajeunissement des Mains - Cas 1</video:title>
+      <video:description>Exemple de traitement du rajeunissement des mains</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/XHOmBV4js_E</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Mesolift Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/mesolift/</loc>
+    <video:video>
+      <video:title>Injections pour Mesolift - Cas 1</video:title>
+      <video:description>Exemple de traitement du mesolift</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/KFhqQ7YmtiY</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Botox Ride du Lion Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/botox-ride-du-lion/</loc>
+    <video:video>
+      <video:title>Injections pour Botox Ride du Lion - Cas 1</video:title>
+      <video:description>Exemple de traitement du botox ride du lion</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/a_8fNQCLW5w</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Botox Ride Pattes d'Oie Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-pattes-d-oie/</loc>
+    <video:video>
+      <video:title>Injections pour Botox Ride Pattes d'Oie - Cas 1</video:title>
+      <video:description>Exemple de traitement du botox ride pattes d'oie</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/vGRy0TIJbLw</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-pattes-d-oie/</loc>
+    <video:video>
+      <video:title>Injections pour Botox Ride Pattes d'Oie - Cas 2</video:title>
+      <video:description>Exemple de traitement du botox ride pattes d'oie</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/JGFxeY_6Pao</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-pattes-d-oie/</loc>
+    <video:video>
+      <video:title>Injections pour Botox Ride Pattes d'Oie - Cas 3</video:title>
+      <video:description>Exemple de traitement du botox ride pattes d'oie</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/pccK9Q1QNzo</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://medecine-esthetique.net/botox-rides-pattes-d-oie/</loc>
+    <video:video>
+      <video:title>Injections pour Botox Ride Pattes d'Oie - Cas 4</video:title>
+      <video:description>Exemple de traitement du botox ride pattes d'oie</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/VRc7mu6bPGg</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Acide Hyaluronique Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/acide-hyaluronique/</loc>
+    <video:video>
+      <video:title>Injections pour Acide Hyaluronique - Cas 1</video:title>
+      <video:description>Exemple de traitement de l'acide hyaluronique</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/wp03hICBN6w</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://medecine-esthetique.net/acide-hyaluronique/</loc>
+    <video:video>
+      <video:title>Injections pour Acide Hyaluronique - Cas 2</video:title>
+      <video:description>Exemple de traitement de l'acide hyaluronique</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/bofwwoGB7wQ</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://medecine-esthetique.net/acide-hyaluronique/</loc>
+    <video:video>
+      <video:title>Injections pour Acide Hyaluronique - Cas 3</video:title>
+      <video:description>Exemple de traitement de l'acide hyaluronique</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/LLvnioKLg1c</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://medecine-esthetique.net/acide-hyaluronique/</loc>
+    <video:video>
+      <video:title>Injections pour Acide Hyaluronique - Cas 4</video:title>
+      <video:description>Exemple de traitement de l'acide hyaluronique</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/cxjm_wK6ROE</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://medecine-esthetique.net/acide-hyaluronique/</loc>
+    <video:video>
+      <video:title>Injections pour Acide Hyaluronique - Cas 5</video:title>
+      <video:description>Exemple de traitement de l'acide hyaluronique</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/66JAcdCHUak</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Botox Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/botox/</loc>
+    <video:video>
+      <video:title>Injections pour Botox - Cas 1</video:title>
+      <video:description>Exemple de traitement du botox</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/SkkF6OA89_o</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://medecine-esthetique.net/botox/</loc>
+    <video:video>
+      <video:title>Injections pour Botox - Cas 2</video:title>
+      <video:description>Exemple de traitement du botox</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/2OnEafGie_8</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://medecine-esthetique.net/botox/</loc>
+    <video:video>
+      <video:title>Injections pour Botox - Cas 3</video:title>
+      <video:description>Exemple de traitement du botox</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/BuWxPERveEQ</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>      
+  </url>
+
+  <url>
+    <loc>https://medecine-esthetique.net/botox/</loc>
+    <video:video>
+      <video:title>Injections pour Botox - Cas 4</video:title>
+      <video:description>Exemple de traitement du botox</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/vGRy0TIJbLw</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+  
+  <url>
+    <loc>https://medecine-esthetique.net/botox/</loc>
+    <video:video>
+      <video:title>Injections pour Botox - Cas 6</video:title>
+      <video:description>Exemple de traitement du botox</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/66JAcdCHUak</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Plexr Blepharoplastie Sans Chirurgie Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/plexr-blepharoplastie-sans-chirurgie/</loc>
+    <video:video>
+      <video:title>Injections pour Plexr Blepharoplastie Sans Chirurgie - Cas 1</video:title>
+      <video:description>Exemple de traitement du plexr blepharoplastie sans chirurgie</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/RPl8vIyWyqk</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Cryolipolyse Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/cryolipolyse-paris/</loc>
+    <video:video>
+      <video:title>Injections pour Cryolipolyse - Cas 1</video:title>
+      <video:description>Exemple de traitement de la cryolipolyse</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/wUcnEnX-Npc</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+
+  <!-- Dr Elard Emmanuel Videos -->
+  <url>
+    <loc>https://medecine-esthetique.net/dr-elard-emmanuel-paris-specialiste-injections/</loc>
+    <video:video>
+      <video:title>Injections pour Dr Elard Emmanuel - Cas 1</video:title>
+      <video:description>Exemple de traitement du dr elard emmanuel</video:description>
+      <video:player_loc allow_embed="yes" allow_autoplay="no">https://www.youtube.com/embed/66JAcdCHUak</video:player_loc>
+      <video:duration>PT0M0S</video:duration>
+      <video:upload_date>2024-01-01</video:upload_date>
+    </video:video>
+  </url>
+</urlset> 
