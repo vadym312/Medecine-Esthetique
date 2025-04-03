@@ -4,6 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { fadeIn } from "@/src/utils/animations";
+import { optimizeImageAlt, optimizeImageFilename } from "@/src/utils/seo";
+import { SchemaOrg } from "@/src/components/shared/SchemaOrg";
 
 interface HeroProps {
   title: string;
@@ -28,13 +30,27 @@ export const TreatmentHero: React.FC<HeroProps> = ({
   subtitle,
   backgroundImage,
 }) => {
+  // Optimize alt text with location information
+  const optimizedAlt = optimizeImageAlt(`${title} - ${subtitle}`, 'Paris 12');
+  
+  // Optimize image filename
+  const keywords = [title.toLowerCase().replace(/\s+/g, '-'), 'paris-12'];
+  const optimizedImageName = optimizeImageFilename(backgroundImage, keywords);
+
+  // Create service data for schema
+  const serviceData = {
+    name: `${title} à Paris 12`,
+    description: `${subtitle} Traitement réalisé par le Dr Emmanuel Elard à Paris 12, proche de Bastille, Nation et Gare de Lyon.`,
+    image: backgroundImage
+  };
+
   return (
     <section className="relative w-full h-[400px] md:h-[600px] flex items-center justify-center">
       <div className="absolute inset-0">
         <Image
           loader={customLoader}
           src={backgroundImage}
-          alt="Background"
+          alt={optimizedAlt}
           fill
           priority
           quality={40}
@@ -48,7 +64,7 @@ export const TreatmentHero: React.FC<HeroProps> = ({
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      <div className="relative z-1 max-w-4xl  text-center">
+      <div className="relative z-1 max-w-4xl text-center">
         <div className="w-full max-w-4xl mx-auto">
           <motion.h1
             variants={fadeIn}
@@ -69,6 +85,9 @@ export const TreatmentHero: React.FC<HeroProps> = ({
           </motion.p>
         </div>
       </div>
+      
+      {/* Add structured data for medical service */}
+      <SchemaOrg type="MedicalService" service={serviceData} />
     </section>
   );
 };

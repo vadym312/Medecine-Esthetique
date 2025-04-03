@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/src/utils/animations';
+import { SchemaOrg } from '@/src/components/shared/SchemaOrg';
 
 interface CTAProps {
   title?: string;
@@ -19,6 +20,13 @@ export const TreatmentCTA: React.FC<CTAProps> = ({
   buttonText,
   buttonLink,
 }) => {
+  // Create service data for schema
+  const serviceData = {
+    name: title || 'Consultation en médecine esthétique',
+    description: description,
+    image: image
+  };
+
   return (
     <section className="bg-black py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -34,7 +42,7 @@ export const TreatmentCTA: React.FC<CTAProps> = ({
             whileTap={{ scale: 0.95 }}
             className="inline-block"
           >
-            <img src={image} alt="avatar"/>
+            <img src={image} alt={`Dr Emmanuel Elard - Médecin esthétique à Paris 12`}/>
           </motion.div>
           <h2 className="text-4xl font-bold text-white mb-4">{title}</h2>
           <p className="text-xl text-gray-300 mb-8">{description}</p>
@@ -48,6 +56,9 @@ export const TreatmentCTA: React.FC<CTAProps> = ({
           </motion.a>
         </motion.div>
       </div>
+      
+      {/* Add structured data for service */}
+      <SchemaOrg type="MedicalService" service={serviceData} />
     </section>
   );
 };

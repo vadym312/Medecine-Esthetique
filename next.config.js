@@ -73,6 +73,51 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      // Rewrite for Paris districts and landmarks
+      {
+        source: '/medecine-esthetique-:district',
+        destination: '/?district=:district',
+      },
+      {
+        source: '/injection-:treatment-paris-:district',
+        destination: '/injection-:treatment',
+      },
+      {
+        source: '/botox-paris-:district',
+        destination: '/botox',
+      },
+      {
+        source: '/injection-acide-hyaluronique-paris-:district',
+        destination: '/acide-hyaluronique',
+      },
+      {
+        source: '/injection-botox-paris-:district',
+        destination: '/botox',
+      },
+      {
+        source: '/augmentation-levres-paris-:district',
+        destination: '/augmentation-levres-paris',
+      },
+      {
+        source: '/injections-cernes-paris-:district',
+        destination: '/injections-cernes-paris',
+      },
+      {
+        source: '/injection-pommettes-paris-:district',
+        destination: '/injection-acide-hyaluronique-pommettes-paris',
+      },
+      {
+        source: '/medecine-esthetique-:landmark',
+        destination: '/?landmark=:landmark',
+      },
+      {
+        source: '/injection-:treatment-:landmark',
+        destination: '/injection-:treatment',
+      }
+    ];
+  },
 };
 
 module.exports = withBundleAnalyzer(nextConfig);

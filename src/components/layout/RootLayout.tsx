@@ -7,6 +7,7 @@ import { Footer } from './Footer';
 import { StickyBanner } from './StickBanner/StickyBanner';
 import { Toaster } from 'react-hot-toast';
 import { usePathname } from 'next/navigation';
+import { SchemaOrg } from '@/src/components/shared/SchemaOrg';
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -45,6 +46,7 @@ export const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
           },
         }}
       />
+      <SchemaOrg />
     </ErrorBoundary>
   );
 };

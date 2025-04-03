@@ -49,8 +49,8 @@ export function generateLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
-    name: 'Cabinet Dr Emmanuel ELARD - Médecine Esthétique Paris 12',
-    description: 'Cabinet de médecine esthétique spécialisé en injections et traitements anti-âge à Paris 12, proche de Bastille, Nation et Gare de Lyon.',
+    name: 'Cabinet Dr Emmanuel ELARD - Médecine Esthétique',
+    description: 'Cabinet de médecine esthétique spécialisé en injections et traitements anti-âge à Paris 12.',
     url: 'https://medecine-esthetique.net',
     telephone: '+33184063773',
     address: {
@@ -89,18 +89,6 @@ export function generateLocalBusinessSchema() {
       {
         '@type': 'AdministrativeArea',
         name: 'Paris 12e arrondissement'
-      },
-      {
-        '@type': 'AdministrativeArea',
-        name: 'Paris 11e arrondissement'
-      },
-      {
-        '@type': 'AdministrativeArea',
-        name: 'Paris 4e arrondissement'
-      },
-      {
-        '@type': 'AdministrativeArea',
-        name: 'Paris 5e arrondissement'
       }
     ],
     serviceArea: {
@@ -111,13 +99,7 @@ export function generateLocalBusinessSchema() {
         longitude: '2.3892899'
       },
       geoRadius: '20000'
-    },
-    hasMap: 'https://www.google.com/maps?cid=6389019496242489637',
-    sameAs: [
-      'https://www.instagram.com/dr.elard',
-      'https://www.facebook.com/dr.elard',
-      'https://www.linkedin.com/in/dr-elard'
-    ]
+    }
   };
 }
 
@@ -127,59 +109,29 @@ export function generateMedicalServiceSchema(service: {
   url: string;
   image?: string;
 }) {
-  // Localize service name if needed
-  const localizedName = service.name.includes('Paris') 
-    ? service.name 
-    : `${service.name} à Paris 12`;
-  
-  // Localize description if needed
-  const localizedDescription = service.description.includes('Paris') 
-    ? service.description 
-    : `${service.description} Traitement réalisé à Paris 12, proche de Bastille, Nation et Gare de Lyon.`;
-
   return {
     '@context': 'https://schema.org',
     '@type': 'MedicalProcedure',
-    name: localizedName,
-    description: localizedDescription,
+    name: service.name,
+    description: service.description,
     url: service.url,
     ...(service.image && { image: service.image }),
     procedureType: 'https://schema.org/NoninvasiveProcedure',
-    followup: 'Suivi personnalisé par le Dr Emmanuel ELARD à Paris 12',
+    followup: 'Suivi personnalisé par le Dr Emmanuel ELARD',
     howPerformed: 'Procédure réalisée en cabinet médical avec des techniques avancées',
     preparation: 'Consultation préalable requise',
     status: 'https://schema.org/ActiveActionStatus',
     provider: {
       '@type': 'MedicalBusiness',
-      name: 'Cabinet Dr Emmanuel ELARD - Paris 12',
+      name: 'Cabinet Dr Emmanuel ELARD',
       address: {
         '@type': 'PostalAddress',
         streetAddress: '8 avenue Dorian',
         addressLocality: 'Paris',
         postalCode: '75012',
         addressCountry: 'FR'
-      },
-      telephone: '+33184063773',
-      url: 'https://medecine-esthetique.net'
-    },
-    areaServed: [
-      {
-        '@type': 'City',
-        name: 'Paris'
-      },
-      {
-        '@type': 'AdministrativeArea',
-        name: 'Paris 12e arrondissement'
-      },
-      {
-        '@type': 'AdministrativeArea',
-        name: 'Paris 11e arrondissement'
-      },
-      {
-        '@type': 'AdministrativeArea',
-        name: 'Paris 4e arrondissement'
       }
-    ]
+    }
   };
 }
 
@@ -247,28 +199,6 @@ export const optimizeImageFilename = (filename: string, keywords: string[]) => {
   
   // Add the first keyword if not already present
   const extension = filename.includes('.') ? filename.split('.').pop() : '';
-  const newName = `${name}-${keywords[0].toLowerCase().replace(/\s+/g, '-')}-paris-12`;
+  const newName = `${name}-${keywords[0].toLowerCase().replace(/\s+/g, '-')}`;
   return extension ? `${newName}.${extension}` : newName;
-};
-
-// Generate variations of meta titles with different Paris districts
-export const generateDistrictVariations = (baseTitle: string, count: number = 3) => {
-  const districts = getParisDistricts();
-  const shuffled = [...districts].sort(() => 0.5 - Math.random());
-  const selected = shuffled.slice(0, count);
-  
-  return selected.map(district => {
-    return localizeMetaTitle(baseTitle, district);
-  });
-};
-
-// Generate variations of meta descriptions with different Paris landmarks
-export const generateLandmarkVariations = (baseDescription: string, count: number = 3) => {
-  const landmarks = getParisLandmarks();
-  const shuffled = [...landmarks].sort(() => 0.5 - Math.random());
-  const selected = shuffled.slice(0, count);
-  
-  return selected.map(landmark => {
-    return `${baseDescription} Cabinet situé à Paris 12, à proximité de ${landmark}.`;
-  });
 };

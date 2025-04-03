@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { SchemaOrg } from '@/src/components/shared/SchemaOrg';
 
 interface FAQItem {
   question: string;
@@ -18,16 +19,39 @@ interface FAQProps {
 export const TreatmentFAQ: React.FC<FAQProps> = ({ title, subtitle, items }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
+  // Localize FAQ items if they don't already mention Paris
+  const localizedItems = items.map(item => {
+    // Check if question already mentions Paris
+    const questionHasParis = item.question.toLowerCase().includes('paris');
+    
+    // Check if answer already mentions Paris
+    const answerHasParis = item.answer.some(a => 
+      a.toLowerCase().includes('paris')
+    );
+    
+    // If neither question nor answer mentions Paris, add it to the first answer
+    if (!questionHasParis && !answerHasParis && item.answer.length > 0) {
+      const newAnswer = [...item.answer];
+      newAnswer[0] = `${newAnswer[0]} À Paris 12, le Dr Emmanuel Elard propose ce traitement dans son cabinet situé près de Bastille.`;
+      return {
+        ...item,
+        answer: newAnswer
+      };
+    }
+    
+    return item;
+  });
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">{title}</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">{title} à Paris</h2>
           <p className="text-xl text-gray-600">{subtitle}</p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-          {items.map((faq, index) => (
+          {localizedItems.map((faq, index) => (
             <div
               key={index}
               className={`
@@ -73,6 +97,9 @@ export const TreatmentFAQ: React.FC<FAQProps> = ({ title, subtitle, items }) => 
           ))}
         </div>
       </div>
+      
+      {/* Add structured data for FAQs */}
+      <SchemaOrg type="FAQ" faqs={localizedItems} />
     </section>
   );
 };

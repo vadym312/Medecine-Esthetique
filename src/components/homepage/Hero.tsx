@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Button } from "../ui/Button";
 import { fadeIn } from "@/src/utils/animations";
 import { hero } from "@/src/lib/mockData/homepage/hero";
+import { SchemaOrg } from "@/src/components/shared/SchemaOrg";
 
 const customLoader = ({ src, width }: { src: string; width: number }) => {
   let finalWidth;
@@ -26,7 +27,7 @@ export const Hero: React.FC = () => {
         <Image
           loader={customLoader}
           src={hero.backgroundImage.url}
-          alt="Hero background"
+          alt="Médecine esthétique à Paris 12 - Cabinet du Dr Emmanuel Elard, spécialiste des injections près de Bastille et Nation"
           quality={40}
           fill
           priority
@@ -50,7 +51,7 @@ export const Hero: React.FC = () => {
           className="space-y-6"
         >
           <h1 className="text-2xl md:text-4xl lg:text-6xl text-white tracking-wide font-light">
-            {hero.title}
+            MÉDECINE ESTHÉTIQUE À PARIS
           </h1>
           <p className="text-sm md:text-base xl:text-xl text-white/90 italic">
             {hero.subtitle}
@@ -62,6 +63,9 @@ export const Hero: React.FC = () => {
           </Button>
         </motion.div>
       </div>
+      
+      {/* Add local business schema */}
+      <SchemaOrg />
     </section>
   );
 };
