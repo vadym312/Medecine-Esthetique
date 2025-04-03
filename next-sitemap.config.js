@@ -7,6 +7,7 @@ module.exports = {
     additionalSitemaps: [
       'https://medecine-esthetique.net/server-sitemap.xml', // Include dynamic blog sitemap
       'https://medecine-esthetique.net/local-sitemap.xml', // Include local sitemap with district variations
+      'https://medecine-esthetique.net/video-sitemap.xml'
     ],
   },
   transform: async (config, path) => {
