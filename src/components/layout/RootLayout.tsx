@@ -1,13 +1,12 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ErrorBoundary } from '@/src/components/shared/ErrorBoundary';
 import { Navigation } from './Navigation';
 import { Footer } from './Footer';
 import { StickyBanner } from './StickBanner/StickyBanner';
 import { Toaster } from 'react-hot-toast';
 import { usePathname } from 'next/navigation';
-import { useEffect } from 'react';
 
 interface RootLayoutProps {
   children: React.ReactNode;
