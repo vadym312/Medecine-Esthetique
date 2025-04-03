@@ -3,7 +3,7 @@
 import Script from 'next/script';
 
 // Replace this with your actual GTM ID
-const GTM_ID = 'GTM-TJNXCXN7';
+const GTM_ID = 'GTM-TJBRS99D';
 
 export default function GoogleTagManager() {
   return (

@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 
 // Replace this with your actual GTM ID
-const GTM_ID = 'GTM-TJNXCXN7';
+const GTM_ID = 'GTM-TJBRS99D';
 
 export const GoogleTagManagerScript = () => {
   return (
