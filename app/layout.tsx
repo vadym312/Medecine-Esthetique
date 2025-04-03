@@ -4,6 +4,7 @@ import { RootLayout } from "@/src/components/layout/RootLayout";
 import { defaultMetadata } from "@/src/lib/seo/metadata";
 import { WhatsAppProvider } from "@/src/components/layout/WhatsApp/Provider";
 import { WhatsAppWrapper } from "@/src/components/layout/WhatsApp/Wrapper";
+import GoogleTagManager from "./gtm";
 
 // Optimize font loading
 const montserrat = Montserrat({
@@ -42,8 +43,17 @@ export default function RootLayoutWrapper({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+        <GoogleTagManager />
       </head>
       <body className={`${montserrat.className} antialiased`}>
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=GTM-TJNXCXN7`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <RootLayout>
           <WhatsAppProvider>
             {children}

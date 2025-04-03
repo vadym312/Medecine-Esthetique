@@ -6,12 +6,26 @@ import { Navigation } from './Navigation';
 import { Footer } from './Footer';
 import { StickyBanner } from './StickBanner/StickyBanner';
 import { Toaster } from 'react-hot-toast';
+import { usePathname } from 'next/navigation';
+import { useEffect } from 'react';
 
 interface RootLayoutProps {
   children: React.ReactNode;
 }
 
 export const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
+  const pathname = usePathname();
+
+  // Track page views for Google Tag Manager
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'pageview',
+        page: pathname,
+      });
+    }
+  }, [pathname]);
+
   return (
     <ErrorBoundary>
       <Navigation />
