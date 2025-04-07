@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://medecine-esthetique.net/
+Host: https://medecine-esthetique.net
 
 # Disallow
 Disallow: /wp-content/plugins/
@@ -25,5 +25,6 @@ Allow: /*.mp4$
 Allow: /*.woff2$
 Allow: /*.ttf$
 
-# Sitemap
+# Sitemaps
 Sitemap: https://medecine-esthetique.net/sitemap.xml
+Sitemap: https://medecine-esthetique.net/blog-sitemap.xml

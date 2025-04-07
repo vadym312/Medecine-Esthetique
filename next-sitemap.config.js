@@ -4,7 +4,7 @@ module.exports = {
   generateRobotsTxt: true,
   sitemapSize: 7000,
 
-  sitemapBaseFileName: 'blog-sitemap',
+  sitemapBaseFileName: 'sitemap',
 
   outDir: 'public',
 
