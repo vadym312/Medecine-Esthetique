@@ -1,12 +1,19 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://medecine-esthetique.net/', // Your actual domain
-  generateRobotsTxt: true, // Generate robots.txt file
-  exclude: ['/blog-sitemap.xml'], // Exclude the dynamic sitemaps from the static sitemap
+  siteUrl: 'https://medecine-esthetique.net',
+  generateRobotsTxt: true,
+  sitemapSize: 7000,
+
+  sitemapBaseFileName: 'blog-sitemap',
+
+  outDir: 'public',
+
   robotsTxtOptions: {
+    policies: [
+      { userAgent: '*', allow: '/' }
+    ],
     additionalSitemaps: [
-      'https://medecine-esthetique.net/blog-sitemap.xml', // Include blog sitemap
-      'https://medecine-esthetique.net/local-sitemap.xml', // Include local sitemap with district variations
+      'https://medecine-esthetique.net/blog-sitemap.xml',
     ],
   },
   transform: async (config, path) => {
