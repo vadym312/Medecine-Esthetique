@@ -39,7 +39,7 @@ export const TreatmentHero: React.FC<HeroProps> = ({
 
   // Create service data for schema
   const serviceData = {
-    name: `${title} à Paris 12`,
+    name: `${title}`,
     description: `${subtitle} Traitement réalisé par le Dr Emmanuel Elard à Paris 12, proche de Bastille, Nation et Gare de Lyon.`,
     image: backgroundImage
   };

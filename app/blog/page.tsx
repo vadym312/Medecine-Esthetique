@@ -1,3 +1,5 @@
+"use client";
+
 import { BlogPage } from '@/src/features/blog/components/BlogPage';
 import Head from 'next/head';
 import { usePathname } from 'next/navigation'

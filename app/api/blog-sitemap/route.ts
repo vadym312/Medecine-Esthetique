@@ -9,7 +9,7 @@ interface WordPressPost {
 // Function to fetch blog slugs from WordPress with error handling
 async function fetchBlogSlugs(): Promise<{ loc: string; lastmod: string }[]> {
     try {
-        const res = await fetch('https://blog.medecine-esthetique.net/wp-json/wp/v2/posts?per_page=100'); // Adjust per_page as needed
+        const res = await fetch(`https://blog.medecine-esthetique.net/wp-json/wp/v2/posts?per_page=100`); // Adjust per_page as needed
 
         // Check for errors in the fetch request
         if (!res.ok) {
@@ -46,6 +46,8 @@ export async function GET() {
                     <url>
                         <loc>${field.loc}</loc>
                         <lastmod>${field.lastmod}</lastmod>
+                        <changefreq>weekly</changefreq>
+                        <priority>0.8</priority>
                     </url>`
             )
             .join('')}
@@ -54,6 +56,7 @@ export async function GET() {
     return new NextResponse(xml, {
         headers: {
             'Content-Type': 'application/xml',
+            'Cache-Control': 'public, max-age=3600, s-maxage=86400'
         },
     });
 }

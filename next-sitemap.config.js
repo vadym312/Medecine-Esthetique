@@ -2,12 +2,11 @@
 module.exports = {
   siteUrl: 'https://medecine-esthetique.net/', // Your actual domain
   generateRobotsTxt: true, // Generate robots.txt file
-  exclude: ['/server-sitemap.xml'], // Exclude the dynamic sitemap from the static sitemap
+  exclude: ['/blog-sitemap.xml'], // Exclude the dynamic sitemaps from the static sitemap
   robotsTxtOptions: {
     additionalSitemaps: [
-      'https://medecine-esthetique.net/server-sitemap.xml', // Include dynamic blog sitemap
+      'https://medecine-esthetique.net/blog-sitemap.xml', // Include blog sitemap
       'https://medecine-esthetique.net/local-sitemap.xml', // Include local sitemap with district variations
-      'https://medecine-esthetique.net/video-sitemap.xml'
     ],
   },
   transform: async (config, path) => {

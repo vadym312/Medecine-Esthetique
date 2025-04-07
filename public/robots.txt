@@ -5,6 +5,25 @@ Allow: /
 # Host
 Host: https://medecine-esthetique.net/
 
-# Sitemaps
+# Disallow
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/uploads/
+Disallow: /wp-includes/
+Disallow: /wp-admin/
+Disallow: /api/
+Disallow: /*?_rsc=
+Disallow: /*?page_id=
+Disallow: /*?page=
+Disallow: /*?
+Disallow: /feed/
+
+# Allowed Sections
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.webp$
+Allow: /*.mp4$
+Allow: /*.woff2$
+Allow: /*.ttf$
+
+# Sitemap
 Sitemap: https://medecine-esthetique.net/sitemap.xml
-Sitemap: https://medecine-esthetique.net/server-sitemap.xml
