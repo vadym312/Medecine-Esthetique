@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
           className="space-y-6"
         >
           <h1 className="text-2xl md:text-4xl lg:text-6xl text-white tracking-wide font-light">
-            MÉDECINE ESTHÉTIQUE À PARIS
+            {hero.title}
           </h1>
           <p className="text-sm md:text-base xl:text-xl text-white/90 italic">
             {hero.subtitle}
