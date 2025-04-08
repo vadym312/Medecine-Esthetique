@@ -17,7 +17,7 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com;"
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://blog.medecine-esthetique.net; frame-src 'self' https://www.youtube.com https://youtube.com https://patient.nextmotion.net https://www.google.com;"
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
@@ -35,12 +35,26 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Blog subdomain to subfolder redirect
+[[redirects]]
+  from = "/*"
+  to = "https://medecine-esthetique.net/blog/:splat"
+  status = 301
+  force = true
+  conditions = {host = "blog.medecine-esthetique.net"}
+
 [[redirects]]
   from = "/*"
   to = "https://medecine-esthetique.net/:splat"
   status = 301
   force = true
   conditions = {host = "medecine-esthetique-app.netlify.app"}
+
+[[redirects]]
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
 
 [functions]
   node_bundler = "esbuild"

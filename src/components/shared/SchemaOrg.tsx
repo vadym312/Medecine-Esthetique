@@ -3,8 +3,8 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import { siteConfig } from '@/src/config/site';
-import { 
-  generateLocalBusinessSchema, 
+import {
+  generateLocalBusinessSchema,
   generateMedicalServiceSchema,
   generateFAQSchema
 } from '@/src/utils/seo';

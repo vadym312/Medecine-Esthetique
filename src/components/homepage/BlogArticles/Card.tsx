@@ -25,7 +25,13 @@ const formatDate = (dateString: string) => {
   }).format(date);
 };
 
+// Default fallback image
+const FALLBACK_IMAGE = "/images/home/IMG_6067.webp";
+
 export const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
+  // Get the featured image URL or use fallback
+  const imageUrl = article._embedded?.["wp:featuredmedia"]?.[0]?.source_url || FALLBACK_IMAGE;
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
@@ -34,18 +40,21 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, index }) => {
       className="bg-white rounded-lg shadow-lg overflow-hidden group"
     >
       <div className="aspect-[16/9] overflow-hidden relative">
-        {article._embedded?.["wp:featuredmedia"] ? (
-          <Image
-            loader={customLoader}
-            src={article._embedded?.["wp:featuredmedia"]?.[0]?.source_url}
-            alt={article.title.rendered}
-            quality={50}
-            width={393} // Mobile width
-            height={221} // Based on 16:9 ratio
-            sizes="(max-width: 480px) 393px, 384px"
-            className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
-          />
-        ) : null}
+        <Image
+          loader={customLoader}
+          src={imageUrl}
+          alt={article.title.rendered}
+          quality={50}
+          width={393} // Mobile width
+          height={221} // Based on 16:9 ratio
+          sizes="(max-width: 480px) 393px, 384px"
+          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+          onError={(e) => {
+            // Fallback if image fails to load
+            const target = e.target as HTMLImageElement;
+            target.src = FALLBACK_IMAGE;
+          }}
+        />
       </div>
 
       <div className="p-6">
