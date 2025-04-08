@@ -261,11 +261,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/procedures/traitements-injectables/botox?_rsc=acgkz',
-        destination: '/botox',
-        permanent: true,
-      },
-      {
         source: '/toxine-botulique-paris-article-docteur-elard',
         destination: '/botox',
         permanent: true,
@@ -291,7 +286,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/injections/visage/rhinoplastie-medicale?_rsc=pfvbf',
+        source: '/injections/visage/rhinoplastie-medicale',
         destination: '/rhinoplastie-medicale-paris',
         permanent: true,
       },
@@ -566,11 +561,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/?p=216',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
         source: '/rides-du-front',
         destination: '/botox-rides-du-front',
         permanent: true,
@@ -696,11 +686,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/ru/?post_type=page&p=1602',
-        destination: '/',
-        permanent: true,
-      },
-      {
         source: '/traitement-cernes-paris-specialiste-injections-visage',
         destination: '/injections-cernes-paris',
         permanent: true,
@@ -728,11 +713,6 @@ const nextConfig = {
       {
         source: '/blepharoplastie-sans-chirurgie-paris-specialiste-visage',
         destination: '/plexr-blepharoplastie-sans-chirurgie',
-        permanent: true,
-      },
-      {
-        source: '/?page_id=525',
-        destination: '/blog',
         permanent: true,
       },
       {
