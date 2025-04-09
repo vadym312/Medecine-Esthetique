@@ -4,12 +4,13 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import { useParams, usePathname } from 'next/navigation';
 import { BlogPost as BlogPostType } from '@/src/types/blog';
-import { BlogPost } from '@/src/features/blog/components/BlogPost';
+import { EnhancedBlogPost } from '@/src/features/blog/components/EnhancedBlogPost';
 import { fetchPostBySlug, fetchPosts } from '@/src/lib/api/cms';
 import { siteConfig } from '@/src/config/site';
-export default function BlogPostPage() {
 
-  const { slug } = useParams();
+export default function BlogPostPage() {
+  const params = useParams();
+  const slug = params?.slug as string;
   const [post, setPost] = useState(null)
   const [posts, setPosts] = useState<BlogPostType[]>([]);
 
@@ -26,7 +27,7 @@ export default function BlogPostPage() {
 
     fetchPostData();
     fetchPostsData();
-  }, [])
+  }, [slug]);
 
   const pathname = usePathname();
   const canonicalUrl = `${siteConfig.domain}${pathname}`;
@@ -56,7 +57,7 @@ export default function BlogPostPage() {
       <Head>
         <link rel="canonical" href={canonicalUrl} />
       </Head>
-      <BlogPost post={post} posts={posts} />
+      <EnhancedBlogPost post={post} posts={posts} />
     </>
   );
 }

@@ -8,6 +8,6 @@ export const useScrollState = () => {
   const isScrolled = useScroll(50);
 
   return (
-    pathname?.includes('blog') || pathname?.includes('tarifs') || isScrolled
+    pathname?.includes('blog') || pathname?.includes('tarifs') || pathname?.includes('authors') && !pathname?.includes('authors/') || pathname?.includes('about-ai') || isScrolled
   );
 };

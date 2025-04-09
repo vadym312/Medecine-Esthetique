@@ -3,11 +3,12 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import { siteConfig } from '@/src/config/site';
-import {
-  generateLocalBusinessSchema,
+import { 
+  generateLocalBusinessSchema, 
   generateMedicalServiceSchema,
   generateFAQSchema
 } from '@/src/utils/seo';
+import { BreadcrumbSchema } from './BreadcrumbSchema';
 
 interface SchemaOrgProps {
   title?: string;
@@ -20,6 +21,7 @@ interface SchemaOrgProps {
     description: string;
     image?: string;
   };
+  customLabels?: Record<string, string>;
 }
 
 export const SchemaOrg: React.FC<SchemaOrgProps> = ({
@@ -28,7 +30,8 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({
   imageUrl,
   type = 'LocalBusiness',
   faqs,
-  service
+  service,
+  customLabels
 }) => {
   const pathname = usePathname();
   const url = `${siteConfig.domain}${pathname}`;
@@ -57,9 +60,12 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({
   }
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <BreadcrumbSchema customLabels={customLabels} />
+    </>
   );
 };

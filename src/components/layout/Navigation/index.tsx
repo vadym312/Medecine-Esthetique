@@ -25,7 +25,12 @@ export const Navigation: React.FC = () => {
         <div className="nav-container">
           <Logo isScrolled={isScrolled} />
           <NavigationMenu isScrolled={isScrolled} />
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center space-x-4">
+            {/* <Link href="/authors" className={`nav-item ${
+              isScrolled ? 'text-gray-800' : 'text-white'
+            } hover:text-gold`}>
+              <span className="nav-link">Nos Experts</span>
+            </Link> */}
             <Link href={buttons.booking.url} target="_blank" rel="noopener noreferrer">
               <button className="booking-button">{buttons.booking.text}</button>
             </Link>

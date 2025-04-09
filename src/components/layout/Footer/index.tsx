@@ -3,6 +3,7 @@
 import React from 'react';
 import { SocialLinks } from './SocialLinks';
 import { Copyright } from './Copyright';
+import Link from 'next/link';
 
 export interface FooterProps {
   title?: string;
@@ -29,6 +30,22 @@ export const Footer: React.FC<FooterProps> = ({
           {title}
         </h2>
         <SocialLinks links={socialLinks} />
+        
+        {/* <div className="flex justify-center mb-6 space-x-6">
+          <Link 
+            href="/about-ai" 
+            className="text-white hover:text-gold transition-colors text-sm"
+          >
+            Notre Approche IA
+          </Link>
+          <Link 
+            href="/authors" 
+            className="text-white hover:text-gold transition-colors text-sm"
+          >
+            Nos Experts
+          </Link>
+        </div> */}
+        
         <Copyright {...copyright} />
       </div>
     </footer>

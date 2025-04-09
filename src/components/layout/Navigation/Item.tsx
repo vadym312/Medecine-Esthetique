@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu } from '@headlessui/react';
 import { ChevronDown } from 'lucide-react';
 import { MenuItem } from '@/src/types/navigation';
@@ -19,6 +19,12 @@ export const NavigationItem: React.FC<NavigationItemProps> = ({
   const pathname = usePathname();
   const isActive = pathname === item.path;
   const hasChildren = item.children && item.children.length > 0;
+  const [mounted, setMounted] = useState(false);
+
+  // Only render menu on client-side to prevent hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   if (!hasChildren) {
     return (
@@ -30,6 +36,23 @@ export const NavigationItem: React.FC<NavigationItemProps> = ({
       >
         <span className="nav-link">{item.label}</span>
       </Link>
+    );
+  }
+
+  // Return a simpler version during server-side rendering
+  if (!mounted) {
+    return (
+      <div className={`nav-item ${
+        isScrolled ? 'text-gray-800' : 'text-white'
+      } hover:text-gold relative group`}>
+        <span className="nav-button">
+          <span className="nav-link">{item.label}</span>
+          <ChevronDown
+            className="w-4 h-4 transform transition-transform duration-300 group-hover:rotate-180"
+            strokeWidth={1.5}
+          />
+        </span>
+      </div>
     );
   }
 

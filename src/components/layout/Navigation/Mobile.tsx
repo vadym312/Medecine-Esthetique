@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, memo } from 'react';
+import React, { useState, memo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { MenuItem } from '@/src/types/navigation';
@@ -136,6 +136,30 @@ BurgerButton.displayName = 'BurgerButton';
 export const NavigationMobile = memo(
   ({ isOpen, onToggle, onClose, isScrolled }: NavigationMobileProps) => {
     const { items } = useNavigation();
+    const [mounted, setMounted] = useState(false);
+
+    // Only render menu on client-side to prevent hydration mismatch
+    useEffect(() => {
+      setMounted(true);
+    }, []);
+
+    if (!mounted) {
+      return (
+        <button
+          className={`lg:hidden p-2 ${
+            isScrolled ? 'text-black' : 'text-white'
+          } relative z-[60]`}
+          onClick={onToggle}
+          aria-label="Toggle menu"
+        >
+          <div className="w-6 h-6 relative">
+            <span className="absolute top-1/2 left-0 w-full h-0.5 bg-current transform -translate-y-2" />
+            <span className="absolute top-1/2 left-0 w-full h-0.5 bg-current" />
+            <span className="absolute top-1/2 left-0 w-full h-0.5 bg-current transform translate-y-2" />
+          </div>
+        </button>
+      );
+    }
 
     return (
       <>

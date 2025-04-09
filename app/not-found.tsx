@@ -1,12 +1,32 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Home, Search } from 'lucide-react';
-import { SchemaOrg } from '@/src/components/shared/SchemaOrg';
 
 export default function NotFound() {
+  // Add useEffect to handle client-side SchemaOrg loading
+  useEffect(() => {
+    // Dynamic import of SchemaOrg to avoid SSR issues
+    import('@/src/components/shared/SchemaOrg').then((mod) => {
+      const SchemaOrg = mod.SchemaOrg;
+      const schemaContainer = document.createElement('div');
+      schemaContainer.id = 'schema-org-container';
+      document.body.appendChild(schemaContainer);
+    }).catch((err) => {
+      console.error('Failed to load SchemaOrg:', err);
+    });
+
+    // Cleanup
+    return () => {
+      const container = document.getElementById('schema-org-container');
+      if (container) {
+        container.remove();
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
       <motion.div 
@@ -65,9 +85,6 @@ export default function NotFound() {
           </button>
         </div>
       </motion.div>
-      
-      {/* Add structured data for better SEO */}
-      <SchemaOrg />
     </div>
   );
 }

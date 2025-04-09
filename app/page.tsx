@@ -11,6 +11,7 @@ import { InstagramFeed } from '@/src/components/homepage/InstagramFeed';
 import { BlogArticles } from '@/src/components/homepage/BlogArticles';
 import { Contact } from '@/src/components/homepage/Contact';
 import { siteConfig } from '@/src/config/site';
+import { OrganizationSchemaHome } from '@/src/components/shared/OrganizationSchemaHome';
 
 const Homepage: React.FC = () => {
 
@@ -31,6 +32,8 @@ const Homepage: React.FC = () => {
       <InstagramFeed />
       <BlogArticles />
       <Contact />
+      
+      <OrganizationSchemaHome />
     </>
   );
 };

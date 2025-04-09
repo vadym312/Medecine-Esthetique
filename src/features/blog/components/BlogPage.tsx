@@ -13,35 +13,45 @@ import { LoadingSpinner } from '@/src/components/ui/LoadingSpinner';
 import { useRouter } from 'next/navigation';
 
 const NewsletterSignup = dynamic(() => import('./NewsletterSignup').then(mod => mod.NewsletterSignup));
-const BlogPostComponent = dynamic(() => import('./BlogPost'));
 
 const ITEMS_PER_PAGE = 6;
 
 export const BlogPage: React.FC = () => {
-  
   const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
 
   const [page, setPage] = useState(1);
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    setLoading(true);
     const fetchData = async () => {
-      const fetchedPosts = await fetchPosts();
-      setPosts(fetchedPosts);
+      try {
+        setLoading(true);
+        const fetchedPosts = await fetchPosts();
+        setPosts(fetchedPosts);
+        setError(null);
+      } catch (err) {
+        console.error('Error fetching posts:', err);
+        setError('Failed to load blog posts');
+      } finally {
+        setLoading(false);
+      }
     };
 
     const fetchCategoriesData = async () => {
-      const fetchedCategories = await fetchCategories();  
-      setCategories(fetchedCategories);
+      try {
+        const fetchedCategories = await fetchCategories();  
+        setCategories(fetchedCategories);
+      } catch (err) {
+        console.error('Error fetching categories:', err);
+      }
     };
 
     fetchData();
     fetchCategoriesData();
-    setLoading(false);
   }, []);
 
   const { ref, inView } = useInView({
@@ -49,11 +59,12 @@ export const BlogPage: React.FC = () => {
     triggerOnce: true,
   });
 
-  const featuredPost: BlogPost = posts[0];
+  const featuredPost = posts.length > 0 ? posts[0] : null;
   const featuredCategory = categories.find((category) => category.id === featuredPost?.categories[0]);
-  const filteredPosts = selectedCategory ? posts.filter(
-    (post: BlogPost) => (post?.categories[0] == selectedCategory.id)
-  ) : posts;
+  
+  const filteredPosts = selectedCategory 
+    ? posts.filter((post: BlogPost) => post?.categories[0] == selectedCategory.id)
+    : posts;
 
   const paginatedPosts = filteredPosts.slice(0, page * ITEMS_PER_PAGE);
 
@@ -63,8 +74,29 @@ export const BlogPage: React.FC = () => {
     }
   }, [inView]);
 
-  if(loading){
-    return <LoadingSpinner/>
+  if (loading) {
+    return <LoadingSpinner />;
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center p-8 max-w-md">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            Impossible de charger les articles
+          </h2>
+          <p className="text-gray-600 mb-6">
+            Nous rencontrons des difficultés pour charger les articles du blog. Veuillez réessayer ultérieurement.
+          </p>
+          <button
+            onClick={() => window.location.reload()}
+            className="px-6 py-2 bg-gold text-white rounded-lg hover:bg-gold/90 transition-colors"
+          >
+            Réessayer
+          </button>
+        </div>
+      </div>
+    );
   }
 
   return (
