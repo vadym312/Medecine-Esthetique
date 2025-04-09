@@ -5,11 +5,10 @@ import Head from 'next/head';
 import { usePathname } from 'next/navigation';
 import { getAllAuthors } from '@/src/lib/mockData/authors';
 import { AuthorsList } from '@/src/features/authors/components/AuthorsList';
-import { siteConfig } from '@/src/config/site';
 
 export default function AuthorsPage() {
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
   const authors = getAllAuthors();
 
   return (

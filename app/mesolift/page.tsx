@@ -9,11 +9,11 @@ import { TreatmentProcedure } from '@/src/components/shared/treatments/Procedure
 import { TreatmentVideo } from '@/src/components/shared/treatments/Video';
 import { TreatmentCTA } from '@/src/components/shared/treatments/CTA';
 import { mesoliftData } from '@/src/lib/mockData/injections/soins/mesolift/Data';
-import { siteConfig } from '@/src/config/site';
+
 const MesoliftPage: React.FC = () => {
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   return (
     <>

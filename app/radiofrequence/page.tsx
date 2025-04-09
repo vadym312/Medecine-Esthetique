@@ -9,12 +9,12 @@ import { TreatmentProcedure } from '@/src/components/shared/treatments/Procedure
 import { TreatmentFAQ } from '@/src/components/shared/treatments/FAQ';
 import { TreatmentCTA } from '@/src/components/shared/treatments/CTA';
 import { radioData } from '@/src/lib/mockData/procedures/technologies-avancees/radiofrequence/Data';
-import { siteConfig } from '@/src/config/site';
+
 
 const CernesPage: React.FC = () => {
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   return (
     <>

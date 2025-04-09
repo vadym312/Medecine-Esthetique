@@ -8,11 +8,11 @@ import { Euro, Send } from 'lucide-react';
 import { fadeIn } from '@/src/utils/animations';
 import { PriceTable } from '@/src/components/tarifs/PriceTable';
 import { tarifsData } from '@/src/lib/mockData/tarifs';
-import { siteConfig } from '@/src/config/site';
+
 const TarifsPage: React.FC = () => {
 
     const pathname = usePathname();
-    const canonicalUrl = `${siteConfig.domain}${pathname}`;
+    const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
     const [formData, setFormData] = useState({
         name: '',

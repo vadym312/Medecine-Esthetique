@@ -10,12 +10,11 @@ import { CallToAction } from '@/src/components/procedures/traitements-injectable
 import { ProceduresGrid } from '@/src/components/procedures/Grid';
 import { hyaluronicAcidKeyPoints } from '@/src/lib/mockData/procedures/traitements-injectables/acide-hyaluronique/KeyPoints';
 import { acideData } from '@/src/lib/mockData/procedures/traitements-injectables/acide-hyaluronique/Data';
-import { siteConfig } from '@/src/config/site';
 
 const AcideHyaluroniquePage: React.FC = () => {
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   return (
     <>

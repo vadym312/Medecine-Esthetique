@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { usePathname } from 'next/navigation';
-import { siteConfig } from '@/src/config/site';
+
 import { 
   generateLocalBusinessSchema, 
   generateMedicalServiceSchema,
@@ -34,7 +34,7 @@ export const SchemaOrg: React.FC<SchemaOrgProps> = ({
   customLabels
 }) => {
   const pathname = usePathname();
-  const url = `${siteConfig.domain}${pathname}`;
+  const url = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   let schema;
 

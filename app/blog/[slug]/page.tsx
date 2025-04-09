@@ -6,7 +6,7 @@ import { useParams, usePathname } from 'next/navigation';
 import { BlogPost as BlogPostType } from '@/src/types/blog';
 import { EnhancedBlogPost } from '@/src/features/blog/components/EnhancedBlogPost';
 import { fetchPostBySlug, fetchPosts } from '@/src/lib/api/cms';
-import { siteConfig } from '@/src/config/site';
+
 
 export default function BlogPostPage() {
   const params = useParams();
@@ -30,7 +30,7 @@ export default function BlogPostPage() {
   }, [slug]);
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   if (!post) {
     return (

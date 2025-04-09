@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { usePathname } from 'next/navigation';
-import { siteConfig } from '@/src/config/site';
+
 
 interface BreadcrumbSchemaProps {
   customLabels?: Record<string, string>;
@@ -49,7 +49,7 @@ export const BreadcrumbSchema: React.FC<BreadcrumbSchemaProps> = ({
       '@type': 'ListItem',
       'position': index + 1,
       'name': item.label,
-      'item': `${siteConfig.domain}${item.url}`
+      'item': `${process.env.NEXT_PUBLIC_SITE_URL}${item.url}`
     }))
   };
 

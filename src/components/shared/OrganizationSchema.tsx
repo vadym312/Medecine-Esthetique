@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { usePathname } from 'next/navigation';
-import { siteConfig } from '@/src/config/site';
+
 
 interface SocialProfile {
   platform: string;
@@ -136,8 +136,8 @@ export const OrganizationSchema: React.FC<OrganizationSchemaProps> = ({
   dataPrivacyPolicy = '/privacy-policy'
 }) => {
   const pathname = usePathname();
-  const fullUrl = url || `${siteConfig.domain}${pathname}`;
-  const fullLogoUrl = logo.startsWith('http') ? logo : `${siteConfig.domain}${logo}`;
+  const fullUrl = url || `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
+  const fullLogoUrl = logo.startsWith('http') ? logo : `${process.env.NEXT_PUBLIC_SITE_URL}${logo}`;
   
   // Construct social media URLs if not provided
   const socialUrls = sameAs || socialProfiles.map(profile => profile.url);
@@ -163,7 +163,7 @@ export const OrganizationSchema: React.FC<OrganizationSchemaProps> = ({
       ...(founder.image && { 
         image: {
           '@type': 'ImageObject',
-          url: founder.image.startsWith('http') ? founder.image : `${siteConfig.domain}${founder.image}`
+          url: founder.image.startsWith('http') ? founder.image : `${process.env.NEXT_PUBLIC_SITE_URL}${founder.image}`
         }
       }),
       ...(founder.jobTitle && { jobTitle: founder.jobTitle }),
@@ -214,11 +214,11 @@ export const OrganizationSchema: React.FC<OrganizationSchemaProps> = ({
     },
     ethicsPolicy: {
       '@type': 'CreativeWork',
-      url: ethicsPolicy.startsWith('http') ? ethicsPolicy : `${siteConfig.domain}${ethicsPolicy}`
+      url: ethicsPolicy.startsWith('http') ? ethicsPolicy : `${process.env.NEXT_PUBLIC_SITE_URL}${ethicsPolicy}`
     },
     publishingPrinciples: {
       '@type': 'CreativeWork',
-      url: dataPrivacyPolicy.startsWith('http') ? dataPrivacyPolicy : `${siteConfig.domain}${dataPrivacyPolicy}`
+      url: dataPrivacyPolicy.startsWith('http') ? dataPrivacyPolicy : `${process.env.NEXT_PUBLIC_SITE_URL}${dataPrivacyPolicy}`
     },
     // AI-specific attributes
     additionalType: [

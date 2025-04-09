@@ -3,7 +3,7 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import { Author } from '@/src/types/author';
-import { siteConfig } from '@/src/config/site';
+
 
 interface AuthorSchemaProps {
   author: Author;
@@ -11,7 +11,7 @@ interface AuthorSchemaProps {
 
 export const AuthorSchema: React.FC<AuthorSchemaProps> = ({ author }) => {
   const pathname = usePathname();
-  const authorUrl = `${siteConfig.domain}${pathname}`;
+  const authorUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
   
   // Format credentials for schema
   const credentials = author.credentials.map(credential => ({
@@ -62,7 +62,7 @@ export const AuthorSchema: React.FC<AuthorSchemaProps> = ({ author }) => {
     "name": author.name,
     "jobTitle": author.title,
     "description": author.shortBio || author.bio.substring(0, 160),
-    "image": author.avatar.startsWith('http') ? author.avatar : `${siteConfig.domain}${author.avatar}`,
+    "image": author.avatar.startsWith('http') ? author.avatar : `${process.env.NEXT_PUBLIC_SITE_URL}${author.avatar}`,
     "url": authorUrl,
     "sameAs": sameAs,
     "knowsAbout": expertise,
@@ -70,7 +70,7 @@ export const AuthorSchema: React.FC<AuthorSchemaProps> = ({ author }) => {
     "memberOf": {
       "@type": "Organization",
       "name": "Cabinet Dr Emmanuel ELARD",
-      "url": siteConfig.domain
+      "url": process.env.NEXT_PUBLIC_SITE_URL
     },
     ...(author.publications && { "workExample": publications }),
     ...(author.aiRole && {

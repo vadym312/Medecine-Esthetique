@@ -13,11 +13,11 @@ import { TreatmentFAQ } from '@/src/components/shared/treatments/FAQ';
 import { TreatmentCTA } from '@/src/components/shared/treatments/CTA';
 import { RelatedProcedures } from '@/src/components/shared/treatments/RelatedProcedures';
 import { cernesData } from '@/src/lib/mockData/injections/visage/cernes/Data';
-import { siteConfig } from '@/src/config/site';
+
 const CernesPage: React.FC = () => {
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   return (
     <>

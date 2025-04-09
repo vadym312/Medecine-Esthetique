@@ -1,29 +1,29 @@
 'use client';
 
 import React from 'react';
-import { siteConfig } from '@/src/config/site';
+
 
 export const OrganizationSchemaHome: React.FC = () => {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'MedicalOrganization',
-    '@id': siteConfig.domain,
+    '@id': process.env.NEXT_PUBLIC_SITE_URL,
     name: 'Cabinet Dr Emmanuel ELARD',
     alternateName: 'Dr Elard Médecine Esthétique',
     description: 'Cabinet de médecine esthétique spécialisé en injections et traitements anti-âge à Paris 12, intégrant des technologies d\'intelligence artificielle pour des résultats personnalisés.',
-    url: siteConfig.domain,
+    url: process.env.NEXT_PUBLIC_SITE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${siteConfig.domain}/images/about/docteur-elard-emmanuel-medecin-esthetique-paris-l.webp`
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/about/docteur-elard-emmanuel-medecin-esthetique-paris-l.webp`
     },
     foundingDate: '2010-01-01',
     founder: {
       '@type': 'Person',
       name: 'Dr Emmanuel Elard',
-      url: `${siteConfig.domain}/dr-elard-emmanuel-paris-specialiste-injections`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/dr-elard-emmanuel-paris-specialiste-injections`,
       image: {
         '@type': 'ImageObject',
-        url: `${siteConfig.domain}/images/about/docteur-elard-emmanuel-medecin-esthetique-paris-l.webp`
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/images/about/docteur-elard-emmanuel-medecin-esthetique-paris-l.webp`
       },
       jobTitle: 'Médecin Esthétique - Fondateur',
       description: 'Expert en médecine esthétique et techniques d\'injection avancées'

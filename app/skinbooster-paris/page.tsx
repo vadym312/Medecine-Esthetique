@@ -10,11 +10,11 @@ import { TreatmentFAQ } from '@/src/components/shared/treatments/FAQ';
 import { TreatmentCTA } from '@/src/components/shared/treatments/CTA';
 import { RelatedProcedures } from '@/src/components/shared/treatments/RelatedProcedures';
 import { skinboosterData } from '@/src/lib/mockData/injections/soins/skinbooster/Data';
-import { siteConfig } from '@/src/config/site';
+
 const SkinboosterPage: React.FC = () => {
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   return (
     <>

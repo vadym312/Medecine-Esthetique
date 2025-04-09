@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { siteConfig } from '@/src/config/site';
+
 import { getParisDistricts, getParisLandmarks } from '@/src/utils/seo';
 
 // Get random items from array
@@ -13,7 +13,7 @@ const nearbyDistricts = ['Paris 11e', 'Paris 4e', 'Paris 5e', 'Paris 13e'];
 const nearbyLandmarks = ['Bastille', 'Nation', 'Gare de Lyon', 'Bercy', 'Bois de Vincennes'];
 
 export const defaultMetadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || siteConfig.domain || 'https://medecine-esthetique.net'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://medecine-esthetique.net'),
   title: 'Dr Emmanuel Elard - Injections Esthétiques à Paris 12 | Médecine Esthétique',
   description: `Spécialiste des injections d'acide hyaluronique à Paris 12, le Dr Emmanuel Elard offre des traitements pour un visage rajeuni et harmonieux, sans chirurgie. Cabinet situé près de Bastille, Nation et Gare de Lyon.`,
   applicationName: 'Dr Emmanuel ELARD',
@@ -37,10 +37,10 @@ export const defaultMetadata: Metadata = {
     title: "Injections Esthétiques à Paris 12 - Dr Emmanuel Elard, Expert en Acide Hyaluronique",
     description: `Faites confiance au Dr Emmanuel Elard, spécialiste des injections d'acide hyaluronique à Paris 12, pour un visage rajeuni et harmonieux. Cabinet situé près de Bastille, Nation et Gare de Lyon.`,
     locale: 'fr_FR',
-    url: siteConfig.domain,
+    url: process.env.NEXT_PUBLIC_SITE_URL,
     siteName: 'Cabinet Dr Emmanuel Elard - Médecine Esthétique Paris 12',
     images: [{
-      url: `${siteConfig.domain}/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg`,
       width: 1444,
       height: 811,
       alt: 'Le Dr Emmanuel Elard réalisant une injection esthétique dans son cabinet médical à Paris 12',
@@ -50,7 +50,7 @@ export const defaultMetadata: Metadata = {
     card: 'summary_large_image',
     title: "Injections Esthétiques à Paris 12 - Dr Emmanuel Elard, Expert en Acide Hyaluronique",
     description: `Faites confiance au Dr Emmanuel Elard, spécialiste des injections d'acide hyaluronique à Paris 12, pour un visage rajeuni et harmonieux. Cabinet situé près de Bastille, Nation et Gare de Lyon.`,
-    images: `${siteConfig.domain}/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg`,
+    images: `${process.env.NEXT_PUBLIC_SITE_URL}/wp-content/uploads/2024/11/Injections-full-face-Plan.jpg`,
   },
   robots: {
     index: true,

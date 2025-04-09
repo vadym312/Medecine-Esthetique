@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import { DrEmmanuelElard } from '@/src/features/about/components/DrEmmanuelElard';
 import { mockdrData } from '@/src/lib/mockData/about/dr-emmanuel-elard';
 import { ExpertiseIconType } from '@/src/features/about/components/DrEmmanuelElard/Expertise/types';
-import { siteConfig } from '@/src/config/site';
+
 // Transform the mock data to match the expected types
 const transformedData = {
   home: {
@@ -23,7 +23,7 @@ const transformedData = {
 export default function DrEmmanuelElardPage() {
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   return (
     <>

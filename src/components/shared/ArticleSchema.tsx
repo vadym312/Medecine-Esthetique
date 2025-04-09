@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { usePathname } from 'next/navigation';
-import { siteConfig } from '@/src/config/site';
+
 
 interface ArticleSchemaProps {
   title: string;
@@ -38,7 +38,7 @@ export const ArticleSchema: React.FC<ArticleSchemaProps> = ({
   aiDisclosure = 'Cet article a été rédigé avec l\'assistance de l\'intelligence artificielle, sous la supervision et validation d\'experts médicaux qualifiés.',
 }) => {
   const pathname = usePathname();
-  const url = `${siteConfig.domain}${pathname}`;
+  const url = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
   
   // Format dates to ISO format if they're not already
   const formatDate = (date: string) => {

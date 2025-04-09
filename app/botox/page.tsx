@@ -10,11 +10,11 @@ import { ContentSection } from '@/src/components/procedures/traitements-injectab
 import { CallToAction } from '@/src/components/procedures/traitements-injectables/CallToAction';
 import { RelatedProcedures } from '@/src/components/procedures/traitements-injectables/botox/RelatedProcedures';
 import { botoxData } from '@/src/lib/mockData/procedures/traitements-injectables/Botox';
-import { siteConfig } from '@/src/config/site';
+
 const Botox: React.FC = () => {
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   return (
     <>

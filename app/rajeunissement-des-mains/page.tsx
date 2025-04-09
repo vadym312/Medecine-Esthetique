@@ -10,11 +10,11 @@ import { TreatmentVideo } from '@/src/components/shared/treatments/Video';
 import { TreatmentResults } from '@/src/components/shared/treatments/Results';
 import { TreatmentCTA } from '@/src/components/shared/treatments/CTA';
 import { rajeunissementMainsData } from '@/src/lib/mockData/injections/soins/rajeunissement-mains/Data';
-import { siteConfig } from '@/src/config/site';
+
 const RajeunissementMainsPage: React.FC = () => {
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   return (
     <>

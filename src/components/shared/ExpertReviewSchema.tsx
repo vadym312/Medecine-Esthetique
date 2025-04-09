@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { usePathname } from 'next/navigation';
-import { siteConfig } from '@/src/config/site';
+
 
 interface ExpertReviewSchemaProps {
   itemReviewed: {
@@ -34,7 +34,7 @@ export const ExpertReviewSchema: React.FC<ExpertReviewSchemaProps> = ({
   reviewBody
 }) => {
   const pathname = usePathname();
-  const url = itemReviewed.url || `${siteConfig.domain}${pathname}`;
+  const url = itemReviewed.url || `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
   
   // Format date to ISO format if it's not already
   const formatDate = (date: string) => {

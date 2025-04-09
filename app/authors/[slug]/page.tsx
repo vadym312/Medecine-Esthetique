@@ -5,14 +5,13 @@ import { useParams, usePathname } from 'next/navigation';
 import Head from 'next/head';
 import { getAuthorBySlug } from '@/src/lib/mockData/authors';
 import { AuthorProfile } from '@/src/features/authors/components/AuthorProfile';
-import { siteConfig } from '@/src/config/site';
 import { NotFound } from '@/src/components/shared/NotFound';
 
 export default function AuthorPage() {
   const params = useParams();
   const slug = params?.slug as string;
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
   
   const author = getAuthorBySlug(slug);
   

@@ -3,12 +3,12 @@
 import Head from 'next/head';
 import { usePathname } from 'next/navigation'
 import { LeCabinet } from '@/src/features/about/components/LeCabinet';
-import { siteConfig } from '@/src/config/site';
+
 
 export default function LeCabinetPage() {
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   return (
     <>

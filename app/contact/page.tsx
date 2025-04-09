@@ -6,11 +6,11 @@ import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion';
 import { ContactForm } from '@/src/components/contact/Form';
 import { ContactInfo } from '@/src/components/contact/Info';
-import { siteConfig } from '@/src/config/site';
+
 const Contact: React.FC = () => {
 
   const pathname = usePathname();
-  const canonicalUrl = `${siteConfig.domain}${pathname}`;
+  const canonicalUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${pathname}`;
 
   return (
     <>
