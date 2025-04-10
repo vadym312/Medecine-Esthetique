@@ -56,6 +56,7 @@ export const defaultMetadata: Metadata = {
         google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
     },
     alternates: {       
+        canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/rhinoplastie-medicale-paris/`,
         languages: {
             'fr': process.env.NEXT_PUBLIC_SITE_URL,
         },
