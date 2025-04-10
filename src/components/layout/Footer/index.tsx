@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = ({
         </h2>
         <SocialLinks links={socialLinks} />
         
-        {/* <div className="flex justify-center mb-6 space-x-6">
+        <div className="flex justify-center mb-6 space-x-6">
           <Link 
             href="/about-ai" 
             className="text-white hover:text-gold transition-colors text-sm"
@@ -44,7 +44,7 @@ export const Footer: React.FC<FooterProps> = ({
           >
             Nos Experts
           </Link>
-        </div> */}
+        </div>
         
         <Copyright {...copyright} />
       </div>
