@@ -4,8 +4,7 @@ import { DefaultSeoProps } from 'next-seo';
 export const defaultSEOConfig: DefaultSeoProps = {
   titleTemplate: '%s | Dr Emmanuel ELARD',
   defaultTitle: 'Dr Emmanuel ELARD | Médecine Esthétique à Paris',
-  description: 'Cabinet de médecine esthétique du Dr Emmanuel ELARD à Paris. Expertise en injections, soins du visage et traitements anti-âge.',
-  canonical: process.env.NEXT_PUBLIC_SITE_URL,
+  description: 'Cabinet de médecine esthétique du Dr Emmanuel ELARD à Paris. Expertise en injections, soins du visage et traitements anti-âge.',  
   openGraph: {
     type: 'website',
     locale: 'fr_FR',

@@ -55,8 +55,7 @@ export const defaultMetadata: Metadata = {
     verification: {
         google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
     },
-    alternates: {
-        canonical: process.env.NEXT_PUBLIC_SITE_URL,
+    alternates: {       
         languages: {
             'fr': process.env.NEXT_PUBLIC_SITE_URL,
         },
