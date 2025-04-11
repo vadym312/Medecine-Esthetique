@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,11 +16,22 @@ const customLoader = ({ src, width }: { src: string; width: number }) => {
   else if (width <= 1200) finalWidth = 1200;
   else finalWidth = 1440;
 
-  const quality = width <= 480 ? 70 : 80; // Higher quality for mobile LCP
-
-  return `${src}?w=${finalWidth}&q=${quality}&auto=format,compress`;
+  return `${src}?w=${finalWidth}&q=80&auto=format,compress,quality`;
 };
+
 export const Hero: React.FC = () => {
+  // Preload the hero image
+  useEffect(() => {
+    const preloadImage = () => {
+      const img = new window.Image();
+      img.src = customLoader({ 
+        src: hero.backgroundImage.url, 
+        width: window.innerWidth 
+      });
+    };
+    preloadImage();
+  }, []);
+
   return (
     <section className="relative w-full min-h-[80vh] sm:min-h-screen flex items-center justify-center">
       <div className="absolute inset-0 w-full h-full">
@@ -37,7 +48,7 @@ export const Hero: React.FC = () => {
           sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 100vw"
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQrJiEyPjktLjY5OC9AOjU6ODUxN0dKSFdYX2VnaGc7SlxkaW9oV2deZWf/2wBDARUXFx4aHR4eHWRVOkVkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGf/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover transform-gpu will-change-transform"
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>
@@ -63,7 +74,6 @@ export const Hero: React.FC = () => {
         </motion.div>
       </div>
       
-      {/* Add local business schema */}
       <SchemaOrg />
     </section>
   );

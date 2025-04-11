@@ -41,7 +41,6 @@ export default function RootLayoutWrapper({
     <html lang="fr" className={montserrat.variable}>
       <head>
         <link rel="icon" href="/favicon.png" sizes="32x32" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
         <link
           rel="preconnect"
           href="https://patient.nextmotion.net"
