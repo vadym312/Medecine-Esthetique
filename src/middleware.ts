@@ -4,9 +4,17 @@ import { getParisDistricts, getParisLandmarks } from './utils/seo';
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const { pathname } = url;
+  const allowedParams = ['utm_source']; // Add any necessary parameters here
+  let modified = false;
 
-  if (url.search) {
-    url.search = '';
+  for (const param of Array.from(url.searchParams.keys())) {
+    if (!allowedParams.includes(param)) {
+      url.searchParams.delete(param);
+      modified = true;
+    }
+  }
+
+  if (modified) {
     return NextResponse.redirect(url, 301);
   }
   
