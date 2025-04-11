@@ -72,8 +72,8 @@ export const TreatmentTypes: React.FC<TypesSectionProps> = ({
                   loader={customLoader}
                   src={item.imageUrl}
                   alt={item.title}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-6">

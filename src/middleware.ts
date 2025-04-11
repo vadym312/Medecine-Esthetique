@@ -4,6 +4,11 @@ import { getParisDistricts, getParisLandmarks } from './utils/seo';
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const { pathname } = url;
+
+  if (url.search) {
+    url.search = '';
+    return NextResponse.redirect(url, 301);
+  }
   
   // Get districts and landmarks
   const districts = getParisDistricts();
@@ -51,11 +56,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Match all paths except for:
-    // - API routes
-    // - Static files
-    // - _next
-    // - favicon.ico
     '/((?!api|_next/static|_next/image|images|favicon.ico).*)',
   ],
 };
