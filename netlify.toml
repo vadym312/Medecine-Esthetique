@@ -56,5 +56,13 @@
   status = 301
   force = true
 
+[build]
+  command = "next build"
+  publish = ".next"
+
+[[edge_functions]]
+  path = "/*"
+  function = "middleware"
+
 [functions]
   node_bundler = "esbuild"
