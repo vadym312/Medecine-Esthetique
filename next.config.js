@@ -38,6 +38,7 @@ const nextConfig = {
       "@headlessui/react",
       "framer-motion",
     ],
+    runtime: 'experimental-edge'
   },
   async headers() {
     return [
