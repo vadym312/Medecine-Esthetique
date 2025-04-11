@@ -4,7 +4,13 @@ import { RootLayout } from "@/src/components/layout/RootLayout";
 import { defaultMetadata } from "@/src/lib/seo/metadata";
 import { WhatsAppProvider } from "@/src/components/layout/WhatsApp/Provider";
 import { WhatsAppWrapper } from "@/src/components/layout/WhatsApp/Wrapper";
-import GoogleTagManager from "./gtm";
+import dynamic from 'next/dynamic';
+
+// Dynamically import GTM with loading optimization
+const GoogleTagManager = dynamic(() => import('./gtm'), {
+  ssr: false,
+  loading: () => null,
+});
 
 // Optimize font loading
 const montserrat = Montserrat({
@@ -16,7 +22,15 @@ const montserrat = Montserrat({
   fallback: ["system-ui", "arial"],
 });
 
-export const metadata = { ...defaultMetadata, fontOptimization: true };
+export const metadata = {
+  ...defaultMetadata,
+  fontOptimization: true,
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
+};
 
 export default function RootLayoutWrapper({
   children,
@@ -27,7 +41,7 @@ export default function RootLayoutWrapper({
     <html lang="fr" className={montserrat.variable}>
       <head>
         <link rel="icon" href="/favicon.png" sizes="32x32" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
         <link
           rel="preconnect"
           href="https://patient.nextmotion.net"
@@ -42,6 +56,10 @@ export default function RootLayoutWrapper({
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
+        />
+        <link 
+          rel="dns-prefetch" 
+          href="https://www.googletagmanager.com"
         />
         <GoogleTagManager />
       </head>
