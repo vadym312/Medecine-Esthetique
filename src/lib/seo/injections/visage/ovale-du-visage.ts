@@ -56,7 +56,7 @@ export const defaultMetadata: Metadata = {
         google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
     },
     alternates: {        
-        canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/ovale-du-visage/`,
+        canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/ovale-du-visage`,
         languages: {
             'fr': process.env.NEXT_PUBLIC_SITE_URL,
         },

@@ -66,7 +66,7 @@ export const defaultMetadata: Metadata = {
         google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
     },
     alternates: {       
-        canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/sillons-nasogeniens/`,
+        canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/sillons-nasogeniens`,
         languages: {
             'fr': process.env.NEXT_PUBLIC_SITE_URL,
         },

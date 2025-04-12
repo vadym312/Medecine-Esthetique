@@ -56,7 +56,7 @@ export const defaultMetadata: Metadata = {
         google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
     },
     alternates: {        
-        canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/injections-cernes-paris/`,
+        canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/injections-cernes-paris`,
         languages: {
             'fr': process.env.NEXT_PUBLIC_SITE_URL,
         },
