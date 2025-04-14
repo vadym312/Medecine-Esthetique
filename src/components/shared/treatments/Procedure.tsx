@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Shield, Clock, CheckCircle } from 'lucide-react';
+import { Calendar, Shield, Clock, CheckCircle, Zap, Sparkles } from 'lucide-react';
 
 interface Step {
   title: string;
@@ -15,13 +15,19 @@ interface ProcedureSectionProps {
   steps: Step[];
 }
 
-const icons = [Calendar, Shield, Clock, CheckCircle];
+const icons = [Calendar, Shield, Clock, CheckCircle, Zap, Sparkles];
 
 export const TreatmentProcedure: React.FC<ProcedureSectionProps> = ({
   title,
   subtitle,
   steps,
 }) => {
+
+  const isHydrafacial = steps.length === 6;
+  const gridClass = isHydrafacial
+    ? "grid md:grid-cols-3 gap-8"
+    : "grid md:grid-cols-2 lg:grid-cols-4 gap-8";
+
   return (
     <section className="py-16 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,7 +36,7 @@ export const TreatmentProcedure: React.FC<ProcedureSectionProps> = ({
           <p className="text-xl text-gray-600">{subtitle}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className={gridClass}>
           {steps.map((step, index) => {
             const Icon = icons[index % icons.length];
             return (

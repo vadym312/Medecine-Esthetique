@@ -19,13 +19,14 @@ const getSpecialPath = (label: string): string | null => {
     'front': '/injection-du-front',
     'menton': '/injection-menton',
     'ovale du visage': '/ovale-du-visage',
-    'rhinoplastie médicale': 'rhinoplastie-medicale-paris',
+    'rhinoplastie médicale': '/rhinoplastie-medicale-paris',
     'augmentation des lèvres': '/augmentation-levres-paris',
     "plis d'amertume": '/plis-armetume-acide-hyaluronique-paris',
     'rides autour de la bouche': '/rides-autour-de-la-bouche',
     'skinbooster': '/skinbooster-paris',
     'rajeunissement des mains': '/rajeunissement-des-mains',
     'mésolift': '/mesolift',
+    'hydrafacial': '/hydrafacial-paris',
     'rides du front': '/botox-rides-du-front',
     'rides du lion': '/botox-ride-du-lion',
     "pattes d'oie": '/botox-rides-pattes-d-oie',
@@ -39,7 +40,7 @@ const getSpecialPath = (label: string): string | null => {
     'cryolipolyse': '/cryolipolyse-paris',
     'blog': '/blog',
     'contact': 'https://contact.medecine-esthetique.net/',
-    
+    'tarifs': '/tarifs',
   };
   
   return specialPaths[label.toLowerCase()] || null;

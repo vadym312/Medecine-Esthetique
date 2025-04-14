@@ -103,6 +103,7 @@ const baseItems: BaseMenuItem[] = [
         children: [
           { label: 'Plexr', order: 1 },
           { label: 'Cryolipolyse', order: 2 },
+          { label: 'Hydrafacial', order: 3 },
         ],
       },
     ],
