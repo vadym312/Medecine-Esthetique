@@ -2,7 +2,7 @@ export const hydrafacialData = {
     hero: {
         title: "Hydrafacial",
         subtitle: "HYDRAFACIAL : LE SOIN VISAGE COMPLET POUR UNE PEAU ÉCLATANTE",
-        backgroundImage: "/images/injections/skinbooster.webp",
+        backgroundImage: "/images/hydrafacial.webp",
     },
     intro: {
         text: "L'Hydrafacial est un soin visage révolutionnaire qui combine nettoyage, exfoliation, extraction, hydratation et protection antioxydante en une seule séance. Cette technologie avancée offre des résultats immédiats et durables pour tous les types de peau, sans temps d'éviction. Découvrez comment le Dr Emmanuel Elard, expert en médecine esthétique à Paris, peut transformer votre peau grâce à ce traitement complet et personnalisé.",
@@ -13,22 +13,22 @@ export const hydrafacialData = {
             {
                 title: "Nettoyage profond",
                 description: "Élimine les impuretés et désincruste les pores en profondeur pour une peau parfaitement nette.",
-                imageUrl: "/images/injections/peau-seche.webp",
+                imageUrl: "/images/nettoyage.webp",
             },
             {
                 title: "Hydratation intense",
                 description: "Infuse la peau avec des sérums riches en antioxydants, peptides et acide hyaluronique pour une hydratation optimale.",
-                imageUrl: "/images/injections/teint-terne-1.webp",
+                imageUrl: "/images/hydratation.webp",
             },
             {
                 title: "Éclat immédiat",
                 description: "Redonne instantanément luminosité et éclat au teint, même aux peaux ternes et fatiguées.",
-                imageUrl: "/images/injections/skinbooster.webp",
+                imageUrl: "/images/immediate.webp",
             },
             {
                 title: "Anti-âge efficace",
                 description: "Stimule le renouvellement cellulaire et améliore la texture de la peau pour un effet rajeunissant visible.",
-                imageUrl: "/images/injections/raffermissement-peau.webp",
+                imageUrl: "/images/anti-age.webp",
             },
         ],
     },
@@ -64,7 +64,7 @@ export const hydrafacialData = {
     },
     video: {
         title: "DÉCOUVREZ L'HYDRAFACIAL EN VIDÉO",
-        videoId: "KFhqQ7YmtiY",
+        videoId: "0fWgUcVfNIQ",
     },
     results: {
         title: "Résultats",
@@ -72,7 +72,7 @@ export const hydrafacialData = {
         videos: [{
             id: '1',
             title: 'Résultat du traitement - Cas 1',
-            url: 'https://www.youtube.com/embed/KFhqQ7YmtiY'
+            url: 'https://www.youtube.com/embed/0fWgUcVfNIQ'
         }],
     },
     testimonials: {
