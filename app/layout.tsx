@@ -5,6 +5,7 @@ import { defaultMetadata } from "@/src/lib/seo/metadata";
 import { WhatsAppProvider } from "@/src/components/layout/WhatsApp/Provider";
 import { WhatsAppWrapper } from "@/src/components/layout/WhatsApp/Wrapper";
 import dynamic from 'next/dynamic';
+import Script from 'next/script';
 
 // Dynamically import GTM with loading optimization
 const GoogleTagManager = dynamic(() => import('./gtm'), {
@@ -61,6 +62,18 @@ export default function RootLayoutWrapper({
           href="https://www.googletagmanager.com"
         />
         <GoogleTagManager />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-F9EMQ1FVMW"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-F9EMQ1FVMW');
+          `}
+        </Script>
       </head>
       <body className={`${montserrat.className} antialiased`}>
         <noscript>
