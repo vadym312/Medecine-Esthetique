@@ -78,7 +78,7 @@ export default function RootLayoutWrapper({
       <body className={`${montserrat.className} antialiased`}>
         <noscript>
           <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=GTM-TJNXCXN7`}
+            src={`https://www.googletagmanager.com/ns.html?id=GTM-TJBRS99D`}
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}

@@ -70,7 +70,7 @@ const nextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://blog.medecine-esthetique.net; frame-src 'self' https://www.youtube.com https://youtube.com https://patient.nextmotion.net https://www.google.com;",
+            value: "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://blog.medecine-esthetique.net; frame-src 'self' https://www.youtube.com https://youtube.com https://patient.nextmotion.net https://www.google.com https://td.doubleclick.net;",
           },
           {
             key: "Permissions-Policy",
