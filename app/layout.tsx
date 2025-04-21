@@ -66,19 +66,19 @@ export default function RootLayoutWrapper({
           src="https://www.googletagmanager.com/gtag/js?id=G-F9EMQ1FVMW"
           strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+        <Script id="google-analytics" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-F9EMQ1FVMW');
-          `}
-        </Script>
+          `
+        }} />
       </head>
       <body className={`${montserrat.className} antialiased`}>
         <noscript>
           <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=GTM-TJBRS99D`}
+            src={`https://www.googletagmanager.com/ns.html?id=GTM-TJNXCXN7`}
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
