@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 
-export function generateBlogPostMetadata(slug: string): Metadata {
+export function generateBlogPostMetadata(slug: string, title: string): Metadata {
   return {
-    title: `${slug} | Blog | Médecine Esthétique`,
-    description: `Article sur ${slug} dans notre blog de médecine esthétique.`,
+    title: `${title} | Blog | Médecine Esthétique`,
+    description: `Article sur ${title} dans notre blog de médecine esthétique.`,
     alternates: {
       canonical: `/blog/${slug}`,
     },

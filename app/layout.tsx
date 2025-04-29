@@ -26,11 +26,12 @@ const montserrat = Montserrat({
 export const metadata = {
   ...defaultMetadata,
   fontOptimization: true,
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayoutWrapper({

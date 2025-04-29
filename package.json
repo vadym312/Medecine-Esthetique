@@ -22,6 +22,7 @@
     "eslint-config-next": "14.1.0",
     "framer-motion": "^11.0.0",
     "googleapis": "^148.0.0",
+    "he": "^1.2.0",
     "lucide-react": "^0.464.0",
     "nanoid": "^5.0.4",
     "next": "14.1.0",
@@ -39,6 +40,7 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.9.4",
     "@next/bundle-analyzer": "^14.1.0",
+    "@types/he": "^1.2.3",
     "cross-env": "^7.0.3",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.2.5"
