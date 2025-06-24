@@ -55,7 +55,7 @@
   }
 
   .mega-menu-grid {
-    @apply grid grid-cols-4 gap-x-6;
+    @apply grid grid-cols-3 gap-x-6;
   }
 
   .mega-menu-column {
