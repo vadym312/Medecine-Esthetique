@@ -64,17 +64,17 @@ const baseItems: BaseMenuItem[] = [
           { label: 'Mésolift', order: 3 },
         ],
       },
-      {
-        label: 'Botox',
-        order: 4,
-        children: [
-          { label: 'Rides du front', order: 1 },
-          { label: 'Rides du lion', order: 2 },
-          { label: "Pattes d'oie", order: 3 },
-          { label: 'Masseter', order: 4 },
-          { label: 'Transpiration', order: 5 },
-        ],
-      },
+      // {
+      //   label: 'Botox',
+      //   order: 4,
+      //   children: [
+      //     { label: 'Rides du front', order: 1 },
+      //     { label: 'Rides du lion', order: 2 },
+      //     { label: "Pattes d'oie", order: 3 },
+      //     { label: 'Masseter', order: 4 },
+      //     { label: 'Transpiration', order: 5 },
+      //   ],
+      // },
     ],
   },
   {
@@ -86,7 +86,7 @@ const baseItems: BaseMenuItem[] = [
         order: 1,
         children: [
           { label: 'Acide hyaluronique', order: 1 },
-          { label: 'Botox', order: 2 },
+          // { label: 'Botox', order: 2 },
         ],
       },
       {
