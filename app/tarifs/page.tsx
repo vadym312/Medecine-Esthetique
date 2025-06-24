@@ -48,14 +48,10 @@ const TarifsPage: React.FC = () => {
                             <h2 className="text-2xl font-montserrat font-light text-gray-900 mb-8 text-center">
                                 {tarifsData.visage.title}
                             </h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                 <PriceTable
                                     title="Injections d'acide hyaluronique"
                                     items={tarifsData.visage.acidHyaluronique}
-                                />
-                                <PriceTable
-                                    title="Toxine botulique"
-                                    items={tarifsData.visage.toxineBotulique}
                                 />
                                 <PriceTable
                                     title="HIFU"
