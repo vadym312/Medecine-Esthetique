@@ -70,7 +70,7 @@ const nextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://blog.medecine-esthetique.net https://region1.analytics.google.com; frame-src 'self' https://www.youtube.com https://youtube.com https://patient.nextmotion.net https://www.google.com https://td.doubleclick.net;",
+            value: "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://blog.medecine-esthetique.net https://region1.analytics.google.com; frame-src 'self' https://www.youtube.com https://youtube.com https://patient.nextmotion.net https://www.google.com https://td.doubleclick.net;",
           },
           {
             key: "Permissions-Policy",
@@ -154,14 +154,443 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      {
-        source: '/blog-redirect/:path*',
-        destination: '/blog/:path*',
+      { 
+        source: '/acide-hyaluronique-paris-article-docteur-elard', 
+        destination: '/', 
         permanent: true,
       },
-      {
-        source: '/procedures/traitements-injectables/botox',
-        destination: '/botox',
+      { 
+        source: '/about/le-cabinet', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/about/le-cabinet/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/traitement-rides-peribuccales-paris-specialiste-injections-visage', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/server-sitemap', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/traitements-specialises/cryolipolyse', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/gonflement-des-levres-apres-une-injection-dacide-hyaluronique-tout-', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/locations.kml', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/comment-fonctionnent-ultrasons-paris-article-docteur-elard', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/category/corps', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/category/corps/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/cryo', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/cryo/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injection-cernes-paris-12', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injection-cernes-paris-12/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/redessiner-ovale-visage-paris-specialiste-injections', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/redessiner-ovale-visage-paris-specialiste-injections/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/botox-rides-du-lion', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/botox-rides-du-lion/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/gonflement-des-levres-apres-une-injection-dacide-hyaluronique-tout-ce-quil-faut-savoir', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/ultrasons', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/idees-recues-toxine-botulique-paris-article-docteur-elard', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/comprendre-alopecie-paris-article-docteur-elard', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/technologies-avancees/hifu', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/toxine-botulique',
+         destination: '/', 
+         permanent: true 
+      },
+      { source: '/procedures/traitements-specialises/plexr', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/ovale-visage', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/cernes', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/lexique-medecine-esthetique', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/category/procedures/page/2', 
+        destination: '/', 
+        permanent: true 
+      },
+      { source: '/wp-json/elementskit/v1', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/wp-json/elementskit/v1/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injections/visage/rhinoplastie-medicale', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/traitements-injectables/botox', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/avants-apres-specialiste-visage-paris', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/category/temoignage-expertise/feed', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/category/temoignage-expertise/feed/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/feed/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injections/visage/tempes/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/5-meilleures-astuces-anti-inflammatoires-nutrition-article', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/levres', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/menton', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/mains', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/sillons-nasogeniens', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/rhinoplastie', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/m', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/ryolipolyse-paris', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/skinbooster', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/lexique', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/pommettes', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injections/visage/cernes', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injections/visage/cernes/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/plis-amertume', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/tempes', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/soin/toxine-botulique', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/soin/toxine-botulique/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/soin/mesotherapie', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/skinbooster-paris-specialiste-injections-acide-hyaluronique', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/skinbooster-paris-specialiste-injections-acide-hyaluronique/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/micronutrition', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/a-propos-du-docteur-elard', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/a-propos-du-docteur-elard/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/russian-lips-paris-specialiste-injections-levres', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/russian-lips-paris-specialiste-injections-levres/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/dr-elard-emmanuel-paris-specialiste-injections-visage', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/dr-elard-emmanuel-paris-specialiste-injections-visage/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injections-levres-paris-specialiste-visage', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injections-levres-paris-specialiste-visage/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/category/cosmeto', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/category/cosmeto/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/login-healthcie', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/login-healthcie/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/en/cellulite', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/en/cellulite/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/category/lifestyle-education', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injections/visage/front', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injections/visage/front/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/rides-front', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/procedures/patte-oie', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/injections-ride-du-lion-paris-specialiste-visage', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/wp-content/uploads/2024/11/Nasolabial-Folds-eII.jpg1', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/traitement-plis-armetume-paris-specialiste-injections-visage', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/rhinoplastie-medicale-paris-specialiste-injections-nez', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/rajeunissement-pommettes-paris-specialiste-injections-visage', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/le-vieillissement-cutane/', 
+        destination: '/', 
+        permanent: true 
+      },
+      { 
+        source: '/', 
+        destination: '/', 
+        permanent: true, 
+        has: [{ type: 'query', key: 'p', value: '216' }] 
+      },
+      { 
+        source: '/blog-redirect/:path*', 
+        destination: '/blog/:path*', 
+        permanent: true 
+      },
+      { 
+        source: '/blog-redirect/:path*',
+        destination: '/blog/:path*',
         permanent: true,
       },
       {
@@ -190,11 +619,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/toxine-botulique',
-        destination: '/botox',
-        permanent: true,
-      },
-      {
         source: '/cellulite-paris-article-docteur-elard',
         destination: '/radiofrequence',
         permanent: true,
@@ -215,18 +639,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/procedures/traitements-specialises/plexr',
-        destination: '/plexr-blepharoplastie-sans-chirurgie',
-        permanent: true,
-      },
-      {
         source: '/lexique-medecine-esthetique-paris-article-docteur-elard',
         destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/procedures/ovale-visage',
-        destination: '/ovale-du-visage',
         permanent: true,
       },
       {
@@ -250,32 +664,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/procedures/technologies-avancees/hifu',
-        destination: '/hifu',
-        permanent: true,
-      },
-      {
-        source: '/procedures/cernes',
-        destination: '/injections-cernes-paris',
-        permanent: true,
-      },
-      {
         source: '/author/admin-healthcie',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/lexique-medecine-esthetique',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/category/procedures/page/2',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/wp-json/elementskit/v1',
         destination: '/',
         permanent: true,
       },
@@ -315,16 +704,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/category/lifestyle-education',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/injections/visage/rhinoplastie-medicale',
-        destination: '/rhinoplastie-medicale-paris',
-        permanent: true,
-      },
-      {
         source: '/feed',
         destination: '/',
         permanent: true,
@@ -332,36 +711,6 @@ const nextConfig = {
       {
         source: '/comment-fonctionne-peeling-paris-article-docteur-elard',
         destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/comprendre-alopecie-paris-article-docteur-elard',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/procedures/levres',
-        destination: '/augmentation-levres-paris',
-        permanent: true,
-      },
-      {
-        source: '/gonflement-des-levres-apres-une-injection-dacide-hyaluronique-tout-ce-quil-faut-savoir',
-        destination: '/augmentation-levres-paris',
-        permanent: true,
-      },
-      {
-        source: '/procedures/mains',
-        destination: '/rajeunissement-des-mains',
-        permanent: true,
-      },
-      {
-        source: '/procedures/sillons-nasogeniens',
-        destination: '/sillons-nasogeniens',
-        permanent: true,
-      },
-      {
-        source: '/procedures/rhinoplastie',
-        destination: '/rhinoplastie-medicale-paris',
         permanent: true,
       },
       {
@@ -380,11 +729,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/lexique-medecine-esthetique',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
         source: '/p-cernes',
         destination: '/injections-cernes-paris',
         permanent: true,
@@ -395,27 +739,7 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/ryolipolyse-paris',
-        destination: '/cryolipolyse-paris',
-        permanent: true,
-      },
-      {
         source: '/inflammaging-role-vieillissement-cutane-article-docteur-elard',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/idees-recues-toxine-botulique-paris-article-docteur-elard',
-        destination: '/botox',
-        permanent: true,
-      },
-      {
-        source: '/procedures/skinbooster',
-        destination: '/skinbooster-paris',
-        permanent: true,
-      },
-      {
-        source: '/lexique',
         destination: '/blog',
         permanent: true,
       },
@@ -425,18 +749,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/procedures/pommettes',
-        destination: '/injection-acide-hyaluronique-pommettes-paris',
-        permanent: true,
-      },
-      {
         source: '/soin/plexr',
         destination: '/plexr-blepharoplastie-sans-chirurgie',
-        permanent: true,
-      },
-      {
-        source: '/injections/visage/cernes',
-        destination: '/injections-cernes-paris',
         permanent: true,
       },
       {
@@ -445,43 +759,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/procedures/plis-amertume',
-        destination: '/plis-armetume-acide-hyaluronique-paris',
-        permanent: true,
-      },
-      {
-        source: '/procedures/tempes',
-        destination: '/injection-tempes',
-        permanent: true,
-      },
-      {
-        source: '/soin/toxine-botulique',
-        destination: '/botox',
-        permanent: true,
-      },
-      {
         source: '/soin/produits-comblement',
         destination: '/acide-hyaluronique',
-        permanent: true,
-      },
-      {
-        source: '/soin/mesotherapie',
-        destination: '/mesolift',
-        permanent: true,
-      },
-      {
-        source: '/skinbooster-paris-specialiste-injections-acide-hyaluronique',
-        destination: '/skinbooster-paris',
-        permanent: true,
-      },
-      {
-        source: '/micronutrition',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/a-propos-du-docteur-elard',
-        destination: '/dr-elard-emmanuel-paris-specialiste-injections',
         permanent: true,
       },
       {
@@ -492,21 +771,6 @@ const nextConfig = {
       {
         source: '/affiner-visage-paris-specialiste-injections-visage',
         destination: '/ovale-du-visage',
-        permanent: true,
-      },
-      {
-        source: '/russian-lips-paris-specialiste-injections-levres',
-        destination: '/augmentation-levres-paris',
-        permanent: true,
-      },
-      {
-        source: '/dr-elard-emmanuel-paris-specialiste-injections-visage',
-        destination: '/dr-elard-emmanuel-paris-specialiste-injections',
-        permanent: true,
-      },
-      {
-        source: '/injections-levres-paris-specialiste-visage',
-        destination: '/augmentation-levres-paris',
         permanent: true,
       },
       {
@@ -525,63 +789,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/category/cosmeto',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/login-healthcie',
-        destination: 'https://contact.medecine-esthetique.net/',
-        permanent: true,
-      },
-      {
-        source: '/en/cellulite',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/injections/visage/front',
-        destination: '/injection-du-front',
-        permanent: true,
-      },
-      {
-        source: '/procedures/rides-front',
-        destination: '/botox-rides-du-front',
-        permanent: true,
-      },
-      {
-        source: '/procedures/patte-oie',
-        destination: '/botox-rides-pattes-d-oie',
-        permanent: true,
-      },
-      {
         source: '/home',
         destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/injections-ride-du-lion-paris-specialiste-visage',
-        destination: '/botox-ride-du-lion',
-        permanent: true,
-      },
-      {
-        source: '/wp-content/uploads/2024/11/Nasolabial-Folds-eII.jpg1',
-        destination: '/blog',
-        permanent: true,
-      },
-      {
-        source: '/traitement-plis-armetume-paris-specialiste-injections-visage',
-        destination: '/plis-armetume-acide-hyaluronique-paris',
-        permanent: true,
-      },
-      {
-        source: '/rhinoplastie-medicale-paris-specialiste-injections-nez',
-        destination: '/rhinoplastie-medicale-paris',
-        permanent: true,
-      },
-      {
-        source: '/rajeunissement-pommettes-paris-specialiste-injections-visage',
-        destination: '/injection-acide-hyaluronique-pommettes-paris',
         permanent: true,
       },
       {
@@ -761,7 +970,7 @@ const nextConfig = {
       },
       {
         source: '/contact-docteur-elard-specialiste-visage',
-        destination: 'https://contact.medecine-esthetique.net/',
+        destination: '/',
         permanent: true,
       },
     ];
