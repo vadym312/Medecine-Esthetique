@@ -614,6 +614,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/procedures/technologies-avancees/epilation-laser',
+        destination: '/epilation-laser',
+        permanent: true,
+      },
+      {
         source: '/vieillissement-cutane-paris-article-docteur-elard',
         destination: '/blog',
         permanent: true,
