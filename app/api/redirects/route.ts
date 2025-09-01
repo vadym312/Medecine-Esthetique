@@ -80,6 +80,8 @@ export async function GET(request: NextRequest) {
     '/plexr': '/plexr-blepharoplastie-sans-chirurgie',
     '/blepharoplastie': '/plexr-blepharoplastie-sans-chirurgie',
     '/cryolipolyse': '/cryolipolyse-paris',
+    '/microneedling': '/microneedling',
+    '/epilation-laser': '/epilation-laser',
     // Skincare variations
     '/skinbooster': '/skinbooster-paris',
     '/mesolift-paris': '/mesolift',

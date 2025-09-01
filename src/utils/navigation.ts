@@ -36,6 +36,8 @@ const getSpecialPath = (label: string): string | null => {
     'botox': '/botox',
     'hifu': '/hifu',
     'radiofréquence': '/radiofrequence',
+    'microneedling': '/microneedling',
+    'epilation laser': '/epilation-laser',
     'plexr': '/plexr-blepharoplastie-sans-chirurgie',
     'cryolipolyse': '/cryolipolyse-paris',
     'blog': '/blog',

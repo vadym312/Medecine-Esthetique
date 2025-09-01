@@ -95,6 +95,7 @@ const baseItems: BaseMenuItem[] = [
         children: [
           { label: 'HIFU', order: 1 },
           { label: 'Radiofréquence', order: 2 },
+          { label: 'Épilation Laser', order: 3 },
         ],
       },
       {
@@ -104,6 +105,7 @@ const baseItems: BaseMenuItem[] = [
           { label: 'Plexr', order: 1 },
           { label: 'Cryolipolyse', order: 2 },
           { label: 'Hydrafacial', order: 3 },
+          { label: 'Microneedling', order: 4 },
         ],
       },
     ],
