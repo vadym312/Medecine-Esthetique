@@ -55,5 +55,75 @@ export const tarifsData = {
     },
     disclaimer: {
         text: '* Les tarifs sont donnés à titre indicatif et peuvent varier selon les spécificités du traitement. Une consultation préalable est nécessaire pour établir un devis personnalisé.'
-    }
+    },
+    epilationLaser: {
+        title: 'ÉPILATION LASER',
+        homme: {
+            title: 'Épilation Laser Homme',
+            visage: [
+                { name: 'Barbe complète', price: '120€' },
+                { name: 'Moustache', price: '60€' },
+                { name: 'Joues', price: '80€' },
+                { name: 'Cou', price: '70€' },
+                { name: 'Sourcils', price: '50€' },
+            ],
+            corps: [
+                { name: 'Torse', price: '150€' },
+                { name: 'Dos complet', price: '200€' },
+                { name: 'Épaules', price: '100€' },
+                { name: 'Ventre', price: '120€' },
+                { name: 'Fesses', price: '120€' },
+            ],
+            bras: [
+                { name: 'Bras complets', price: '150€' },
+                { name: 'Avant-bras', price: '100€' },
+                { name: 'Aisselles', price: '80€' },
+                { name: 'Mains', price: '60€' },
+            ],
+            jambes: [
+                { name: 'Jambes complètes', price: '250€' },
+                { name: 'Cuisses', price: '180€' },
+                { name: 'Mollets', price: '150€' },
+                { name: 'Pieds', price: '70€' },
+            ],
+        },
+        femme: {
+            title: 'Épilation Laser Femme',
+            visage: [
+                { name: 'Lèvre supérieure', price: '60€' },
+                { name: 'Menton', price: '60€' },
+                { name: 'Joues', price: '80€' },
+                { name: 'Visage complet', price: '150€' },
+                { name: 'Sourcils', price: '50€' },
+            ],
+            corps: [
+                { name: 'Aisselles', price: '80€' },
+                { name: 'Bras complets', price: '120€' },
+                { name: 'Ventre', price: '100€' },
+                { name: 'Dos', price: '150€' },
+                { name: 'Fesses', price: '100€' },
+            ],
+            bras: [
+                { name: 'Bras complets', price: '120€' },
+                { name: 'Avant-bras', price: '80€' },
+                { name: 'Aisselles', price: '80€' },
+                { name: 'Mains', price: '50€' },
+            ],
+            jambes: [
+                { name: 'Jambes complètes', price: '200€' },
+                { name: 'Cuisses', price: '150€' },
+                { name: 'Mollets', price: '120€' },
+                { name: 'Maillot classique', price: '80€' },
+                { name: 'Maillot intégral', price: '120€' },
+                { name: 'Pieds', price: '60€' },
+            ],
+        },
+    },
+    microneedling: {
+        title: 'MICRONEEDLING',
+        tarifs: [
+            { name: 'Une séance', price: '250€' },
+            { name: 'Protocole 3 séances', price: '600€' },
+        ],
+    },
 };

@@ -31,7 +31,7 @@ const TarifsPage: React.FC = () => {
             <Head>
                 <link rel="canonical" href={canonicalUrl} />
             </Head>
-            
+
             <div className="min-h-screen bg-gray-50 pt-20">
                 <section className="py-20 bg-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,10 +48,14 @@ const TarifsPage: React.FC = () => {
                             <h2 className="text-2xl font-montserrat font-light text-gray-900 mb-8 text-center">
                                 {tarifsData.visage.title}
                             </h2>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <PriceTable
                                     title="Injections d'acide hyaluronique"
                                     items={tarifsData.visage.acidHyaluronique}
+                                />
+                                <PriceTable
+                                    title="Toxine botulique"
+                                    items={tarifsData.visage.toxineBotulique}
                                 />
                                 <PriceTable
                                     title="HIFU"
@@ -89,6 +93,78 @@ const TarifsPage: React.FC = () => {
                             <p className="text-sm text-gray-500">
                                 {tarifsData.disclaimer.text}
                             </p>
+                        </div>
+
+                        {/* Épilation Laser Section */}
+                        <div className="mb-16">
+                            <h2 className="text-2xl font-montserrat font-light text-gray-900 mb-8 text-center">
+                                {tarifsData.epilationLaser.title}
+                            </h2>
+
+                            {/* Épilation Laser Homme */}
+                            <div className="mb-12">
+                                <h3 className="text-xl font-montserrat font-medium text-gray-800 mb-6 text-center">
+                                    {tarifsData.epilationLaser.homme.title}
+                                </h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                    <PriceTable
+                                        title="Visage"
+                                        items={tarifsData.epilationLaser.homme.visage}
+                                    />
+                                    <PriceTable
+                                        title="Corps"
+                                        items={tarifsData.epilationLaser.homme.corps}
+                                    />
+                                    <PriceTable
+                                        title="Bras"
+                                        items={tarifsData.epilationLaser.homme.bras}
+                                    />
+                                    <PriceTable
+                                        title="Jambes"
+                                        items={tarifsData.epilationLaser.homme.jambes}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Épilation Laser Femme */}
+                            <div className="mb-12">
+                                <h3 className="text-xl font-montserrat font-medium text-gray-800 mb-6 text-center">
+                                    {tarifsData.epilationLaser.femme.title}
+                                </h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                    <PriceTable
+                                        title="Visage"
+                                        items={tarifsData.epilationLaser.femme.visage}
+                                    />
+                                    <PriceTable
+                                        title="Corps"
+                                        items={tarifsData.epilationLaser.femme.corps}
+                                    />
+                                    <PriceTable
+                                        title="Bras"
+                                        items={tarifsData.epilationLaser.femme.bras}
+                                    />
+                                    <PriceTable
+                                        title="Jambes"
+                                        items={tarifsData.epilationLaser.femme.jambes}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Microneedling Section */}
+                        <div className="mb-16">
+                            <h2 className="text-2xl font-montserrat font-light text-gray-900 mb-8 text-center">
+                                {tarifsData.microneedling.title}
+                            </h2>
+                            <div className="flex justify-center">
+                                <div className="w-full max-w-md">
+                                    <PriceTable
+                                        title="Tarifs Microneedling"
+                                        items={tarifsData.microneedling.tarifs}
+                                    />
+                                </div>
+                            </div>
                         </div>
 
                         {/* Contact Form Section */}
