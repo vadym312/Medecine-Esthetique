@@ -35,12 +35,18 @@ const TarifsPage: React.FC = () => {
             <div className="min-h-screen bg-gray-50 pt-20">
                 <section className="py-20 bg-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="text-center mb-16">
+                        <div className="text-center mb-8">
                             <Euro className="w-12 h-12 text-gold mx-auto mb-4" />
                             <h1 className="text-3xl font-montserrat font-light text-gray-900 mb-4">
                                 {tarifsData.hero.title}
                             </h1>
                             <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
+                        </div>
+
+                        <div className="mb-8 text-center">
+                            <p className="text-sm text-gray-500">
+                                {tarifsData.disclaimer.text}
+                            </p>
                         </div>
 
                         {/* Visage Section */}
@@ -87,12 +93,6 @@ const TarifsPage: React.FC = () => {
                                     items={tarifsData.silhouette.radiofrequence}
                                 />
                             </div>
-                        </div>
-
-                        <div className="mt-16 text-center">
-                            <p className="text-sm text-gray-500">
-                                {tarifsData.disclaimer.text}
-                            </p>
                         </div>
 
                         {/* Épilation Laser Section */}
